@@ -6,7 +6,6 @@ export interface UnitListProps
 {
   units: Unit[];
   unitChanged: (unit: Unit) => void;
-  unitRemoved: (unit: Unit) => void;
 }
 
 export class UnitList extends React.Component<UnitListProps, {}> {
@@ -52,7 +51,7 @@ export class UnitList extends React.Component<UnitListProps, {}> {
 
   private removeUnitHandler(unit: Unit): void
   {
-    this.props.unitRemoved(unit);
+    this.props.unitChanged({ ...unit, strength: undefined, armor: undefined });
   }
 
 }

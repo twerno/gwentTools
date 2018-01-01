@@ -3,10 +3,9 @@ import './DuelCalc.style.less';
 import { DuelCalcService, IDuelResult } from '@src/duelCalc/DuelCalcService';
 import { DuelResultList } from '@src/duelCalc/duelResult/DuelResult.comp';
 import { UnitList } from '@src/duelCalc/UnitList';
-import { ImgSrc } from '@src/ImgSrc';
 import { nextId } from '@src/Numerator';
 import * as React from 'react';
-import { Button, Panel } from 'react-bootstrap';
+import { Panel } from 'react-bootstrap';
 
 export interface Unit
 {
@@ -62,12 +61,7 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
           <UnitList
             units={this.state.units}
             unitChanged={(unit) => this.unitChangedHandler(unit)}
-            unitRemoved={(unit) => this.unitRemovedHandler(unit)}
           />
-          <br />
-          <Button onClick={() => this.dodajUnitClickHandler()} bsStyle="primary">
-            <img src={ImgSrc.ADD} width="20" /> Add Unit
-          </Button>
         </div>
 
         <div className="resultPanel">
@@ -84,32 +78,46 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     return { id: nextId(), strength: undefined, armor: undefined };
   }
 
-  private dodajUnitClickHandler(): void
-  {
-    this.setState((prevState, props) =>
-    {
-      const units = [...prevState.units, this.newUnit()];
-      return { units };
-    });
-  }
-
   private unitChangedHandler(unit: Unit): void
   {
     this.setState((prevState, props) =>
     {
-      const units = [...prevState.units];
-      const index: number = units.findIndex((currentUnit) => currentUnit.id === unit.id);
-      if (index >= 0)
+      let units: Unit[];
+      let results = prevState.results;
+
+      clearTimeout(this.calcDelay);
+      if (this.isUnitEmpty(unit))
       {
-        units[index] = unit;
+        units = this.removeUnit(unit, prevState);
+        if (units.length === 0)
+        {
+          units.push(this.newUnit());
+        }
+
+        results = this.calcService.calculate(units);
       }
-      return { units };
+      else
+      {
+        units = [...prevState.units];
+        const index: number = units.findIndex((currentUnit) => currentUnit.id === unit.id);
+        if (index >= 0)
+        {
+          units[index] = unit;
+          this.delayResultCalculation();
+        }
+      }
+
+      if (units.filter((u) => this.isUnitEmpty(u)).length === 0)
+      {
+        units.push(this.newUnit());
+      }
+      return { units, results };
     });
-    this.delayResultCalculation();
   }
 
   private calculateResultAndRefresh(): void
   {
+    clearTimeout(this.calcDelay);
     this.setState((prevState, props) =>
     {
       const results = this.calcService.calculate(this.state.units);
@@ -117,29 +125,29 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     });
   }
 
-  private unitRemovedHandler(unit: Unit): void
+  private removeUnit(unit: Unit, prevState: DuelCalcState): Unit[]
   {
-    this.setState((prevState, props) =>
+    const index: number = prevState.units.findIndex((currentUnit) => currentUnit.id === unit.id);
+    if (index >= 0 && prevState.units.length > 1)
     {
-      const index: number = prevState.units.findIndex((currentUnit) => currentUnit.id === unit.id);
-      if (index >= 0)
-      {
-        clearTimeout(this.calcDelay);
-        const units: Unit[] = [
-          ...prevState.units.slice(0, index),
-          ...prevState.units.slice(index + 1, prevState.units.length)];
-        const results = this.calcService.calculate(units);
-        return { units, results };
-      }
-
-      return prevState;
-    });
+      const units: Unit[] = [
+        ...prevState.units.slice(0, index),
+        ...prevState.units.slice(index + 1, prevState.units.length)];
+      return units;
+    }
+    return prevState.units;
   }
 
   private delayResultCalculation(): void
   {
     clearTimeout(this.calcDelay);
     this.calcDelay = setTimeout(() => this.calculateResultAndRefresh(), 200);
+  }
+
+  private isUnitEmpty(unit: Unit): boolean
+  {
+    return ((unit.strength || 0) === 0)
+      && ((unit.armor || 0) === 0);
   }
 
 }
