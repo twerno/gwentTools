@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/", // enables relative imports to root
+    "paths": {
+      "@src/*": [
+        "main/js/*"
+      ],
+      "@test/*": [
+        "test/js/*"
+      ]
+    },
+    "module": "commonjs",
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "ts-build",
+    "jsx": "react",
+    "strict": true,
+    "lib": [
+      "es6",
+      "dom"
+    ]
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

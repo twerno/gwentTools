@@ -1,0 +1,102 @@
+{
+  "name": "gwentTools",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "lint": "tslint --project tsconfig.json",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "testcov": "jest --coverage",
+    "build": "webpack --config webpack.prod.js"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json"
+    ],
+    "testResultsProcessor": "jest-junit",
+    "globals": {
+      "ts-jest": {
+        "skipBabel": true
+      }
+    },
+    "setupFiles": [
+      "./src/test/js/setup.ts"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ],
+    "moduleNameMapper": {
+      "^.+\\.(css|less)$": "identity-obj-proxy",
+      "@src/(.*)": "<rootDir>/src/main/js/$1",
+      "@test/(.*)": "<rootDir>/src/test/js/$1"
+    }
+  },
+  "jest-junit": {
+    "suiteName": "jest tests",
+    "output": "./build/jest-results/test/result.xml",
+    "classNameTemplate": "{classname}-{title}",
+    "titleTemplate": "{classname}-{title}",
+    "ancestorSeparator": " › ",
+    "usePathForSuiteName": "true"
+  },
+  "dependencies": {
+    "@types/node": "^8.5.2",
+    "@types/react": "^16.0.31",
+    "@types/react-bootstrap": "^0.31.9",
+    "@types/react-dom": "^16.0.3",
+    "awesome-typescript-loader": "^3.4.1",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "bootstrap": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "mkdirp": "^0.5.1",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-dom": "^16.2.0",
+    "typescript": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack": "^3.10.0",
+    "webpack-merge": "^4.1.1",
+    "webpack-notifier": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.10",
+    "@types/enzyme": "^3.1.6",
+    "@types/enzyme-adapter-react-16": "^1.0.1",
+    "@types/react-test-renderer": "^16.0.0",
+    "babel-jest": "^21.2.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^21.2.1",
+    "jest-create-mock-instance": "^1.0.2",
+    "jest-junit": "^3.4.1",
+    "less": "^3.0.0-pre.4",
+    "less-loader": "^4.0.5",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.2.0",
+    "style-loader": "^0.19.1",
+    "ts-jest": "^21.2.4",
+    "tslint": "^5.8.0",
+    "tslint-react": "^3.3.3",
+    "webpack-dev-server": "^2.9.7"
+  }
+}
