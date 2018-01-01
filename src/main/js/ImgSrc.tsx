@@ -7,5 +7,6 @@ export enum ImgSrc
   CROWN = '/img/icons8-fairytale-25.png',
   SKULL = '/img/icons8-poison-filled-25.png',
   SHIELD = '/img/icons8-shield-50.png',
-  SWORD = '/img/icons8-sword-50.png'
+  SWORD = '/img/icons8-sword-50.png',
+  FIRE = '/img/icons8-gas-16.png',
 }
