@@ -21,6 +21,8 @@ interface IDuelResultListState
 export class DuelResultList extends React.Component<IDuelResultListProps, IDuelResultListState>
 {
 
+  public static readonly ROW_LIMIT = 20;
+
   public constructor(props: IDuelResultListProps, context?: any)
   {
     super(props, context);
@@ -78,7 +80,7 @@ export class DuelResultList extends React.Component<IDuelResultListProps, IDuelR
             {
               this.props.sortedDuelResults
                 .map((duelResult, index) =>
-                  (index < 50 || this.state.showAll)
+                  (index < DuelResultList.ROW_LIMIT || this.state.showAll)
                     ? <DuelResultListRow
                       duelResult={duelResult}
                       maxScore={maxScore}
@@ -89,10 +91,10 @@ export class DuelResultList extends React.Component<IDuelResultListProps, IDuelR
             }
           </tbody>
         </table>
-        {!this.state.showAll && this.props.sortedDuelResults.length >= 50
-          ? <a href="#" onClick={() => this.showAllClickHandler()}>
-            {`Show ${this.props.sortedDuelResults.length - 50} more`}
-          </a>
+        {!this.state.showAll && this.props.sortedDuelResults.length >= DuelResultList.ROW_LIMIT
+          ? <button type="button" className="btn btn-link" onClick={() => this.showAllClickHandler()}>
+            {`Show ${this.props.sortedDuelResults.length - DuelResultList.ROW_LIMIT} more`}
+          </button>
           : null}
       </div>
     );
