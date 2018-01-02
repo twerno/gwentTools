@@ -23,7 +23,6 @@ export interface DuelCalcState
 export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
 
   private calcService: DuelCalcService = new DuelCalcService();
-  private calcDelay: any;
 
   public constructor(props: {}, context?: any)
   {
@@ -43,16 +42,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     // }
 
     return { units, results: [] };
-  }
-
-  public componentWillMount(): void
-  {
-    this.delayResultCalculation();
-  }
-
-  public componentWillUnmount(): void
-  {
-    clearTimeout(this.calcDelay);
   }
 
   public render()
@@ -88,7 +77,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
       let units: Unit[];
       let results = prevState.results;
 
-      clearTimeout(this.calcDelay);
       if (this.isUnitEmpty(unit))
       {
         units = this.removeUnit(unit, prevState);
@@ -122,7 +110,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
 
   private calculateResultAndRefresh(): void
   {
-    clearTimeout(this.calcDelay);
     this.setState((prevState, props) =>
     {
       const results = this.calcService.calculate(this.state.units);
@@ -141,12 +128,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
       return units;
     }
     return prevState.units;
-  }
-
-  private delayResultCalculation(): void
-  {
-    clearTimeout(this.calcDelay);
-    this.calcDelay = setTimeout(() => this.calculateResultAndRefresh(), 200);
   }
 
   private isUnitEmpty(unit: Unit): boolean
