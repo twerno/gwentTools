@@ -13,12 +13,24 @@ export interface IDuelResultListProps
   sortedDuelResults: IDuelResult[];
 }
 
-export class DuelResultList extends React.Component<IDuelResultListProps, {}>
+interface IDuelResultListState
+{
+  showAll: boolean;
+}
+
+export class DuelResultList extends React.Component<IDuelResultListProps, IDuelResultListState>
 {
 
-  public shouldComponentUpdate(nextProps: IDuelResultListProps, nextState: {}): boolean
+  public constructor(props: IDuelResultListProps, context?: any)
   {
-    if (this.props.sortedDuelResults.length !== nextProps.sortedDuelResults.length)
+    super(props, context);
+    this.state = { showAll: false };
+  }
+
+  public shouldComponentUpdate(nextProps: IDuelResultListProps, nextState: IDuelResultListState): boolean
+  {
+    if (this.props.sortedDuelResults.length !== nextProps.sortedDuelResults.length
+      || this.state.showAll !== nextState.showAll)
     {
       return true;
     }
@@ -35,6 +47,11 @@ export class DuelResultList extends React.Component<IDuelResultListProps, {}>
     }
 
     return false;
+  }
+
+  public componentWillReceiveProps(nextProps: IDuelResultListProps): void
+  {
+    this.setState((prevState, props) => ({ showAll: false }));
   }
 
   public render()
@@ -61,16 +78,28 @@ export class DuelResultList extends React.Component<IDuelResultListProps, {}>
             {
               this.props.sortedDuelResults
                 .map((duelResult, index) =>
-                  <DuelResultListRow
-                    duelResult={duelResult}
-                    maxScore={maxScore}
-                    key={duelResult.id}
-                  />
+                  (index < 50 || this.state.showAll)
+                    ? <DuelResultListRow
+                      duelResult={duelResult}
+                      maxScore={maxScore}
+                      key={duelResult.id}
+                    />
+                    : null
                 )
             }
           </tbody>
         </table>
+        {!this.state.showAll && this.props.sortedDuelResults.length >= 50
+          ? <a href="#" onClick={() => this.showAllClickHandler()}>
+            {`Show ${this.props.sortedDuelResults.length - 50} more`}
+          </a>
+          : null}
       </div>
     );
+  }
+
+  private showAllClickHandler(): void
+  {
+    this.setState((prevState, props) => ({ showAll: true }));
   }
 }
