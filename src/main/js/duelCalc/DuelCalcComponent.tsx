@@ -89,10 +89,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
       if (this.isUnitEmpty(unit))
       {
         units = this.removeUnit(unit, prevState);
-        if (units.length === 0)
-        {
-          units.push(this.newUnit());
-        }
       }
       else
       {
@@ -105,8 +101,9 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
       }
 
       results = this.calcService.calculate(units);
-      const ilePustych = units.filter((u) => this.isUnitEmpty(u)).length;
-      for (let i = ilePustych; i < 3; i++)
+      const ilePustychJest = units.filter((u) => this.isUnitEmpty(u)).length;
+      const ilePowinnoByc = Math.max(3 - units.length + ilePustychJest, 1);
+      for (let i = ilePustychJest; i < ilePowinnoByc; i++)
       {
         units.push(this.newUnit());
       }
