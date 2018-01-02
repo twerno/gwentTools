@@ -34,11 +34,9 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
   {
     const units = [this.newUnit(), this.newUnit(), this.newUnit()];
 
-    // this.state = { units: [], results: [] };
-
-    // for (let i = 0; i < 40; i++)
+    // for (let i = 0; i < 6; i++)
     // {
-    //   this.state.units.push({ id: nextId(), strength: i + 1, armor: 0 });
+    //   units.push({ id: nextId(), strength: i + 1, armor: 0 });
     // }
 
     return { units, results: [] };

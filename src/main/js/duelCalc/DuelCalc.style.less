@@ -33,3 +33,26 @@
         background-color: #eeeeee;
         border-color: #cccccc;
     }
+
+    .unitEditor {
+        overflow: hidden;
+    }
+    /* ******************* */
+
+    .unitEditorRow-enter {
+        max-height: 0px;
+    }
+
+    .unitEditorRow-enter.unitEditorRow-enter-active {
+        max-height: 34px;
+        transition: max-height 0.3s;
+    }
+
+    .unitEditorRow-exit {
+        max-height: 34px;
+    }
+
+    .unitEditorRow-exit.unitEditorRow-exit-active {
+        max-height: 0px;
+        transition: max-height 0.3s;
+    }
