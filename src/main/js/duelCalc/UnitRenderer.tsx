@@ -17,7 +17,7 @@ export function UnitRenderer(props: UnitRendererProps)
 
     <div className="unitEditor" key={props.unit.id}>
       <Button className="removeUnitBtn" onClick={() => props.removeUnitHandler()}>
-        <img src={ImgSrc.FIRE} width="16" />
+        <img src={ImgSrc.DELETE} width="16" />
       </Button>
       <div className="editInputs row">
         <div className="editInput col-xs-6">

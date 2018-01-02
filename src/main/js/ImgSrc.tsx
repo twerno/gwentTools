@@ -9,4 +9,6 @@ export enum ImgSrc
   SHIELD = '/img/icons8-shield-50.png',
   SWORD = '/img/icons8-sword-50.png',
   FIRE = '/img/icons8-gas-16.png',
+  DELETE = '/img/icons8-delete-16.png',
+  CLEAR = '/img/icons8-unavailable-filled-16.png',
 }

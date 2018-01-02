@@ -28,17 +28,12 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
   public constructor(props: {}, context?: any)
   {
     super(props, context);
-    this.initState();
+    this.state = this.emptyState();
   }
 
+  private emptyState(): DuelCalcState
   {
-
-
-    {
-    }
-  private initState(): void
-  {
-    this.state = { units: [this.newUnit(), this.newUnit(), this.newUnit()], results: [] };
+    const units = [this.newUnit(), this.newUnit(), this.newUnit()];
 
     // this.state = { units: [], results: [] };
 
@@ -46,6 +41,8 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     // {
     //   this.state.units.push({ id: nextId(), strength: i + 1, armor: 0 });
     // }
+
+    return { units, results: [] };
   }
 
   public componentWillMount(): void
@@ -66,6 +63,7 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
           <UnitList
             units={this.state.units}
             unitChanged={(unit) => this.unitChangedHandler(unit)}
+            clear={() => this.clearClickHandler()}
           />
         </div>
 
@@ -115,6 +113,11 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
 
       return { units, results };
     });
+  }
+
+  private clearClickHandler(): void
+  {
+    this.setState((prevState, props) => this.emptyState());
   }
 
   private calculateResultAndRefresh(): void

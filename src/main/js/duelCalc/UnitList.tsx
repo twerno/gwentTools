@@ -1,11 +1,14 @@
 import { Unit } from '@src/duelCalc/DuelCalcComponent';
 import { UnitRenderer } from '@src/duelCalc/UnitRenderer';
+import { ImgSrc } from '@src/ImgSrc';
 import * as React from 'react';
+import { Button } from 'react-bootstrap';
 
 export interface UnitListProps
 {
   units: Unit[];
   unitChanged: (unit: Unit) => void;
+  clear: () => void;
 }
 
 export class UnitList extends React.Component<UnitListProps, {}> {
@@ -21,7 +24,14 @@ export class UnitList extends React.Component<UnitListProps, {}> {
         removeUnitHandler={() => this.removeUnitHandler(unit)}
       />
     ));
-    return (<>{unitList}</>);
+    return (<>
+      {unitList}
+      <div className="row editInputs" style={{ marginTop: '6px', marginBottom: '6px' }}>
+        <Button className="clearAllBtn col-xs-6" onClick={() => this.props.clear()}>
+          <img src={ImgSrc.CLEAR} width="16" /> Clear all
+      </Button>
+      </div>
+      </>);
   }
 
   private strengthChangeHandler(unit: Unit, event: React.ChangeEvent<HTMLInputElement>): void
