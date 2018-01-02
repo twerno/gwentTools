@@ -26,18 +26,20 @@ export class UnitList extends React.Component<UnitListProps, {}> {
 
   private strengthChangeHandler(unit: Unit, event: React.ChangeEvent<HTMLInputElement>): void
   {
-    const strength: number | undefined = this.text2Int(event.target.value);
+    let strength: number | undefined = this.text2Int(event.target.value);
     if ((strength || 0) >= 0)
     {
+      strength = strength === 0 ? undefined : strength;
       this.props.unitChanged({ ...unit, strength });
     }
   }
 
   private armorChangeHandler(unit: Unit, event: React.ChangeEvent<HTMLInputElement>): void
   {
-    const armor: number | undefined = this.text2Int(event.target.value);
+    let armor: number | undefined = this.text2Int(event.target.value);
     if ((armor || 0) >= 0)
     {
+      armor = armor === 0 ? undefined : armor;
       this.props.unitChanged({ ...unit, armor });
     }
   }

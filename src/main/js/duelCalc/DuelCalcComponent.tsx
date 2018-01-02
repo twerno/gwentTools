@@ -93,8 +93,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
         {
           units.push(this.newUnit());
         }
-
-        results = this.calcService.calculate(units);
       }
       else
       {
@@ -103,14 +101,16 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
         if (index >= 0)
         {
           units[index] = unit;
-          this.delayResultCalculation();
         }
       }
 
-      if (units.filter((u) => this.isUnitEmpty(u)).length === 0)
+      results = this.calcService.calculate(units);
+      const ilePustych = units.filter((u) => this.isUnitEmpty(u)).length;
+      for (let i = ilePustych; i < 3; i++)
       {
         units.push(this.newUnit());
       }
+
       return { units, results };
     });
   }
