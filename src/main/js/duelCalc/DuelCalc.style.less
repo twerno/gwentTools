@@ -1,21 +1,6 @@
     @import "../common";
     /* ********* */
 
-    @media (max-width: @screen-xs-max) {
-        .editPanel {
-            width: 100%;
-            float: left;
-        }
-        .editInputs {
-            width: 100%;
-            padding-right: 42px;
-        }
-        .editInput {
-            width: 50%;
-            float: left
-        }
-    }
-
     @media (min-width: @screen-sm) {
         .editPanel {
             width: 302px;
@@ -26,17 +11,25 @@
             left: 0px;
             right: 0px;
         }
-        .editInput {
-            width: 130px;
-        }
     }
 
     .removeUnitBtn {
-        float: left;
+        // float: left;
+        display: table-cell;
+        background-color: #eeeeee;
+        border-color: #cccccc;
+    }
+
+    .editInputs {
+        display: table-cell;
     }
 
     .editInput {
         padding-left: 2px;
-        padding-right: 2px;
-        float: left;
+        padding-right: 2px; // float: left;
+        display: table-cell;
+    }
+
+    .unitEditor {
+        display: table-row;
     }

@@ -15,9 +15,9 @@ export function UnitRenderer(props: UnitRendererProps)
 {
   return (
     <>
-    <div key={props.unit.id}>
-      <div className="editInputs">
-        <div className="editInput">
+    <div className="unitEditor" key={props.unit.id}>
+      <div className="editInputs row">
+        <div className="editInput col-sm-6">
           <div className="input-group">
             <div className="input-group-addon">
               <img src={ImgSrc.SWORD} width="20" />
@@ -31,7 +31,7 @@ export function UnitRenderer(props: UnitRendererProps)
           </div>
         </div>
 
-        <div className="editInput">
+        <div className="editInput col-sm-6">
           <div className="input-group">
             <div className="input-group-addon">
               <img src={ImgSrc.SHIELD} width="20" />
@@ -44,11 +44,13 @@ export function UnitRenderer(props: UnitRendererProps)
             />
           </div>
         </div>
-      </div>
 
-      <Button className="removeUnitBtn" onClick={() => props.removeUnitHandler()} bsStyle="danger">
-        <img src={ImgSrc.SKULL} width="16" />
+      </div>
+      <Button className="removeUnitBtn" onClick={() => props.removeUnitHandler()}>
+        <img src={ImgSrc.FIRE} width="16" />
       </Button>
+
+
     </div>
 
     </>
