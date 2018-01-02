@@ -31,16 +31,21 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     this.initState();
   }
 
+  {
+
+
+    {
+    }
   private initState(): void
   {
     this.state = { units: [this.newUnit(), this.newUnit(), this.newUnit()], results: [] };
 
-    this.state = { units: [], results: [] };
+    // this.state = { units: [], results: [] };
 
-    for (let i = 0; i < 12; i++)
-    {
-      this.state.units.push({ id: nextId(), strength: i + 1, armor: 0 });
-    }
+    // for (let i = 0; i < 40; i++)
+    // {
+    //   this.state.units.push({ id: nextId(), strength: i + 1, armor: 0 });
+    // }
   }
 
   public componentWillMount(): void
