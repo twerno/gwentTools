@@ -6,18 +6,9 @@
     width: 30px;
 }
 
-@media (max-width: @screen-md-max) {
-    .hideUnlessLarge {
-        display: none;
-    }
-}
-
 @media (min-width: @screen-lg) {
-    .thinColumn {
-        width: 180px;
-    }
-    .fatColumn {
-        width: 320px;
+    .resultTable {
+        max-width: @screen-lg - 300;
     }
 }
 

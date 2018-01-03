@@ -64,7 +64,7 @@ export class DuelResultList extends React.Component<IDuelResultListProps, IDuelR
 
     return (
       <div className="table-responsive">
-        <table className="table table-striped">
+        <table className="table table-striped resultTable">
           <thead>
             <tr>
               <th className="textCentered">Points</th>
