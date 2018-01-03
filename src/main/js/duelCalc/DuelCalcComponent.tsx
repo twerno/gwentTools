@@ -47,7 +47,7 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
   public render()
   {
     return (
-      <Panel header="Duel calculator" bsStyle="info">
+      <Panel header="Gwent Duel Calculator" bsStyle="info">
         <div className="editPanel">
           <UnitList
             units={this.state.units}

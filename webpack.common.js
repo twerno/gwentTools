@@ -7,9 +7,9 @@ module.exports = {
     './src/main/js/index.tsx'
   ],
   output: {
-    filename: 'app.js',
+    filename: 'gwentTools.js',
     publicPath: 'js',
-    path: path.resolve(__dirname, 'src/main/resources/static/')
+    path: path.resolve(__dirname, 'src/main/resources/static/js')
   },
   resolve: {
     alias: { '@src': path.resolve('src/main/js') },

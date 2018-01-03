@@ -11,5 +11,5 @@ ReactDOM.render(
     <StickyFooter />
   </div>
   ,
-  document.getElementById('app')
+  document.getElementById('duelCalc')
 );
