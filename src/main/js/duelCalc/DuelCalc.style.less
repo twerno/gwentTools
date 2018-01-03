@@ -1,58 +1,64 @@
-    @import "../common";
-    /* ********* */
+        @import "../common";
+        /* ********* */
 
-    @media (min-width: @screen-sm) {
-        .editPanel {
-            width: 302px;
-            float: left;
+        @media (MAX-width: @screen-xs-max) {
+            .resultPanel {
+                margin-top: 10px;
+            }
         }
-        .resultPanel {
-            margin-left: 312px;
-            left: 0px;
-            right: 0px;
+
+        @media (min-width: @screen-sm) {
+            .editPanel {
+                width: 302px;
+                float: left;
+            }
+            .resultPanel {
+                margin-left: 312px;
+                left: 0px;
+                right: 0px;
+            }
         }
-    }
 
-    .removeUnitBtn {
-        float: right;
-        background-color: #eeeeee;
-        border-color: #cccccc;
-    }
+        .removeUnitBtn {
+            float: right;
+            background-color: #eeeeee;
+            border-color: #cccccc;
+        }
 
-    .editInputs {
-        margin-right: 44px;
-        margin-left: 0px;
-    }
+        .editInputs {
+            margin-right: 44px;
+            margin-left: 0px;
+        }
 
-    .editInput {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
+        .editInput {
+            padding-left: 2px;
+            padding-right: 2px;
+        }
 
-    .clearAllBtn {
-        background-color: #eeeeee;
-        border-color: #cccccc;
-    }
+        .clearAllBtn {
+            background-color: #eeeeee;
+            border-color: #cccccc;
+        }
 
-    .unitEditor {
-        overflow: hidden;
-    }
-    /* ******************* */
+        .unitEditor {
+            overflow: hidden;
+        }
+        /* ******************* */
 
-    .unitEditorRow-enter {
-        max-height: 0px;
-    }
+        .unitEditorRow-enter {
+            max-height: 0px;
+        }
 
-    .unitEditorRow-enter.unitEditorRow-enter-active {
-        max-height: 34px;
-        transition: max-height 0.2s;
-    }
+        .unitEditorRow-enter.unitEditorRow-enter-active {
+            max-height: 34px;
+            transition: max-height 0.2s;
+        }
 
-    .unitEditorRow-exit {
-        max-height: 34px;
-    }
+        .unitEditorRow-exit {
+            max-height: 34px;
+        }
 
-    .unitEditorRow-exit.unitEditorRow-exit-active {
-        max-height: 0px;
-        transition: max-height 0.2s;
-    }
+        .unitEditorRow-exit.unitEditorRow-exit-active {
+            max-height: 0px;
+            transition: max-height 0.2s;
+        }
