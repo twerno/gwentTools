@@ -1,17 +1,21 @@
 import './DuelCalc.style.less';
 
-import { Unit } from '@src/duelCalc/DuelCalcComponent';
+import { Unit, DuelCalcState } from '@src/duelCalc/DuelCalcComponent';
 import { UnitRenderer } from '@src/duelCalc/UnitRenderer';
 import { ImgSrc } from '@src/ImgSrc';
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { StrengthChangeAction } from '@src/duelCalc/action/StrengthChangeAction';
+import { ArmorChangeAction } from '@src/duelCalc/action/ArmorChangeAction';
+import { IStateChangeAction, ICommonActionParam } from '@src/duelCalc/action/CommonActionClasses';
+import { RemoveUnitAction } from '@src/duelCalc/action/RemoveUnitAction';
+import { ClearUnitsAction } from '@src/duelCalc/action/ClearUnitsAction';
 
 export interface UnitListProps
 {
   units: Unit[];
-  unitChanged: (unit: Unit) => void;
-  clear: () => void;
+  actionHandler: (action: IStateChangeAction<{}, DuelCalcState, ICommonActionParam>) => void;
 }
 
 export class UnitList extends React.Component<UnitListProps, {}> {
@@ -39,7 +43,7 @@ export class UnitList extends React.Component<UnitListProps, {}> {
         {unitList}
       </TransitionGroup>
       <div className="row editInputs" style={{ marginTop: '6px', marginBottom: '6px' }}>
-        <Button className="clearAllBtn col-xs-6" onClick={() => this.props.clear()}>
+        <Button className="clearAllBtn col-xs-6" onClick={() => this.clearUnitsHandler()}>
           <img src={ImgSrc.CLEAR} width="16" /> Clear all
             </Button>
       </div>
@@ -49,34 +53,22 @@ export class UnitList extends React.Component<UnitListProps, {}> {
 
   private strengthChangeHandler(unit: Unit, event: React.ChangeEvent<HTMLInputElement>): void
   {
-    let strength: number | undefined = this.text2Int(event.target.value);
-    if ((strength || 0) >= 0)
-    {
-      strength = strength === 0 ? undefined : strength;
-      this.props.unitChanged({ ...unit, strength });
-    }
+    this.props.actionHandler(new StrengthChangeAction(unit, event.target.value));
   }
 
   private armorChangeHandler(unit: Unit, event: React.ChangeEvent<HTMLInputElement>): void
   {
-    let armor: number | undefined = this.text2Int(event.target.value);
-    if ((armor || 0) >= 0)
-    {
-      armor = armor === 0 ? undefined : armor;
-      this.props.unitChanged({ ...unit, armor });
-    }
-  }
-
-  private text2Int(rawValue: string): number | undefined
-  {
-    return (rawValue || '') === ''
-      ? undefined
-      : parseInt(rawValue, 0);
+    this.props.actionHandler(new ArmorChangeAction(unit, event.target.value));
   }
 
   private removeUnitHandler(unit: Unit): void
   {
-    this.props.unitChanged({ ...unit, strength: undefined, armor: undefined });
+    this.props.actionHandler(new RemoveUnitAction(unit));
+  }
+
+  private clearUnitsHandler(): void
+  {
+    this.props.actionHandler(new ClearUnitsAction());
   }
 
 }

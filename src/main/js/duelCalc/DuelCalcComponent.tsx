@@ -6,6 +6,8 @@ import { UnitList } from '@src/duelCalc/UnitList';
 import { nextId } from '@src/Numerator';
 import * as React from 'react';
 import { Panel } from 'react-bootstrap';
+import { IStateChangeAction, ICommonActionParam } from '@src/duelCalc/action/CommonActionClasses';
+import { UnitHelper } from '@src/duelCalc/helper/UnitHelper';
 
 export interface Unit
 {
@@ -32,7 +34,7 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
 
   private emptyState(): DuelCalcState
   {
-    const units = [this.newUnit(), this.newUnit(), this.newUnit()];
+    const units = UnitHelper.initialState();
 
     // for (let i = 0; i < 6; i++)
     // {
@@ -49,8 +51,7 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
         <div className="editPanel">
           <UnitList
             units={this.state.units}
-            unitChanged={(unit) => this.unitChangedHandler(unit)}
-            clear={() => this.clearClickHandler()}
+            actionHandler={(action) => this.actionHandler(action)}
           />
         </div>
 
@@ -63,42 +64,10 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
     );
   }
 
-  private newUnit(): Unit
-  {
-    return { id: nextId(), strength: undefined, armor: undefined };
-  }
-
-  private unitChangedHandler(unit: Unit): void
+  private actionHandler(action: IStateChangeAction<{}, DuelCalcState, ICommonActionParam>): void
   {
     this.setState((prevState, props) =>
-    {
-      let units: Unit[];
-      let results = prevState.results;
-
-      if (this.isUnitEmpty(unit))
-      {
-        units = this.removeUnit(unit, prevState);
-      }
-      else
-      {
-        units = [...prevState.units];
-        const index: number = units.findIndex((currentUnit) => currentUnit.id === unit.id);
-        if (index >= 0)
-        {
-          units[index] = unit;
-        }
-      }
-
-      results = this.calcService.calculate(units);
-      const ilePustychJest = units.filter((u) => this.isUnitEmpty(u)).length;
-      const ilePowinnoByc = Math.max(3 - units.length + ilePustychJest, 1);
-      for (let i = ilePustychJest; i < ilePowinnoByc; i++)
-      {
-        units.push(this.newUnit());
-      }
-
-      return { units, results };
-    });
+      action.resolve(prevState, props, { calcService: this.calcService }));
   }
 
   private clearClickHandler(): void
@@ -113,25 +82,6 @@ export class DuelCalcComponent extends React.Component<{}, DuelCalcState> {
       const results = this.calcService.calculate(this.state.units);
       return { results };
     });
-  }
-
-  private removeUnit(unit: Unit, prevState: DuelCalcState): Unit[]
-  {
-    const index: number = prevState.units.findIndex((currentUnit) => currentUnit.id === unit.id);
-    if (index >= 0 && prevState.units.length > 1)
-    {
-      const units: Unit[] = [
-        ...prevState.units.slice(0, index),
-        ...prevState.units.slice(index + 1, prevState.units.length)];
-      return units;
-    }
-    return prevState.units;
-  }
-
-  private isUnitEmpty(unit: Unit): boolean
-  {
-    return ((unit.strength || 0) === 0)
-      && ((unit.armor || 0) === 0);
   }
 
 }
