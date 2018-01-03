@@ -91,10 +91,12 @@ export class DuelResultList extends React.Component<IDuelResultListProps, IDuelR
             }
           </tbody>
         </table>
-        {!this.state.showAll && this.props.sortedDuelResults.length >= DuelResultList.ROW_LIMIT
-          ? <button type="button" className="btn btn-link" onClick={() => this.showAllClickHandler()}>
-            {`Show ${this.props.sortedDuelResults.length - DuelResultList.ROW_LIMIT} more`}
-          </button>
+        {!this.state.showAll && this.props.sortedDuelResults.length > DuelResultList.ROW_LIMIT
+          ? (
+            <button type="button" className="btn btn-link" onClick={() => this.showAllClickHandler()}>
+              {`Show ${this.props.sortedDuelResults.length - DuelResultList.ROW_LIMIT} more`}
+            </button>
+          )
           : null}
       </div>
     );
