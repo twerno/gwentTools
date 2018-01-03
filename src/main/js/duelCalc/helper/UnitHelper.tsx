@@ -5,8 +5,8 @@ export abstract class UnitHelper
 {
   public static isUnitEmpty(unit: Unit): boolean
   {
-    return ((unit.strength || 0) === 0)
-      && ((unit.armor || 0) === 0);
+    return (unit.strength === undefined)
+      && (unit.armor === undefined);
   }
 
   public static newEmptyUnit(): Unit

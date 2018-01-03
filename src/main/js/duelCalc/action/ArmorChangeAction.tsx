@@ -30,13 +30,11 @@ export class ArmorChangeAction implements IStateChangeAction<{}, DuelCalcState, 
   protected event2Armor(): number | undefined
   {
     const armor: number | undefined = this.text2Int(this.rawValue);
-    return ((armor || 0) >= 0) ? armor : undefined;
+    return (armor === undefined) ? undefined : Math.max(armor, 0);
   }
 
   protected text2Int(rawValue: string): number | undefined
   {
-    return (rawValue || '') === ''
-      ? undefined
-      : parseInt(rawValue, 0);
+    return parseInt(rawValue || '0', 0);
   }
 }

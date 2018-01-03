@@ -30,13 +30,11 @@ export class StrengthChangeAction implements IStateChangeAction<{}, DuelCalcStat
   protected event2Strength(): number | undefined
   {
     const strength: number | undefined = this.text2Int(this.rawValue);
-    return ((strength || 0) >= 0) ? strength : undefined;
+    return (strength === undefined) ? undefined : Math.max(strength, 0);
   }
 
   protected text2Int(rawValue: string): number | undefined
   {
-    return (rawValue || '') === ''
-      ? undefined
-      : parseInt(rawValue, 0);
+    return parseInt(rawValue || '0', 0);
   }
 }
