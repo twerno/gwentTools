@@ -1,4 +1,4 @@
-import '../resources/static/app.less';
+import './app.less';
 
 import { DuelCalcComponent } from '@src/duelCalc/DuelCalcComponent';
 import { StickyFooter } from '@src/Footer';

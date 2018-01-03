@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: 'gwentTools.js',
     publicPath: 'js',
-    path: path.resolve(__dirname, 'src/main/resources/static/js')
+    path: path.resolve(__dirname, './dist/js')
   },
   resolve: {
     alias: { '@src': path.resolve('src/main/js') },

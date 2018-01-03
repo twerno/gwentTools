@@ -9,7 +9,7 @@ module.exports = merge(common, {
     port: 3000,
     historyApiFallback: true,
     inline: true,
-    contentBase: path.resolve(__dirname, 'src/main/resources/static/'),
+    contentBase: path.resolve(__dirname, 'dist/'),
     stats: {
       modules: false,
       chunks: false,
