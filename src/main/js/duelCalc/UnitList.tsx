@@ -42,11 +42,11 @@ export class UnitList extends React.Component<UnitListProps, {}> {
       <TransitionGroup>
         {unitList}
       </TransitionGroup>
-      <div className="row editInputs" style={{ marginTop: '6px', marginBottom: '6px' }}>
+      {/* <div className="row editInputs" style={{ marginTop: '6px', marginBottom: '6px' }}>
         <Button className="clearAllBtn col-xs-6" onClick={() => this.clearUnitsHandler()}>
           <img src={ImgSrc.CLEAR} width="16" /> Clear all
             </Button>
-      </div>
+      </div> */}
       </>
     );
   }
