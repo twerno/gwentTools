@@ -56,7 +56,9 @@ class DuelResultScoreColumn extends React.PureComponent<DuelListScoreColumnProps
         {
           this.props.points === this.props.maxScore
             ? <img src={ImgSrc.CROWN} className="crownIcon" />
-            : <span className="text-muted">{` (-${this.props.maxScore - this.props.points})`}</span>
+            : <span className="text-muted" style={{ fontSize: '14px' }}>
+              {` (-${this.props.maxScore - this.props.points})`}
+            </span>
         }
       </td>
     );
