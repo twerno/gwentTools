@@ -26,6 +26,7 @@ export function UnitRenderer(props: UnitRendererProps)
               <img src={ImgSrc.SWORD} width="20" />
             </div>
             <input
+              type="tel"
               className="form-control"
               placeholder="Strength"
               value={props.unit.strength === undefined ? '' : props.unit.strength}
@@ -40,6 +41,7 @@ export function UnitRenderer(props: UnitRendererProps)
               <img src={ImgSrc.SHIELD} width="20" />
             </div>
             <input
+              type="tel"
               className="form-control"
               placeholder="Armor"
               value={props.unit.armor === undefined ? '' : props.unit.armor}
