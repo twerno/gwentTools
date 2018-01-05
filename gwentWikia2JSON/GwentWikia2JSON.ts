@@ -32,7 +32,10 @@ class SaveCardDefs
 
     const cards = this.infoboxConverter.convertAll(infoboxList)
       .filter((card) => card.set === CardSet.CLASSIC);
-    GwentWikiaHelper.saveOnDiskLn('cards.json', cards);
+    const cardsStr = cards
+      .map((card) => JSON.stringify(card))
+      .reduce((a, b) => `${a},\n  ${b}`);
+    GwentWikiaHelper.saveOnDisk('cards.json', `export const cards = [\n  ${cardsStr}\n];`);
   }
 
 }
