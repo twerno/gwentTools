@@ -14,4 +14,16 @@ export abstract class GwentWikiaHelper
       return false;
     });
   }
+
+  public static logError(e: any): void
+  {
+    // tslint:disable-next-line:no-console
+    console.error(e);
+  }
+
+  public static log(message: string): void
+  {
+    // tslint:disable-next-line:no-console
+    console.log(message);
+  }
 }

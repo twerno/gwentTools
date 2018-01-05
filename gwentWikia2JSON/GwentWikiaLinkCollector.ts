@@ -1,5 +1,5 @@
-import { Downloader } from './Downloader';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
+import { HttpDownloadService } from './HttpDownloadService';
 
 export interface ILink
 {
@@ -14,7 +14,7 @@ export class GwentWikiaLinkCollector
   private linkParser = /<li><a\s+href="(.+?)"/i;
   private rawPageParser = /<li><a\s+href="(.+?)"/gi;
 
-  public constructor(private downloader: Downloader) { }
+  public constructor(private downloader: HttpDownloadService) { }
 
   public async collect(): Promise<ILink[]>
   {
@@ -23,12 +23,15 @@ export class GwentWikiaLinkCollector
 
     for (const category of categories)
     {
-      for (let i = 1; i < 3; i++)
+      for (let i = 1; i <= 3; i++)
       {
         const url: string = this.categorySourceUrl + category + '?page=' + i;
-        const rawPage: string = await this.downloader.load(url);
-        const links: string[] = this.parseLinks(rawPage);
-        result = result.concat(links);
+        const rawPage: string | null = await this.downloader.loadOne(url);
+        if (rawPage)
+        {
+          const links: string[] = this.parseLinks(rawPage);
+          result = result.concat(links);
+        }
       }
 
     }
@@ -40,7 +43,8 @@ export class GwentWikiaLinkCollector
         ({
           id: val.replace(/\//g, '_'),
           url: `${this.cardSourceUrl + val}?action=raw`
-        }));
+        }))
+      .sort((a, b) => a.id.localeCompare(b.id));
   }
 
   private parseLinks(rawPage: string): string[]
