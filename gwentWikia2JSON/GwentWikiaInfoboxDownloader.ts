@@ -27,9 +27,10 @@ export class GwentWikiaInfoboxDownloader
         this.downloader.loadMany(links,
           (link, body, remaining) =>
           {
-            const infobox = this.parseInfoBox(body);
+            let infobox = this.parseInfoBox(body);
             if (infobox)
             {
+              infobox += this.add2Infobox(link, infobox);
               GwentWikiaHelper.saveOnDisk(`${dir}/${link.id}`, infobox);
             }
 
@@ -42,10 +43,29 @@ export class GwentWikiaInfoboxDownloader
     });
   }
 
+  private add2Infobox(link: ILink, infobox: string): string
+  {
+    infobox += `\n|__url=${link.urlToShow}`;
+    infobox += `\n|__filename=${link.id}`;
+    infobox += `\n|__set=${this.setFromUrl(infobox)}`;
+
+    return infobox;
+  }
+
+  private setFromUrl(infoBox: string): string
+  {
+    const group = infoBox.match(/\|\s*url\s*=.+?_\((.+)\)/);
+    if (group && group.length > 1 && group[1])
+    {
+      return group[1];
+    }
+    return '';
+  }
+
   private parseInfoBox(body: string): string | null
   {
     const regExpGroup = body.match(this.infoBoxParser);
-    if (regExpGroup && regExpGroup.length > 0)
+    if (regExpGroup && regExpGroup.length > 0 && regExpGroup[1])
     {
       return regExpGroup[1];
     }

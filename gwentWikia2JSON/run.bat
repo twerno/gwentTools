@@ -1,0 +1,1 @@
+ts-node GwentWikia2JSON.ts

@@ -13,8 +13,14 @@ export class GwentWikiaInfoboxStatsGenerator
     const files: string[] = fs.readdirSync(`${dir}/`);
     for (const file of files)
     {
-      const infoBox = fs.readFileSync(`${dir}/${file}`, 'utf8');
-      this.add2Stats(infoBox);
+      try
+      {
+        const infoBox = fs.readFileSync(`${dir}/${file}`, 'utf8');
+        this.add2Stats(infoBox);
+      } catch (e)
+      {
+        GwentWikiaHelper.logError(`[${file}] ${e.message}`);
+      }
     }
   }
 
@@ -25,12 +31,22 @@ export class GwentWikiaInfoboxStatsGenerator
     {
       this.processLine(line);
     }
+    this.url_set_stat(infoBox);
+  }
+
+  private url_set_stat(infoBox: string): void
+  {
+    const group = infoBox.match(/\|\s*url\s*=.+?_\((.+)\)/);
+    if (group && group.length > 1 && group[1])
+    {
+      this.addToMap('set', group[1]);
+    }
   }
 
   private processLine(line: string): void
   {
     const group = line.match(this.linePaser);
-    if (group && group.length > 1)
+    if (group && group.length > 1 && group[1])
     {
       this.addToMap(group[1].trim(), group[2].trim());
     }
@@ -60,14 +76,6 @@ export class GwentWikiaInfoboxStatsGenerator
 
     for (const key of this.keys)
     {
-      // if (key === 'name'
-      //   || key === 'description'
-      //   || key === 'illustrator'
-      //   || key === 'image')
-      // {
-      //   continue;
-      // }
-
       const list = GwentWikiaHelper.removeDuplicates(this.stats[key] || []);
       result += `\n\n${key} = ${list.join(';;')}`;
     }

@@ -1,5 +1,6 @@
 import {
   CardColor,
+  CardLoyalty,
   CardRarity,
   CardSet,
   CardType,
@@ -7,6 +8,7 @@ import {
   ICardv1,
   IUnitv1,
 } from '../src/main/js/createHelper/CardStruct';
+import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { IInfobox } from './GwentWikiaInfoboxParser';
 
 export class GwentWikiaInfoboxCardConverter
@@ -19,30 +21,36 @@ export class GwentWikiaInfoboxCardConverter
 
   public convert(infobox: IInfobox): ICardv1
   {
-    const result: ICardv1 = {
-      id: '',
-      name: this.name(infobox),
-      cardColor: this.cardColor(infobox),
-      cardText: infobox.description || '',
-      cardType: this.cardType(infobox),
-      collectable: (infobox.craft || '') !== '',
-      faction: this.faction(infobox),
-      rarity: this.rarity(infobox),
-      set: (infobox.craft || '') !== '' ? CardSet.CLASSIC : CardSet.UNKNOWN,
-      tags: infobox.type || []
-    };
-
-    if (result.cardType === CardType.UNIT)
+    try
     {
-      (result as IUnitv1).stats = { strength: 0, armor: 0 };
-      (result as IUnitv1).loyality = { loyal: false, disloyal: false };
-      (result as IUnitv1).stats.strength = parseInt(infobox.strength || '0', 0);
-      (result as IUnitv1).stats.armor = 0;
-      (result as IUnitv1).loyality.loyal = infobox.loyalty === 'Loyal' || infobox.loyalty === 'Both';
-      (result as IUnitv1).loyality.disloyal = infobox.loyalty === 'Disloyal' || infobox.loyalty === 'Both';
-    }
+      const result: ICardv1 = {
+        id: '',
+        url: infobox.url || '',
+        name: this.name(infobox),
+        cardColor: this.cardColor(infobox),
+        cardText: infobox.description || '',
+        cardType: this.cardType(infobox),
+        collectable: this.collectable(infobox),
+        faction: this.faction(infobox),
+        rarity: this.rarity(infobox),
+        set: this.set(infobox),
+        tags: infobox.type || []
+      };
 
-    return result;
+      if (result.cardType === CardType.UNIT)
+      {
+        (result as IUnitv1).strength = parseInt(infobox.strength || '0', 0);
+        (result as IUnitv1).armor = this.armor(infobox);
+        (result as IUnitv1).loyalty = this.loyalty(infobox);
+      }
+
+      return result;
+    } catch (e)
+    {
+      GwentWikiaHelper.log(JSON.stringify(infobox));
+
+      throw e;
+    }
   }
 
   private name(infobox: IInfobox): string
@@ -59,13 +67,13 @@ export class GwentWikiaInfoboxCardConverter
       case 'Bronze': return CardColor.BRONZE;
       case 'Silver': return CardColor.SILVER;
       case 'Gold': return CardColor.GOLD;
-      default: return CardColor.UNDEFINED;
+      default: return CardColor.UNKNOWN;
     }
   }
 
   private cardType(infobox: IInfobox): CardType
   {
-    if ((infobox.type || []).indexOf('special') === -1)
+    if ((infobox.type || []).indexOf('Special') === -1)
     {
       return CardType.UNIT;
     }
@@ -73,6 +81,11 @@ export class GwentWikiaInfoboxCardConverter
     {
       return CardType.SPECIAL;
     }
+  }
+
+  private collectable(infobox: IInfobox): boolean
+  {
+    return (infobox.craft || '') !== '';
   }
 
   private faction(infobox: IInfobox): Factionv1
@@ -85,7 +98,7 @@ export class GwentWikiaInfoboxCardConverter
       case `Scoia'tael`: return Factionv1.SCOIATAEL;
       case 'Nilfgaardian Empire': return Factionv1.NILFGAARD;
       case 'Skellige': return Factionv1.SKELLIGE;
-      default: return Factionv1.UNDEFINED;
+      default: return Factionv1.UNKNOWN;
     }
   }
 
@@ -97,7 +110,42 @@ export class GwentWikiaInfoboxCardConverter
       case 'Rare': return CardRarity.RARE;
       case 'Legendary': return CardRarity.LEGENDARY;
       case `Common`: return CardRarity.COMMON;
-      default: return CardRarity.UNDEFINED;
+      default: return CardRarity.UNKNOWN;
     }
+  }
+
+  private set(infobox: IInfobox): CardSet
+  {
+    switch (infobox.set)
+    {
+      case 'Saovine': return CardSet.SAOVINE_2016;
+      case 'Alpha': return CardSet.ALPHA;
+      case 'Ale_Fest': return CardSet.ALE_FEST_2016;
+      case `Midwinter_Hunt`: return CardSet.MIDWINTER_HUNT_2016;
+      default: return this.collectable(infobox)
+        ? CardSet.CLASSIC
+        : CardSet.UNKNOWN;
+    }
+  }
+
+  private loyalty(infobox: IInfobox): CardLoyalty
+  {
+    switch (infobox.loyalty)
+    {
+      case 'Loyal': return CardLoyalty.LOYAL;
+      case 'Disloyal': return CardLoyalty.DISLOYAL;
+      case 'Both': return CardLoyalty.BOTH;
+      default: return CardLoyalty.UNKNOWN;
+    }
+  }
+
+  private armor(infobox: IInfobox): number
+  {
+    const group = (infobox.description || '').match(/(\d+)\s+Armor/);
+    if (group && group.length > 0 && group[1])
+    {
+      return parseInt(group[1], 0);
+    }
+    return 0;
   }
 }

@@ -38,4 +38,18 @@ export abstract class GwentWikiaHelper
     } catch (e) { }
     fs.writeFileSync(filename, content);
   }
+
+  public static saveOnDiskLn(filename: string, content: any[]): void
+  {
+    const data: string = content
+      .map((val) => JSON.stringify(val))
+      .reduce((a, b) => `${a}\n${b}`);
+    this.saveOnDisk(filename, data);
+  }
+
+  public static mkdir(dir: string): void
+  {
+    // tslint:disable-next-line:no-empty
+    fs.mkdir(dir, (err) => { });
+  }
 }

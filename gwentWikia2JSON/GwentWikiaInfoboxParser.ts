@@ -1,5 +1,7 @@
 import * as fs from 'fs';
 
+import { GwentWikiaHelper } from './GwentWikiaHelper';
+
 export interface IInfobox
 {
   name: string | undefined;
@@ -18,6 +20,8 @@ export interface IInfobox
   mill_powder: string | undefined;
   illustrator: string | undefined;
   description: string | undefined;
+  url: string | undefined;
+  set: string | undefined;
 }
 
 class Parser
@@ -26,8 +30,8 @@ class Parser
 
   public get(field: string): string | undefined
   {
-    const group = this.infobox.match(`\s*${field}\s*=(.+)`);
-    if (group && group.length > 1)
+    const group = this.infobox.match(`\\|\\s*${field}\\s*=(.+)`);
+    if (group && group.length > 1 && group[1])
     {
       return group[1].trim();
     }
@@ -55,38 +59,53 @@ export class GwentWikiaInfoboxParser
     const files: string[] = fs.readdirSync(`${dir}/`);
     for (const file of files)
     {
-      const infoBox = fs.readFileSync(`${dir}/${file}`, 'utf8');
-      result.push(this.parse(infoBox));
+      try
+      {
+        const infoBox = fs.readFileSync(`${dir}/${file}`, 'utf8');
+        result.push(this.parse(infoBox));
+      } catch (e)
+      {
+        GwentWikiaHelper.logError(`[${file}] ${e.message}`);
+      }
     }
     return result;
   }
 
   public parse(infobox: string): IInfobox
   {
-    const paser = new Parser(infobox);
+    const parser = new Parser(infobox);
 
     return {
-      name: paser.get('name'),
-      title: paser.get('title'),
-      image: paser.get('image'),
-      cardtype: paser.get('cardtype'),
-      type: paser.get2('type', (list) => list.split(',').map((val) => this.removeHtmlTagsAndTrim(val))),
-      faction: paser.get('faction'),
-      unittype: paser.get('unittype'),
-      loyalty: paser.get('loyalty'),
-      strength: paser.get('strength'),
-      rarity: paser.get('rarity'),
-      craft: paser.get('craft'),
-      mill: paser.get('mill'),
-      transmute: paser.get('transmute'),
-      mill_powder: paser.get('mill\s+powder'),
-      illustrator: paser.get('illustrator'),
-      description: paser.get('description')
+      name: parser.get('name'),
+      title: parser.get('title'),
+      image: parser.get('image'),
+      cardtype: parser.get('cardtype'),
+      type: this.type(parser),
+      faction: parser.get('faction'),
+      unittype: parser.get('unittype'),
+      loyalty: parser.get('loyalty'),
+      strength: parser.get('strength'),
+      rarity: parser.get('rarity'),
+      craft: parser.get('craft'),
+      mill: parser.get('mill'),
+      transmute: parser.get('transmute'),
+      mill_powder: parser.get('mill\s+powder'),
+      illustrator: parser.get('illustrator'),
+      description: parser.get('description'),
+      url: parser.get('__url'),
+      set: parser.get('__set'),
     };
   }
 
   private removeHtmlTagsAndTrim(val: string): string
   {
     return val.replace(/<.+?>/g, '').trim();
+  }
+
+  private type(parser: Parser): string[] | undefined
+  {
+    return parser
+      .get2('type', (list) => list.split(',')
+        .map((val) => this.removeHtmlTagsAndTrim(val)));
   }
 }

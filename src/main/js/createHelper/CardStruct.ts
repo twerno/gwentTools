@@ -1,26 +1,42 @@
 export enum Factionv1
 {
-  NEUTRAL, NILFGAARD, NORTHERN_REALMS, MONSTERS, SCOIATAEL, SKELLIGE, UNDEFINED
+  NEUTRAL = 'NEUTRAL',
+  NILFGAARD = 'NILFGAARD',
+  NORTHERN_REALMS = 'NORTHERN_REALMS',
+  MONSTERS = 'MONSTERS',
+  SCOIATAEL = 'SCOIATAEL',
+  SKELLIGE = 'SKELLIGE',
+  UNKNOWN = 'UNKNOWN'
 }
 
 export enum CardSet
 {
-  CLASSIC, UNKNOWN
+  CLASSIC = 'CLASSIC',
+  SAOVINE_2016 = 'SAOVINE_2016',
+  ALPHA = 'ALPHA',
+  ALE_FEST_2016 = 'ALE_FEST_2016',
+  MIDWINTER_HUNT_2016 = 'MIDWINTER_HUNT_2016',
+  UNKNOWN = 'UNKNOWN'
 }
 
 export enum CardColor
 {
-  BRONZE, SILVER, GOLD, UNDEFINED
+  BRONZE = 'BRONZE', SILVER = 'SILVER', GOLD = 'GOLD', UNKNOWN = 'UNKNOWN'
 }
 
 export enum CardType
 {
-  UNIT, SPECIAL
+  UNIT = 'UNIT', SPECIAL = 'SPECIAL'
 }
 
 export enum CardRarity
 {
-  COMMON, RARE, EPIC, LEGENDARY, UNDEFINED
+  COMMON = 'COMMON', RARE = 'RARE', EPIC = 'EPIC', LEGENDARY = 'LEGENDARY', UNKNOWN = 'UNKNOWN'
+}
+
+export enum CardLoyalty
+{
+  LOYAL = 'LOYAL', DISLOYAL = 'DISLOYAL', BOTH = 'BOTH', UNKNOWN = 'UNKNOWN'
 }
 
 export interface ICardv1
@@ -36,10 +52,12 @@ export interface ICardv1
   collectable: boolean;
   // abilities: object[];
   cardText: string;
+  url: string;
 }
 
 export interface IUnitv1 extends ICardv1
 {
-  loyality: { loyal: boolean, disloyal: boolean };
-  stats: { strength: number, armor: number };
+  loyalty: CardLoyalty;
+  strength: number;
+  armor: number;
 }

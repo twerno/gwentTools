@@ -1,3 +1,4 @@
+import { CardSet } from '../src/main/js/createHelper/CardStruct';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { GwentWikiaInfoboxCardConverter } from './GwentWikiaInfoboxCardConverter';
 import { GwentWikiaInfoboxDownloader } from './GwentWikiaInfoboxDownloader';
@@ -15,25 +16,30 @@ class SaveCardDefs
   private infoboxParser: GwentWikiaInfoboxParser = new GwentWikiaInfoboxParser();
   private infoboxConverter: GwentWikiaInfoboxCardConverter = new GwentWikiaInfoboxCardConverter();
 
-  public async downloadAndSave(): Promise<void>
-  {
-    const links = await this.linkCollector.collect();
-    await this.infoboxDownloader.downloadAndSave(links, 'cache', false);
+  private cacheDir = 'cache';
 
-    this.statsGen.generateStats('cache');
+  public async exec(): Promise<void>
+  {
+    GwentWikiaHelper.mkdir(this.cacheDir);
+    const links = await this.linkCollector.collect();
+    await this.infoboxDownloader.downloadAndSave(links, this.cacheDir, false);
+
+    this.statsGen.generateStats(this.cacheDir);
     this.statsGen.saveOnDisk('stats.txt');
 
-    const infoboxList: IInfobox[] = this.infoboxParser.parseAllFiles('cache');
-    const cards = this.infoboxConverter.convertAll(infoboxList);
+    const infoboxList: IInfobox[] = this.infoboxParser.parseAllFiles(this.cacheDir);
+    GwentWikiaHelper.saveOnDiskLn('infobox.json', infoboxList);
 
-    GwentWikiaHelper.saveOnDisk('cards.json', JSON.stringify(cards));
+    const cards = this.infoboxConverter.convertAll(infoboxList)
+      .filter((card) => card.set === CardSet.CLASSIC);
+    GwentWikiaHelper.saveOnDiskLn('cards.json', cards);
   }
 
 }
 
 const cd = new SaveCardDefs();
 
-cd.downloadAndSave().then((result) =>
+cd.exec().then((result) =>
 {
   // tslint:disable-next-line:no-console
   console.log('done');

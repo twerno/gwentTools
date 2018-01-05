@@ -5,6 +5,7 @@ export interface ILink
 {
   id: string;
   url: string;
+  urlToShow: string;
 }
 
 export class GwentWikiaLinkCollector
@@ -42,7 +43,8 @@ export class GwentWikiaLinkCollector
       .map((val) =>
         ({
           id: val.replace(/\/|:/g, '_'),
-          url: `${this.cardSourceUrl + val}?action=raw`
+          url: `${this.cardSourceUrl + val}?action=raw`,
+          urlToShow: this.cardSourceUrl + val
         }))
       .sort((a, b) => a.id.localeCompare(b.id));
   }
@@ -63,7 +65,7 @@ export class GwentWikiaLinkCollector
   {
     const urlGroup = rawLine.match(this.linkParser);
 
-    if (urlGroup && urlGroup.length > 0)
+    if (urlGroup && urlGroup.length > 0 && urlGroup[1])
     {
       return urlGroup[1]
         .replace(/%27/, '\'');
