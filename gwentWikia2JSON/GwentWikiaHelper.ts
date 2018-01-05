@@ -1,3 +1,5 @@
+import * as fs from 'fs';
+
 export abstract class GwentWikiaHelper
 {
   public static removeDuplicates(links: string[]): string[]
@@ -25,5 +27,15 @@ export abstract class GwentWikiaHelper
   {
     // tslint:disable-next-line:no-console
     console.log(message);
+  }
+
+  public static saveOnDisk(filename: string, content: string): void
+  {
+    try
+    {
+      fs.truncateSync(filename, 0);
+      // tslint:disable-next-line:no-empty
+    } catch (e) { }
+    fs.writeFileSync(filename, content);
   }
 }

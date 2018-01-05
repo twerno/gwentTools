@@ -41,7 +41,7 @@ export class GwentWikiaLinkCollector
       .filter((val: string) => val.indexOf('/') === 0)
       .map((val) =>
         ({
-          id: val.replace(/\//g, '_'),
+          id: val.replace(/\/|:/g, '_'),
           url: `${this.cardSourceUrl + val}?action=raw`
         }))
       .sort((a, b) => a.id.localeCompare(b.id));

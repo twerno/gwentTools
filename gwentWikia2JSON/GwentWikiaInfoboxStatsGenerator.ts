@@ -2,13 +2,23 @@ import * as fs from 'fs';
 
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 
-export class GwentWikiaInfoboxStats
+export class GwentWikiaInfoboxStatsGenerator
 {
   private keys: string[] = [];
   private stats: { [key: string]: string[] } = {};
   private linePaser = /(.+?)=(.+)/;
 
-  public add2Stats(infoBox: string): void
+  public generateStats(dir: string): void
+  {
+    const files: string[] = fs.readdirSync(`${dir}/`);
+    for (const file of files)
+    {
+      const infoBox = fs.readFileSync(`${dir}/${file}`, 'utf8');
+      this.add2Stats(infoBox);
+    }
+  }
+
+  private add2Stats(infoBox: string): void
   {
     const lines: string[] = infoBox.split('|');
     for (const line of lines)
@@ -22,7 +32,7 @@ export class GwentWikiaInfoboxStats
     const group = line.match(this.linePaser);
     if (group && group.length > 1)
     {
-      this.addToMap(group[1], group[2]);
+      this.addToMap(group[1].trim(), group[2].trim());
     }
   }
 
@@ -39,33 +49,27 @@ export class GwentWikiaInfoboxStats
     list.push(val);
   }
 
-  public save(filename: string): void
+  public saveOnDisk(filename: string): void
   {
-    fs.writeFile(
-      filename,
-      this.map2String(),
-      { encoding: 'utf8' },
-      // tslint:disable-next-line:no-console
-      (err) => console.log(err));
+    GwentWikiaHelper.saveOnDisk(filename, this.map2String());
   }
 
-  public map2String(): string
+  private map2String(): string
   {
     let result: string = '';
 
     for (const key of this.keys)
     {
-      if (key === 'name'
-        || key === 'description'
-        || key === 'illustrator'
-        || key === 'name'
-        || key === 'image')
-      {
-        continue;
-      }
+      // if (key === 'name'
+      //   || key === 'description'
+      //   || key === 'illustrator'
+      //   || key === 'image')
+      // {
+      //   continue;
+      // }
 
       const list = GwentWikiaHelper.removeDuplicates(this.stats[key] || []);
-      result += `\n\n${key}=${list.join(';;')}`;
+      result += `\n\n${key} = ${list.join(';;')}`;
     }
 
     return result;

@@ -1,38 +1,44 @@
 import * as fs from 'fs';
 
-import { GwentWikiaInfoboxStats } from './GwentWikiaInfoboxStats';
+import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { ILink } from './GwentWikiaLinkCollector';
 import { HttpDownloadService } from './HttpDownloadService';
 
 export class GwentWikiaInfoboxDownloader
 {
   private infoBoxParser = /{{Infobox\s+Card((.|\s)+?)}}/;
-  private stats: GwentWikiaInfoboxStats = new GwentWikiaInfoboxStats();
 
   public constructor(private downloader: HttpDownloadService) { }
 
-  public async downloadAndSave(links: ILink[], override: boolean = false): Promise<void>
+  public async downloadAndSave(links: ILink[], dir: string, override: boolean = false): Promise<void>
   {
     return new Promise<void>((resolve, reject) =>
     {
       links = override
         ? links
-        : links.filter((link) => !fs.existsSync(`cache/${link.id}`));
+        : links.filter((link) => !fs.existsSync(`${dir}/${link.id}`));
 
-      this.downloader.loadMany(links,
-        (link, body, remaining) =>
-        {
-          const infobox = this.parseInfoBox(body);
-          if (infobox)
+      if (links.length === 0)
+      {
+        resolve();
+      }
+      else
+      {
+        this.downloader.loadMany(links,
+          (link, body, remaining) =>
           {
-            this.saveOnDisk(`cache/${link.id}`, infobox);
-          }
+            const infobox = this.parseInfoBox(body);
+            if (infobox)
+            {
+              GwentWikiaHelper.saveOnDisk(`${dir}/${link.id}`, infobox);
+            }
 
-          if (remaining === 0)
-          {
-            resolve();
-          }
-        });
+            if (remaining === 0)
+            {
+              resolve();
+            }
+          });
+      }
     });
   }
 
@@ -45,15 +51,5 @@ export class GwentWikiaInfoboxDownloader
     }
 
     return null;
-  }
-
-  private saveOnDisk(filename: string, content: string): void
-  {
-    try
-    {
-      fs.truncateSync(filename, 0);
-      // tslint:disable-next-line:no-empty
-    } catch (e) { }
-    fs.writeFileSync(filename, content);
   }
 }
