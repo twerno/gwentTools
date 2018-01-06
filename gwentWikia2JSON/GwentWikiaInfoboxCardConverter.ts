@@ -34,7 +34,7 @@ export class GwentWikiaInfoboxCardConverter
         faction: this.faction(infobox),
         rarity: this.rarity(infobox),
         set: this.set(infobox),
-        tags: infobox.type || []
+        tags: this.tags(infobox)
       };
 
       if (result.cardType === CardType.UNIT)
@@ -151,5 +151,10 @@ export class GwentWikiaInfoboxCardConverter
       return parseInt(group[1], 0);
     }
     return 0;
+  }
+
+  private tags(infobox: IInfobox): string[]
+  {
+    return (infobox.type || []).filter(tag => tag !== 'Special');
   }
 }
