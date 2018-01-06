@@ -34,7 +34,7 @@ export class GwentWikiaInfoboxDownloader
               GwentWikiaHelper.saveOnDisk(`${dir}/${this.filename(link)}`, infobox);
             }
 
-            if (remaining === 0)
+            if (remaining === 1)
             {
               resolve();
             }
