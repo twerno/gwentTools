@@ -37,7 +37,8 @@ export class GwentWikiaInfoboxCardConverter
         tags: this.tags(infobox)
       };
 
-      if (result.cardType === CardType.UNIT)
+      if (result.cardType === CardType.UNIT
+        || result.cardType === CardType.LEADER)
       {
         (result as IUnitv1).strength = parseInt(infobox.strength || '0', 0);
         (result as IUnitv1).armor = this.armor(infobox);
