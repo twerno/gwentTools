@@ -7,6 +7,7 @@ interface ILoadQueueData
 {
   remainingLinks: ILink[];
   callback: (link: ILink, responseBody: string, remaining: number) => void;
+  remainingTasks: number;
 }
 
 export class HttpDownloadService
@@ -19,7 +20,8 @@ export class HttpDownloadService
   {
     const queueData: ILoadQueueData = {
       remainingLinks: [...links],
-      callback
+      callback,
+      remainingTasks: links.length
     };
 
     for (let i = 0; i < concurency; i++)
@@ -37,7 +39,13 @@ export class HttpDownloadService
       this.loadOne(link.url)
         .then((value: string) =>
         {
-          data.callback(link, value, data.remainingLinks.length);
+          data.callback(link, value, data.remainingTasks--);
+          this.startTask(data);
+        })
+        .catch(reason =>
+        {
+          GwentWikiaHelper.logError(reason);
+          data.remainingTasks--;
           this.startTask(data);
         });
     }
@@ -52,7 +60,8 @@ export class HttpDownloadService
       http.get(url, (response: http.IncomingMessage) =>
       {
         this.handleResponse(response)
-          .then((rawPage: string) => resolve(rawPage));
+          .then((rawPage: string) => resolve(rawPage))
+          .catch(reason => reject(reason));
       });
     });
   }
@@ -70,7 +79,7 @@ export class HttpDownloadService
       }
       catch (e)
       {
-        GwentWikiaHelper.logError(e);
+        reject(e);
       }
     });
   }

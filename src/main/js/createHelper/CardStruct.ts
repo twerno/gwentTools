@@ -26,7 +26,7 @@ export enum CardColor
 
 export enum CardType
 {
-  UNIT = 'UNIT', SPECIAL = 'SPECIAL'
+  UNIT = 'UNIT', SPECIAL = 'SPECIAL', LEADER = 'LEADER'
 }
 
 export enum CardRarity

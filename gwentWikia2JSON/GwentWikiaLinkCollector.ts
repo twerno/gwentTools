@@ -19,7 +19,7 @@ export class GwentWikiaLinkCollector
 
   public async collect(): Promise<ILink[]>
   {
-    const categories: string[] = ['Bronze', 'Silver', 'Gold'];
+    const categories: string[] = ['Bronze', 'Silver', 'Gold', 'Leader'];
     let result: string[] = [];
 
     for (const category of categories)
@@ -42,7 +42,7 @@ export class GwentWikiaLinkCollector
       .filter((val: string) => val.indexOf('/') === 0)
       .map((val) =>
         ({
-          id: val.replace(/\/|:/g, '_'),
+          id: val,
           url: `${this.cardSourceUrl + val}?action=raw`,
           urlToShow: this.cardSourceUrl + val
         }))

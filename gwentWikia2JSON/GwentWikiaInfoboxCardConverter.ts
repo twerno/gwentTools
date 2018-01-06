@@ -67,20 +67,24 @@ export class GwentWikiaInfoboxCardConverter
       case 'Bronze': return CardColor.BRONZE;
       case 'Silver': return CardColor.SILVER;
       case 'Gold': return CardColor.GOLD;
+      case 'Leader': return CardColor.GOLD;
       default: return CardColor.UNKNOWN;
     }
   }
 
   private cardType(infobox: IInfobox): CardType
   {
-    if ((infobox.type || []).indexOf('Special') === -1)
+    if (infobox.cardtype === 'Leader')
     {
-      return CardType.UNIT;
+      return CardType.LEADER;
     }
-    else
+
+    if ((infobox.type || []).indexOf('Special') !== -1)
     {
       return CardType.SPECIAL;
     }
+
+    return CardType.UNIT;
   }
 
   private collectable(infobox: IInfobox): boolean

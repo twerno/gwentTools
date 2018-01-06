@@ -16,7 +16,7 @@ export class GwentWikiaInfoboxDownloader
     {
       links = override
         ? links
-        : links.filter((link) => !fs.existsSync(`${dir}/${link.id}`));
+        : links.filter((link) => !fs.existsSync(`${dir}/${this.filename(link)}`));
 
       if (links.length === 0)
       {
@@ -31,25 +31,26 @@ export class GwentWikiaInfoboxDownloader
             if (infobox)
             {
               infobox += this.add2Infobox(link, infobox);
-              GwentWikiaHelper.saveOnDisk(`${dir}/${link.id}`, infobox);
+              GwentWikiaHelper.saveOnDisk(`${dir}/${this.filename(link)}`, infobox);
             }
 
             if (remaining === 0)
             {
               resolve();
             }
-          });
+          }, 10);
       }
     });
   }
 
   private add2Infobox(link: ILink, infobox: string): string
   {
-    infobox += `\n|__url=${link.urlToShow}`;
-    infobox += `\n|__filename=${link.id}`;
-    infobox += `\n|__set=${this.setFromUrl(infobox)}`;
+    let result = `\n|__url=${link.urlToShow}`;
+    result += `\n|__wiki_id=${link.id.replace(/\/wiki\//g, '')}`;
+    result += `\n|__filename=${this.filename(link)}`;
+    result += `\n|__set=${this.setFromUrl(infobox)}`;
 
-    return infobox;
+    return result;
   }
 
   private setFromUrl(infoBox: string): string
@@ -71,5 +72,12 @@ export class GwentWikiaInfoboxDownloader
     }
 
     return null;
+  }
+
+  private filename(link: ILink): string
+  {
+    return link.id
+      .replace(/\/wiki\//g, '')
+      .replace(/:/g, '_');
   }
 }
