@@ -227,7 +227,15 @@ class ICardFilterOptionSetsBuilder
 
   private initOptionSets(): void
   {
+    this.initOptionSet(this.cardTypes, [CardType.LEADER, CardType.SPECIAL, CardType.UNIT]);
+    this.initOptionSet(this.rarities, [CardRarity.COMMON, CardRarity.RARE, CardRarity.RARE, CardRarity.LEGENDARY]);
     this.initOptionSet(this.cardColors, [CardColor.BRONZE, CardColor.SILVER, CardColor.GOLD]);
+    this.initOptionSet(this.factions,
+      [Factionv1.NEUTRAL, Factionv1.MONSTERS, Factionv1.NILFGAARD, Factionv1.NORTHERN_REALMS, Factionv1.SCOIATAEL,
+      Factionv1.SKELLIGE]);
+    this.initOptionSet(this.sets,
+      [CardSet.CLASSIC, CardSet.ALE_FEST_2016, CardSet.SAOVINE_2016, CardSet.MIDWINTER_HUNT_2016]);
+    this.initOptionSet(this.loyalty, [CardLoyalty.LOYAL, CardLoyalty.DISLOYAL, CardLoyalty.BOTH]);
   }
 
   private initOptionSet<T>(data: CardFilterOptionSetBuilderData<T>, options: T[]): void

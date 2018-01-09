@@ -26,6 +26,7 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
             <th>Faction</th>
             <th>Set</th>
             <th>Loyalty</th>
+            <th>Strength</th>
             <th>Text</th>
           </tr>
         </thead>
@@ -51,14 +52,22 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
       <tr key={card.name}>
         <td>{card.name}</td>
         <td>{card.cardType}</td>
-        <td>{card.tags}</td>
+        <td>{this.tags2Str(card.tags)}</td>
         <td>{card.rarity}</td>
         <td>{card.cardColor}</td>
         <td>{card.faction}</td>
         <td>{card.set}</td>
         <td>{isIUnitv1(card) ? card.loyalty : ''}</td>
+        <td>{isIUnitv1(card) ? `${card.strength}` : ''}</td>
         <td>{card.cardText}</td>
       </tr>
     );
+  }
+
+  private tags2Str(tags: string[]): string
+  {
+    return tags && tags.length > 0
+      ? tags.reduce((a, b) => `${a}, ${b}`)
+      : '';
   }
 }
