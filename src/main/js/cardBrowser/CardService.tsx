@@ -9,7 +9,7 @@ import {
   isIUnitv1,
 } from '@src/commons/CardStruct';
 
-declare var __cardsDB: ICardv1[];
+declare var __cardDB: ICardv1[];
 
 export interface IFilter
 {
@@ -51,7 +51,7 @@ export class CardService
 
   public getAllCards(): ICardv1[]
   {
-    return __cardsDB as ICardv1[];
+    return __cardDB as ICardv1[];
   }
 
   public getFiltered(filter: IFilter): ICardv1[]
@@ -97,14 +97,14 @@ class Filter
 
   private filterByCardType(f: IFilter, c: ICardv1): boolean
   {
-    return f.cardTypes
+    return f.cardTypes && f.cardTypes.length > 0
       ? f.cardTypes.indexOf(c.cardType) !== -1
       : true;
   }
 
   private filterByTag(f: IFilter, c: ICardv1): boolean
   {
-    if (f.tags === undefined)
+    if (f.tags === undefined || f.tags.length === 0)
     {
       return true;
     }
@@ -122,36 +122,36 @@ class Filter
 
   private filterByRarity(f: IFilter, c: ICardv1): boolean
   {
-    return f.rarities
+    return f.rarities && f.rarities.length > 0
       ? f.rarities.indexOf(c.rarity) !== -1
       : true;
   }
 
   private filterByCardColor(f: IFilter, c: ICardv1): boolean
   {
-    return f.cardColors
+    return f.cardColors && f.cardColors.length > 0
       ? f.cardColors.indexOf(c.cardColor) !== -1
       : true;
   }
 
   private filterByFaction(f: IFilter, c: ICardv1): boolean
   {
-    return f.factions
+    return f.factions && f.factions.length > 0
       ? f.factions.indexOf(c.faction) !== -1
       : true;
   }
 
   private filterBySet(f: IFilter, c: ICardv1): boolean
   {
-    return f.sets
+    return f.sets && f.sets.length > 0
       ? f.sets.indexOf(c.set) !== -1
       : true;
   }
 
   private filterByLoyalty(f: IFilter, c: ICardv1): boolean
   {
-    return f.loyalty && isIUnitv1(c)
-      ? f.loyalty === CardLoyalty.BOTH || f.loyalty === c.loyalty
+    return f.loyalty
+      ? isIUnitv1(c) && (f.loyalty === CardLoyalty.BOTH || f.loyalty === c.loyalty)
       : true;
   }
 

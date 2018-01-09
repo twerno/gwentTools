@@ -35,7 +35,7 @@ class SaveCardDefs
     const cardsStr = cards
       .map((card) => JSON.stringify(card))
       .reduce((a, b) => `${a},\n  ${b}`);
-    GwentWikiaHelper.saveOnDisk('cards.js', `export const __cardsDB = [\n  ${cardsStr}\n];`);
+    GwentWikiaHelper.saveOnDisk('cards.js', `const __cardDB = [\n  ${cardsStr}\n];`);
   }
 
 }

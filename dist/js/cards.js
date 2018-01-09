@@ -1,4 +1,4 @@
-export const __cardsDB = [
+const __cardDB = [
   {"id":"","url":"http://gwent.wikia.com/wiki/Abaya","name":"Abaya","cardColor":"SILVER","cardText":"Spawn Rain, Clear Skies or Arachas Venom.","cardType":"UNIT","collectable":true,"faction":"MONSTERS","rarity":"EPIC","set":"CLASSIC","tags":["Necrophage"],"strength":4,"armor":0,"loyalty":"LOYAL"},
   {"id":"","url":"http://gwent.wikia.com/wiki/Adda","name":"Adda","cardColor":"GOLD","cardText":"Create a Bronze or Silver Cursed unit.","cardType":"LEADER","collectable":true,"faction":"NORTHERN_REALMS","rarity":"LEGENDARY","set":"CLASSIC","tags":["Cursed"],"strength":6,"armor":0,"loyalty":"LOYAL"},
   {"id":"","url":"http://gwent.wikia.com/wiki/Adrenaline","name":"Adrenaline","cardColor":"BRONZE","cardText":"Make a unit Resilient.","cardType":"SPECIAL","collectable":true,"faction":"NEUTRAL","rarity":"RARE","set":"CLASSIC","tags":["Organic"]},

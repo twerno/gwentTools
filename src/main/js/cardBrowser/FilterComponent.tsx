@@ -87,6 +87,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           />
         </div>
       </div>
+      {JSON.stringify(this.props.filter)}
       </>
     );
   }
@@ -94,8 +95,8 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
   private cardTypeChangeHandler(selection: Select.Option | Select.Options | null): void
   {
     const options = this.optionsFromSelection(selection);
-    const cardType: CardType[] = options.map(o => o.value as CardType);
-    this.callOnChange({ cardType });
+    const cardTypes: CardType[] = options.map(o => o.value as CardType);
+    this.callOnChange({ cardTypes });
   }
 
   private cardTagsChangeHandler(selection: Select.Option | Select.Options | null): void
@@ -108,8 +109,8 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
   private cardRarityChangeHandler<T>(selection: Select.Option | Select.Options | null): void
   {
     const options = this.optionsFromSelection(selection);
-    const cardRarity: CardRarity[] = options.map(o => o.value as CardRarity);
-    this.callOnChange({ cardRarity });
+    const rarities: CardRarity[] = options.map(o => o.value as CardRarity);
+    this.callOnChange({ rarities });
   }
 
   private cardColorChangeHandler(selection: Select.Option | Select.Options | null): void
@@ -129,11 +130,13 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
   private cardLoyaltyChangeHandler(selection: Select.Option | Select.Options | null): void
   {
     const options = this.optionsFromSelection(selection);
-    const loyalty: CardLoyalty[] = options.map(o => o.value as CardLoyalty);
+    const loyalty: CardLoyalty | undefined = options.length > 0
+      ? options[0].value as CardLoyalty
+      : undefined;
     this.callOnChange({ loyalty });
   }
 
-  private callOnChange(changes: {}): void
+  private callOnChange(changes: IFilter): void
   {
     this.props.onFilterChange({ ...this.props.filter, ...changes });
   }

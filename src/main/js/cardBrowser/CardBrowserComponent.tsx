@@ -1,5 +1,3 @@
-import './style.less';
-
 import { CardGalleryTable } from '@src/cardBrowser/CardGalleryTable';
 import { CardService, IFilter } from '@src/cardBrowser/CardService';
 import { CardFilterComponent } from '@src/cardBrowser/FilterComponent';
