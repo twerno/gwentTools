@@ -1,13 +1,12 @@
 import './DuelCalc.style.less';
 
+import { ICommonActionParam, IStateChangeAction } from '@src/duelCalc/action/CommonActionClasses';
 import { DuelCalcService, IDuelResult } from '@src/duelCalc/DuelCalcService';
 import { DuelResultList } from '@src/duelCalc/duelResult/DuelResult.comp';
+import { UnitHelper } from '@src/duelCalc/helper/UnitHelper';
 import { UnitList } from '@src/duelCalc/UnitList';
-import { nextId } from '@src/Numerator';
 import * as React from 'react';
 import { Panel } from 'react-bootstrap';
-import { IStateChangeAction, ICommonActionParam } from '@src/duelCalc/action/CommonActionClasses';
-import { UnitHelper } from '@src/duelCalc/helper/UnitHelper';
 
 export interface Unit
 {
