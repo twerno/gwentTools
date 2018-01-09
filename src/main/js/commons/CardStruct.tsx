@@ -61,3 +61,11 @@ export interface IUnitv1 extends ICardv1
   strength: number;
   armor: number;
 }
+
+export function isIUnitv1(card: ICardv1): card is IUnitv1
+{
+  return card
+    && card.hasOwnProperty('loyalty')
+    && card.hasOwnProperty('strength')
+    && card.hasOwnProperty('armor');
+}

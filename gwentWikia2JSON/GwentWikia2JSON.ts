@@ -1,4 +1,4 @@
-import { CardSet } from '../src/main/js/createHelper/CardStruct';
+import { CardSet } from '../src/main/js/commons/CardStruct';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { GwentWikiaInfoboxCardConverter } from './GwentWikiaInfoboxCardConverter';
 import { GwentWikiaInfoboxDownloader } from './GwentWikiaInfoboxDownloader';
@@ -35,7 +35,7 @@ class SaveCardDefs
     const cardsStr = cards
       .map((card) => JSON.stringify(card))
       .reduce((a, b) => `${a},\n  ${b}`);
-    GwentWikiaHelper.saveOnDisk('cards.json', `export const cards = [\n  ${cardsStr}\n];`);
+    GwentWikiaHelper.saveOnDisk('cards.js', `export const __cardsDB = [\n  ${cardsStr}\n];`);
   }
 
 }

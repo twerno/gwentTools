@@ -7,7 +7,7 @@ import {
   Factionv1,
   ICardv1,
   IUnitv1,
-} from '../src/main/js/createHelper/CardStruct';
+} from '../src/main/js/commons/CardStruct';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { IInfobox } from './GwentWikiaInfoboxParser';
 
