@@ -59,7 +59,7 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
         <td>{card.set}</td>
         <td>{isIUnitv1(card) ? card.loyalty : ''}</td>
         <td>{isIUnitv1(card) ? `${card.strength}` : ''}</td>
-        <td>{card.cardText}</td>
+        <td>{this.cardText2Str(card.cardText)}</td>
       </tr>
     );
   }
@@ -69,5 +69,12 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
     return tags && tags.length > 0
       ? tags.reduce((a, b) => `${a}, ${b}`)
       : '';
+  }
+
+  private cardText2Str(cardText: string[]): JSX.Element
+  {
+    return cardText.length === 1
+      ? <>{cardText[0]}</>
+      : <>{cardText.map(s => <>{s}</>).reduce((a, b) => <> {a} <br /> {b}</>)}</>;
   }
 }

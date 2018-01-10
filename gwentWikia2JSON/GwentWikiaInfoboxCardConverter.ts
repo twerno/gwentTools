@@ -28,7 +28,7 @@ export class GwentWikiaInfoboxCardConverter
         url: infobox.url || '',
         name: this.name(infobox),
         cardColor: this.cardColor(infobox),
-        cardText: infobox.description || '',
+        cardText: this.cardText(infobox),
         cardType: this.cardType(infobox),
         collectable: this.collectable(infobox),
         faction: this.faction(infobox),
@@ -157,5 +157,12 @@ export class GwentWikiaInfoboxCardConverter
   private tags(infobox: IInfobox): string[]
   {
     return (infobox.type || []).filter(tag => tag !== 'Special');
+  }
+
+  private cardText(infobox: IInfobox): string[]
+  {
+    const regExpr = /<\s*BR\s*\/?>/i;
+    const cardText = infobox.description || '';
+    return cardText.split(regExpr);
   }
 }

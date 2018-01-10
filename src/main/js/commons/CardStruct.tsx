@@ -51,7 +51,7 @@ export interface ICardv1
   set: CardSet;
   collectable: boolean;
   // abilities: object[];
-  cardText: string;
+  cardText: string[];
   url: string;
 }
 
