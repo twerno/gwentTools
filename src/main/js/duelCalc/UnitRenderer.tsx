@@ -1,5 +1,5 @@
+import { Icons8Img } from '@src/commons/Icons8Img';
 import { Unit } from '@src/duelCalc/DuelCalcComponent';
-import { ImgSrc } from '@src/ImgSrc';
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
 
@@ -17,13 +17,13 @@ export function UnitRenderer(props: UnitRendererProps)
 
     <div className="unitEditor" key={props.unit.id}>
       <Button className="removeUnitBtn" onClick={() => props.removeUnitHandler()}>
-        <img src={ImgSrc.DELETE} width="16" />
+        <img src={Icons8Img.DELETE} width="16" />
       </Button>
       <div className="editInputs row">
         <div className="editInput col-xs-6">
           <div className="input-group">
             <div className="input-group-addon">
-              <img src={ImgSrc.SWORD} width="20" />
+              <img src={Icons8Img.SWORD} width="20" />
             </div>
             <input
               type="tel"
@@ -38,7 +38,7 @@ export function UnitRenderer(props: UnitRendererProps)
         <div className="editInput col-xs-6">
           <div className="input-group">
             <div className="input-group-addon">
-              <img src={ImgSrc.SHIELD} width="20" />
+              <img src={Icons8Img.SHIELD} width="20" />
             </div>
             <input
               type="tel"

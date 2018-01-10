@@ -1,5 +1,5 @@
 
-export enum ImgSrc
+export enum Icons8Img
 {
   ADD = './img/icons8-add-25.png',
   DUEL_WHITE = './img/icons8-battle-white-25.png',

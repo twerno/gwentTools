@@ -1,8 +1,8 @@
 import './DuelResult.style.less';
 
+import { Icons8Img } from '@src/commons/Icons8Img';
 import { IDuelResult } from '@src/duelCalc/DuelCalcService';
 import { Duelist } from '@src/duelCalc/duelResult/Duelist.comp';
-import { ImgSrc } from '@src/ImgSrc';
 import * as React from 'react';
 
 /* ********************************************* */
@@ -55,7 +55,7 @@ class DuelResultScoreColumn extends React.PureComponent<DuelListScoreColumnProps
         {this.props.points}
         {
           this.props.points === this.props.maxScore
-            ? <img src={ImgSrc.CROWN} className="crownIcon" />
+            ? <img src={Icons8Img.CROWN} className="crownIcon" />
             : <span className="text-muted" style={{ fontSize: '14px' }}>
               {` (-${this.props.maxScore - this.props.points})`}
             </span>
@@ -94,7 +94,7 @@ class DuelResultDataColumns extends React.Component<DuelListDataColumnsPops, {}>
         />
       </td>
       <td className="veticalMiddle">
-        <img className="duelIcon" src={ImgSrc.DUEL_BLACK} />
+        <img className="duelIcon" src={Icons8Img.DUEL_BLACK} />
       </td>
       <td className="veticalMiddle" style={{ textAlign: 'left' }}>
         <Duelist

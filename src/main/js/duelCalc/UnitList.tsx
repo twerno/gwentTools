@@ -1,16 +1,14 @@
 import './DuelCalc.style.less';
 
-import { Unit, DuelCalcState } from '@src/duelCalc/DuelCalcComponent';
-import { UnitRenderer } from '@src/duelCalc/UnitRenderer';
-import { ImgSrc } from '@src/ImgSrc';
-import * as React from 'react';
-import { Button } from 'react-bootstrap';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import { StrengthChangeAction } from '@src/duelCalc/action/StrengthChangeAction';
 import { ArmorChangeAction } from '@src/duelCalc/action/ArmorChangeAction';
-import { IStateChangeAction, ICommonActionParam } from '@src/duelCalc/action/CommonActionClasses';
-import { RemoveUnitAction } from '@src/duelCalc/action/RemoveUnitAction';
 import { ClearUnitsAction } from '@src/duelCalc/action/ClearUnitsAction';
+import { ICommonActionParam, IStateChangeAction } from '@src/duelCalc/action/CommonActionClasses';
+import { RemoveUnitAction } from '@src/duelCalc/action/RemoveUnitAction';
+import { StrengthChangeAction } from '@src/duelCalc/action/StrengthChangeAction';
+import { DuelCalcState, Unit } from '@src/duelCalc/DuelCalcComponent';
+import { UnitRenderer } from '@src/duelCalc/UnitRenderer';
+import * as React from 'react';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 export interface UnitListProps
 {
@@ -42,11 +40,6 @@ export class UnitList extends React.Component<UnitListProps, {}> {
       <TransitionGroup>
         {unitList}
       </TransitionGroup>
-      {/* <div className="row editInputs" style={{ marginTop: '6px', marginBottom: '6px' }}>
-        <Button className="clearAllBtn col-xs-6" onClick={() => this.clearUnitsHandler()}>
-          <img src={ImgSrc.CLEAR} width="16" /> Clear all
-            </Button>
-      </div> */}
       </>
     );
   }

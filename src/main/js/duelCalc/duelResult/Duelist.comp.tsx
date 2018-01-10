@@ -1,6 +1,6 @@
 import './DuelResult.style.less';
 
-import { ImgSrc } from '@src/ImgSrc';
+import { Icons8Img } from '@src/commons/Icons8Img';
 import * as React from 'react';
 
 export interface DuelistProps
@@ -15,14 +15,14 @@ export class Duelist extends React.PureComponent<DuelistProps, {}> {
   {
     if (this.props.strength === 0)
     {
-      return <img src={ImgSrc.SKULL} className="bigIcon" />;
+      return <img src={Icons8Img.SKULL} className="bigIcon" />;
     }
 
     return (
       <div>
         <div>
           <span>
-            <img src={ImgSrc.SWORD} className="duelistLittleIcon" />
+            <img src={Icons8Img.SWORD} className="duelistLittleIcon" />
           </span>
           <span>
             {this.props.strength}
@@ -30,7 +30,7 @@ export class Duelist extends React.PureComponent<DuelistProps, {}> {
         </div>
         <div>
           <span>
-            <img src={ImgSrc.SHIELD} className="duelistLittleIcon" />
+            <img src={Icons8Img.SHIELD} className="duelistLittleIcon" />
           </span>
           <span>
             {this.props.armor}
