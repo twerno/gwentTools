@@ -1,0 +1,36 @@
+.item {
+    margin: 10px;
+    float: left;
+    width: 100px;
+}
+
+.item .cardName {
+    margin-top: -25px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 70px;
+    overflow: hidden;
+    text-align: center;
+    height: 20px;
+}
+
+.border {
+    margin-top: -120px;
+    margin-left: -1px;
+}
+
+.background {
+    width: 75px;
+    padding-left: 3px;
+}
+
+.img_wrapper {
+    width: 80px;
+    height: 100px;
+    overflow: hidden;
+}
+
+
+/* .nr_gold {
+    background-image: url('http://localhost:3000/gwentAssets/goldBorder_NR.png')
+} */

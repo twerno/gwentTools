@@ -19,7 +19,7 @@ module.exports = {
   module: {
     rules:
       [
-        { test: /\.tsx$/, loaders: ['babel-loader', 'awesome-typescript-loader'], include: path.resolve('src/main/js') },
+        { test: /\.tsx?$/, loaders: ['babel-loader', 'awesome-typescript-loader'], include: path.resolve('src/main/js') },
         {
           test: /\.less$/,
           use: [{
@@ -32,8 +32,16 @@ module.exports = {
         },
         {
           test: /\.css$/,
-          use: ['style-loader', 'css-loader']
+          use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2|json|xml|ico)$/,
+          loader: 'file-loader',
+          options: {
+            name: './../gwentAssets/[name].[ext]'
+          }
         }
+
       ]
   },
   plugins: [

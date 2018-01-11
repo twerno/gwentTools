@@ -50,7 +50,7 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
   {
     return (
       <tr key={card.name}>
-        <td>{card.name}</td>
+        <td><a href={card.url} target="_blank">{card.name}</a></td>
         <td>{card.cardType}</td>
         <td>{this.tags2Str(card.tags)}</td>
         <td>{card.rarity}</td>

@@ -21,16 +21,6 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
     return (
       <>
       <div className="row">
-        <div className="section col-md-2">
-          <Select.default
-            multi={true}
-            name="cardColors"
-            value={this.props.filter.cardColors}
-            onChange={selection => this.cardColorChangeHandler(selection)}
-            options={this.mapSet2Options(options.cardColors)}
-            placeholder="Any color"
-          />
-        </div>
 
         <div className="section col-md-2">
           <Select.default
