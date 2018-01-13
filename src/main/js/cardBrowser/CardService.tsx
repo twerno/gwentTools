@@ -200,7 +200,7 @@ class ICardFilterOptionSetsBuilder
     return {
       names: this.names,
       cardTypes: this.cardTypes.options,
-      tags: this.tags.options,
+      tags: this.tags.options.sort((a, b) => a.value.localeCompare(b.value)),
       rarities: this.rarities.options,
       cardColors: this.cardColors.options,
       factions: this.factions.options,
@@ -228,7 +228,7 @@ class ICardFilterOptionSetsBuilder
   private initOptionSets(): void
   {
     this.initOptionSet(this.cardTypes, [CardType.LEADER, CardType.SPECIAL, CardType.UNIT]);
-    this.initOptionSet(this.rarities, [CardRarity.COMMON, CardRarity.RARE, CardRarity.RARE, CardRarity.LEGENDARY]);
+    this.initOptionSet(this.rarities, [CardRarity.COMMON, CardRarity.RARE, CardRarity.EPIC, CardRarity.LEGENDARY]);
     this.initOptionSet(this.cardColors, [CardColor.BRONZE, CardColor.SILVER, CardColor.GOLD]);
     this.initOptionSet(this.factions,
       [Factionv1.NEUTRAL, Factionv1.MONSTERS, Factionv1.NILFGAARD, Factionv1.NORTHERN_REALMS, Factionv1.SCOIATAEL,
@@ -243,4 +243,5 @@ class ICardFilterOptionSetsBuilder
     options.forEach(o => this.updateOptionSet(o, data));
     data.options.forEach(o => o.count = 0);
   }
+
 }
