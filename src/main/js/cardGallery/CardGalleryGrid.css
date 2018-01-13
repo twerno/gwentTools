@@ -1,4 +1,10 @@
-.item {
+@font-face {
+    font-family: 'GwentFont';
+    src: url('https://www.playgwent.com/fonts/hinted-GWENT-ExtraBold.ttf');
+}
+
+
+/* .item {
     margin: 10px;
     float: left;
     width: 100px;
@@ -6,31 +12,122 @@
 
 .item .cardName {
     margin-top: -25px;
-    padding-left: 8px;
-    padding-right: 8px;
-    width: 70px;
-    overflow: hidden;
-    text-align: center;
-    height: 20px;
-}
 
+padding-left: 8px;
+padding-right: 8px;
+width: 70px;
+overflow: hidden;
+text-align: center;
+height: 20px;
+
+}
 .border {
     margin-top: -120px;
     margin-left: -1px;
 }
-
 .background {
     width: 75px;
     padding-left: 3px;
 }
-
 .img_wrapper {
     width: 80px;
     height: 100px;
     overflow: hidden;
 }
+.nr_gold {
+    background-image: url('../gwentAssets/goldBorder.png');
+    width: 80px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+*/
 
+.cardContainer {
+    height: 150px;
+    width: 120px;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    float: left;
+}
 
-/* .nr_gold {
-    background-image: url('http://localhost:3000/gwentAssets/goldBorder_NR.png')
-} */
+.border_gold {
+    background-image: url('../gwentAssets/goldBorder.png');
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.card {
+    background-image: url('../gwentAssets/cards/Derran.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 2px;
+    right: 2px;
+    opacity: .9;
+}
+
+.banner {
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    margin-top: -10px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.banner_neutral {
+    background-image: url(../gwentAssets/banner_neutral.png);
+}
+
+.banner_monster {
+    background-image: url(../gwentAssets/banner_monster.png);
+}
+
+.banner_nilfgaard {
+    background-image: url(../gwentAssets/banner_nilfgaard.png);
+}
+
+.banner_northern {
+    background-image: url(../gwentAssets/banner_northern.png);
+}
+
+.banner_scoiatael {
+    background-image: url(../gwentAssets/banner_scoiatael.png);
+}
+
+.banner_skellige {
+    background-image: url(../gwentAssets/banner_skellige.png);
+}
+
+.unit {
+    position: absolute;
+    width: 30px;
+    font-family: 'GwentFont';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+}
+
+.armor_line {
+    margin-top: -4px;
+}
+
+.cardName {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'GwentFont';
+    padding-left: 8px;
+    padding-right: 8px;
+    text-shadow: #000 0px 0 4px;
+    font-size: 15px;
+}

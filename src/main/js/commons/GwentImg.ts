@@ -1,5 +1,3 @@
-import Background from '../../gwentAssets/cards/Arachas Venom.jpg';
-
 export enum GwentBorder
 {
   NR_GOLD = './gwentAssets/goldBorder_NR.png',
@@ -16,7 +14,3 @@ export enum GwentCads
 
 }
 
-export class BB
-{
-  public static aa = Background;
-}
