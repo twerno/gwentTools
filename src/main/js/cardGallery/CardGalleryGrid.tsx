@@ -1,7 +1,9 @@
 import './CardGalleryGrid.css';
 
 import { CardService, IFilter } from '@src/cardBrowser/CardService';
-import { CardLoyalty, Factionv1, ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
+import { CardColor, CardLoyalty, Factionv1, ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
+import { imageMap } from '@src/commons/ImageMap';
+import { fillLeftStr } from '@src/commons/StringHelper';
 import * as React from 'react';
 
 export interface CardGalleryGridProps
@@ -30,8 +32,8 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
     return (
       <a href={card.url}>
         <div className="cardContainer">
-          <div className="card" style={{ backgroundImage: cardImgPath }} />
-          <div className="border_gold" />
+          <div className="card" style={{ backgroundImage: `url(${this.cardImage(card)})` }} />
+          <div className={this.borderClass(card)} />
           <div className={this.factionBannerClass(card)} />
           {this.renderDuelist(card)}
           {this.spyToken(card)}
@@ -89,6 +91,33 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
     return card.loyalty === CardLoyalty.DISLOYAL
       ? <div className="spy_token" />
       : <></>;
+  }
+
+  private borderClass(card: ICardv1)
+  {
+    switch (card.cardColor)
+    {
+      case CardColor.GOLD: return 'border border_gold';
+      case CardColor.SILVER: return 'border border_silver';
+      case CardColor.BRONZE: return 'border border_bronze';
+    }
+    return '';
+  }
+
+  private cardImage(card: ICardv1)
+  {
+    const mapEl = imageMap.find(e => e.wikiUrl.toLocaleLowerCase() === card.url.toLocaleLowerCase());
+    if (mapEl)
+    {
+      console.log(mapEl);
+      return this.imgUrl(fillLeftStr(mapEl.imgId, 5, '0'));
+    }
+    return '';
+  }
+
+  private imgUrl(id: string): string
+  {
+    return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
   }
 
 }
