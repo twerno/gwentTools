@@ -10,10 +10,9 @@ export interface CardGalleryGridProps
   service: CardService;
 }
 
-export class CardGalleryGrid extends React.Component<CardGalleryGridProps,
-  {}
+export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
+{
 
-  > {
   public render()
   {
     const cards = this.props.service.getFiltered(this.props.filter);

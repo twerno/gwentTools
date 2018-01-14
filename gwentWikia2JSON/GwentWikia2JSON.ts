@@ -1,4 +1,3 @@
-import { CardSet } from '../src/main/js/commons/CardStruct';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { GwentWikiaInfoboxCardConverter } from './GwentWikiaInfoboxCardConverter';
 import { GwentWikiaInfoboxDownloader } from './GwentWikiaInfoboxDownloader';
@@ -30,8 +29,8 @@ class SaveCardDefs
     const infoboxList: IInfobox[] = this.infoboxParser.parseAllFiles(this.cacheDir);
     GwentWikiaHelper.saveOnDiskLn('infobox.json', infoboxList);
 
-    const cards = this.infoboxConverter.convertAll(infoboxList)
-      .filter((card) => card.set === CardSet.CLASSIC);
+    const cards = this.infoboxConverter.convertAll(infoboxList);
+    // .filter((card) => card.set === CardSet.CLASSIC);
     const cardsStr = cards
       .map((card) => JSON.stringify(card))
       .reduce((a, b) => `${a},\n  ${b}`);

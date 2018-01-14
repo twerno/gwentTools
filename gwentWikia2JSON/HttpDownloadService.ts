@@ -1,4 +1,5 @@
 import * as http from 'http';
+import * as https from 'https';
 
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { ILink } from './GwentWikiaLinkCollector';
@@ -58,6 +59,20 @@ export class HttpDownloadService
     {
       GwentWikiaHelper.log(`Downloading: ${url}`);
       http.get(url, (response: http.IncomingMessage) =>
+      {
+        this.handleResponse(response)
+          .then((rawPage: string) => resolve(rawPage))
+          .catch(reason => reject(reason));
+      });
+    });
+  }
+
+  public loadOneHttps(url: string): Promise<string>
+  {
+    return new Promise((resolve, reject) =>
+    {
+      GwentWikiaHelper.log(`Downloading: ${url}`);
+      https.get(url, (response: http.IncomingMessage) =>
       {
         this.handleResponse(response)
           .then((rawPage: string) => resolve(rawPage))

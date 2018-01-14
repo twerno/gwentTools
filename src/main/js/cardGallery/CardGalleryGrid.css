@@ -50,6 +50,7 @@ height: 20px;
     overflow: hidden;
     margin: 8px;
     float: left;
+    background-color: white;
 }
 
 .border_gold {
@@ -62,7 +63,6 @@ height: 20px;
 }
 
 .card {
-    background-image: url('../gwentAssets/cards/Derran.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
@@ -129,6 +129,7 @@ height: 20px;
     font-size: 30px;
     color: white;
     text-align: center;
+    padding-left: 2px;
 }
 
 .armor_line {
