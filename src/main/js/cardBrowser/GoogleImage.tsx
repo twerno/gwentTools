@@ -1,5 +1,5 @@
 import { CardService } from '@src/cardBrowser/CardService';
-import { imageMap } from '@src/commons/ImageMap';
+import { getElFromImgId } from '@src/commons/ImageMap';
 import * as React from 'react';
 
 export class GoogleImage extends React.Component<{}, {}>
@@ -55,25 +55,16 @@ export class GoogleImage extends React.Component<{}, {}>
   {
     return imgIdList.filter(imgId =>
     {
-      const mapEl = this.getMapEl(imgId);
-      if (mapEl && (mapEl.wikiUrl || '') !== '')
+      const mapEl = getElFromImgId(imgId);
+      if (mapEl && mapEl.wikiUrl && mapEl.wikiUrl !== '')
       {
-        return this.cardService.getAllCards()
-          .find((card) => card.url.toLowerCase() === mapEl.wikiUrl.toLowerCase()) === null;
+        const wikiUrl = (mapEl.wikiUrl || '').toLowerCase();
+        const card = this.cardService.getAllCards()
+          .find(c => c.url.toLowerCase() === wikiUrl);
+        return card === null;
       }
       return true;
     });
   }
 
-  private getMapEl(id: string)
-  {
-    for (const el of imageMap)
-    {
-      if (parseInt(el.imgId, 0) === parseInt(id, 0))
-      {
-        return el;
-      }
-    }
-    return null;
-  }
 }

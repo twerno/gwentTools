@@ -27,3 +27,4 @@ nodejs/
 gwentWikia2JSON/cards.js
 gwentWikia2JSON/infobox.json
 gwentWikia2JSON/stats.txt
+**/remoteAssets/*

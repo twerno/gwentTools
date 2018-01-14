@@ -1,7 +1,14 @@
 import './react-select.less';
 
 import { CardService, ICardFilterOption, IFilter } from '@src/cardBrowser/CardService';
-import { CardColor, CardLoyalty, CardRarity, CardType, Factionv1 } from '@src/commons/CardStruct';
+import {
+  CardColor,
+  CardLoyalty,
+  CardRarity,
+  CardSet,
+  CardType,
+  Factionv1,
+} from '@src/commons/CardStruct';
 import * as React from 'react';
 import * as Select from 'react-select';
 
@@ -76,6 +83,17 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
             placeholder="Any loyalty"
           />
         </div>
+
+        <div className="section col-md-2">
+          <Select.default
+            multi={true}
+            name="set"
+            value={this.props.filter.sets}
+            onChange={selection => this.cardSetsChangeHandler(selection)}
+            options={this.mapSet2Options(options.sets)}
+            placeholder="Any Set"
+          />
+        </div>
       </div>
       {JSON.stringify(this.props.filter)}
       </>
@@ -124,6 +142,13 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
       ? options[0].value as CardLoyalty
       : undefined;
     this.callOnChange({ loyalty });
+  }
+
+  private cardSetsChangeHandler(selection: Select.Option | Select.Options | null): void
+  {
+    const options = this.optionsFromSelection(selection);
+    const sets: CardSet[] = options.map(o => o.value as CardSet);
+    this.callOnChange({ sets });
   }
 
   private callOnChange(changes: IFilter): void

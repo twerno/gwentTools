@@ -1,5 +1,5 @@
 import { CardService } from '@src/cardBrowser/CardService';
-import { imageMap } from '@src/commons/ImageMap';
+import { IImageMapEl, imageMap } from '@src/commons/ImageMap';
 import * as React from 'react';
 
 export class ImageMapJsonGenerator extends React.Component<{}, {}>
@@ -16,7 +16,7 @@ export class ImageMapJsonGenerator extends React.Component<{}, {}>
   {
     const cards = this.service.getAllCards();
 
-    const newImageMap = cards.map(c => ({ wikiUrl: c.url, imgId: '' }));
+    const newImageMap = cards.map(c => ({ wikiUrl: c.url, imgId: '' })) as IImageMapEl[];
 
     imageMap
       .filter(e => e.imgId !== '')
@@ -28,12 +28,6 @@ export class ImageMapJsonGenerator extends React.Component<{}, {}>
           nez.imgId = e.imgId;
         }
       });
-
-    // const elements: string[] = [];
-    // for (let i = 1; i < 531; i++)
-    // {
-    //   elements.push(this.fillLeftStr(i.toString(), 5, '0'));
-    // }
 
     return (
       <div>

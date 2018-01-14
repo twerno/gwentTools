@@ -8,11 +8,14 @@ import * as ReactDOM from 'react-dom';
 
 ReactDOM.render(
   <div>
-    <Panel header="Gwent Duel Calculator" bsStyle="info">
-      <div className="editPanel">
-        <CardBrowserComponent />
-      </div>
-    </Panel>
+    {false ?
+      <Panel header="Gwent Duel Calculator" bsStyle="info">
+        <div className="editPanel">
+          <CardBrowserComponent />
+        </div>
+      </Panel>
+      : <></>
+    }
     {/* <ImageMapJsonGenerator /> */}
     <GoogleImage />
     {/* <DuelCalcComponent />

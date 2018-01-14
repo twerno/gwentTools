@@ -2,7 +2,7 @@ import './CardGalleryGrid.css';
 
 import { CardService, IFilter } from '@src/cardBrowser/CardService';
 import { CardColor, CardLoyalty, Factionv1, ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
-import { imageMap } from '@src/commons/ImageMap';
+import { getFirstImageId, imageMap } from '@src/commons/ImageMap';
 import { fillLeftStr } from '@src/commons/StringHelper';
 import * as React from 'react';
 
@@ -109,15 +109,18 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
     const mapEl = imageMap.find(e => e.wikiUrl.toLocaleLowerCase() === card.url.toLocaleLowerCase());
     if (mapEl)
     {
-      console.log(mapEl);
-      return this.imgUrl(fillLeftStr(mapEl.imgId, 5, '0'));
+      return this.imgUrl(fillLeftStr(getFirstImageId(mapEl), 5, '0'));
     }
     return '';
   }
 
   private imgUrl(id: string): string
   {
-    return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
+    if (process.env.NODE_ENV === 'production')
+    {
+      return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
+    }
+    return `../remoteAssets/small/${id}.jpg`;
   }
 
 }
