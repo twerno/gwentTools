@@ -163,7 +163,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aspirant`,
-    imgId: ''
+    imgId: '127'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Assassin`,

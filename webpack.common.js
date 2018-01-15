@@ -24,8 +24,8 @@ module.exports = {
           test: /\.less$/,
           use: [
             { loader: "style-loader" }, // creates style nodes from JS strings
-            { loader: "css-loader" }, // translates CSS into CommonJS
-            { loader: "less-loader" }, // compiles Less to CSS
+            { loader: "css-loader", options: { url: false } }, // translates CSS into CommonJS
+            { loader: "less-loader", options: { url: false } }, // compiles Less to CSS
           ]
         },
         {
