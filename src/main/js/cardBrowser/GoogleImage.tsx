@@ -1,4 +1,5 @@
 import { CardService } from '@src/cardBrowser/CardService';
+import { GwentAssetsHelper } from '@src/commons/GwentAssetsHelper';
 import { getElFromImgId } from '@src/commons/ImageMap';
 import * as React from 'react';
 
@@ -37,12 +38,12 @@ export class GoogleImage extends React.Component<{}, {}>
 
   private imgUrl(id: string): string
   {
-    return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
+    return GwentAssetsHelper.getSmallImgUrl(id);
   }
 
   private imgUrlBig(id: string): string
   {
-    return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/${id}.jpg`;
+    return GwentAssetsHelper.getMediumImgUrl(id);
   }
 
   private googleSeachUrl(id: string): string

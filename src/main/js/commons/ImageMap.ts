@@ -3146,13 +3146,13 @@ export function getElFromWikiUrl(wikiUrl: string): IImageMapEl | null
 
 export function getFirstImageId(e: IImageMapEl | null): string
 {
-  if (e && e instanceof Array && e.length > 0)
+  if (e && e.imgId instanceof Array && e.imgId.length > 0)
   {
-    return e[0];
+    return e.imgId[0];
   }
-  else if (typeof e === 'string')
+  else if (e && typeof e.imgId === 'string')
   {
-    return e;
+    return e.imgId;
   }
   return '';
 }

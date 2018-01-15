@@ -4,52 +4,25 @@
 }
 
 
-/* .item {
-    margin: 10px;
-    float: left;
-    width: 100px;
-}
+/* https: //stackoverflow.com/a/46099319 */
 
-.item .cardName {
-    margin-top: -25px;
-
-padding-left: 8px;
-padding-right: 8px;
-width: 70px;
-overflow: hidden;
-text-align: center;
-height: 20px;
-
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 130px);
+    grid-gap: 4rem;
+    justify-content: space-between;
+    /* boring properties */
+    list-style: none;
+    padding: 2rem;
+    margin: 0 auto;
 }
-.border {
-    margin-top: -120px;
-    margin-left: -1px;
-}
-.background {
-    width: 75px;
-    padding-left: 3px;
-}
-.img_wrapper {
-    width: 80px;
-    height: 100px;
-    overflow: hidden;
-}
-.nr_gold {
-    background-image: url('../gwentAssets/goldBorder.png');
-    width: 80px;
-    height: 100px;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-*/
 
 .cardContainer {
     height: 150px;
     width: 120px;
     position: relative;
     overflow: hidden;
-    margin: 8px;
-    float: left;
+    /* margin: 8px; */
     background-color: white;
 }
 

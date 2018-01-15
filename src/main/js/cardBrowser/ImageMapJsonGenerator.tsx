@@ -1,4 +1,5 @@
 import { CardService } from '@src/cardBrowser/CardService';
+import { GwentAssetsHelper } from '@src/commons/GwentAssetsHelper';
 import { IImageMapEl, imageMap } from '@src/commons/ImageMap';
 import * as React from 'react';
 
@@ -47,7 +48,7 @@ export class ImageMapJsonGenerator extends React.Component<{}, {}>
 
   private imgUrl(id: string): string
   {
-    return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
+    return GwentAssetsHelper.getSmallImgUrl(id);
   }
 
   private googleSeachUrl(id: string): string
