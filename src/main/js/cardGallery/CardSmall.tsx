@@ -10,8 +10,13 @@ export interface CardSmallProps
   card: ICardv1;
 }
 
-export class CardSmall extends React.PureComponent<CardSmallProps, {}>
+export class CardSmall extends React.Component<CardSmallProps, {}>
 {
+
+  public shouldComponentUpdate(nextProps: CardSmallProps, nextState: {}): boolean
+  {
+    return this.props.card.url !== nextProps.card.url;
+  }
 
   public render()
   {
