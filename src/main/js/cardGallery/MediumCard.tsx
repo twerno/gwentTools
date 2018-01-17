@@ -1,8 +1,15 @@
+import '../gwentAssets/GwentAssets.less';
 import './MediumCard.less';
 
 import { ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
 import { GwentAssetsHelper } from '@src/commons/GwentAssetsHelper';
 import { getFirstImageId, imageMap } from '@src/commons/ImageMap';
+import {
+  cardColor2Border,
+  cardFaction2BanerBasic,
+  cardFaction2Frame,
+  cardRarity2Gem,
+} from '@src/gwentAssets/GwentAssetsHelper';
 import * as React from 'react';
 
 export interface MediumCardProps
@@ -17,6 +24,8 @@ interface MediumCardState
 
 export class MediumCard extends React.Component<MediumCardProps, MediumCardState>
 {
+
+  private readonly cssPrefix = 'cardMedium_';
 
   public shouldComponentUpdate(nextProps: MediumCardProps, nextState: MediumCardState): boolean
   {
@@ -34,26 +43,33 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
   {
     const card = this.props.card;
     const cardArtStyle: React.CSSProperties = { backgroundImage: `url(${this.cardImage(card)})` };
-    const mediumTextBoxClass = 'mediumCardTextBox' + (this.state.isOpen ? ' mediumCardTextBox_open' : '');
+    const mediumTextBoxClass = `textBox` + (this.state.isOpen ? ` textBox_open` : '');
 
     return (
-      <div
-        className="cardMediumContainer"
-        onMouseEnter={() => this.setState({ isOpen: true })}
-        onMouseLeave={() => this.setState({ isOpen: false })}
-      >
-        <div className="cardMediumArt" style={cardArtStyle} />
-        <div className="cardMediumBackImage cardMediumFrame_bronze" />
-        <div className={mediumTextBoxClass}>
-          {/* <br />villentretenmerth */}
-          <div className="name">villentretenmerth {card.name}</div>
-          <div className="tags">{this.tags(card)}</div>
-          <div className="text">{this.cardText2Str(card.cardText)}</div>
+      <div className={`${this.cssPrefix}container`}>
+        <div className="art" style={cardArtStyle} />
+        <div className={`fullSize ${cardColor2Border(card.cardColor)}`} />
+        <div className="textBoxWrapper">
+          <div className={mediumTextBoxClass}>
+            {/* <br />villentretenmerth */}
+            <div className="name"><span>{card.name}</span></div>
+            <div className="tags">{this.tags(card)}</div>
+            <div className="separator" />
+            <div className="text">{this.cardText2Str(card.cardText)}</div>
+          </div>
         </div>
-        <div className="cardMediumBackImage cardMediumFactionFrame_northern" />
-        <div className="cardMediumGem cardMediumGem_rare" />
-        <div className="cardMediumBanner cardMediumBanner_northern_basic" />
+        <div
+          className={`fullSize ${cardFaction2Frame(card.faction)}`}
+
+        />
+        <div className={`gem ${cardRarity2Gem(card.rarity)}`} />
+        <div className={`banner ${cardFaction2BanerBasic(card.faction)}`} />
         {this.unitStrength(card)}
+        <div
+          className="fullSize"
+          onMouseEnter={() => this.setState({ isOpen: true })}
+          onMouseLeave={() => this.setState({ isOpen: false })}
+        />
       </div>
     );
   }
@@ -64,14 +80,22 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
     {
       return <></>;
     }
+    const css = this.cssPrefix;
+    const armor = card.armor > 0
+      ? <>
+      <div className="armorBackground" />
+      <div className="armor">{card.armor}</div>
+      </>
+      : '';
+
     return (
-      <div className="cardMediumStrength">
-        99{/* 99{card.strength} */}
-        {card.armor > 0
-          ? <div className="cardMediumArmor">{card.armor}</div>
-          : <></>
-        }
+      <>
+      <div className="unitBox textBorder">
+        {card.strength}
+        {armor}
       </div>
+
+      </>
     );
   }
 

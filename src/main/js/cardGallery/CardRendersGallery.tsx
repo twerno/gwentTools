@@ -1,7 +1,5 @@
 import { CardService } from '@src/cardBrowser/CardService';
-import { CardSmall } from '@src/cardGallery/CardSmall';
 import { MediumCard } from '@src/cardGallery/MediumCard';
-import { CardSmallPreview } from '@src/cardGallery/SmallCadPreview';
 import * as React from 'react';
 
 export class CardRendersGallery extends React.Component<{}, {}>
@@ -17,7 +15,7 @@ export class CardRendersGallery extends React.Component<{}, {}>
 
     return (
       <div>
-        <div style={style}>
+        {/* <div style={style}>
           <div style={inneStyle}>
             <CardSmall card={card} />
           </div><div style={inneStyle}>
@@ -27,7 +25,7 @@ export class CardRendersGallery extends React.Component<{}, {}>
           </div><div style={inneStyle}>
             <CardSmall card={card} />
           </div>
-        </div>
+        </div> */}
         <div style={{ clear: 'both' }} />
         <div style={style}>
           <div style={inneStyle}>
@@ -36,12 +34,15 @@ export class CardRendersGallery extends React.Component<{}, {}>
           <div style={inneStyle}>
             <MediumCard card={card} />
           </div>
+          <div style={inneStyle}>
+            <MediumCard card={card} />
+          </div>
         </div>
         <div style={{ clear: 'both' }} />
-        <div style={style}>
+        {/* <div style={style}>
           <CardSmallPreview card={card} />
           <CardSmallPreview card={card} />
-        </div>
+        </div> */}
       </div>
     );
   }

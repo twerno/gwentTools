@@ -1,8 +1,7 @@
 import './CardGalleryGrid.css';
 
 import { CardService, IFilter } from '@src/cardBrowser/CardService';
-import { CardSmall } from '@src/cardGallery/CardSmall';
-import { CardSmallPreview } from '@src/cardGallery/SmallCadPreview';
+import { MediumCard } from '@src/cardGallery/MediumCard';
 import { ICardv1 } from '@src/commons/CardStruct';
 import * as React from 'react';
 
@@ -12,45 +11,24 @@ export interface CardGalleryGridProps
   service: CardService;
 }
 
-export interface CardGalleryGridState
-{
-  highlighted: ICardv1 | null;
-}
-
-export class CardGalleryGrid extends React.Component<CardGalleryGridProps, CardGalleryGridState>
+export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 {
 
   public constructor(props: CardGalleryGridProps)
   {
     super(props);
-    this.state = { highlighted: null };
   }
 
   public render()
   {
     const cards = this.props.service.getFiltered(this.props.filter);
-    return <ul>
-      {cards.map(card => this.renderCard(card))}
-    </ul>;
+    return <>{cards.map(card => this.renderCard(card))}</>;
   }
 
   public renderCard(card: ICardv1)
   {
-    if (this.state.highlighted === card)
-    {
-      return <div
-        key={`preview-${card.url}`}
-        onMouseLeave={event => this.setState({ highlighted: null })}
-        style={{ marginTop: '-9px', marginLeft: '-10px' }}
-      >
-        <CardSmallPreview card={card} />
-      </div>;
-    }
-    return <div
-      key={`smallImg-${card.url}`}
-      onMouseEnter={event => this.setState({ highlighted: card })}
-    >
-      <CardSmall card={card} key={card.url} />
+    return <div key={`preview-${card.url}`} style={{ float: 'none', margin: '30px' }}>
+      <MediumCard card={card} />
     </div>;
   }
 
