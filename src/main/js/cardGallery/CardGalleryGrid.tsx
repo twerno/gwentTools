@@ -39,13 +39,17 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, CardG
     if (this.state.highlighted === card)
     {
       return <div
+        key={`preview-${card.url}`}
         onMouseLeave={event => this.setState({ highlighted: null })}
         style={{ marginTop: '-9px', marginLeft: '-10px' }}
       >
         <CardSmallPreview card={card} />
       </div>;
     }
-    return <div onMouseEnter={event => this.setState({ highlighted: card })}>
+    return <div
+      key={`smallImg-${card.url}`}
+      onMouseEnter={event => this.setState({ highlighted: card })}
+    >
       <CardSmall card={card} key={card.url} />
     </div>;
   }

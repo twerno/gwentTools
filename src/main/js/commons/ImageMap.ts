@@ -43,7 +43,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aguara`,
-    imgId: ''
+    imgId: '359'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aguara:_True_Form`,
