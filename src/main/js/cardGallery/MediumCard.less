@@ -3,7 +3,7 @@
     src: url('https://www.playgwent.com/fonts/hinted-GWENT-ExtraBold.ttf');
 }
 
-@CardOpenAnimDuration: .6s;
+@CardOpenAnimDuration: .4s;
 .cardMedium {
     &_container {
         height: 255px;
@@ -12,6 +12,8 @@
         margin-left: 12px;
         margin-top: 12px;
         margin-bottom: 12px;
+        z-index: 2;
+        will-change: transform;
     }
     /* ******************** */
     /* ******************** */
@@ -31,18 +33,18 @@
         width: 100%;
         height: 232px;
         background-color: rgba(0, 0, 0, 0.8);
-        transition: all @CardOpenAnimDuration;
+        transition: transform @CardOpenAnimDuration;
         padding-left: 8px;
         transform: translateY(165px);
     }
-    &_container .textBox_open {
+    &_container_open .textBox {
         transform: translateY(0px);
     }
     &_container .textBox .name {
         text-align: center;
         color: white;
         font-family: "GwentFont";
-        font-size: 17px;
+        font-size: 16px;
         height: 45px;
         line-height: 48px;
     }
@@ -61,15 +63,13 @@
         border-top-style: groove;
         border-top-width: 1px;
         border-top-color: white;
-        margin-left: -6px;
-        transition: width @CardOpenAnimDuration, margin-left @CardOpenAnimDuration ease;
-        width: 0%;
-        margin-left: 75px;
-    }
-    &_container .textBox_open .separator {
+        margin-left: -6px; // transition: width @CardOpenAnimDuration, margin-left @CardOpenAnimDuration ease;
         width: 80%;
-        margin-left: 13px;
-    }
+        margin-left: 75px;
+    } // &_container .textBox_open .separator {
+    //     width: 80%;
+    //     margin-left: 13px;
+    // }
     &_container .textBox .text {
         position: absolute;
         top: 80px;
@@ -110,7 +110,7 @@
         bottom: 14px;
         position: absolute;
         width: 100%;
-        background-size: cover;
+        background-size: 197px 230px;
     }
     /* ******************** */
     /* ******************** */

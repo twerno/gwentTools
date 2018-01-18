@@ -22,12 +22,14 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
   public render()
   {
     const cards = this.props.service.getFiltered(this.props.filter);
-    return <>{cards.map(card => this.renderCard(card))}</>;
+    return <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {cards.map(card => this.renderCard(card))}
+    </div>;
   }
 
   public renderCard(card: ICardv1)
   {
-    return <div key={`preview-${card.url}`} style={{ float: 'none', margin: '30px' }}>
+    return <div key={`preview-${card.url}`} style={{ flex: '1 0 calc(100% / 5)', padding: '30px' }}>
       <MediumCard card={card} />
     </div>;
   }
