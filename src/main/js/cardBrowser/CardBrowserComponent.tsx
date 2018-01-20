@@ -3,12 +3,16 @@ import { CardFilterComponent } from '@src/cardBrowser/FilterComponent';
 import { CardGalleryGrid } from '@src/cardGallery/CardGalleryGrid';
 import { CardGalleryTable } from '@src/cardGallery/CardGalleryTable';
 import * as React from 'react';
-import { Checkbox } from 'react-bootstrap';
+
+export enum CardRenderer
+{
+  CARD, WIDE, TABLE
+}
 
 export interface CardBrowserComponentState
 {
   filter: IFilter;
-  gridLayout: boolean;
+  renderer: CardRenderer;
 }
 
 export class CardBrowserComponent extends React.Component<{}, CardBrowserComponentState> {
@@ -18,7 +22,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
   public constructor(props: {}, context?: any)
   {
     super(props, context);
-    this.state = { filter: {}, gridLayout: true };
+    this.state = { filter: {}, renderer: CardRenderer.CARD };
   }
 
   private onFilterChange(filter: IFilter): void
@@ -28,10 +32,10 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
 
   public render()
   {
-    const layout = (this.state.gridLayout
-      ? <CardGalleryGrid service={this.service} filter={this.state.filter} />
-      : <CardGalleryTable service={this.service} filter={this.state.filter} />
-    );
+    const layout = this.state.renderer === CardRenderer.TABLE
+      ? <CardGalleryTable service={this.service} filter={this.state.filter} />
+      : <CardGalleryGrid service={this.service} filter={this.state.filter} renderer={this.state.renderer} />;
+
     return (
       <>
       <CardFilterComponent
@@ -39,16 +43,21 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
         filter={this.state.filter}
         onFilterChange={filter => this.onFilterChange(filter)}
       />
-      <Checkbox onChange={event => this.layoutChangeHandler(event)}>
-        Table layout
-      </Checkbox>
-      {layout}
+      <a onClick={() => this.setRenderer(CardRenderer.CARD)}>CARD</a>&nbsp;
+      <a onClick={() => this.setRenderer(CardRenderer.WIDE)}>WIDE</a>&nbsp;
+      <a onClick={() => this.setRenderer(CardRenderer.TABLE)}>TABLE</a>&nbsp;
+    <div style={{ marginTop: '20px' }}>
+        {layout}
+      </div>
       </>
     );
   }
 
-  private layoutChangeHandler(event: React.FormEvent<Checkbox>): void
+  private setRenderer(renderer: CardRenderer): void
   {
-    this.setState({ gridLayout: !this.state.gridLayout });
+    if (this.state.renderer !== renderer)
+    {
+      this.setState({ renderer });
+    }
   }
 }

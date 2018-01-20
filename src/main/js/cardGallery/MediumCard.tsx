@@ -19,8 +19,7 @@ export interface MediumCardProps
 
 interface MediumCardState
 {
-  isOpen: boolean;
-  willChange: 'auto' | 'transform';
+  descriptionMode: 'full' | 'name_only';
 }
 
 export class MediumCard extends React.Component<MediumCardProps, MediumCardState>
@@ -31,13 +30,13 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
   public shouldComponentUpdate(nextProps: MediumCardProps, nextState: MediumCardState): boolean
   {
     return this.props.card !== nextProps.card
-      || this.state.isOpen !== nextState.isOpen;
+      || this.state.descriptionMode !== nextState.descriptionMode;
   }
 
   public constructor(props: MediumCardProps)
   {
     super(props);
-    this.state = { isOpen: false, willChange: 'auto' };
+    this.state = { descriptionMode: 'name_only' };
   }
 
   public render()
@@ -50,7 +49,7 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
     return (
       <div
         // tslint:disable-next-line:max-line-length
-        className={`${this.cssPrefix}container ${this.state.isOpen ? ` ${this.cssPrefix}container_open` : ''}`}
+        className={`${this.cssPrefix}container ${true ? ` ${this.cssPrefix}container_open` : ''}`}
       >
         <div className="art" style={cardArtStyle} />
         <div className={`fullSize ${cardColor2Border(card.cardColor)}`} />
@@ -72,8 +71,8 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
         {this.unitStrength(card)}
         <div
           className="fullSize"
-          onMouseEnter={() => this.setState({ isOpen: true, willChange: 'transform' })}
-          onMouseLeave={() => this.setState({ isOpen: false })}
+        // onMouseEnter={() => this.setState({ isOpen: true, willChange: 'transform' })}
+        // onMouseLeave={() => this.setState({ isOpen: false })}
         />
       </div>
     );

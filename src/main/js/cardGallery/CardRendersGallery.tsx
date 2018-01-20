@@ -1,3 +1,4 @@
+import { WideCard } from '@src/cardBrowser/card/WideCard';
 import { CardService } from '@src/cardBrowser/CardService';
 import { MediumCard } from '@src/cardGallery/MediumCard';
 import * as React from 'react';
@@ -39,6 +40,17 @@ export class CardRendersGallery extends React.Component<{}, {}>
           </div>
         </div>
         <div style={{ clear: 'both' }} />
+        <div style={style}>
+          <div style={inneStyle}>
+            <WideCard card={card} />
+          </div>
+          <div style={inneStyle}>
+            <WideCard card={card} />
+          </div>
+          <div style={inneStyle}>
+            <WideCard card={card} />
+          </div>
+        </div>
         {/* <div style={style}>
           <CardSmallPreview card={card} />
           <CardSmallPreview card={card} />
