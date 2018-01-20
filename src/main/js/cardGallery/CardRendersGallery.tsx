@@ -30,13 +30,13 @@ export class CardRendersGallery extends React.Component<{}, {}>
         <div style={{ clear: 'both' }} />
         <div style={style}>
           <div style={inneStyle}>
-            <MediumCard card={card} />
+            <MediumCard card={card} mobileView={false} />
           </div>
           <div style={inneStyle}>
-            <MediumCard card={card} />
+            <MediumCard card={card} mobileView={false} />
           </div>
           <div style={inneStyle}>
-            <MediumCard card={card} />
+            <MediumCard card={card} mobileView={false} />
           </div>
         </div>
         <div style={{ clear: 'both' }} />

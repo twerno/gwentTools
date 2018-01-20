@@ -15,6 +15,7 @@ import * as React from 'react';
 export interface MediumCardProps
 {
   card: ICardv1;
+  mobileView: boolean;
 }
 
 interface MediumCardState
@@ -30,6 +31,7 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
   public shouldComponentUpdate(nextProps: MediumCardProps, nextState: MediumCardState): boolean
   {
     return this.props.card !== nextProps.card
+      || this.props.mobileView !== nextProps.mobileView
       || this.state.descriptionMode !== nextState.descriptionMode;
   }
 
@@ -46,13 +48,17 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
     const mediumTextBoxClass = `textBox`; // + (this.state.isOpen ? ` textBox_open` : '');
     // const willChange = (this.state.willChange === 'transform') ? ' willAnimate' : '';
 
+    const containerStyle = (this.props.mobileView)
+      ? { height: '195px', width: '145px' }
+      : {};
+
     return (
       <div
-        // tslint:disable-next-line:max-line-length
+        style={containerStyle}
         className={`${this.cssPrefix}container ${true ? ` ${this.cssPrefix}container_open` : ''}`}
       >
         <div className="art" style={cardArtStyle} />
-        <div className={`fullSize ${cardColor2Border(card.cardColor)}`} />
+        <div className={`fullSize ${cardColor2Border(card.cardColor)} `} />
         <div className="textBoxWrapper">
           <div className={mediumTextBoxClass} onAnimationEnd={() => console.log('onAnimationEnd')}>
             {/* <br />villentretenmerth */}
@@ -63,11 +69,11 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
           </div>
         </div>
         <div
-          className={`fullSize ${cardFaction2Frame(card.faction)}`}
+          className={`fullSize ${cardFaction2Frame(card.faction)} `}
 
         />
-        <div className={`gem ${cardRarity2Gem(card.rarity)}`} />
-        <div className={`banner ${cardFaction2BanerBasic(card.faction)}`} />
+        <div className={`gem ${cardRarity2Gem(card.rarity)} `} />
+        <div className={`banner_medium ${cardFaction2BanerBasic(card.faction)} `} />
         {this.unitStrength(card)}
         <div
           className="fullSize"
@@ -116,7 +122,7 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
   private tags(card: ICardv1)
   {
     return card.tags && card.tags.length > 0
-      ? card.tags.reduce((a, b) => `${a}, ${b}`)
+      ? card.tags.reduce((a, b) => `${a}, ${b} `)
       : '';
   }
 

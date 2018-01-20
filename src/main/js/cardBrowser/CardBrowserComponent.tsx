@@ -3,10 +3,11 @@ import { CardFilterComponent } from '@src/cardBrowser/FilterComponent';
 import { CardGalleryGrid } from '@src/cardGallery/CardGalleryGrid';
 import { CardGalleryTable } from '@src/cardGallery/CardGalleryTable';
 import * as React from 'react';
+import { Button } from 'react-bootstrap';
 
 export enum CardRenderer
 {
-  CARD, WIDE, TABLE
+  CARD_MEDIUM, CARD_MEDIUM_MOBILE, CARD_SMALL, CARD_WIDE, TABLE, PREVIEW
 }
 
 export interface CardBrowserComponentState
@@ -22,7 +23,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
   public constructor(props: {}, context?: any)
   {
     super(props, context);
-    this.state = { filter: {}, renderer: CardRenderer.CARD };
+    this.state = { filter: {}, renderer: CardRenderer.CARD_MEDIUM };
   }
 
   private onFilterChange(filter: IFilter): void
@@ -43,12 +44,17 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
         filter={this.state.filter}
         onFilterChange={filter => this.onFilterChange(filter)}
       />
-      <a onClick={() => this.setRenderer(CardRenderer.CARD)}>CARD</a>&nbsp;
-      <a onClick={() => this.setRenderer(CardRenderer.WIDE)}>WIDE</a>&nbsp;
-      <a onClick={() => this.setRenderer(CardRenderer.TABLE)}>TABLE</a>&nbsp;
-    <div style={{ marginTop: '20px' }}>
-        {layout}
+      <div style={{ paddingBottom: '40px' }}>
+        <Button onClick={() => this.setRenderer(CardRenderer.CARD_MEDIUM_MOBILE)}>CARD MOBILE</Button>&nbsp;
+      <Button onClick={() => this.setRenderer(CardRenderer.CARD_MEDIUM)}>CARD</Button>&nbsp;
+      <Button onClick={() => this.setRenderer(CardRenderer.CARD_WIDE)}>WIDE</Button>&nbsp;
+      <Button onClick={() => this.setRenderer(CardRenderer.CARD_SMALL)}>SMALL</Button>&nbsp;
+      <Button onClick={() => this.setRenderer(CardRenderer.TABLE)}>TABLE</Button>&nbsp;
+      <Button onClick={() => this.setRenderer(CardRenderer.PREVIEW)}>PREVIEW</Button>&nbsp;
       </div>
+
+      {layout}
+
       </>
     );
   }
