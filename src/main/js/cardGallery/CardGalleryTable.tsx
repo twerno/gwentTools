@@ -1,10 +1,10 @@
-import { CardService, IFilter } from '@src/cardBrowser/CardService';
+import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
 import { ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
 import * as React from 'react';
 
 export interface CardGalleryTableProps
 {
-  filter: IFilter;
+  filter: IFilterDef;
   service: CardService;
 }
 

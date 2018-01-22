@@ -3,11 +3,7 @@ import './WideCard.less';
 
 import { CardRendererHelper } from '@src/cardBrowser/card/CardRendererHelper';
 import { ICardv1 } from '@src/commons/CardStruct';
-import {
-  cardColor2BorderWide,
-  cardFaction2BanerBasic,
-  cardFaction2FrameWide,
-} from '@src/gwentAssets/GwentAssetsHelper';
+import { cardFaction2FrameWide, cardRarity2Gem } from '@src/gwentAssets/GwentAssetsHelper';
 import * as React from 'react';
 
 export interface WideCardProps
@@ -53,9 +49,10 @@ export class WideCard extends React.Component<WideCardProps, {}> {
             </div>
           </div>
         </div>
-        <div className={`${css}_full_back_img ${cardColor2BorderWide(card.cardColor)}`} />
+        {/* <div className={`${css}_full_back_img ${cardColor2BorderWide(card.cardColor)}`} /> */}
         <div className={`${css}_full_back_img ${css}_frame ${cardFaction2FrameWide(card.faction)}`} />
-        <div className={`${css}_banner ${cardFaction2BanerBasic(card.faction)}`} />
+        <div className={`${css}_gem ${cardRarity2Gem(card.rarity)} `} />
+        {/* <div className={`${css}_banner ${cardFaction2BanerBasic(card.faction)}`} /> */}
       </div >
     );
   }

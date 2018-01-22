@@ -2,7 +2,7 @@ import './CardGalleryGrid.css';
 
 import { WideCard } from '@src/cardBrowser/card/WideCard';
 import { CardRenderer } from '@src/cardBrowser/CardBrowserComponent';
-import { CardService, IFilter } from '@src/cardBrowser/CardService';
+import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
 import { CardSmall } from '@src/cardGallery/CardSmall';
 import { MediumCard } from '@src/cardGallery/MediumCard';
 import { CardSmallPreview } from '@src/cardGallery/SmallCadPreview';
@@ -12,7 +12,7 @@ import * as React from 'react';
 export interface CardGalleryGridProps
 {
   renderer: CardRenderer;
-  filter: IFilter;
+  filter: IFilterDef;
   service: CardService;
 }
 

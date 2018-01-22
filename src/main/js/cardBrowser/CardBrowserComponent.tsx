@@ -1,4 +1,4 @@
-import { CardService, IFilter } from '@src/cardBrowser/CardService';
+import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
 import { CardFilterComponent } from '@src/cardBrowser/FilterComponent';
 import { CardGalleryGrid } from '@src/cardGallery/CardGalleryGrid';
 import { CardGalleryTable } from '@src/cardGallery/CardGalleryTable';
@@ -12,7 +12,7 @@ export enum CardRenderer
 
 export interface CardBrowserComponentState
 {
-  filter: IFilter;
+  filter: IFilterDef;
   renderer: CardRenderer;
 }
 
@@ -26,7 +26,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
     this.state = { filter: {}, renderer: CardRenderer.CARD_MEDIUM };
   }
 
-  private onFilterChange(filter: IFilter): void
+  private onFilterChange(filter: IFilterDef): void
   {
     this.setState({ filter });
   }

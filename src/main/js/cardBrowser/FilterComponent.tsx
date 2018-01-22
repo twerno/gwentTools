@@ -1,7 +1,8 @@
 import './react-select.less';
 
-import { CardService, ICardFilterOption, IFilter } from '@src/cardBrowser/CardService';
-import {
+import { CardService, ICardFilterOption } from '@src/cardBrowser/CardService';
+import
+{
   CardColor,
   CardLoyalty,
   CardRarity,
@@ -11,12 +12,13 @@ import {
 } from '@src/commons/CardStruct';
 import * as React from 'react';
 import * as Select from 'react-select';
+import { ICardFilterDef } from '@src/commons/cardFilter/CardFiler';
 
 export interface CardFilterComponentProp
 {
-  filter: IFilter;
+  filter: ICardFilterDef;
   service: CardService;
-  onFilterChange: (newFilter: IFilter) => void;
+  onFilterChange: (newFilter: ICardFilterDef) => void;
 }
 
 export class CardFilterComponent extends React.Component<CardFilterComponentProp, {}> {
@@ -151,7 +153,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
     this.callOnChange({ sets });
   }
 
-  private callOnChange(changes: IFilter): void
+  private callOnChange(changes: IFilterDef): void
   {
     this.props.onFilterChange({ ...this.props.filter, ...changes });
   }

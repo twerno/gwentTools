@@ -1,6 +1,5 @@
 import './CardSmallPreview.css';
 
-import { CardSmall } from '@src/cardGallery/CardSmall';
 import { ICardv1 } from '@src/commons/CardStruct';
 import * as React from 'react';
 
@@ -9,16 +8,32 @@ export interface CardSmallPreviewProps
   card: ICardv1;
 }
 
-export class CardSmallPreview extends React.Component<CardSmallPreviewProps, {}>
+export interface CardSmallPreviewState
 {
+  highlight: boolean;
+}
+
+export class CardSmallPreview extends React.Component<CardSmallPreviewProps, CardSmallPreviewState>
+{
+
+  public constructor(props: CardSmallPreviewProps)
+  {
+    super(props);
+    this.state = { highlight: false };
+  }
 
   public render()
   {
     const card = this.props.card;
 
     return <div className="cardPreview">
-      <CardSmall card={{ ...card, name: '' }} />
-      <div className="cardTextBox">
+      {/* <CardSmall card={{ ...card, name: '' }} /> */}
+      <img src="../remoteAssets/card_test.png" style={{ width: '100px' }} />
+      <div
+        className="cardTextBox"
+        onMouseEnter={() => this.setState({ highlight: true })}
+        onMouseLeave={() => this.setState({ highlight: false })}
+      >
         <div className="cardNamePreview">{card.name}</div>
         <div className="cardTagsPreview">{this.tags(card)}</div>
         <div className="cardTextPreview">{this.cardText2Str(card.cardText)}</div>

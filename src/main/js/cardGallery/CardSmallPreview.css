@@ -4,7 +4,7 @@
 }
 
 .cardPreview {
-    width: 430px;
+    width: 300px;
     background-color: rgb(0, 0, 0);
     height: 160px;
     padding-top: 9px;
@@ -15,16 +15,25 @@
 }
 
 .cardTextBox {
-    width: 290px;
+    left: 120px;
     top: 4px;
     right: 5px;
+    bottom: 5px;
     position: absolute;
+    overflow: hidden;
+    background: black;
+}
+
+.cardTextBox_highlighted {
+    overflow: visible;
+    bottom: initial;
 }
 
 .cardNamePreview {
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
+    margin-left: -35px;
     font-family: 'GwentFont';
 }
 
@@ -32,14 +41,16 @@
     color: rgb(218, 218, 218);
     font-size: 14px;
     text-align: center;
-    font-family: 'GwentFont';
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cardTextPreview {
     margin-top: 8px;
     margin-left: 5px;
     color: white;
-    font-size: 2.5vmin;
+    font-size: 11px;
     text-align: left;
     /* font-family: 'GwentFont'; */
+    overflow-y: auto;
+    max-height: 150px;
 }

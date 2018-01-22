@@ -3,6 +3,10 @@
     src: url('https://www.playgwent.com/fonts/hinted-GWENT-ExtraBold.ttf');
 }
 
+.panel-body {
+    background-color: #484848;
+}
+
 .wideCard {
     &_container {
         position: relative;
@@ -80,6 +84,12 @@
         font-size: 11px;
         z-index: 4; // background-color: black;
     }
+    &_frame {
+        top: -5px;
+        left: -6px;
+        right: -6px;
+        bottom: -7px;
+    }
     &_banner {
         position: absolute;
         background-size: 100% 100%;
@@ -88,6 +98,14 @@
         left: -42px;
         top: -30px;
         z-index: 3;
+    }
+    &_gem {
+        background-size: 100% 100%;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
     }
     &_vertical_middle_wrapper {
         display: table;
