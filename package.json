@@ -33,9 +33,6 @@
         "skipBabel": true
       }
     },
-    "setupFiles": [
-      "./src/test/js/setup.ts"
-    ],
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ],

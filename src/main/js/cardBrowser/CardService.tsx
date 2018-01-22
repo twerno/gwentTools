@@ -1,4 +1,5 @@
-import {
+import
+{
   CardColor,
   CardLoyalty,
   CardRarity,
@@ -8,20 +9,9 @@ import {
   ICardv1,
   isIUnitv1,
 } from '@src/commons/CardStruct';
+import { ICardFilterDef, FilterDefBuilder } from '@src/commons/cardFilter/CardFiler';
 
 declare var __cardDB: ICardv1[];
-
-export interface IFilter
-{
-  name?: string;
-  cardTypes?: CardType[];
-  tags?: string[];
-  rarities?: CardRarity[];
-  cardColors?: CardColor[];
-  factions?: Factionv1[];
-  sets?: CardSet[];
-  loyalty?: CardLoyalty;
-}
 
 export interface ICardFilterOption<T>
 {
@@ -54,105 +44,16 @@ export class CardService
     return __cardDB as ICardv1[];
   }
 
-  public getFiltered(filter: IFilter): ICardv1[]
+  public getFiltered(filter: ICardFilterDef): ICardv1[]
   {
-    return new Filter(filter, this.getAllCards())
+    return new FilterDefBuilder(filter, this.getAllCards())
       .get();
   }
 
-  public getOptions(filter: IFilter): ICardFilterOptionSets
+  public getOptions(filter: ICardFilterDef): ICardFilterOptionSets
   {
     return new ICardFilterOptionSetsBuilder(this.getFiltered(filter))
       .build();
-  }
-
-}
-
-class Filter
-{
-  constructor(private filter: IFilter, private cards: ICardv1[]) { }
-
-  public get(): ICardv1[]
-  {
-    return this.cards
-      .filter(c =>
-      {
-        return this.filterByName(this.filter, c)
-          && this.filterByCardType(this.filter, c)
-          && this.filterByTag(this.filter, c)
-          && this.filterByRarity(this.filter, c)
-          && this.filterByCardColor(this.filter, c)
-          && this.filterByFaction(this.filter, c)
-          && this.filterBySet(this.filter, c)
-          && this.filterByLoyalty(this.filter, c);
-      });
-  }
-
-  private filterByName(f: IFilter, c: ICardv1): boolean
-  {
-    return f.name
-      ? c.name.toLocaleLowerCase().indexOf(f.name.toLocaleLowerCase()) === 0
-      : true;
-  }
-
-  private filterByCardType(f: IFilter, c: ICardv1): boolean
-  {
-    return f.cardTypes && f.cardTypes.length > 0
-      ? f.cardTypes.indexOf(c.cardType) !== -1
-      : true;
-  }
-
-  private filterByTag(f: IFilter, c: ICardv1): boolean
-  {
-    if (f.tags === undefined || f.tags.length === 0)
-    {
-      return true;
-    }
-
-    for (const tag of f.tags)
-    {
-      if (c.tags.indexOf(tag) !== -1)
-      {
-        return true;
-      }
-    }
-
-    return false;
-  }
-
-  private filterByRarity(f: IFilter, c: ICardv1): boolean
-  {
-    return f.rarities && f.rarities.length > 0
-      ? f.rarities.indexOf(c.rarity) !== -1
-      : true;
-  }
-
-  private filterByCardColor(f: IFilter, c: ICardv1): boolean
-  {
-    return f.cardColors && f.cardColors.length > 0
-      ? f.cardColors.indexOf(c.cardColor) !== -1
-      : true;
-  }
-
-  private filterByFaction(f: IFilter, c: ICardv1): boolean
-  {
-    return f.factions && f.factions.length > 0
-      ? f.factions.indexOf(c.faction) !== -1
-      : true;
-  }
-
-  private filterBySet(f: IFilter, c: ICardv1): boolean
-  {
-    return f.sets && f.sets.length > 0
-      ? f.sets.indexOf(c.set) !== -1
-      : true;
-  }
-
-  private filterByLoyalty(f: IFilter, c: ICardv1): boolean
-  {
-    return f.loyalty
-      ? isIUnitv1(c) && (f.loyalty === CardLoyalty.BOTH || f.loyalty === c.loyalty)
-      : true;
   }
 
 }
