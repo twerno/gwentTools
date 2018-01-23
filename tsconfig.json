@@ -3,10 +3,10 @@
     "baseUrl": "./src/", // enables relative imports to root
     "paths": {
       "@src/*": [
-        "main/js/*"
+        "main/*"
       ],
       "@test/*": [
-        "test/js/*"
+        "test/*"
       ]
     },
     "module": "commonjs",

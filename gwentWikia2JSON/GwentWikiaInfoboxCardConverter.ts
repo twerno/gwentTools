@@ -1,15 +1,6 @@
-import {
-  CardColor,
-  CardLoyalty,
-  CardRarity,
-  CardSet,
-  CardType,
-  Factionv1,
-  ICardv1,
-  IUnitv1,
-} from '../src/main/js/commons/CardStruct';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { IInfobox } from './GwentWikiaInfoboxParser';
+import { ICardv1, CardType, IUnitv1, CardColor, Factionv1, CardRarity, CardSet, CardLoyalty } from '@src/commons/card/CardStruct';
 
 export class GwentWikiaInfoboxCardConverter
 {

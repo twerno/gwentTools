@@ -4,7 +4,7 @@ const WebpackNotifierPlugin = require('webpack-notifier')
 
 module.exports = {
   entry: [
-    './src/main/js/index.tsx'
+    './src/main/index.tsx'
   ],
   output: {
     filename: 'gwentTools.js',
@@ -12,14 +12,14 @@ module.exports = {
     path: path.resolve(__dirname, './dist/js')
   },
   resolve: {
-    alias: { '@src': path.resolve('src/main/js') },
+    alias: { '@src': path.resolve('src/main') },
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
-    modules: ['src/main/js', 'node_modules'],
+    modules: ['src/main', 'node_modules'],
   },
   module: {
     rules:
       [
-        { test: /\.tsx?$/, loaders: ['babel-loader', 'awesome-typescript-loader'], include: path.resolve('src/main/js') },
+        { test: /\.tsx?$/, loaders: ['babel-loader', 'awesome-typescript-loader'], include: path.resolve('src/main') },
         {
           test: /\.less$/,
           use: [

@@ -38,8 +38,8 @@
     ],
     "moduleNameMapper": {
       "^.+\\.(css|less)$": "identity-obj-proxy",
-      "@src/(.*)": "<rootDir>/src/main/js/$1",
-      "@test/(.*)": "<rootDir>/src/test/js/$1"
+      "@src/(.*)": "<rootDir>/src/main/$1",
+      "@test/(.*)": "<rootDir>/src/test/$1"
     }
   },
   "jest-junit": {
