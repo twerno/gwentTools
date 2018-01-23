@@ -45,15 +45,20 @@ export class BasicFilterService
     ]
       .filter(f => f !== this.empty);
 
-    return { operator: 'AND', filters };
+    return filters.length === 0 ? {} : { operator: 'AND', filters };
   }
 
   private innerFilter<T>(list: T[] | undefined, mapper: (e: T) => ICardFilterDef): CardFilterType
   {
-    if (list && list.length > 0)
+    if (list && list.length === 1)
     {
-      return { operator: 'OR', filters: list.map(mapper) };
+      return list.map(mapper)[0];
     }
+    else
+      if (list && list.length > 1)
+      {
+        return { operator: 'OR', filters: list.map(mapper) };
+      }
     return this.empty;
   }
 }

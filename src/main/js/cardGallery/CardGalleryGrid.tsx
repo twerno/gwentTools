@@ -34,7 +34,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 
   public renderCard(card: ICardv1)
   {
-    return <div key={`preview-${card.url}`} style={{ flex: '1 0 calc(100% / 3)', padding: '10px' }}>
+    return <div key={`preview-${card.url}`} style={{ flex: '1 0 calc(100% / 5)', padding: '10px' }}>
       {this.cardendererPicker(this.props.renderer, card)}
     </div>;
   }

@@ -72,11 +72,6 @@ export class CardFilterHelper
 
   private internalCardFilter(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
-    if (filter.filters.length === 0)
-    {
-      return [];
-    }
-
     if (filter.operator === 'AND')
     {
       return this.internalFilterAnd(cards, filter);
@@ -130,11 +125,11 @@ export class CardFilterHelper
 
   private internalICardFIlterDef(cards: ICardv1[], filter: ICardFilterDef): ICardv1[]
   {
-    return FilterDefBuilder.filter(cards, filter);
+    return FilterDefCardPicker.filter(cards, filter);
   }
 }
 
-class FilterDefBuilder
+class FilterDefCardPicker
 {
   public static filter(cards: ICardv1[], filterDef: ICardFilterDef): ICardv1[]
   {
@@ -145,15 +140,15 @@ class FilterDefBuilder
 
     return cards.filter(c =>
     {
-      return FilterDefBuilder.filterByName(filterDef, c)
-        && FilterDefBuilder.genFilter(filterDef.cardType, c.cardType)
-        && FilterDefBuilder.filterByTag(filterDef, c)
-        && FilterDefBuilder.genFilter(filterDef.cardColor, c.cardColor)
-        && FilterDefBuilder.genFilter(filterDef.rarity, c.rarity)
-        && FilterDefBuilder.genFilter(filterDef.faction, c.faction)
-        && FilterDefBuilder.genFilter(filterDef.set, c.set)
-        && FilterDefBuilder.filterByLoyalty(filterDef, c)
-        && FilterDefBuilder.genFilter(filterDef.isCollectable, c.collectable);
+      return FilterDefCardPicker.filterByName(filterDef, c)
+        && FilterDefCardPicker.genFilter(filterDef.cardType, c.cardType)
+        && FilterDefCardPicker.filterByTag(filterDef, c)
+        && FilterDefCardPicker.genFilter(filterDef.cardColor, c.cardColor)
+        && FilterDefCardPicker.genFilter(filterDef.rarity, c.rarity)
+        && FilterDefCardPicker.genFilter(filterDef.faction, c.faction)
+        && FilterDefCardPicker.genFilter(filterDef.set, c.set)
+        && FilterDefCardPicker.filterByLoyalty(filterDef, c)
+        && FilterDefCardPicker.genFilter(filterDef.isCollectable, c.collectable);
     });
 
   }
