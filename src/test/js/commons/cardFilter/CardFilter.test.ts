@@ -10,7 +10,7 @@ test('Card filter test 1', () =>
   const filter: CardFilterType =
     {
       operator: 'AND',
-      filter: [
+      filters: [
         { cardColor: CardColor.BRONZE },
         { cardType: CardType.UNIT },
         { faction: Factionv1.MONSTERS }
@@ -29,10 +29,10 @@ test('Card filter test 2', () =>
   const filter: CardFilterType =
     {
       operator: 'OR',
-      filter: [
+      filters: [
         {
           operator: 'AND',
-          filter: [
+          filters: [
             { cardColor: CardColor.BRONZE },
             { cardType: CardType.UNIT },
             { faction: Factionv1.MONSTERS }
@@ -56,17 +56,17 @@ test('Card filter test 3', () =>
   const filter: CardFilterType =
     {
       operator: 'AND',
-      filter: [
+      filters: [
         {
           operator: 'OR',
-          filter: [
+          filters: [
             { cardColor: CardColor.BRONZE },
             { cardColor: CardColor.GOLD },
           ]
         },
         {
           operator: 'NOT',
-          filter: { faction: Factionv1.NEUTRAL }
+          filters: [{ faction: Factionv1.NEUTRAL }]
         }
       ]
     };

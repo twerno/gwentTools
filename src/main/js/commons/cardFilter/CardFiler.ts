@@ -17,112 +17,92 @@ export interface ICardFilterDef
   isCollectable?: boolean;
 }
 
-export type CardFilterType = ICardFilterDef | ICardFIlterAndOr | ICardFilterNot;
+export type CardFilterType = ICardFilterDef | ICardFIlter;
 
-export interface ICardFIlterAndOr
+export interface ICardFIlter
 {
-  operator: 'AND' | 'OR';
-  filter: CardFilterType[];
-}
-
-export interface ICardFilterNot
-{
-  operator: 'NOT';
-  filter: ICardFilterDef | ICardFIlterAndOr;
+  id?: string;
+  operator: 'AND' | 'OR' | 'NOT';
+  filters: CardFilterType[];
 }
 
 export class CardFilterHelper
 {
   public filter(cards: ICardv1[], filter: CardFilterType): ICardv1[]
   {
-    return this.internalFilter(cards, filter);
-  }
-
-  private internalFilter(cards: ICardv1[], filter: CardFilterType): ICardv1[]
-  {
     if (filter === null || filter === undefined)
     {
-      throw new Error('Filter cant be null');
+      throw new Error('Filter cant be null.');
     }
     else
-      if (this.isIFilterAndOr(filter))
+      if (CardFilterHelper.isCardIFilter(filter))
       {
-        return this.internalFilterAndOr(cards, filter);
+        return this.internalCardFilter(cards, filter);
       }
       else
-        if (this.isFilterNot(filter))
+        if (CardFilterHelper.isICardFilterDef(filter))
         {
-          return this.internalFilterNot(cards, filter);
+          return this.internalICardFIlterDef(cards, filter);
         }
         else
-          if (this.isIFilterDef(filter))
-          {
-            return this.internalIFIlterDef(cards, filter);
-          }
-          else
-          {
-            throw new Error('Unknown filter type: ' + filter);
-          }
+        {
+          throw new Error(`Unknown filter type: ${filter}.`);
+        }
   }
 
-  private isFilterNot(filter: any): filter is ICardFilterNot
+  public static isCardIFilter(filter: any): filter is ICardFIlter
   {
     const operatorProp = 'operator';
-    const filterProp = 'filter';
+    const filterProp = 'filters';
     return filter
       && filter[operatorProp]
       && filter[filterProp]
-      && filter[operatorProp] === 'NOT';
+      && (filter[operatorProp] === 'AND' || filter[operatorProp] === 'OR' || filter[operatorProp] === 'NOT');
   }
 
-  private isIFilterAndOr(filter: any): filter is ICardFIlterAndOr
+  public static isICardFilterDef(filter: any): filter is ICardFilterDef
   {
     const operatorProp = 'operator';
-    const filterProp = 'filter';
-    return filter
-      && filter[operatorProp]
-      && filter[filterProp]
-      && (filter[operatorProp] === 'AND' || filter[operatorProp] === 'OR');
-  }
-
-  private isIFilterDef(filter: any): filter is ICardFilterDef
-  {
-    const operatorProp = 'operator';
-    const filterProp = 'filter';
+    const filterProp = 'filters';
     return filter
       && !filter[operatorProp]
       && !filter[filterProp];
   }
 
-  private internalFilterAndOr(cards: ICardv1[], filter: ICardFIlterAndOr): ICardv1[]
+  private internalCardFilter(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
     if (filter.operator === 'AND')
     {
       return this.internalFilterAnd(cards, filter);
     }
     else
-    {
-      return this.internalFilterOr(cards, filter);
-    }
+      if (filter.operator === 'OR')
+      {
+        return this.internalFilterOr(cards, filter);
+      }
+      else
+      {
+        return this.internalFilterNot(cards, filter);
+      }
   }
 
-  private internalFilterAnd(cards: ICardv1[], filter: ICardFIlterAndOr): ICardv1[]
+  private internalFilterAnd(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
-    let result = [...cards];
-    for (const f of filter.filter)
+    let result = cards;
+    for (const f of filter.filters)
     {
-      result = this.internalFilter(result, f);
+      result = this.filter(result, f);
     }
 
     return result;
   }
 
-  private internalFilterOr(cards: ICardv1[], filter: ICardFIlterAndOr): ICardv1[]
+  private internalFilterOr(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
     const results: ICardv1[][] = [];
-    for (const f of filter.filter)
+    for (const f of filter.filters)
     {
-      results.push(this.internalFilter(cards, f));
+      results.push(this.filter(cards, f));
     }
 
     return results
@@ -130,14 +110,19 @@ export class CardFilterHelper
       .filter((c, index, arr) => arr.indexOf(c) === index);
   }
 
-  private internalFilterNot(cards: ICardv1[], filter: ICardFilterNot): ICardv1[]
+  private internalFilterNot(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
-    const filtered = this.internalFilter(cards, filter.filter);
-    return cards
-      .filter(c => filtered.findIndex(c2 => c === c2) === -1);
+    let result = cards;
+    for (const f of filter.filters)
+    {
+      const filtered = this.filter(result, f);
+      result = result.filter(c => filtered.findIndex(c2 => c === c2) === -1);
+    }
+
+    return result;
   }
 
-  private internalIFIlterDef(cards: ICardv1[], filter: ICardFilterDef): ICardv1[]
+  private internalICardFIlterDef(cards: ICardv1[], filter: ICardFilterDef): ICardv1[]
   {
     return FilterDefBuilder.filter(cards, filter);
   }
