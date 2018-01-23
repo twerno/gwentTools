@@ -1,3 +1,5 @@
+import { ICardAbility } from "@src/commons/card/Ability";
+
 export enum Factionv1
 {
   NEUTRAL = 'NEUTRAL',
@@ -50,7 +52,7 @@ export interface ICardv1
   faction: Factionv1;
   set: CardSet;
   collectable: boolean;
-  // abilities: object[];
+  abilities?: ICardAbility[];
   cardText: string[];
   url: string;
 }

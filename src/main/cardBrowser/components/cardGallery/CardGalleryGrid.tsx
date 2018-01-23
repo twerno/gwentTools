@@ -7,11 +7,13 @@ import { MediumCard } from '@src/cardBrowser/components/card/MediumCard';
 import { WideCard } from '@src/cardBrowser/components/card/WideCard';
 import { CardSmall } from '@src/cardBrowser/components/card/CardSmall';
 import { CardSmallPreview } from '@src/cardBrowser/components/card/CardSmallPreview';
+import { BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
 
 export interface CardGalleryGridProps
 {
-  renderer: CardRenderer;
   cards: ICardv1[];
+  renderer: CardRenderer;
+  basicCardService: BasicFilterService;
 }
 
 export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
@@ -44,7 +46,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
     {
       case CardRenderer.CARD_MEDIUM: return <MediumCard card={card} mobileView={false} />;
       case CardRenderer.CARD_MEDIUM_MOBILE: return <MediumCard card={card} mobileView={true} />;
-      case CardRenderer.CARD_WIDE: return <WideCard card={card} />;
+      case CardRenderer.CARD_WIDE: return <WideCard card={card} basicCardService={this.props.basicCardService} />;
       case CardRenderer.CARD_SMALL: return <CardSmall card={card} />;
       case CardRenderer.PREVIEW: return <CardSmallPreview card={card} />;
     }

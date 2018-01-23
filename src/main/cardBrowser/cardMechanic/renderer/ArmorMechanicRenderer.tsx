@@ -1,9 +1,9 @@
 import * as React from 'react';
-import { ArmorMechanic } from '@src/cardBrowser/cardMechanic/renderer/Mechanic';
+import { ArmorAbility } from '@src/commons/card/Ability';
 
 export interface ArmorMechanicRendererProps
 {
-  mechanic: ArmorMechanic;
+  mechanic: ArmorAbility;
 }
 
 export class ArmorMechanicRendererBasic extends React.PureComponent<ArmorMechanicRendererProps, {}> {

@@ -22,6 +22,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
 
   private service: CardService = new CardService();
   private basicFilterService = new BasicFilterService(this.service);
+  private basicCardService = new BasicFilterService(this.service);
 
   public constructor(props: {}, context?: any)
   {
@@ -40,7 +41,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
 
     const layout = this.state.renderer === CardRenderer.TABLE
       ? <CardGalleryTable cards={cards} />
-      : <CardGalleryGrid cards={cards} renderer={this.state.renderer} />;
+      : <CardGalleryGrid cards={cards} renderer={this.state.renderer} basicCardService={this.basicCardService} />;
 
     return (
       <>

@@ -3,12 +3,14 @@ import './WideCard.less';
 
 import * as React from 'react';
 import { ICardv1 } from '@src/commons/card/CardStruct';
-import { CardRendererHelper } from '@src/cardBrowser/cardMechanic/CardRenderer.helper';
 import { cardRarity2Gem, cardFaction2FrameWide } from '@src/commons/assets/GwentAssets.helper';
+import { CardRendererHelper } from '@src/cardBrowser/components/card/Card.helper';
+import { BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
 
 export interface WideCardProps
 {
   card: ICardv1;
+  basicCardService: BasicFilterService;
 }
 
 export class WideCard extends React.Component<WideCardProps, {}> {
@@ -45,7 +47,7 @@ export class WideCard extends React.Component<WideCardProps, {}> {
           </div>
           <div className={`${css}_text ${css}_vertical_middle_wrapper`}>
             <div className={`${css}_vertical_middle`}>
-              {this.helper.cardText2Str(card.cardText)}
+              {this.helper.cardText2Str(card, this.props.basicCardService)}
             </div>
           </div>
         </div>
