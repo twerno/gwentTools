@@ -76,3 +76,24 @@ test('Card filter test 3', () =>
   expect(filtered.length).toBe(1);
   expect(filtered[0]).toBe(testCardSet[0]);
 });
+
+test('Card filter test 4', () =>
+{
+  const filter: CardFilterType =
+    {
+      operator: 'AND',
+      filters: []
+    };
+
+  const filtered = helper.filter(testCardSet, filter);
+
+  expect(filtered.length).toBe(0);
+});
+
+test('Card filter test 5', () =>
+{
+  const filter: CardFilterType = {};
+  const filtered = helper.filter(testCardSet, filter);
+
+  expect(filtered.length).toBe(0);
+});

@@ -7,7 +7,7 @@ import
 export const testCardSet: Array<ICardv1 | IUnitv1> = [
   {
     cardColor: CardColor.BRONZE,
-    cardText: '',
+    cardText: [''],
     cardType: CardType.UNIT,
     collectable: true,
     faction: Factionv1.MONSTERS,
@@ -23,7 +23,7 @@ export const testCardSet: Array<ICardv1 | IUnitv1> = [
   },
   {
     cardColor: CardColor.BRONZE,
-    cardText: '',
+    cardText: [''],
     cardType: CardType.SPECIAL,
     collectable: true,
     faction: Factionv1.NEUTRAL,
@@ -36,7 +36,7 @@ export const testCardSet: Array<ICardv1 | IUnitv1> = [
   },
   {
     cardColor: CardColor.GOLD,
-    cardText: '',
+    cardText: [''],
     cardType: CardType.LEADER,
     collectable: true,
     faction: Factionv1.NEUTRAL,

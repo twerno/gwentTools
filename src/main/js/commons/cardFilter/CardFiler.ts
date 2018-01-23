@@ -3,6 +3,7 @@ import
   CardType, CardRarity, CardColor, Factionv1,
   CardSet, CardLoyalty, ICardv1, isIUnitv1
 } from '@src/commons/CardStruct';
+import { isObjectEmpty } from '@src/commons/ObjectHelper';
 
 export interface ICardFilterDef
 {
@@ -71,6 +72,11 @@ export class CardFilterHelper
 
   private internalCardFilter(cards: ICardv1[], filter: ICardFIlter): ICardv1[]
   {
+    if (filter.filters.length === 0)
+    {
+      return [];
+    }
+
     if (filter.operator === 'AND')
     {
       return this.internalFilterAnd(cards, filter);
@@ -132,6 +138,11 @@ class FilterDefBuilder
 {
   public static filter(cards: ICardv1[], filterDef: ICardFilterDef): ICardv1[]
   {
+    if (isObjectEmpty(filterDef))
+    {
+      return [];
+    }
+
     return cards.filter(c =>
     {
       return FilterDefBuilder.filterByName(filterDef, c)

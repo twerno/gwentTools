@@ -1,5 +1,6 @@
 import { ICardv1 } from '@src/commons/CardStruct';
-import { IFilterDef } from '@src/cardBrowser/CardService';
+import { } from '@src/cardBrowser/CardService';
+import { CardFilterType } from '@src/commons/cardFilter/CardFiler';
 
 export type gwentMechanic = 'SPAWN' | 'DEPLOY' | 'ARMOR';
 
@@ -8,14 +9,10 @@ export interface IGameMechanic
   mechanicId: gwentMechanic;
 }
 
-export interface ICardFilter extends 
-{
-}
-
 export interface SpawnMechanic extends IGameMechanic
 {
   mechanicId: gwentMechanic & 'SPAWN';
-  cards: ICardv1[] | IFilterDef;
+  cards: CardFilterType;
 }
 
 export interface DeployMechanic extends IGameMechanic

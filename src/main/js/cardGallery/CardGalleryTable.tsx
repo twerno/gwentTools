@@ -1,11 +1,10 @@
-import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
+import { CardService } from '@src/cardBrowser/CardService';
 import { ICardv1, isIUnitv1 } from '@src/commons/CardStruct';
 import * as React from 'react';
 
 export interface CardGalleryTableProps
 {
-  filter: IFilterDef;
-  service: CardService;
+  cards: ICardv1[];
 }
 
 export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
@@ -40,9 +39,8 @@ export class CardGalleryTable extends React.Component<CardGalleryTableProps, {}>
 
   private renderCards(): JSX.Element
   {
-    const cards = this.props.service.getFiltered(this.props.filter);
     return <>
-      {cards.map(card => this.renderCard(card))}
+      {this.props.cards.map(card => this.renderCard(card))}
       </>;
   }
 

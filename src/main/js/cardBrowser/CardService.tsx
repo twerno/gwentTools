@@ -9,7 +9,8 @@ import
   ICardv1,
   isIUnitv1,
 } from '@src/commons/CardStruct';
-import { ICardFilterDef, FilterDefBuilder } from '@src/commons/cardFilter/CardFiler';
+import { ICardFilterDef, CardFilterHelper, CardFilterType } from '@src/commons/cardFilter/CardFiler';
+import { } from '@src/cardBrowser/card/mechanic/Mechanic';
 
 declare var __cardDB: ICardv1[];
 
@@ -39,18 +40,19 @@ export interface IMap<T>
 export class CardService
 {
 
+  private filterHelper: CardFilterHelper = new CardFilterHelper();
+
   public getAllCards(): ICardv1[]
   {
     return __cardDB as ICardv1[];
   }
 
-  public getFiltered(filter: ICardFilterDef): ICardv1[]
+  public getFiltered(filter: CardFilterType): ICardv1[]
   {
-    return new FilterDefBuilder(filter, this.getAllCards())
-      .get();
+    return this.filterHelper.filter(this.getAllCards(), filter);
   }
 
-  public getOptions(filter: ICardFilterDef): ICardFilterOptionSets
+  public getOptions(filter: CardFilterType): ICardFilterOptionSets
   {
     return new ICardFilterOptionSetsBuilder(this.getFiltered(filter))
       .build();

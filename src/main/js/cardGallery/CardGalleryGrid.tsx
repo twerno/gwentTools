@@ -2,7 +2,7 @@ import './CardGalleryGrid.css';
 
 import { WideCard } from '@src/cardBrowser/card/WideCard';
 import { CardRenderer } from '@src/cardBrowser/CardBrowserComponent';
-import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
+import { CardService } from '@src/cardBrowser/CardService';
 import { CardSmall } from '@src/cardGallery/CardSmall';
 import { MediumCard } from '@src/cardGallery/MediumCard';
 import { CardSmallPreview } from '@src/cardGallery/SmallCadPreview';
@@ -12,8 +12,7 @@ import * as React from 'react';
 export interface CardGalleryGridProps
 {
   renderer: CardRenderer;
-  filter: IFilterDef;
-  service: CardService;
+  cards: ICardv1[];
 }
 
 export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
@@ -26,10 +25,11 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 
   public render()
   {
-    const cards = this.props.service.getFiltered(this.props.filter);
-    return <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-      {cards.map(card => this.renderCard(card))}
-    </div>;
+    return (
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+        {this.props.cards.map(card => this.renderCard(card))}
+      </div>
+    );
   }
 
   public renderCard(card: ICardv1)

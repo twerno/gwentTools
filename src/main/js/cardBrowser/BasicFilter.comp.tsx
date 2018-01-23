@@ -12,21 +12,22 @@ import
 } from '@src/commons/CardStruct';
 import * as React from 'react';
 import * as Select from 'react-select';
-import { ICardFilterDef } from '@src/commons/cardFilter/CardFiler';
+import { ICardFilterDef, ICardFIlter, CardFilterHelper } from '@src/commons/cardFilter/CardFiler';
+import { IBasicCardFilter, BasicFilterService } from '@src/cardBrowser/BasicFilter.service';
 
-export interface CardFilterComponentProp
+export interface BasicFilterCompProps
 {
-  filter: ICardFilterDef;
   service: CardService;
-  onFilterChange: (newFilter: ICardFilterDef) => void;
+  basicCardFilter: IBasicCardFilter;
+  onFilterChange: (newBasicFilter: IBasicCardFilter) => void;
+  basicFilterService: BasicFilterService;
 }
 
-export class CardFilterComponent extends React.Component<CardFilterComponentProp, {}> {
+export class BasicFilterComp extends React.Component<BasicFilterCompProps, {}> {
 
   public render()
   {
-    const options = this.props.service.getOptions(this.props.filter);
-
+    const options = this.props.service.getOptions(this.props.basicCardFilter);
     return (
       <>
       <div className="row">
@@ -35,7 +36,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="rarities"
-            value={this.props.filter.rarities}
+            value={this.props.basicCardFilter.rarities}
             onChange={selection => this.cardRarityChangeHandler(selection)}
             options={this.mapSet2Options(options.rarities)}
             placeholder="Any rarity"
@@ -46,7 +47,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="cardTypes"
-            value={this.props.filter.cardTypes}
+            value={this.props.basicCardFilter.cardTypes}
             onChange={selection => this.cardTypeChangeHandler(selection)}
             options={this.mapSet2Options(options.cardTypes)}
             placeholder="Any type"
@@ -57,7 +58,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="factions"
-            value={this.props.filter.factions}
+            value={this.props.basicCardFilter.factions}
             onChange={selection => this.cardFactionChangeHandler(selection)}
             options={this.mapSet2Options(options.factions)}
             placeholder="Any faction"
@@ -68,7 +69,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="tags"
-            value={this.props.filter.tags}
+            value={this.props.basicCardFilter.tags}
             onChange={selection => this.cardTagsChangeHandler(selection)}
             options={this.mapSet2Options(options.tags)}
             placeholder="Any tag"
@@ -79,7 +80,7 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="loyalty"
-            value={this.props.filter.loyalty}
+            value={this.props.basicCardFilter.loyalty}
             onChange={selection => this.cardLoyaltyChangeHandler(selection)}
             options={this.mapSet2Options(options.loyalty)}
             placeholder="Any loyalty"
@@ -90,14 +91,18 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
           <Select.default
             multi={true}
             name="set"
-            value={this.props.filter.sets}
+            value={this.props.basicCardFilter.sets}
             onChange={selection => this.cardSetsChangeHandler(selection)}
             options={this.mapSet2Options(options.sets)}
             placeholder="Any Set"
           />
         </div>
       </div>
-      {JSON.stringify(this.props.filter)}
+      <div style={{ color: 'white' }}>
+        BasicFilter: {JSON.stringify(this.props.basicCardFilter)}
+        <br />
+        Filter: {JSON.stringify(this.props.basicFilterService.basicFilter2Filter(this.props.basicCardFilter))}
+      </div>
       </>
     );
   }
@@ -153,9 +158,9 @@ export class CardFilterComponent extends React.Component<CardFilterComponentProp
     this.callOnChange({ sets });
   }
 
-  private callOnChange(changes: IFilterDef): void
+  private callOnChange(changes: IBasicCardFilter): void
   {
-    this.props.onFilterChange({ ...this.props.filter, ...changes });
+    this.props.onFilterChange({ ...this.props.basicCardFilter, ...changes });
   }
 
   private mapSet2Options(set: Array<ICardFilterOption<any>>): Select.Options

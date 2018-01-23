@@ -1,9 +1,11 @@
-import { CardService, IFilterDef } from '@src/cardBrowser/CardService';
-import { CardFilterComponent } from '@src/cardBrowser/FilterComponent';
+import { CardService, } from '@src/cardBrowser/CardService';
+
 import { CardGalleryGrid } from '@src/cardGallery/CardGalleryGrid';
 import { CardGalleryTable } from '@src/cardGallery/CardGalleryTable';
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
+import { IBasicCardFilter, BasicFilterService } from '@src/cardBrowser/BasicFilter.service';
+import { BasicFilterComp } from '@src/cardBrowser/BasicFilter.comp';
 
 export enum CardRenderer
 {
@@ -12,37 +14,41 @@ export enum CardRenderer
 
 export interface CardBrowserComponentState
 {
-  filter: IFilterDef;
+  basicFilter: IBasicCardFilter;
   renderer: CardRenderer;
 }
 
 export class CardBrowserComponent extends React.Component<{}, CardBrowserComponentState> {
 
   private service: CardService = new CardService();
+  private basicFilterService = new BasicFilterService(this.service);
 
   public constructor(props: {}, context?: any)
   {
     super(props, context);
-    this.state = { filter: {}, renderer: CardRenderer.CARD_MEDIUM };
+    this.state = { basicFilter: {}, renderer: CardRenderer.CARD_MEDIUM };
   }
 
-  private onFilterChange(filter: IFilterDef): void
+  private onFilterChange(basicFilter: IBasicCardFilter): void
   {
-    this.setState({ filter });
+    this.setState({ basicFilter });
   }
 
   public render()
   {
+    const cards = this.basicFilterService.filter(this.state.basicFilter);
+
     const layout = this.state.renderer === CardRenderer.TABLE
-      ? <CardGalleryTable service={this.service} filter={this.state.filter} />
-      : <CardGalleryGrid service={this.service} filter={this.state.filter} renderer={this.state.renderer} />;
+      ? <CardGalleryTable cards={cards} />
+      : <CardGalleryGrid cards={cards} renderer={this.state.renderer} />;
 
     return (
       <>
-      <CardFilterComponent
+      <BasicFilterComp
         service={this.service}
-        filter={this.state.filter}
+        basicCardFilter={this.state.basicFilter}
         onFilterChange={filter => this.onFilterChange(filter)}
+        basicFilterService={this.basicFilterService}
       />
       <div style={{ paddingBottom: '40px' }}>
         <Button onClick={() => this.setRenderer(CardRenderer.CARD_MEDIUM_MOBILE)}>CARD MOBILE</Button>&nbsp;
