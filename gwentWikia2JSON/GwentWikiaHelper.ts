@@ -52,4 +52,20 @@ export abstract class GwentWikiaHelper
     // tslint:disable-next-line:no-empty
     fs.mkdir(dir, (err) => { });
   }
+
+  public static readFromDisk(filename: string): string
+  {
+    return fs.readFileSync(filename, 'utf8');
+  }
+
+  public static deleteFileIfExists(filename: string): void
+  {
+    try
+    {
+      fs.unlinkSync(filename);
+    } catch (e)
+    // tslint:disable-next-line:no-empty
+    {
+    }
+  }
 }

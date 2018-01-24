@@ -1,6 +1,10 @@
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { IInfobox } from './GwentWikiaInfoboxParser';
-import { ICardv1, CardType, IUnitv1, CardColor, Factionv1, CardRarity, CardSet, CardLoyalty } from '@src/commons/card/CardStruct';
+import
+{
+  ICardv1, CardType, IUnitv1, CardColor, Factionv1,
+  CardRarity, CardSet, CardLoyalty
+} from '../src/main/commons/card/CardStruct';
 
 export class GwentWikiaInfoboxCardConverter
 {
@@ -16,7 +20,7 @@ export class GwentWikiaInfoboxCardConverter
     {
       const result: ICardv1 = {
         id: '',
-        url: infobox.url || '',
+        url: this.url(infobox),
         name: this.name(infobox),
         cardColor: this.cardColor(infobox),
         cardText: this.cardText(infobox),
@@ -43,6 +47,12 @@ export class GwentWikiaInfoboxCardConverter
 
       throw e;
     }
+  }
+
+  private url(infobox: IInfobox): string
+  {
+    // return decodeURIComponent(infobox.url || '');
+    return infobox.url || '';
   }
 
   private name(infobox: IInfobox): string
