@@ -16,6 +16,7 @@ export interface IBasicCardFilter
   factions?: Factionv1[];
   sets?: CardSet[];
   loyalty?: CardLoyalty;
+  isCollectable?: boolean;
 }
 
 export class BasicFilterService
@@ -46,6 +47,7 @@ export class BasicFilterService
       this.innerFilter(basicFilter.sets, s => ({ set: s })),
       this.innerFilter(basicFilter.tags, t => ({ tag: t })),
       basicFilter.loyalty ? { loyalty: basicFilter.loyalty } : this.empty,
+      basicFilter.isCollectable ? { isCollectable: basicFilter.isCollectable } : this.empty
     ]
       .filter(f => f !== this.empty);
 

@@ -169,8 +169,8 @@ class FilterDefCardPicker
 
   private static filterByTag(f: ICardFilterDef, c: ICardv1): boolean
   {
-    return f.tag && c.tags.length > 0
-      ? c.tags.map(t => t === f.tag).reduce((a, b) => a && b)
+    return f.tag
+      ? c.tags.length > 0 && c.tags.find(t => t === f.tag) !== undefined
       : true;
   }
 
