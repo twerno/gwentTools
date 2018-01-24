@@ -28,7 +28,7 @@ export class CardSmallPreview extends React.Component<CardSmallPreviewProps, Car
 
     return <div className="cardPreview">
       {/* <CardSmall card={{ ...card, name: '' }} /> */}
-      <img src="../remoteAssets/card_test.png" style={{ width: '100px' }} />
+      <img src="../remoteAssets/card_test.png" style={{ width: '100px', marginLeft: '-10px' }} />
       <div
         className="cardTextBox"
         onMouseEnter={() => this.setState({ highlight: true })}
