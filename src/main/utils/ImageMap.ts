@@ -7,7 +7,7 @@ export interface IImageMapEl
 export const imageMap: IImageMapEl[] = [
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Abaya',
-    imgId: ''
+    imgId: '141'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Adda`,
@@ -23,7 +23,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aelirenn`,
-    imgId: ''
+    imgId: '206'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aeromancer`,
@@ -35,7 +35,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Agla%C3%AFs`,
-    imgId: ''
+    imgId: '193'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Agla%C3%AFs_(Alpha)`,
@@ -107,7 +107,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Ancient_Foglet`,
-    imgId: ''
+    imgId: '159'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Ancient_Foglet_(Alpha)`,
@@ -115,7 +115,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Arachas_Behemoth`,
-    imgId: `00001`
+    imgId: [`00001`, '139']
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Arachas_Behemoth_(Alpha)`,
@@ -123,7 +123,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Arachas_Drone`,
-    imgId: ''
+    imgId: '161'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Arachas_Hatchling`,
@@ -147,11 +147,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Archgriffin`,
-    imgId: ''
+    imgId: '164'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Arena_Champion`,
-    imgId: ''
+    imgId: '241'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Aretuza_Adept`,
@@ -183,7 +183,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Avallac'h`,
-    imgId: ''
+    imgId: '135'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Avallac'h:_Mysterious_Elf_(Alpha)`,
@@ -215,7 +215,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Barclay_Els`,
-    imgId: ''
+    imgId: '202'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Bardic_Power_Chords`,
@@ -251,7 +251,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Birna_Bran',
-    imgId: ''
+    imgId: '238'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Biting_Frost_(Alpha)`,
@@ -283,7 +283,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blueboy_Lugos`,
-    imgId: ''
+    imgId: '240'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blueboy_Lugos_(Alpha)`,
@@ -299,7 +299,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blue_Stripes_Commando`,
-    imgId: ''
+    imgId: ['111', '112', '113']
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blue_Stripes_Commando_(Alpha)`,
@@ -307,7 +307,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blue_Stripes_Scout`,
-    imgId: ''
+    imgId: '110'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Blue_Stripes_Scout_(Alpha)`,
@@ -323,7 +323,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Botchling`,
-    imgId: ''
+    imgId: '123'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Boulder`,
@@ -335,15 +335,15 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Braenn`,
-    imgId: ''
+    imgId: '204'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Bran`,
-    imgId: ''
+    imgId: '230'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Brewess`,
-    imgId: ''
+    imgId: '145'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Brewess:_Ritual`,
@@ -355,7 +355,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Brouver`,
-    imgId: ''
+    imgId: '187'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Brouver_Hoog_(Ale_Fest)`,
@@ -379,7 +379,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Caranthir`,
-    imgId: ''
+    imgId: '134'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Caranthir_(Alpha)`,
@@ -387,7 +387,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Caretaker`,
-    imgId: ''
+    imgId: '136'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Caretaker_(Alpha)`,
@@ -407,7 +407,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Celaeno_Harpy`,
-    imgId: ''
+    imgId: '155'
   },
   {
     wikiUrl: `http://gwent.wikia.com/wiki/Celaeno_Harpy_(Ale_Fest)`,
@@ -443,7 +443,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ciaran',
-    imgId: ''
+    imgId: '201'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ciri',
@@ -627,7 +627,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Coral',
-    imgId: ''
+    imgId: '237'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Coral_(Alpha)',
@@ -647,7 +647,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Crach',
-    imgId: ''
+    imgId: '231'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Crach_an_Craite_(Alpha)',
@@ -711,7 +711,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/D\'ao',
-    imgId: ''
+    imgId: '151'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Daerlan_Soldier',
@@ -719,7 +719,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dagon',
-    imgId: ''
+    imgId: '130'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dagon_(Alpha)',
@@ -763,7 +763,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dennis_Cranmer',
-    imgId: ''
+    imgId: '196'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Derran',
@@ -795,7 +795,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Djenge_Frett',
-    imgId: ''
+    imgId: '242'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Djenge_Frett_(Midwinter_Hunt)',
@@ -815,7 +815,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Donar',
-    imgId: ''
+    imgId: '243'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Donar_an_Hindar_(Alpha)',
@@ -839,7 +839,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Draig_Bon-Dhu',
-    imgId: ''
+    imgId: '244'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Draig_Bon-Dhu_(Ale_Fest)',
@@ -851,7 +851,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Draug',
-    imgId: ''
+    imgId: '131'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Draugir',
@@ -867,7 +867,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Drowner',
-    imgId: ''
+    imgId: '173'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Drunken_Dwarf',
@@ -891,7 +891,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dun_Banner',
-    imgId: ''
+    imgId: '115'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dun_Banner_Heavy_Cavalry_(Alpha)',
@@ -907,7 +907,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dwarven_Mercenary',
-    imgId: ''
+    imgId: '220'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dwarven_Mercenary_(Ale_Fest)',
@@ -919,7 +919,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dwarven_Skirmisher',
-    imgId: ''
+    imgId: '214'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Dwarven_Skirmisher_(Ale_Fest)',
@@ -931,7 +931,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Eithn%C3%A9',
-    imgId: ''
+    imgId: '186'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Eithn%C3%A9_(Alpha)',
@@ -939,7 +939,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ekimmara',
-    imgId: ''
+    imgId: '172'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ekimmara_(Saovine)',
@@ -951,11 +951,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ele\'yas',
-    imgId: ''
+    imgId: '209'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Archer',
-    imgId: ''
+    imgId: '219'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Blade',
@@ -963,11 +963,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Marksman',
-    imgId: ''
+    imgId: '223'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Mercenary',
-    imgId: ''
+    imgId: '217'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Mercenary_(Alpha)',
@@ -979,7 +979,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Saboteurs',
-    imgId: ''
+    imgId: '225'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Scout',
@@ -991,7 +991,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Elven_Trapper',
-    imgId: ''
+    imgId: '213'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Emhyr',
@@ -1019,7 +1019,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Eredin',
-    imgId: ''
+    imgId: '128'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Eredin_(Unit)',
@@ -1035,7 +1035,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ermion',
-    imgId: ''
+    imgId: '234'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ermion_(Alpha)',
@@ -1083,7 +1083,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Field_Medic',
-    imgId: ''
+    imgId: '114'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Field_Medic_(Alpha)',
@@ -1115,7 +1115,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Foglet',
-    imgId: ''
+    imgId: '158'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Foglet_(Alpha)',
@@ -1151,11 +1151,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Francesca',
-    imgId: ''
+    imgId: '185'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Frightener',
-    imgId: ''
+    imgId: '142'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Frightener_(Alpha)',
@@ -1191,7 +1191,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Gaunter_O\'Dimm',
-    imgId: ''
+    imgId: '153'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Gaunter_O\'Dimm_(Alpha)',
@@ -1199,7 +1199,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ge\'els',
-    imgId: ''
+    imgId: '129'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ge\'els_(Alpha)',
@@ -1255,7 +1255,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ghoul',
-    imgId: ''
+    imgId: '163'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Giant_Boar',
@@ -1291,11 +1291,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Gremist',
-    imgId: ''
+    imgId: '245'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Griffin',
-    imgId: ''
+    imgId: '171'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Griffin_(Alpha)',
@@ -1315,7 +1315,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Harald_the_Cripple',
-    imgId: ''
+    imgId: '232'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Harald_the_Cripple_(Alpha)',
@@ -1323,11 +1323,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Harpy',
-    imgId: ''
+    imgId: '174'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Harpy_Egg',
-    imgId: ''
+    imgId: '175'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Harpy_Egg_(Ale_Fest)',
@@ -1355,15 +1355,15 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hawker_Healer',
-    imgId: ''
+    imgId: '210'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hawker_Smuggler',
-    imgId: ''
+    imgId: '224'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hawker_Support',
-    imgId: ''
+    imgId: '221'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Headless_Drunkman',
@@ -1399,7 +1399,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hjalmar',
-    imgId: ''
+    imgId: '233'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hjalmar_(Ale_Fest)',
@@ -1411,7 +1411,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Holger_Blackhand',
-    imgId: ''
+    imgId: '246'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Hubert_Rejk',
@@ -1423,7 +1423,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ice_Giant',
-    imgId: ''
+    imgId: '150'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ice_Giant_(Alpha)',
@@ -1443,15 +1443,15 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ida_Emean',
-    imgId: ''
+    imgId: '197'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ifrit',
-    imgId: ''
+    imgId: '148'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Imlerith',
-    imgId: ''
+    imgId: '132'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Imlerith_(Alpha)',
@@ -1471,15 +1471,15 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Imperial_Golem',
-    imgId: ''
+    imgId: ['170', '181']
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Imperial_Manticore',
-    imgId: ''
+    imgId: '147'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Incinerating_Trap',
-    imgId: ''
+    imgId: '229'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Infestation_(Saovine)',
@@ -1491,7 +1491,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Iorveth',
-    imgId: ''
+    imgId: '190'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Iorveth_(Alpha)',
@@ -1507,7 +1507,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Isengrim',
-    imgId: ''
+    imgId: '189'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Isengrim:_Outlaw',
@@ -1515,7 +1515,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ithlinne',
-    imgId: ''
+    imgId: '194'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Ithlinne_Aegli_(Alpha)',
@@ -1559,11 +1559,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Jutta',
-    imgId: ''
+    imgId: '247'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Kaedweni_Cavalry',
-    imgId: ''
+    imgId: '116'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Kaedweni_Knight',
@@ -1583,7 +1583,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Kambi',
-    imgId: ''
+    imgId: '235'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Kambi_(Alpha)',
@@ -1595,7 +1595,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Kayran',
-    imgId: ''
+    imgId: '137'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Keira_Metz',
@@ -1659,7 +1659,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Lesser_Ifrit',
-    imgId: ''
+    imgId: ['178', '179']
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Lesser_Jade_Golem_(Alpha)',
@@ -1687,11 +1687,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Lubberkin',
-    imgId: ''
+    imgId: '124'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Madman_Lugos',
-    imgId: ''
+    imgId: '236'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Madman_Lugos_(Alpha)',
@@ -1715,7 +1715,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mahakam_Defender',
-    imgId: ''
+    imgId: '215'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mahakam_Defender_(Ale_Fest)',
@@ -1723,7 +1723,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mahakam_Guard',
-    imgId: ''
+    imgId: '226'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mahakam_Guard_(Ale_Fest)',
@@ -1747,7 +1747,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Malena',
-    imgId: ''
+    imgId: '205'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mandrake',
@@ -1795,11 +1795,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Milva',
-    imgId: ''
+    imgId: '191'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Monster_Nest',
-    imgId: ''
+    imgId: '184'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Moonlight',
@@ -1811,7 +1811,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morenn',
-    imgId: ''
+    imgId: '203'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morenn_(Alpha)',
@@ -1819,7 +1819,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morkvarg',
-    imgId: ''
+    imgId: '248'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morkvarg_(Alpha)',
@@ -1827,11 +1827,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morvudd',
-    imgId: ''
+    imgId: '143'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mourntart',
-    imgId: ''
+    imgId: '140'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Mushrooms',
@@ -1863,7 +1863,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nature\'s_Gift',
-    imgId: ''
+    imgId: '228'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nature\'s_Gift_(Alpha)',
@@ -1883,15 +1883,15 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nekker',
-    imgId: ''
+    imgId: '162'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nekker_Warrior',
-    imgId: ''
+    imgId: '149'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nekurat',
-    imgId: ''
+    imgId: '157'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nenneke',
@@ -1911,7 +1911,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nithral',
-    imgId: ''
+    imgId: '152'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Nithral_(Alpha)',
@@ -1959,7 +1959,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Old_Speartip',
-    imgId: ''
+    imgId: '182'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Olgierd',
@@ -2143,7 +2143,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Quen_Sign',
-    imgId: ''
+    imgId: '183'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Radovid',
@@ -2199,7 +2199,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Reaver_Scout',
-    imgId: ''
+    imgId: '107'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Reaver_Scout_(Alpha)',
@@ -2215,7 +2215,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Redanian_Elite',
-    imgId: ''
+    imgId: '121'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Redanian_Elite_(Alpha)',
@@ -2223,7 +2223,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Redanian_Knight',
-    imgId: ''
+    imgId: '108'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Regis',
@@ -2255,11 +2255,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Reinforced_Trebuchet',
-    imgId: ''
+    imgId: '117'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Reinforcement',
-    imgId: ''
+    imgId: '126'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Renew',
@@ -2347,7 +2347,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Saskia:_Destroyer',
-    imgId: ''
+    imgId: '188'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Saskia:_Dragonfire',
@@ -2355,11 +2355,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Savage_Bear',
-    imgId: ''
+    imgId: '249'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Schirr%C3%BA',
-    imgId: ''
+    imgId: '195'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Schirr%C3%BA_(Alpha)',
@@ -2399,7 +2399,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Shadow',
-    imgId: ''
+    imgId: '180'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Shani',
@@ -2419,7 +2419,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Sheldon_Skaggs',
-    imgId: ''
+    imgId: '207'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Sheldon_Skaggs_(Ale_Fest)',
@@ -2459,11 +2459,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Siege_Master',
-    imgId: ''
+    imgId: '122'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Siege_Support',
-    imgId: ''
+    imgId: '109'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Siege_Tower',
@@ -2471,7 +2471,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Sigrdrifa',
-    imgId: ''
+    imgId: '250'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Sigrdrifa_(Ale_Fest)',
@@ -2519,7 +2519,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Sleeping_Giant',
-    imgId: ''
+    imgId: '156'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Slyzard',
@@ -2575,7 +2575,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Succubus',
-    imgId: ''
+    imgId: '138'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Summoning_Circle',
@@ -2583,7 +2583,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Svanrige',
-    imgId: ''
+    imgId: '251'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Swallow',
@@ -2607,7 +2607,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Temerian_Infantry',
-    imgId: ''
+    imgId: ['118', '119', '120']
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Tesham_Mutna_Ghoul_(Saovine)',
@@ -2655,7 +2655,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Toad_Prince',
-    imgId: ''
+    imgId: '154'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Tormented_Mage',
@@ -2667,7 +2667,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Toruviel',
-    imgId: ''
+    imgId: '199'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Treason',
@@ -2827,7 +2827,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vicovaro_Novice',
-    imgId: ''
+    imgId: '125'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vilgefortz',
@@ -2855,7 +2855,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vran_Warrior',
-    imgId: ''
+    imgId: '165'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vreemde',
@@ -2863,19 +2863,19 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Brigade',
-    imgId: ''
+    imgId: '211'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Dragoon',
-    imgId: ''
+    imgId: '200'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Neophyte',
-    imgId: ''
+    imgId: '227'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Officer',
-    imgId: ''
+    imgId: '212'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Officer_(Alpha)',
@@ -2883,11 +2883,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Sappers',
-    imgId: ''
+    imgId: '216'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Vanguard',
-    imgId: ''
+    imgId: '218'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Vrihedd_Vanguard_(Alpha)',
@@ -2903,7 +2903,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wardancer',
-    imgId: ''
+    imgId: '222'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Warship',
@@ -2915,7 +2915,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Weavess',
-    imgId: ''
+    imgId: '146'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Weavess:_Incantation',
@@ -2943,7 +2943,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Whispess',
-    imgId: ''
+    imgId: '144'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Whispess:_Tribute',
@@ -2963,7 +2963,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Boar_of_the_Sea',
-    imgId: ''
+    imgId: '239'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Drakkar',
@@ -2971,7 +2971,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Hound',
-    imgId: ''
+    imgId: '176'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Hound_(Alpha)',
@@ -2983,7 +2983,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Rider',
-    imgId: ''
+    imgId: ['167', '168', '169']
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Rider_(Alpha)',
@@ -2991,7 +2991,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Warrior',
-    imgId: ''
+    imgId: '166'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wild_Hunt_Warrior_(Alpha)',
@@ -3019,7 +3019,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wolf',
-    imgId: ''
+    imgId: '177'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wolfsbane',
@@ -3027,11 +3027,11 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Woodland_Spirit',
-    imgId: ''
+    imgId: '133'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wyvern',
-    imgId: ''
+    imgId: '160'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Wyvern_(Alpha)',
@@ -3051,7 +3051,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Yaevinn',
-    imgId: ''
+    imgId: '198'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Yaevinn_(Alpha)',
@@ -3059,7 +3059,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Yarpen',
-    imgId: ''
+    imgId: '208'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Yennefer',
@@ -3083,7 +3083,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Zoltan',
-    imgId: ''
+    imgId: '192'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Zoltan_Chivay_(Ale_Fest)',

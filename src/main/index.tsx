@@ -4,6 +4,7 @@ import * as React from 'react';
 import { Panel } from 'react-bootstrap';
 import * as ReactDOM from 'react-dom';
 import { CardBrowserComponent } from '@src/cardBrowser/CardBrowser.comp';
+import { ImageMapper } from '@src/utils/ImageMapper';
 
 ReactDOM.render(
   <div>
@@ -16,7 +17,7 @@ ReactDOM.render(
       : <></>
     }
     {/* <ImageMapJsonGenerator /> */}
-    {/* <GoogleImage /> */}
+    {/* <ImageMapper /> */}
     {/* <DuelCalcComponent />
     <StickyFooter /> */}
   </div>

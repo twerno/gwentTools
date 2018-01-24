@@ -4,7 +4,7 @@ import { CardService } from '@src/cardBrowser/Card.service';
 import { getSmallImgUrl, getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
 import { getElFromImgId } from '@src/utils/ImageMap';
 
-export class GoogleImage extends React.Component<{}, {}>
+export class ImageMapper extends React.Component<{}, {}>
 {
   private cardService: CardService = new CardService();
 
@@ -16,7 +16,7 @@ export class GoogleImage extends React.Component<{}, {}>
       elements.push(this.fillLeftStr(i.toString(), 5, '0'));
     }
 
-    const filtered = this.odfiltrujZmapowane(elements);
+    const filtered = this.odfiltrujZmapowane(elements).slice(0, 10);
 
     return (
       <div>
@@ -37,9 +37,9 @@ export class GoogleImage extends React.Component<{}, {}>
       : new Array(width - base.length + 1).join(filler) + base;
   }
 
-  private imgUrl(id: string): string
+  private imgUrl(id: string, remote: boolean = false): string
   {
-    return getSmallImgUrl(id);
+    return getSmallImgUrl(id, remote);
   }
 
   private imgUrlBig(id: string): string
@@ -50,7 +50,7 @@ export class GoogleImage extends React.Component<{}, {}>
   private googleSeachUrl(id: string): string
   {
     // tslint:disable-next-line:max-line-length
-    return `https://www.google.com/searchbyimage?site=search&sa=X&image_url=${this.imgUrl(id)}&hl=en-PL&q=site%3Agwent.wikia.com&oq=site%3Agwent.wikia.com`;
+    return `https://www.google.com/searchbyimage?site=search&sa=X&image_url=${this.imgUrl(id, true)}&hl=en-PL&q=site%3Agwent.wikia.com&oq=site%3Agwent.wikia.com`;
   }
 
   private odfiltrujZmapowane(imgIdList: string[]): string[]

@@ -77,11 +77,11 @@ export function cardFaction2BanerBasic(faction: Factionv1): string
   return '';
 }
 
-export function getSmallImgUrl(id: string): string
+export function getSmallImgUrl(id: string, remote: boolean = false): string
 {
   id = fillLeftStr(id, 5, '0');
 
-  if (process.env.NODE_ENV === 'production')
+  if (remote || process.env.NODE_ENV === 'production')
   {
     return `https://s3-eu-west-1.amazonaws.com/gwenttools/cards/small/${id}.jpg`;
   }
