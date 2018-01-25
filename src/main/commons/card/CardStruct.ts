@@ -1,4 +1,4 @@
-import { ICardAbility } from "@src/commons/card/Ability";
+import { ICardAbility } from '@src/commons/card/Ability';
 
 export enum Factionv1
 {

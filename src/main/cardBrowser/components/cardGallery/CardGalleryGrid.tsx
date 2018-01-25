@@ -50,6 +50,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
       case CardRenderer.CARD_SMALL: return <CardSmall card={card} />;
       case CardRenderer.PREVIEW: return <CardSmallPreview card={card} />;
     }
+    return <div>Unknown renderer for: {renderer}</div>;
   }
 
 }

@@ -18,9 +18,15 @@
     "lib": [
       "es6",
       "dom"
-    ]
+    ],
+    "alwaysStrict": true,
+    "charset": "UTF-8",
+    "noImplicitReturns": true,
+    "strictPropertyInitialization": true,
+    "strictNullChecks": true
   },
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+    "gwentWikia2JSON",
+  ],
 }
