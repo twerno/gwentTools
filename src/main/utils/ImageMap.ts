@@ -1103,7 +1103,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/First_Light',
-    imgId: ''
+    imgId: '54'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Flaminica',
@@ -1803,7 +1803,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Moonlight',
-    imgId: ''
+    imgId: '361'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Morana_Runestone',
@@ -2031,7 +2031,7 @@ export const imageMap: IImageMapEl[] = [
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Petri\'s_Philter',
-    imgId: ''
+    imgId: '67'
   },
   {
     wikiUrl: 'http://gwent.wikia.com/wiki/Philippa',

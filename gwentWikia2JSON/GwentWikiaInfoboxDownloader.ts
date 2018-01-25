@@ -30,7 +30,7 @@ export class GwentWikiaInfoboxDownloader
             let infobox = this.parseInfoBox(body);
             if (infobox)
             {
-              infobox += this.add2Infobox(link, infobox);
+              infobox += this.add2Infobox(link, infobox, body);
               GwentWikiaHelper.saveOnDisk(`${dir}/${this.filename(link)}`, infobox);
             }
 
@@ -43,12 +43,16 @@ export class GwentWikiaInfoboxDownloader
     });
   }
 
-  private add2Infobox(link: ILink, infobox: string): string
+  private add2Infobox(link: ILink, infobox: string, body: string): string
   {
     let result = `\n|__url=${link.urlToShow}`;
     result += `\n|__wiki_id=${link.id.replace(/\/wiki\//g, '')}`;
     result += `\n|__filename=${this.filename(link)}`;
     result += `\n|__set=${this.setFromUrl(infobox)}`;
+    if (body.search(/{{Removed}}/) !== -1)
+    {
+      result += `\n|__removed=true`;
+    }
 
     return result;
   }

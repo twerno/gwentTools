@@ -1304,7 +1304,7 @@ const __cardDB = [
     "collectable": true,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "CLASSIC",
+    "set": "UNKNOWN",
     "tags": [
         "Potion"
     ]
@@ -5178,7 +5178,7 @@ const __cardDB = [
     "id": "",
     "url": "http://gwent.wikia.com/wiki/Eskel:_Pathfinder",
     "name": "Eskel: Pathfinder",
-    "cardColor": "UNKNOWN",
+    "cardColor": "GOLD",
     "cardText": [
         "Destroy a Bronze or Silver enemy that is not boosted."
     ],
@@ -6300,7 +6300,7 @@ const __cardDB = [
     "collectable": true,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "CLASSIC",
+    "set": "UNKNOWN",
     "tags": [],
     "strength": 7,
     "armor": 0,
@@ -10463,7 +10463,7 @@ const __cardDB = [
     "collectable": true,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "CLASSIC",
+    "set": "UNKNOWN",
     "tags": []
 },
   {
@@ -10582,7 +10582,7 @@ const __cardDB = [
     "collectable": true,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "CLASSIC",
+    "set": "UNKNOWN",
     "tags": [
         "Spell"
     ]
@@ -14317,7 +14317,7 @@ const __cardDB = [
     "collectable": true,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "CLASSIC",
+    "set": "UNKNOWN",
     "tags": []
 },
   {

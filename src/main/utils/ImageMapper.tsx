@@ -16,7 +16,7 @@ export class ImageMapper extends React.Component<{}, {}>
       elements.push(this.fillLeftStr(i.toString(), 5, '0'));
     }
 
-    elements = this.odfiltrujZmapowane(elements).slice(0, 10);
+    elements = this.odfiltrujZmapowane(elements); // .slice(0, 10);
 
     return (
       <div>

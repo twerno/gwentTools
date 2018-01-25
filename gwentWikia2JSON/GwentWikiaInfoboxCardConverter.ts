@@ -130,31 +130,36 @@ export class GwentWikiaInfoboxCardConverter
   {
     const url = this.url(infobox);
 
-    if (url.indexOf('_(Saovine)') !== -1)
+    if (infobox.removed === true)
     {
-      return CardSet.SAOVINE_2017;
+      return CardSet.UNKNOWN;
     }
     else
-      if (url.indexOf('_(Alpha)') !== -1)
+      if (url.indexOf('_(Saovine)') !== -1)
       {
-        return CardSet.ALPHA;
+        return CardSet.SAOVINE_2017;
       }
       else
-        if (url.indexOf('_(Ale_Fest)') !== -1)
+        if (url.indexOf('_(Alpha)') !== -1)
         {
-          return CardSet.ALE_FEST_2017;
+          return CardSet.ALPHA;
         }
         else
-          if (url.indexOf('_(Midwinter_Hunt)') !== -1)
+          if (url.indexOf('_(Ale_Fest)') !== -1)
           {
-            return CardSet.MIDWINTER_HUNT_2017;
+            return CardSet.ALE_FEST_2017;
           }
           else
-          {
-            return this.collectable(infobox)
-              ? CardSet.CLASSIC
-              : CardSet.UNKNOWN;
-          }
+            if (url.indexOf('_(Midwinter_Hunt)') !== -1)
+            {
+              return CardSet.MIDWINTER_HUNT_2017;
+            }
+            else
+            {
+              return this.collectable(infobox)
+                ? CardSet.CLASSIC
+                : CardSet.UNKNOWN;
+            }
   }
 
   private loyalty(infobox: IInfobox): CardLoyalty

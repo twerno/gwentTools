@@ -28,7 +28,6 @@ export class GwentWikiaLinkCollector
       {
         const url: string = this.categorySourceUrl + category + '?page=' + i;
         const rawPage: string | null = await this.downloader.loadOne(url);
-        GwentWikiaHelper.saveOnDisk(category + '_' + i, rawPage);
         if (rawPage)
         {
           const links: string[] = this.parseLinks(rawPage);

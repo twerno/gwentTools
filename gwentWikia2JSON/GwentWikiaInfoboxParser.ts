@@ -22,6 +22,7 @@ export interface IInfobox
   description: string | undefined;
   url: string | undefined;
   set: string | undefined;
+  removed: boolean | undefined;
 }
 
 class Parser
@@ -94,6 +95,7 @@ export class GwentWikiaInfoboxParser
       description: parser.get('description'),
       url: parser.get('__url'),
       set: parser.get('__set'),
+      removed: parser.get('__removed') ? true : false,
     };
   }
 
