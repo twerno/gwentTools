@@ -1,8 +1,8 @@
-
 import * as React from 'react';
 import { CardService } from '@src/cardBrowser/Card.service';
 import { getSmallImgUrl, getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
 import { getElFromImgId } from '@src/utils/ImageMap';
+import { ICardv1 } from '@src/commons/card/CardStruct';
 
 export class ImageMapper extends React.Component<{}, {}>
 {
@@ -10,22 +10,30 @@ export class ImageMapper extends React.Component<{}, {}>
 
   public render()
   {
-    const elements: string[] = [];
+    let elements: string[] = [];
     for (let i = 1; i < 531; i++)
     {
       elements.push(this.fillLeftStr(i.toString(), 5, '0'));
     }
 
-    const filtered = this.odfiltrujZmapowane(elements).slice(0, 10);
+    // elements = this.odfiltrujZmapowane(elements).slice(0, 10);
 
     return (
       <div>
-        {filtered.map(e => <div key={e}>
+        {elements.map(e => <div key={e}>
           <img src={this.imgUrl(e)} />
-          <a href={this.googleSeachUrl(e)} target="_blank">{e}</a>
+          {this.renderRow(e)}
         </div>)}
       </div>
     );
+  }
+
+  private renderRow(imgId: string): JSX.Element
+  {
+    const card = this.findCard(imgId);
+    return card === undefined
+      ? <a href={this.googleSeachUrl(imgId)} target="_blank">{imgId}</a>
+      : <a href={card.url} target="_blank">{card.name}</a>;
   }
 
   private fillLeftStr(base: string, width: number, filler: string): string
@@ -55,18 +63,20 @@ export class ImageMapper extends React.Component<{}, {}>
 
   private odfiltrujZmapowane(imgIdList: string[]): string[]
   {
-    return imgIdList.filter(imgId =>
+    return imgIdList.filter(imgId => this.findCard(imgId) !== undefined);
+  }
+
+  private findCard(imgId: string): ICardv1 | undefined
+  {
+    const mapEl = getElFromImgId(imgId);
+    if (mapEl && mapEl.wikiUrl && mapEl.wikiUrl !== '')
     {
-      const mapEl = getElFromImgId(imgId);
-      if (mapEl && mapEl.wikiUrl && mapEl.wikiUrl !== '')
-      {
-        const wikiUrl = (mapEl.wikiUrl || '').toLowerCase();
-        const card = this.cardService.getAllCards()
-          .find(c => c.url.toLowerCase() === wikiUrl);
-        return card === null;
-      }
-      return true;
-    });
+      const wikiUrl = (mapEl.wikiUrl || '').toLowerCase();
+      const card = this.cardService.getAllCards()
+        .find(c => c.url.toLowerCase() === wikiUrl);
+      return card;
+    }
+    return undefined;
   }
 
 }
