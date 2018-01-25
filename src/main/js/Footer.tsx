@@ -15,6 +15,9 @@ export function StickyFooter(props: any)
       }}
     >
       <div className="container">
+        <p className="text-muted">
+          Project site <a href="https://github.com/twerno/gwentTools">https://github.com/twerno/gwentTools</a>
+        </p>
         <p className="text-muted">Icons by <a href="https://icons8.com">icons8</a></p>
       </div>
     </Footer>
