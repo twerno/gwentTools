@@ -22,11 +22,9 @@
     "alwaysStrict": true,
     "charset": "UTF-8",
     "noImplicitReturns": true,
-    "strictPropertyInitialization": true,
     "strictNullChecks": true
   },
   "exclude": [
-    "node_modules",
-    "gwentWikia2JSON",
-  ],
+    "node_modules"
+  ]
 }

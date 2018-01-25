@@ -130,8 +130,8 @@ class ICardFilterOptionSetsBuilder
       [Factionv1.NEUTRAL, Factionv1.MONSTERS, Factionv1.NILFGAARD, Factionv1.NORTHERN_REALMS, Factionv1.SCOIATAEL,
       Factionv1.SKELLIGE]);
     this.initOptionSet(this.sets,
-      [CardSet.CLASSIC, CardSet.ALE_FEST_2016, CardSet.SAOVINE_2016, CardSet.MIDWINTER_HUNT_2016]);
-    this.initOptionSet(this.loyalty, [CardLoyalty.LOYAL, CardLoyalty.DISLOYAL, CardLoyalty.BOTH]);
+      [CardSet.CLASSIC, CardSet.ALE_FEST_2017, CardSet.SAOVINE_2017, CardSet.MIDWINTER_HUNT_2017]);
+    this.initOptionSet(this.loyalty, [CardLoyalty.LOYAL, CardLoyalty.DISLOYAL, CardLoyalty.BOTH, CardLoyalty.UNKNOWN]);
   }
 
   private initOptionSet<T>(data: CardFilterOptionSetBuilderData<T>, options: T[]): void

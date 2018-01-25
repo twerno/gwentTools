@@ -80,13 +80,19 @@ export class GwentWikiaInfoboxCardConverter
     {
       return CardType.LEADER;
     }
-
-    if ((infobox.type || []).indexOf('Special') !== -1)
-    {
-      return CardType.SPECIAL;
-    }
-
-    return CardType.UNIT;
+    else
+      if ((infobox.type || []).indexOf('Special') !== -1)
+      {
+        return CardType.SPECIAL;
+      }
+      else if (parseInt(infobox.strength || '0', 0) !== 0)
+      {
+        return CardType.UNIT;
+      }
+      else
+      {
+        return CardType.SPECIAL;
+      }
   }
 
   private collectable(infobox: IInfobox): boolean
@@ -122,16 +128,33 @@ export class GwentWikiaInfoboxCardConverter
 
   private set(infobox: IInfobox): CardSet
   {
-    switch (infobox.set)
+    const url = this.url(infobox);
+
+    if (url.indexOf('_(Saovine)') !== -1)
     {
-      case 'Saovine': return CardSet.SAOVINE_2016;
-      case 'Alpha': return CardSet.ALPHA;
-      case 'Ale_Fest': return CardSet.ALE_FEST_2016;
-      case `Midwinter_Hunt`: return CardSet.MIDWINTER_HUNT_2016;
-      default: return this.collectable(infobox)
-        ? CardSet.CLASSIC
-        : CardSet.UNKNOWN;
+      return CardSet.SAOVINE_2017;
     }
+    else
+      if (url.indexOf('_(Alpha)') !== -1)
+      {
+        return CardSet.ALPHA;
+      }
+      else
+        if (url.indexOf('_(Ale_Fest)') !== -1)
+        {
+          return CardSet.ALE_FEST_2017;
+        }
+        else
+          if (url.indexOf('_(Midwinter_Hunt)') !== -1)
+          {
+            return CardSet.MIDWINTER_HUNT_2017;
+          }
+          else
+          {
+            return this.collectable(infobox)
+              ? CardSet.CLASSIC
+              : CardSet.UNKNOWN;
+          }
   }
 
   private loyalty(infobox: IInfobox): CardLoyalty

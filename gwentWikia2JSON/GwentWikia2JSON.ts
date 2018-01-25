@@ -21,10 +21,18 @@ class SaveCardDefs
 
   public async exec(): Promise<void>
   {
+    GwentWikiaHelper.log(`Deleting file: cards.js`);
     GwentWikiaHelper.deleteFileIfExists('cards.js');
+    GwentWikiaHelper.log(`Fille deleted.`);
+
     GwentWikiaHelper.mkdir(this.cacheDir);
+    GwentWikiaHelper.log(`Link collector begin.`);
     const links = await this.linkCollector.collect();
+    GwentWikiaHelper.log(`Link collector end.`);
+
+    GwentWikiaHelper.log(`InfoBox downloader start.`);
     await this.infoboxDownloader.downloadAndSave(links, this.cacheDir, false);
+    GwentWikiaHelper.log(`InfoBox downloader end.`);
 
     this.statsGen.generateStats(this.cacheDir);
     this.statsGen.saveOnDisk('stats.txt');

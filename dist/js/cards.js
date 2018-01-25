@@ -155,7 +155,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -196,7 +196,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -361,7 +361,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -417,7 +417,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [],
     "strength": 5,
     "armor": 0,
@@ -551,7 +551,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -590,7 +590,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -688,7 +688,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -927,7 +927,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 12,
     "armor": 0,
@@ -967,7 +967,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 10,
     "armor": 0,
@@ -1123,7 +1123,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Machine"
     ],
@@ -1185,7 +1185,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -1206,7 +1206,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -1266,15 +1266,12 @@ const __cardDB = [
         "Frost.",
         "When Played: Place a Frost Glyph on both players' Melee rows. Reduces base Strength of all cards on row to 1."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -1346,7 +1343,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -1420,7 +1417,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -1456,7 +1453,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 3,
     "armor": 0,
@@ -1496,7 +1493,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -1536,7 +1533,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -1631,7 +1628,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Organic"
     ]
@@ -1772,7 +1769,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Dwarf"
     ],
@@ -1793,7 +1790,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -1896,7 +1893,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -1936,7 +1933,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -1954,7 +1951,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [],
     "strength": 80,
     "armor": 0,
@@ -1972,7 +1969,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [],
     "strength": 1,
     "armor": 0,
@@ -2030,7 +2027,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Beast"
     ],
@@ -2051,7 +2048,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -2091,7 +2088,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -2109,7 +2106,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Ogroid"
     ],
@@ -2171,7 +2168,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 10,
     "armor": 0,
@@ -2233,7 +2230,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 10,
     "armor": 0,
@@ -2294,7 +2291,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -2312,7 +2309,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Soldier",
         "an Craite"
@@ -2333,7 +2330,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Soldier",
         "an Craite"
@@ -2355,7 +2352,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -2394,7 +2391,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier",
         "Tuirseach"
@@ -2503,7 +2500,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -2522,7 +2519,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -2561,7 +2558,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier",
         "An Craite"
@@ -2603,7 +2600,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier",
         "Tuirseach"
@@ -2647,7 +2644,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier",
         "An Craite"
@@ -2795,7 +2792,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -2813,7 +2810,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support",
         "Tordarroch"
@@ -2835,7 +2832,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -2951,15 +2948,12 @@ const __cardDB = [
         "Fair Weather.",
         "When Played: Remove all weather glyphs from the Battlefield."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -3033,7 +3027,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -3067,15 +3061,12 @@ const __cardDB = [
         "Inspire.",
         "When Played: Place an Inspire glyph on its row. This glyph doubles the Strength of all non-Hero Units."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -3089,7 +3080,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": []
 },
   {
@@ -3104,7 +3095,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -3145,7 +3136,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -3243,7 +3234,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -3281,7 +3272,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Mage",
         "Relict"
@@ -3303,7 +3294,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 7,
     "armor": 0,
@@ -3321,7 +3312,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Mage",
         "Relict"
@@ -3343,7 +3334,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 7,
     "armor": 0,
@@ -3361,7 +3352,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Mage",
         "Relict"
@@ -3383,7 +3374,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -3438,7 +3429,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": []
 },
   {
@@ -3595,7 +3586,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -3654,7 +3645,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support"
     ],
@@ -3675,7 +3666,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 1,
     "armor": 0,
@@ -3725,15 +3716,12 @@ const __cardDB = [
         "Swap.",
         "When Played: Return a loyal, non-Hero Unit on the Battlefield to your Hand and play this in its place. Cannot replace Units which have the Swap ability."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -3747,7 +3735,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Tactic"
     ]
@@ -3890,7 +3878,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -3965,7 +3953,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier"
     ],
@@ -3985,7 +3973,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Soldier"
     ],
@@ -4006,7 +3994,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 3,
     "armor": 0,
@@ -4025,7 +4013,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 3,
     "armor": 0,
@@ -4065,7 +4053,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -4136,15 +4124,12 @@ const __cardDB = [
         "Spread flammable gas over all opposing rows.",
         "Get out your roasting sticks."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "SAOVINE_2016",
+    "tags": []
 },
   {
     "id": "",
@@ -4178,7 +4163,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support"
     ],
@@ -4199,7 +4184,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -4260,7 +4245,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -4437,7 +4422,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -4456,7 +4441,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -4518,7 +4503,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Dwarf",
         "Soldier"
@@ -4540,7 +4525,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -4579,7 +4564,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Soldier",
         "Dwarf"
@@ -4641,7 +4626,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -4679,7 +4664,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -4701,7 +4686,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -4824,7 +4809,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -4989,7 +4974,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -5010,7 +4995,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -5045,15 +5030,12 @@ const __cardDB = [
         "Plague.",
         "When Played: Remove weakest unit(s) on Battlefield."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -5108,7 +5090,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -5126,7 +5108,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 15,
     "armor": 0,
@@ -5166,7 +5148,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 11,
     "armor": 0,
@@ -5204,7 +5186,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -5279,7 +5261,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -5334,15 +5316,12 @@ const __cardDB = [
     "cardText": [
         "The ability text wasn't shown and its original version is unknown."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "DISLOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -5352,15 +5331,12 @@ const __cardDB = [
     "cardText": [
         "The ability text wasn't shown and its original version is unknown."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -5391,15 +5367,12 @@ const __cardDB = [
         "Medic.",
         "When Played: Take any non-Hero Unit from your Graveyard. Play it instantly."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -5552,7 +5525,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 1,
     "armor": 0,
@@ -5613,7 +5586,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -5669,7 +5642,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Alchemy"
     ]
@@ -5750,7 +5723,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -5805,7 +5778,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Hazard"
     ]
@@ -5839,7 +5812,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Alchemy"
     ]
@@ -5876,7 +5849,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -5917,7 +5890,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -5952,15 +5925,12 @@ const __cardDB = [
     "cardText": [
         "Set the Strength of every Unit on the Row to 8."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -5994,7 +5964,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [],
     "strength": 15,
     "armor": 0,
@@ -6053,7 +6023,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -6071,7 +6041,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Witcher"
     ],
@@ -6091,7 +6061,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 15,
     "armor": 0,
@@ -6151,7 +6121,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -6172,7 +6142,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -6196,7 +6166,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -6257,7 +6227,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -6329,7 +6299,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -6365,15 +6335,12 @@ const __cardDB = [
         "Empower: Necrophage.",
         "When Played: Banish Units (including Hero Units) from the Graveyard. +2 Strength for each."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -6427,7 +6394,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -6525,7 +6492,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -6585,7 +6552,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [],
     "strength": 1,
     "armor": 0,
@@ -6624,7 +6591,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Beast"
     ],
@@ -6663,15 +6630,12 @@ const __cardDB = [
         "Resurrection.",
         "When played: Take one non-Hero unit from your Graveyard. Play it instantly."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -6686,7 +6650,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -6871,7 +6835,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -6911,7 +6875,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": []
 },
   {
@@ -6947,7 +6911,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Officer",
         "an Craite"
@@ -6968,7 +6932,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 15,
     "armor": 0,
@@ -7072,7 +7036,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -7090,7 +7054,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Ogroid"
     ],
@@ -7132,7 +7096,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Ogroid"
     ],
@@ -7211,15 +7175,12 @@ const __cardDB = [
         "The Frost's Harbingers.",
         "When Played: Cast Frost and spawn and play 2 Wild Hunt Hounds with the Frostbound ability."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -7230,15 +7191,12 @@ const __cardDB = [
         "Fog.",
         "When Played: Place a Fog glyph on both players' Ranged rows. This glyph reduces the base Strength of non-Hero Units to 1."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -7356,7 +7314,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": []
 },
   {
@@ -7414,7 +7372,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 7,
     "armor": 0,
@@ -7539,7 +7497,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -7578,7 +7536,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -7680,7 +7638,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 10,
     "armor": 0,
@@ -7719,7 +7677,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Ogroid"
     ],
@@ -7846,7 +7804,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -7885,7 +7843,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 3,
     "armor": 0,
@@ -7904,7 +7862,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -7965,7 +7923,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Tuirseach"
     ],
@@ -8065,7 +8023,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -8125,7 +8083,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": []
 },
   {
@@ -8141,7 +8099,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 7,
     "armor": 0,
@@ -8263,7 +8221,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -8281,7 +8239,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -8428,7 +8386,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -8467,7 +8425,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -8502,7 +8460,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Alchemy"
     ],
@@ -8543,7 +8501,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Soldier",
         "Dwarf"
@@ -8585,7 +8543,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Dwarf"
     ],
@@ -8668,7 +8626,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Machine"
     ],
@@ -8728,7 +8686,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Alchemy",
         "Organic"
@@ -8767,7 +8725,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 12,
     "armor": 0,
@@ -8836,15 +8794,12 @@ const __cardDB = [
     "cardText": [
         "Play 3 Scytheman from your Deck."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "SAOVINE_2016",
+    "tags": []
 },
   {
     "id": "",
@@ -9015,7 +8970,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -9055,7 +9010,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -9130,15 +9085,12 @@ const __cardDB = [
         "Spores.",
         "When Played: Place a Spores glyph on a row, adding +4 to the Strength of all non-Hero Units"
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -9154,7 +9106,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Alchemy",
         "Organic"
@@ -9228,7 +9180,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -9260,15 +9212,12 @@ const __cardDB = [
         "Lille's Blessing.",
         "Create and play a copy of the last Special Card played."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -9422,7 +9371,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -9499,7 +9448,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -9533,17 +9482,14 @@ const __cardDB = [
     "cardText": [
         "Halve the Phoenix's Armor."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Alchemy"
-    ],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    ]
 },
   {
     "id": "",
@@ -9578,7 +9524,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -9618,7 +9564,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Soldier",
         "Kaedwen"
@@ -9640,7 +9586,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -9702,7 +9648,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 9,
     "armor": 0,
@@ -9797,7 +9743,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -9851,7 +9797,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Support"
     ],
@@ -10009,7 +9955,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -10127,7 +10073,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [],
     "strength": 40,
     "armor": 0,
@@ -10145,7 +10091,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [],
     "strength": 10,
     "armor": 0,
@@ -10224,7 +10170,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -10299,17 +10245,14 @@ const __cardDB = [
     "cardText": [
         "Can't be targeted or destroyed."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Token"
-    ],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    ]
 },
   {
     "id": "",
@@ -10346,7 +10289,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support"
     ],
@@ -10363,15 +10306,12 @@ const __cardDB = [
         "Resurrection.",
         "When Played: Take any non-Hero Unit from your Graveyard. Play it instantly."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -10385,7 +10325,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Heymaey",
         "Support",
@@ -10428,7 +10368,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support"
     ],
@@ -10449,7 +10389,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 1,
     "armor": 0,
@@ -10484,15 +10424,12 @@ const __cardDB = [
         "Deathwish: Bovine Defense Force.",
         "When Removed: Spawn a Chort."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "LOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -10564,7 +10501,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -10583,7 +10520,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -10605,7 +10542,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -10663,7 +10600,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 0,
     "armor": 0,
@@ -10797,7 +10734,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -10818,7 +10755,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -10839,7 +10776,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -10859,7 +10796,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Beast"
     ],
@@ -10922,7 +10859,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -10999,7 +10936,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11059,7 +10996,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11078,7 +11015,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -11100,7 +11037,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -11122,7 +11059,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Vampire"
     ],
@@ -11271,7 +11208,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11310,7 +11247,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11567,7 +11504,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11607,7 +11544,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -11711,7 +11648,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -11730,7 +11667,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -11762,15 +11699,12 @@ const __cardDB = [
         "Incinerate.",
         "When Played: Send the strongest non-Hero Unit(s) on the battlefield to the Graveyard."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -11784,7 +11718,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -11804,7 +11738,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -11930,7 +11864,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -11968,7 +11902,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Ogroid"
     ],
@@ -12009,7 +11943,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Dwarf"
     ],
@@ -12030,7 +11964,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -12276,7 +12210,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Support"
     ],
@@ -12297,7 +12231,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -12389,15 +12323,12 @@ const __cardDB = [
         "Choice: Fog or Rain.",
         "When Played: Spawn and play either Impenetrable Fog or Torrential Rain."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -12843,7 +12774,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Alchemy",
         "Item"
@@ -12903,7 +12834,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -12942,7 +12873,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Necrophage"
     ],
@@ -12985,7 +12916,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -13100,7 +13031,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Alchemy"
     ]
@@ -13117,7 +13048,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Alchemy"
     ]
@@ -13192,15 +13123,12 @@ const __cardDB = [
         "Rain.",
         "When Played: Place a Rain glyph on both players' Siege rows. This glyph reduces the base Strength of non-Hero Units to 1."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -13370,7 +13298,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 11,
     "armor": 0,
@@ -13389,7 +13317,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -13447,7 +13375,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Ogroid"
     ],
@@ -13485,7 +13413,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 12,
     "armor": 0,
@@ -13543,7 +13471,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -13683,7 +13611,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 9,
     "armor": 0,
@@ -13824,7 +13752,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 15,
     "armor": 0,
@@ -13884,7 +13812,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -13902,7 +13830,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Witcher"
     ],
@@ -13924,7 +13852,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -13963,7 +13891,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NORTHERN_REALMS",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -14064,7 +13992,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -14269,7 +14197,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -14331,7 +14259,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 4,
     "armor": 0,
@@ -14531,15 +14459,12 @@ const __cardDB = [
         "Discourage: Curse Bringer.",
         "Passive: Move to random row at start of opponent's turn. -2 Strength to all on row (except self)."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "SKELLIGE",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "DISLOYAL"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -14650,15 +14575,12 @@ const __cardDB = [
         "Choice: Frost or Fog.",
         "When Played: Spawn Biting Frost or impenetrable Fog card."
     ],
-    "cardType": "UNIT",
+    "cardType": "SPECIAL",
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "UNKNOWN",
-    "set": "UNKNOWN",
-    "tags": [],
-    "strength": 0,
-    "armor": 0,
-    "loyalty": "UNKNOWN"
+    "set": "ALPHA",
+    "tags": []
 },
   {
     "id": "",
@@ -14672,7 +14594,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "MIDWINTER_HUNT_2016",
     "tags": [
         "Hazard"
     ]
@@ -14754,7 +14676,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -14815,7 +14737,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 2,
     "armor": 0,
@@ -14855,7 +14777,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -15053,7 +14975,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "MONSTERS",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -15151,7 +15073,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "RARE",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 8,
     "armor": 0,
@@ -15255,7 +15177,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NILFGAARD",
     "rarity": "COMMON",
-    "set": "UNKNOWN",
+    "set": "SAOVINE_2016",
     "tags": [
         "Peasant"
     ],
@@ -15320,7 +15242,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "SCOIATAEL",
     "rarity": "LEGENDARY",
-    "set": "UNKNOWN",
+    "set": "ALE_FEST_2016",
     "tags": [
         "Dwarf"
     ],
@@ -15341,7 +15263,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
@@ -15381,7 +15303,7 @@ const __cardDB = [
     "collectable": false,
     "faction": "NEUTRAL",
     "rarity": "EPIC",
-    "set": "UNKNOWN",
+    "set": "ALPHA",
     "tags": [],
     "strength": 6,
     "armor": 0,
