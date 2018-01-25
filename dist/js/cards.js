@@ -5176,6 +5176,26 @@ const __cardDB = [
 },
   {
     "id": "",
+    "url": "http://gwent.wikia.com/wiki/Eskel:_Pathfinder",
+    "name": "Eskel: Pathfinder",
+    "cardColor": "UNKNOWN",
+    "cardText": [
+        "Destroy a Bronze or Silver enemy that is not boosted."
+    ],
+    "cardType": "UNIT",
+    "collectable": true,
+    "faction": "NEUTRAL",
+    "rarity": "LEGENDARY",
+    "set": "CLASSIC",
+    "tags": [
+        "Witcher"
+    ],
+    "strength": 7,
+    "armor": 0,
+    "loyalty": "LOYAL"
+},
+  {
+    "id": "",
     "url": "http://gwent.wikia.com/wiki/Even_Lesser_Raven_(Saovine)",
     "name": "Even Lesser Raven",
     "cardColor": "BRONZE",

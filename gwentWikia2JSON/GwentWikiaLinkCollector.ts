@@ -19,7 +19,7 @@ export class GwentWikiaLinkCollector
 
   public async collect(): Promise<ILink[]>
   {
-    const categories: string[] = ['Bronze', 'Silver', 'Gold', 'Leader'];
+    const categories: string[] = ['Bronze', 'Common', 'Silver', 'Epic', 'Gold', 'Legendary', 'Leader'];
     let result: string[] = [];
 
     for (const category of categories)
@@ -28,6 +28,7 @@ export class GwentWikiaLinkCollector
       {
         const url: string = this.categorySourceUrl + category + '?page=' + i;
         const rawPage: string | null = await this.downloader.loadOne(url);
+        GwentWikiaHelper.saveOnDisk(category + '_' + i, rawPage);
         if (rawPage)
         {
           const links: string[] = this.parseLinks(rawPage);
