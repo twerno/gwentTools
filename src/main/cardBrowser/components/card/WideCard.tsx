@@ -24,7 +24,8 @@ export class WideCard extends React.Component<WideCardProps, {}> {
     const card = this.props.card;
     const art: React.CSSProperties = {
       backgroundImage: `url(${this.helper.cardImage(card)})`,
-      backgroundSize: 'cover'
+      backgroundSize: 'cover',
+      top: '-35px'
     };
 
     return (
