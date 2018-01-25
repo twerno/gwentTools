@@ -27,7 +27,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
   public render()
   {
     return (
-      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap', width: '1000px', margin: '0 auto' }}>
         {this.props.cards.map(card => this.renderCard(card))}
       </div>
     );
@@ -35,7 +35,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 
   public renderCard(card: ICardv1)
   {
-    return <div key={`preview-${card.url}`} style={{ flex: '1 0 calc(100% / 5)', padding: '10px' }}>
+    return <div key={`preview-${card.url}`} style={{ flex: '1 0 calc(100% / 6)', padding: '10px' }}>
       {this.cardendererPicker(this.props.renderer, card)}
     </div>;
   }
