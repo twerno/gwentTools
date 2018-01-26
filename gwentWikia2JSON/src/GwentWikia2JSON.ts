@@ -13,6 +13,7 @@ export const dbDir = 'db';
 export const tmpDir = 'tmp';
 export const cacheDir = `${tmpDir}/cache`;
 export const patchedCardsFormatter = (s: string) => `const __cardDB = ${s};\n`;
+export const distCardsFN = '..\\dist\\js\\cards.js';
 
 export class DownloadCardsAndApplyPatches
 {
@@ -52,6 +53,8 @@ export class DownloadCardsAndApplyPatches
     this.cardDbHelper.saveOnDisk(`${dbDir}/raw.js`, cards);
     this.patchHelper.applyTo(cards);
     this.cardDbHelper.saveOnDisk(`${dbDir}/patched.js`, cards, patchedCardsFormatter);
+
+    this.cardDbHelper.copyMinified(`${dbDir}/patched.js`, distCardsFN);
   }
 
 }
