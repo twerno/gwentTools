@@ -29,6 +29,7 @@ export class CardDbHelper
       return [];
     }
     str = str
+      .replace('];\n', ']')
       .replace('const __cardDB = ', '');
     const cards = JSON.parse(str) as ICardv1[];
     return cards;

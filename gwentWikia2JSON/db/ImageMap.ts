@@ -610,11 +610,11 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Commander\'s_Horn',
+    wikiUrl: `http://gwent.wikia.com/wiki/Commander's_Horn`,
     img: '49'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Commander\'s_Horn_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Commander's_Horn_(Alpha)`,
     img: ''
   },
   {
@@ -682,7 +682,7 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Crow\'s_Eye',
+    wikiUrl: `http://gwent.wikia.com/wiki/Crow's_Eye`,
     img: '411'
   },
   {
@@ -710,7 +710,7 @@ export const imageMap: IImageMapEl[] = [
     img: '34'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/D\'ao',
+    wikiUrl: `http://gwent.wikia.com/wiki/D'ao`,
     img: '151'
   },
   {
@@ -830,11 +830,11 @@ export const imageMap: IImageMapEl[] = [
     img: '370'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Dragon\'s_Dream',
+    wikiUrl: `http://gwent.wikia.com/wiki/Dragon's_Dream`,
     img: ['451', '477']
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Dragon\'s_Dream_(Saovine)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Dragon's_Dream_(Saovine)`,
     img: ''
   },
   {
@@ -950,7 +950,7 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Ele\'yas',
+    wikiUrl: `http://gwent.wikia.com/wiki/Ele'yas`,
     img: '209'
   },
   {
@@ -1126,7 +1126,7 @@ export const imageMap: IImageMapEl[] = [
     img: '71'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Foltest\'s_Pride',
+    wikiUrl: `http://gwent.wikia.com/wiki/Foltest's_Pride`,
     img: '466'
   },
   {
@@ -1190,19 +1190,19 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Gaunter_O\'Dimm',
+    wikiUrl: `http://gwent.wikia.com/wiki/Gaunter_O'Dimm`,
     img: '153'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Gaunter_O\'Dimm_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Gaunter_O'Dimm_(Alpha)`,
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Ge\'els',
+    wikiUrl: `http://gwent.wikia.com/wiki/Ge'els`,
     img: '129'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Ge\'els_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Ge'els_(Alpha)`,
     img: ''
   },
   {
@@ -1346,11 +1346,11 @@ export const imageMap: IImageMapEl[] = [
     img: '449'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Hav\'caaren_Healer_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Hav'caaren_Healer_(Alpha)`,
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Hav\'caaren_Smuggler_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Hav'caaren_Smuggler_(Alpha)`,
     img: ''
   },
   {
@@ -1642,7 +1642,7 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Lesser_D\'ao',
+    wikiUrl: `http://gwent.wikia.com/wiki/Lesser_D'ao`,
     img: ''
   },
   {
@@ -1862,11 +1862,11 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Nature\'s_Gift',
+    wikiUrl: `http://gwent.wikia.com/wiki/Nature's_Gift`,
     img: '228'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Nature\'s_Gift_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Nature's_Gift_(Alpha)`,
     img: ''
   },
   {
@@ -2030,7 +2030,7 @@ export const imageMap: IImageMapEl[] = [
     img: '296'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Petri\'s_Philter',
+    wikiUrl: `http://gwent.wikia.com/wiki/Petri's_Philter`,
     img: '67'
   },
   {
@@ -2322,7 +2322,7 @@ export const imageMap: IImageMapEl[] = [
     img: '87'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Sabrina\'s_Specter',
+    wikiUrl: `http://gwent.wikia.com/wiki/Sabrina's_Specter`,
     img: '512'
   },
   {
@@ -2366,7 +2366,7 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Scoia\'tael_Neophyte_(Alpha)',
+    wikiUrl: `http://gwent.wikia.com/wiki/Scoia'tael_Neophyte_(Alpha)`,
     img: ''
   },
   {
@@ -2442,7 +2442,7 @@ export const imageMap: IImageMapEl[] = [
     img: ''
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Shupe\'s_Bizzare_Adventure',
+    wikiUrl: `http://gwent.wikia.com/wiki/Shupe's_Bizzare_Adventure`,
     img: '426'
   },
   {
@@ -2742,7 +2742,7 @@ export const imageMap: IImageMapEl[] = [
     img: '378'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Uma\'s_Curse',
+    wikiUrl: `http://gwent.wikia.com/wiki/Uma's_Curse`,
     img: '357'
   },
   {
@@ -2770,7 +2770,7 @@ export const imageMap: IImageMapEl[] = [
     img: '496'
   },
   {
-    wikiUrl: 'http://gwent.wikia.com/wiki/Vandergrift\'s_Blade',
+    wikiUrl: `http://gwent.wikia.com/wiki/Vandergrift's_Blade`,
     img: '506'
   },
   {
