@@ -1,10 +1,10 @@
 import { ICardv1, CardColor, CardType, Factionv1, CardSet } from '../../src/main/commons/card/CardStruct';
 
-export type CardPatch = Partial<ICardv1> & ({ id: string, url: string });
+export type CardPatch = Partial<ICardv1> & ({ img: string, url: string });
 
 export const cardDbPatch: CardPatch[] = [
   {
-    id: '360',
+    img: '360',
     url: 'http://gwent.wikia.com/wiki/Adda',
     abilities: [
       {

@@ -90,11 +90,6 @@ export function getSmallImgUrl(id: string, remote: boolean = false): string
 
 export function getMediumImgUrl(id: string): string
 {
-  // id = fillLeftStr(id, 5, '0');
-  if (id === '')
-  {
-    id = '100';
-  }
   id = fillLeftStr(id, 5, '0');
 
   if (process.env.NODE_ENV === 'production')

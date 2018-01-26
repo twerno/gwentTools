@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { CardService } from '@src/cardBrowser/Card.service';
 import { getSmallImgUrl, getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
-import { getElFromImgId } from '@src/utils/ImageMap';
 import { ICardv1 } from '@src/commons/card/CardStruct';
+import { getElFromImgId } from '@src/utils/ImageMapper.helper';
 
 export class ImageMapper extends React.Component<{}, {}>
 {

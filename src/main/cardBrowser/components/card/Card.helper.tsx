@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { ICardv1 } from '@src/commons/card/CardStruct';
-import { imageMap, getFirstImageId } from '@src/utils/ImageMap';
 import { getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
 import { GenMechanicRenderer } from '@src/cardBrowser/cardMechanic/renderer/GenMechanicRenderer';
 import { BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
@@ -16,12 +15,7 @@ export class CardRendererHelper
 
   public cardImage(card: ICardv1)
   {
-    const mapEl = imageMap.find(e => e.wikiUrl.toLocaleLowerCase() === card.url.toLocaleLowerCase());
-    if (mapEl)
-    {
-      return getMediumImgUrl(getFirstImageId(mapEl));
-    }
-    return '';
+    return getMediumImgUrl(card.img);
   }
 
   public cardText2Str(card: ICardv1, basicCardService: BasicFilterService): JSX.Element

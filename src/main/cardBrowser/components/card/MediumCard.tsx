@@ -8,7 +8,6 @@ import
   cardColor2Border, cardFaction2Frame,
   cardRarity2Gem, cardFaction2BanerBasic, getMediumImgUrl
 } from '@src/commons/assets/GwentAssets.helper';
-import { imageMap, getFirstImageId } from '@src/utils/ImageMap';
 
 export interface MediumCardProps
 {
@@ -109,12 +108,7 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
 
   private cardImage(card: ICardv1)
   {
-    const mapEl = imageMap.find(e => e.wikiUrl.toLocaleLowerCase() === card.url.toLocaleLowerCase());
-    if (mapEl)
-    {
-      return getMediumImgUrl(getFirstImageId(mapEl));
-    }
-    return '';
+    return getMediumImgUrl(card.img);
   }
 
   private tags(card: ICardv1)

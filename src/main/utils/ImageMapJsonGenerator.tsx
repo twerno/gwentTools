@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { CardService } from '@src/cardBrowser/Card.service';
-import { IImageMapEl, imageMap } from '@src/utils/ImageMap';
 import { getSmallImgUrl } from '@src/commons/assets/GwentAssets.helper';
+import { imageMap, IImageMapEl } from '../../../gwentWikia2JSON/db/ImageMap';
 
 export class ImageMapJsonGenerator extends React.Component<{}, {}>
 {
@@ -17,16 +17,16 @@ export class ImageMapJsonGenerator extends React.Component<{}, {}>
   {
     const cards = this.service.getAllCards();
 
-    const newImageMap = cards.map(c => ({ wikiUrl: c.url, imgId: '' })) as IImageMapEl[];
+    const newImageMap = cards.map(c => ({ wikiUrl: c.url, img: '' })) as IImageMapEl[];
 
     imageMap
-      .filter(e => e.imgId !== '')
+      .filter(e => e.img !== '')
       .forEach(e =>
       {
         const nez = newImageMap.find(ne => ne.wikiUrl === e.wikiUrl);
         if (nez !== undefined)
         {
-          nez.imgId = e.imgId;
+          nez.img = e.img;
         }
       });
 

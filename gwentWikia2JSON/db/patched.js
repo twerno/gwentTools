@@ -1,6 +1,6 @@
 const __cardDB = [
   {
-    "id": "141",
+    "img": "141",
     "url": "http://gwent.wikia.com/wiki/Abaya",
     "name": "Abaya",
     "cardColor": "SILVER",
@@ -20,7 +20,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "360",
+    "img": "360",
     "url": "http://gwent.wikia.com/wiki/Adda",
     "name": "Adda",
     "cardColor": "GOLD",
@@ -38,6 +38,7 @@ const __cardDB = [
     "strength": 6,
     "armor": 0,
     "loyalty": "LOYAL",
+    "id": "360",
     "abilities": [
       {
         "mechanicId": "CREATE",
@@ -65,7 +66,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "57",
+    "img": "57",
     "url": "http://gwent.wikia.com/wiki/Adrenaline",
     "name": "Adrenaline",
     "cardColor": "BRONZE",
@@ -82,7 +83,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "515",
+    "img": "515",
     "url": "http://gwent.wikia.com/wiki/Aedirnian_Mauler",
     "name": "Aedirnian Mauler",
     "cardColor": "BRONZE",
@@ -103,7 +104,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "206",
+    "img": "206",
     "url": "http://gwent.wikia.com/wiki/Aelirenn",
     "name": "Aelirenn",
     "cardColor": "SILVER",
@@ -124,7 +125,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "50",
+    "img": "50",
     "url": "http://gwent.wikia.com/wiki/Aeromancer",
     "name": "Aeromancer",
     "cardColor": "SILVER",
@@ -144,7 +145,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Agitator_(Saovine)",
     "name": "Agitator",
     "cardColor": "BRONZE",
@@ -164,7 +165,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "193",
+    "img": "193",
     "url": "http://gwent.wikia.com/wiki/Agla%C3%AFs",
     "name": "Aglaïs",
     "cardColor": "GOLD",
@@ -184,7 +185,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Agla%C3%AFs_(Alpha)",
     "name": "Aglaïs",
     "cardColor": "GOLD",
@@ -203,7 +204,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "359",
+    "img": "359",
     "url": "http://gwent.wikia.com/wiki/Aguara",
     "name": "Aguara",
     "cardColor": "GOLD",
@@ -227,7 +228,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "355",
+    "img": "355",
     "url": "http://gwent.wikia.com/wiki/Aguara:_True_Form",
     "name": "Aguara: True Form",
     "cardColor": "GOLD",
@@ -248,7 +249,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "430",
+    "img": "430",
     "url": "http://gwent.wikia.com/wiki/Alba_Cavalry",
     "name": "Alba Cavalry",
     "cardColor": "BRONZE",
@@ -268,7 +269,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "316",
+    "img": "316",
     "url": "http://gwent.wikia.com/wiki/Alba_Pikeman",
     "name": "Alba Pikeman",
     "cardColor": "BRONZE",
@@ -288,7 +289,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "317",
+    "img": "317",
     "url": "http://gwent.wikia.com/wiki/Alba_Spearman",
     "name": "Alba Spearman",
     "cardColor": "BRONZE",
@@ -308,7 +309,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "293",
+    "img": "293",
     "url": "http://gwent.wikia.com/wiki/Albrich",
     "name": "Albrich",
     "cardColor": "SILVER",
@@ -329,7 +330,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "321",
+    "img": "321",
     "url": "http://gwent.wikia.com/wiki/Alchemist",
     "name": "Alchemist",
     "cardColor": "BRONZE",
@@ -349,7 +350,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Alchemist_(Alpha)",
     "name": "Alchemist",
     "cardColor": "BRONZE",
@@ -368,7 +369,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ale-Wolf",
     "name": "Ale-Wolf",
     "cardColor": "SILVER",
@@ -388,7 +389,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "424",
+    "img": "424",
     "url": "http://gwent.wikia.com/wiki/Ale_of_the_Ancestors",
     "name": "Ale of the Ancestors",
     "cardColor": "GOLD",
@@ -406,7 +407,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ale_of_the_Ancestors_(Ale_Fest)",
     "name": "Ale of the Ancestors",
     "cardColor": "GOLD",
@@ -424,7 +425,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "520",
+    "img": "520",
     "url": "http://gwent.wikia.com/wiki/Alghoul",
     "name": "Alghoul",
     "cardColor": "SILVER",
@@ -444,7 +445,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "384",
+    "img": "384",
     "url": "http://gwent.wikia.com/wiki/Alpha_Werewolf",
     "name": "Alpha Werewolf",
     "cardColor": "BRONZE",
@@ -465,7 +466,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "51",
+    "img": "51",
     "url": "http://gwent.wikia.com/wiki/Alzur's_Double%E2%80%93Cross",
     "name": "Alzur's Double–Cross",
     "cardColor": "SILVER",
@@ -482,7 +483,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "52",
+    "img": "52",
     "url": "http://gwent.wikia.com/wiki/Alzur's_Thunder",
     "name": "Alzur's Thunder",
     "cardColor": "BRONZE",
@@ -499,7 +500,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "320",
+    "img": "320",
     "url": "http://gwent.wikia.com/wiki/Ambassador",
     "name": "Ambassador",
     "cardColor": "BRONZE",
@@ -519,7 +520,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "159",
+    "img": "159",
     "url": "http://gwent.wikia.com/wiki/Ancient_Foglet",
     "name": "Ancient Foglet",
     "cardColor": "BRONZE",
@@ -539,7 +540,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ancient_Foglet_(Alpha)",
     "name": "Ancient Foglet",
     "cardColor": "BRONZE",
@@ -558,7 +559,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00001",
+    "img": "00001",
     "url": "http://gwent.wikia.com/wiki/Arachas_Behemoth",
     "name": "Arachas Behemoth",
     "cardColor": "BRONZE",
@@ -578,7 +579,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Arachas_Behemoth_(Alpha)",
     "name": "Arachas Behemoth",
     "cardColor": "SILVER",
@@ -597,7 +598,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "161",
+    "img": "161",
     "url": "http://gwent.wikia.com/wiki/Arachas_Drone",
     "name": "Arachas Drone",
     "cardColor": "BRONZE",
@@ -617,7 +618,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "437",
+    "img": "437",
     "url": "http://gwent.wikia.com/wiki/Arachas_Hatchling",
     "name": "Arachas Hatchling",
     "cardColor": "BRONZE",
@@ -638,7 +639,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "525",
+    "img": "525",
     "url": "http://gwent.wikia.com/wiki/Arachas_Queen",
     "name": "Arachas Queen",
     "cardColor": "GOLD",
@@ -659,7 +660,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00004",
+    "img": "00004",
     "url": "http://gwent.wikia.com/wiki/Arachas_Venom",
     "name": "Arachas Venom",
     "cardColor": "BRONZE",
@@ -676,7 +677,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Archer_(Saovine)",
     "name": "Archer",
     "cardColor": "BRONZE",
@@ -697,7 +698,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "341",
+    "img": "341",
     "url": "http://gwent.wikia.com/wiki/Archespore",
     "name": "Archespore",
     "cardColor": "BRONZE",
@@ -718,7 +719,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "164",
+    "img": "164",
     "url": "http://gwent.wikia.com/wiki/Archgriffin",
     "name": "Archgriffin",
     "cardColor": "BRONZE",
@@ -738,7 +739,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "241",
+    "img": "241",
     "url": "http://gwent.wikia.com/wiki/Arena_Champion",
     "name": "Arena Champion",
     "cardColor": "SILVER",
@@ -758,7 +759,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "337",
+    "img": "337",
     "url": "http://gwent.wikia.com/wiki/Aretuza_Adept",
     "name": "Aretuza Adept",
     "cardColor": "BRONZE",
@@ -779,7 +780,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "353",
+    "img": "353",
     "url": "http://gwent.wikia.com/wiki/Artefact_Compression",
     "name": "Artefact Compression",
     "cardColor": "SILVER",
@@ -796,7 +797,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "127",
+    "img": "127",
     "url": "http://gwent.wikia.com/wiki/Aspirant",
     "name": "Aspirant",
     "cardColor": "BRONZE",
@@ -817,7 +818,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "385",
+    "img": "385",
     "url": "http://gwent.wikia.com/wiki/Assassin",
     "name": "Assassin",
     "cardColor": "BRONZE",
@@ -837,7 +838,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "326",
+    "img": "326",
     "url": "http://gwent.wikia.com/wiki/Assassination",
     "name": "Assassination",
     "cardColor": "GOLD",
@@ -854,7 +855,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "294",
+    "img": "294",
     "url": "http://gwent.wikia.com/wiki/Assire",
     "name": "Assire",
     "cardColor": "SILVER",
@@ -874,7 +875,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "300",
+    "img": "300",
     "url": "http://gwent.wikia.com/wiki/Auckes",
     "name": "Auckes",
     "cardColor": "SILVER",
@@ -894,7 +895,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "135",
+    "img": "135",
     "url": "http://gwent.wikia.com/wiki/Avallac'h",
     "name": "Avallac'h",
     "cardColor": "GOLD",
@@ -915,7 +916,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Avallac'h:_Mysterious_Elf_(Alpha)",
     "name": "Avallac'h: Mysterious Elf",
     "cardColor": "GOLD",
@@ -934,7 +935,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "19",
+    "img": "19",
     "url": "http://gwent.wikia.com/wiki/Avallac'h:_Sage",
     "name": "Avallac'h: the Sage",
     "cardColor": "GOLD",
@@ -955,7 +956,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Avallac'h:_the_Sage_(Alpha)",
     "name": "Avallac'h: the Sage",
     "cardColor": "GOLD",
@@ -974,7 +975,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "97",
+    "img": "97",
     "url": "http://gwent.wikia.com/wiki/Ballista",
     "name": "Ballista",
     "cardColor": "BRONZE",
@@ -995,7 +996,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ban_Ard_Adept",
     "name": "Ban Ard Adept",
     "cardColor": "BRONZE",
@@ -1013,7 +1014,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "349",
+    "img": "349",
     "url": "http://gwent.wikia.com/wiki/Ban_Ard_Tutor",
     "name": "Ban Aard Tutor",
     "cardColor": "BRONZE",
@@ -1034,7 +1035,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "521",
+    "img": "521",
     "url": "http://gwent.wikia.com/wiki/Barbegazi",
     "name": "Barbegazi",
     "cardColor": "BRONZE",
@@ -1054,7 +1055,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "202",
+    "img": "202",
     "url": "http://gwent.wikia.com/wiki/Barclay_Els",
     "name": "Barclay Els",
     "cardColor": "SILVER",
@@ -1075,7 +1076,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Bardic_Power_Chords",
     "name": "Bardic Power Chords",
     "cardColor": "SILVER",
@@ -1090,7 +1091,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "350",
+    "img": "350",
     "url": "http://gwent.wikia.com/wiki/Battering_Ram",
     "name": "Battering Ram",
     "cardColor": "BRONZE",
@@ -1110,7 +1111,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Battering_Ram_(Saovine)",
     "name": "Battering Ram",
     "cardColor": "SILVER",
@@ -1132,7 +1133,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "398",
+    "img": "398",
     "url": "http://gwent.wikia.com/wiki/Battle_Maiden",
     "name": "Battle Maiden",
     "cardColor": "BRONZE",
@@ -1153,7 +1154,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "279",
+    "img": "279",
     "url": "http://gwent.wikia.com/wiki/Bear",
     "name": "Bear",
     "cardColor": "BRONZE",
@@ -1174,7 +1175,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Beauclair_Bovine_(Saovine)",
     "name": "Beauclair Bovine",
     "cardColor": "BRONZE",
@@ -1194,7 +1195,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Beauclair_Bovine_2_(Saovine)",
     "name": "Beauclair Bovine",
     "cardColor": "BRONZE",
@@ -1215,7 +1216,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "254",
+    "img": "254",
     "url": "http://gwent.wikia.com/wiki/Berserker_Marauder",
     "name": "Berserker Marauder",
     "cardColor": "BRONZE",
@@ -1237,7 +1238,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "236",
+    "img": "236",
     "url": "http://gwent.wikia.com/wiki/Birna_Bran",
     "name": "Birna Bran",
     "cardColor": "GOLD",
@@ -1258,7 +1259,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "53",
+    "img": "53",
     "url": "http://gwent.wikia.com/wiki/Biting_Frost_(Alpha)",
     "name": "Biting Frost",
     "cardColor": "BRONZE",
@@ -1274,7 +1275,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "519",
+    "img": "519",
     "url": "http://gwent.wikia.com/wiki/Black_Blood",
     "name": "Black Blood",
     "cardColor": "SILVER",
@@ -1293,7 +1294,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "67",
+    "img": "67",
     "url": "http://gwent.wikia.com/wiki/Blizzard_Potion",
     "name": "Blizzard Potion",
     "cardColor": "BRONZE",
@@ -1310,7 +1311,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "74",
+    "img": "74",
     "url": "http://gwent.wikia.com/wiki/Bloody_Baron",
     "name": "Bloody Baron",
     "cardColor": "GOLD",
@@ -1331,7 +1332,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Bloody_Baron_(Alpha)",
     "name": "Bloody Baron",
     "cardColor": "GOLD",
@@ -1350,7 +1351,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "468",
+    "img": "468",
     "url": "http://gwent.wikia.com/wiki/Bloody_Flail",
     "name": "Bloody Flail",
     "cardColor": "BRONZE",
@@ -1367,7 +1368,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "361",
+    "img": "361",
     "url": "http://gwent.wikia.com/wiki/Blood_Moon",
     "name": "Blood Moon",
     "cardColor": "BRONZE",
@@ -1384,7 +1385,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "240",
+    "img": "240",
     "url": "http://gwent.wikia.com/wiki/Blueboy_Lugos",
     "name": "Blueboy Lugos",
     "cardColor": "SILVER",
@@ -1405,7 +1406,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Blueboy_Lugos_(Alpha)",
     "name": "Blueboy Lugos",
     "cardColor": "SILVER",
@@ -1424,7 +1425,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "366",
+    "img": "366",
     "url": "http://gwent.wikia.com/wiki/Blue_Dream",
     "name": "Hanmarvyn's Blue Dream",
     "cardColor": "GOLD",
@@ -1441,7 +1442,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Blue_Mountain_Commando_(Alpha)",
     "name": "Blue Mountain Commando",
     "cardColor": "BRONZE",
@@ -1460,7 +1461,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "111",
+    "img": "111",
     "url": "http://gwent.wikia.com/wiki/Blue_Stripes_Commando",
     "name": "Blue Stripes Commando",
     "cardColor": "BRONZE",
@@ -1481,7 +1482,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Blue_Stripes_Commando_(Alpha)",
     "name": "Blue Stripes Commando",
     "cardColor": "BRONZE",
@@ -1500,7 +1501,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "110",
+    "img": "110",
     "url": "http://gwent.wikia.com/wiki/Blue_Stripes_Scout",
     "name": "Blue Stripes Scout",
     "cardColor": "BRONZE",
@@ -1521,7 +1522,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Blue_Stripes_Scout_(Alpha)",
     "name": "Blue Stripes Scout",
     "cardColor": "BRONZE",
@@ -1540,7 +1541,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "489",
+    "img": "489",
     "url": "http://gwent.wikia.com/wiki/Bone_Talisman",
     "name": "Bone Talisman",
     "cardColor": "BRONZE",
@@ -1558,7 +1559,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "335",
+    "img": "335",
     "url": "http://gwent.wikia.com/wiki/Bonhart",
     "name": "Bonhart",
     "cardColor": "GOLD",
@@ -1578,7 +1579,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "123",
+    "img": "123",
     "url": "http://gwent.wikia.com/wiki/Botchling",
     "name": "Botchling",
     "cardColor": "SILVER",
@@ -1598,7 +1599,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "511",
+    "img": "511",
     "url": "http://gwent.wikia.com/wiki/Boulder",
     "name": "Boulder",
     "cardColor": "BRONZE",
@@ -1616,7 +1617,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Boulder_(Midwinter_Hunt)",
     "name": "Boulder",
     "cardColor": "BRONZE",
@@ -1634,7 +1635,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "204",
+    "img": "204",
     "url": "http://gwent.wikia.com/wiki/Braenn",
     "name": "Braenn",
     "cardColor": "SILVER",
@@ -1655,7 +1656,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "230",
+    "img": "230",
     "url": "http://gwent.wikia.com/wiki/Bran",
     "name": "Bran",
     "cardColor": "GOLD",
@@ -1675,7 +1676,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "145",
+    "img": "145",
     "url": "http://gwent.wikia.com/wiki/Brewess",
     "name": "Brewess",
     "cardColor": "SILVER",
@@ -1696,7 +1697,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "408",
+    "img": "408",
     "url": "http://gwent.wikia.com/wiki/Brewess:_Ritual",
     "name": "Brewess: Ritual",
     "cardColor": "GOLD",
@@ -1718,7 +1719,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "444",
+    "img": "444",
     "url": "http://gwent.wikia.com/wiki/Bridge_Troll",
     "name": "Bridge Troll",
     "cardColor": "BRONZE",
@@ -1738,7 +1739,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "187",
+    "img": "187",
     "url": "http://gwent.wikia.com/wiki/Brouver",
     "name": "Brouver",
     "cardColor": "GOLD",
@@ -1758,7 +1759,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Brouver_Hoog_(Ale_Fest)",
     "name": "Brouver Hoog",
     "cardColor": "GOLD",
@@ -1778,7 +1779,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Brouver_Hoog_(Alpha)",
     "name": "Brouver Hoog",
     "cardColor": "GOLD",
@@ -1797,7 +1798,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "475",
+    "img": "475",
     "url": "http://gwent.wikia.com/wiki/Cadaverine",
     "name": "Cadaverine",
     "cardColor": "SILVER",
@@ -1817,7 +1818,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "288",
+    "img": "288",
     "url": "http://gwent.wikia.com/wiki/Cahir",
     "name": "Cahir",
     "cardColor": "GOLD",
@@ -1838,7 +1839,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "302",
+    "img": "302",
     "url": "http://gwent.wikia.com/wiki/Cantarella",
     "name": "Cantarella",
     "cardColor": "SILVER",
@@ -1859,7 +1860,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "134",
+    "img": "134",
     "url": "http://gwent.wikia.com/wiki/Caranthir",
     "name": "Caranthir",
     "cardColor": "GOLD",
@@ -1881,7 +1882,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Caranthir_(Alpha)",
     "name": "Caranthir",
     "cardColor": "GOLD",
@@ -1900,7 +1901,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "136",
+    "img": "136",
     "url": "http://gwent.wikia.com/wiki/Caretaker",
     "name": "Caretaker",
     "cardColor": "GOLD",
@@ -1921,7 +1922,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Caretaker_(Alpha)",
     "name": "Caretaker",
     "cardColor": "GOLD",
@@ -1940,7 +1941,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Castle_Gate_(Saovine)",
     "name": "Castle Gate",
     "cardColor": "SILVER",
@@ -1958,7 +1959,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Castle_Gate:_Open_(Saovine)",
     "name": "Castle Gate: Open",
     "cardColor": "GOLD",
@@ -1976,7 +1977,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "305",
+    "img": "305",
     "url": "http://gwent.wikia.com/wiki/Ceallach",
     "name": "Ceallach",
     "cardColor": "SILVER",
@@ -1996,7 +1997,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "155",
+    "img": "155",
     "url": "http://gwent.wikia.com/wiki/Celaeno_Harpy",
     "name": "Celaeno Harpy",
     "cardColor": "BRONZE",
@@ -2016,7 +2017,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Celaeno_Harpy_(Ale_Fest)",
     "name": "Celaeno Harpy",
     "cardColor": "BRONZE",
@@ -2036,7 +2037,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Celaeno_Harpy_(Alpha)",
     "name": "Celaeno Harpy",
     "cardColor": "SILVER",
@@ -2055,7 +2056,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "402",
+    "img": "402",
     "url": "http://gwent.wikia.com/wiki/Cerys",
     "name": "Cerys",
     "cardColor": "GOLD",
@@ -2076,7 +2077,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Cerys_(Alpha)",
     "name": "Cerys",
     "cardColor": "GOLD",
@@ -2095,7 +2096,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Champion_of_Champions_(Ale_Fest)",
     "name": "Champion of Champions",
     "cardColor": "GOLD",
@@ -2115,7 +2116,7 @@ const __cardDB = [
     "loyalty": "BOTH"
   },
   {
-    "id": "37",
+    "img": "37",
     "url": "http://gwent.wikia.com/wiki/Chironex",
     "name": "Chironex",
     "cardColor": "SILVER",
@@ -2136,7 +2137,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "438",
+    "img": "438",
     "url": "http://gwent.wikia.com/wiki/Chort",
     "name": "Chort",
     "cardColor": "BRONZE",
@@ -2157,7 +2158,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Chort_(Alpha)",
     "name": "Chort",
     "cardColor": "SILVER",
@@ -2175,7 +2176,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "201",
+    "img": "201",
     "url": "http://gwent.wikia.com/wiki/Ciaran",
     "name": "Ciaran",
     "cardColor": "SILVER",
@@ -2197,7 +2198,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00008",
+    "img": "00008",
     "url": "http://gwent.wikia.com/wiki/Ciri",
     "name": "Ciri",
     "cardColor": "GOLD",
@@ -2218,7 +2219,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ciri:_Blink_(Alpha)",
     "name": "Ciri: Blink",
     "cardColor": "GOLD",
@@ -2237,7 +2238,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "17",
+    "img": "17",
     "url": "http://gwent.wikia.com/wiki/Ciri:_Dash",
     "name": "Ciri: Dash",
     "cardColor": "GOLD",
@@ -2258,7 +2259,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "501",
+    "img": "501",
     "url": "http://gwent.wikia.com/wiki/Ciri:_Nova",
     "name": "Ciri: Nova",
     "cardColor": "GOLD",
@@ -2280,7 +2281,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_an_Craite_Raider_(Alpha)",
     "name": "Clan an Craite Raider",
     "cardColor": "BRONZE",
@@ -2298,7 +2299,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_an_Craite_Warcrier_(Ale_Fest)",
     "name": "Clan an Craite Warcrier",
     "cardColor": "BRONZE",
@@ -2319,7 +2320,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_an_Craite_Warrior_(Ale_Fest)",
     "name": "Clan an Craite Warrior",
     "cardColor": "BRONZE",
@@ -2340,7 +2341,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_an_Craite_Warrior_(Alpha)",
     "name": "Clan an Craite Warrior",
     "cardColor": "BRONZE",
@@ -2359,7 +2360,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "269",
+    "img": "269",
     "url": "http://gwent.wikia.com/wiki/Clan_Archer",
     "name": "Clan Archer",
     "cardColor": "BRONZE",
@@ -2380,7 +2381,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Archer_(Midwinter_Hunt)",
     "name": "Clan Archer",
     "cardColor": "BRONZE",
@@ -2401,7 +2402,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "271",
+    "img": "271",
     "url": "http://gwent.wikia.com/wiki/Clan_Armorsmith",
     "name": "Clan Armorsmith",
     "cardColor": "BRONZE",
@@ -2422,7 +2423,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "266",
+    "img": "266",
     "url": "http://gwent.wikia.com/wiki/Clan_Axeman",
     "name": "Clan Tuirseach Axeman",
     "cardColor": "BRONZE",
@@ -2445,7 +2446,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "394",
+    "img": "394",
     "url": "http://gwent.wikia.com/wiki/Clan_Beastmaster",
     "name": "Clan Beastmaster",
     "cardColor": "BRONZE",
@@ -2466,7 +2467,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "395",
+    "img": "395",
     "url": "http://gwent.wikia.com/wiki/Clan_Corsair",
     "name": "Clan Corsair",
     "cardColor": "BRONZE",
@@ -2488,7 +2489,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Dimun_Pirate_(Alpha)",
     "name": "Clan Dimune Pirate",
     "cardColor": "BRONZE",
@@ -2507,7 +2508,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Dimun_Pirate_Captain_(Alpha)",
     "name": "Clan Dimun Pirate Captain",
     "cardColor": "BRONZE",
@@ -2526,7 +2527,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "343",
+    "img": "343",
     "url": "http://gwent.wikia.com/wiki/Clan_Greatsword",
     "name": "Clan Greatsword",
     "cardColor": "BRONZE",
@@ -2547,7 +2548,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Greatsword_(Midwinter_Hunt)",
     "name": "Clan Greatsword",
     "cardColor": "BRONZE",
@@ -2568,7 +2569,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "256",
+    "img": "256",
     "url": "http://gwent.wikia.com/wiki/Clan_Hunter",
     "name": "Clan Hunter",
     "cardColor": "BRONZE",
@@ -2589,7 +2590,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Hunter_(Midwinter_Hunt)",
     "name": "Clan Hunter",
     "cardColor": "BRONZE",
@@ -2610,7 +2611,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "480",
+    "img": "480",
     "url": "http://gwent.wikia.com/wiki/Clan_Marauder",
     "name": "Clan Marauder",
     "cardColor": "BRONZE",
@@ -2632,7 +2633,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Marauder_(Midwinter_Hunt)",
     "name": "Clan Marauder",
     "cardColor": "BRONZE",
@@ -2654,7 +2655,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "257",
+    "img": "257",
     "url": "http://gwent.wikia.com/wiki/Clan_Pirate",
     "name": "Clan Pirate",
     "cardColor": "BRONZE",
@@ -2675,7 +2676,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "399",
+    "img": "399",
     "url": "http://gwent.wikia.com/wiki/Clan_Protector",
     "name": "Clan Protector",
     "cardColor": "BRONZE",
@@ -2696,7 +2697,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "270",
+    "img": "270",
     "url": "http://gwent.wikia.com/wiki/Clan_Raider",
     "name": "Clan Raider",
     "cardColor": "BRONZE",
@@ -2717,7 +2718,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "265",
+    "img": "265",
     "url": "http://gwent.wikia.com/wiki/Clan_Shieldsmith",
     "name": "Clan Shieldsmith",
     "cardColor": "BRONZE",
@@ -2738,7 +2739,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "267",
+    "img": "267",
     "url": "http://gwent.wikia.com/wiki/Clan_Skirmisher",
     "name": "Clan Skirmisher",
     "cardColor": "BRONZE",
@@ -2759,7 +2760,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "396",
+    "img": "396",
     "url": "http://gwent.wikia.com/wiki/Clan_Smuggler",
     "name": "Clan Smuggler",
     "cardColor": "BRONZE",
@@ -2780,7 +2781,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Tordarroch_Armorsmith_(Alpha)",
     "name": "Clan Tordarroch Armorsmith",
     "cardColor": "BRONZE",
@@ -2799,7 +2800,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Tordarroch_Shieldsmith_(Ale_Fest)",
     "name": "Clan Tordarroch Shieldsmith",
     "cardColor": "BRONZE",
@@ -2820,7 +2821,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clan_Tordarroch_Shieldsmith_(Alpha)",
     "name": "Clan Tordarroch Shieldsmith",
     "cardColor": "BRONZE",
@@ -2839,7 +2840,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "348",
+    "img": "348",
     "url": "http://gwent.wikia.com/wiki/Clan_Veteran",
     "name": "Clan Veteran",
     "cardColor": "BRONZE",
@@ -2860,7 +2861,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "63",
+    "img": "63",
     "url": "http://gwent.wikia.com/wiki/Clan_Warcrier",
     "name": "Clan Warcrier",
     "cardColor": "BRONZE",
@@ -2881,7 +2882,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "339",
+    "img": "339",
     "url": "http://gwent.wikia.com/wiki/Clan_Warmonger",
     "name": "Clan Warmonger",
     "cardColor": "BRONZE",
@@ -2902,7 +2903,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "255",
+    "img": "255",
     "url": "http://gwent.wikia.com/wiki/Clan_Warrior",
     "name": "Clan an Craite Warrior",
     "cardColor": "BRONZE",
@@ -2923,7 +2924,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "54",
+    "img": "54",
     "url": "http://gwent.wikia.com/wiki/Clear_Skies",
     "name": "Clear Skies",
     "cardColor": "BRONZE",
@@ -2940,7 +2941,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Clear_Skies_(Alpha)",
     "name": "Clear Skies",
     "cardColor": "BRONZE",
@@ -2956,7 +2957,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "96",
+    "img": "96",
     "url": "http://gwent.wikia.com/wiki/Cleaver",
     "name": "Cleaver",
     "cardColor": "SILVER",
@@ -2976,7 +2977,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "417",
+    "img": "417",
     "url": "http://gwent.wikia.com/wiki/Cockatrice",
     "name": "Cockatrice",
     "cardColor": "BRONZE",
@@ -2996,7 +2997,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "318",
+    "img": "318",
     "url": "http://gwent.wikia.com/wiki/Combat_Engineer",
     "name": "Combat Engineer",
     "cardColor": "BRONZE",
@@ -3016,7 +3017,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Combat_Tinkerer_(Saovine)",
     "name": "Combat Tinkerer",
     "cardColor": "BRONZE",
@@ -3036,7 +3037,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "49",
+    "img": "49",
     "url": "http://gwent.wikia.com/wiki/Commander's_Horn",
     "name": "Commander's Horn",
     "cardColor": "SILVER",
@@ -3053,7 +3054,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Commander's_Horn_(Alpha)",
     "name": "Commander's Horn",
     "cardColor": "BRONZE",
@@ -3069,7 +3070,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Condemnation_(Saovine)",
     "name": "Condemnation",
     "cardColor": "BRONZE",
@@ -3084,7 +3085,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Cook_(Saovine)",
     "name": "Cook",
     "cardColor": "BRONZE",
@@ -3104,7 +3105,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "238",
+    "img": "238",
     "url": "http://gwent.wikia.com/wiki/Coral",
     "name": "Coral",
     "cardColor": "GOLD",
@@ -3124,7 +3125,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Coral_(Alpha)",
     "name": "Coral",
     "cardColor": "GOLD",
@@ -3143,7 +3144,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Cordial",
     "name": "Cordial",
     "cardColor": "SILVER",
@@ -3161,7 +3162,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "447",
+    "img": "447",
     "url": "http://gwent.wikia.com/wiki/Cow",
     "name": "Cow",
     "cardColor": "BRONZE",
@@ -3182,7 +3183,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "325",
+    "img": "325",
     "url": "http://gwent.wikia.com/wiki/Cow_Carcass",
     "name": "Cow Carcass",
     "cardColor": "BRONZE",
@@ -3202,7 +3203,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "231",
+    "img": "231",
     "url": "http://gwent.wikia.com/wiki/Crach",
     "name": "Crach",
     "cardColor": "GOLD",
@@ -3222,7 +3223,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crach_an_Craite_(Alpha)",
     "name": "Crach an Craite",
     "cardColor": "GOLD",
@@ -3241,7 +3242,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Craven_Revived",
     "name": "Craven Revived",
     "cardColor": "SILVER",
@@ -3261,7 +3262,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crone:_Brewess_(Ale_Fest)",
     "name": "Crone: Brewess",
     "cardColor": "SILVER",
@@ -3282,7 +3283,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crone:_Brewess_(Alpha)",
     "name": "Crone: Brewess",
     "cardColor": "SILVER",
@@ -3301,7 +3302,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crone:_Weavess_(Ale_Fest)",
     "name": "Crone: Weavess",
     "cardColor": "SILVER",
@@ -3322,7 +3323,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crone:_Weavess_(Alpha)",
     "name": "Crone: Weavess",
     "cardColor": "SILVER",
@@ -3341,7 +3342,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crone:_Whispess_(Ale_Fest)",
     "name": "Crone: Whispess",
     "cardColor": "SILVER",
@@ -3362,7 +3363,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Crossbowman_(Saovine)",
     "name": "Crossbowman",
     "cardColor": "BRONZE",
@@ -3383,7 +3384,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "411",
+    "img": "411",
     "url": "http://gwent.wikia.com/wiki/Crow's_Eye",
     "name": "Crow's Eye",
     "cardColor": "BRONZE",
@@ -3401,7 +3402,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "463",
+    "img": "463",
     "url": "http://gwent.wikia.com/wiki/Crushing_Trap",
     "name": "Crushing Trap",
     "cardColor": "BRONZE",
@@ -3418,7 +3419,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Cry_in_the_Dark_(Saovine)",
     "name": "Cry in the Dark",
     "cardColor": "BRONZE",
@@ -3433,7 +3434,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "500",
+    "img": "500",
     "url": "http://gwent.wikia.com/wiki/Cursed_Knight",
     "name": "Cursed Knight",
     "cardColor": "BRONZE",
@@ -3454,7 +3455,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "340",
+    "img": "340",
     "url": "http://gwent.wikia.com/wiki/Cyclops",
     "name": "Cyclops",
     "cardColor": "BRONZE",
@@ -3474,7 +3475,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "295",
+    "img": "295",
     "url": "http://gwent.wikia.com/wiki/Cynthia",
     "name": "Cynthia",
     "cardColor": "SILVER",
@@ -3494,7 +3495,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "34",
+    "img": "34",
     "url": "http://gwent.wikia.com/wiki/Cyprian_Wiley",
     "name": "Cyprian Wiley",
     "cardColor": "SILVER",
@@ -3514,7 +3515,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "151",
+    "img": "151",
     "url": "http://gwent.wikia.com/wiki/D'ao",
     "name": "D'ao",
     "cardColor": "BRONZE",
@@ -3534,7 +3535,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "306",
+    "img": "306",
     "url": "http://gwent.wikia.com/wiki/Daerlan_Soldier",
     "name": "Daerlan Soldier",
     "cardColor": "BRONZE",
@@ -3554,7 +3555,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "130",
+    "img": "130",
     "url": "http://gwent.wikia.com/wiki/Dagon",
     "name": "Dagon",
     "cardColor": "GOLD",
@@ -3574,7 +3575,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dagon_(Alpha)",
     "name": "Dagon",
     "cardColor": "GOLD",
@@ -3593,7 +3594,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "503",
+    "img": "503",
     "url": "http://gwent.wikia.com/wiki/Damned_Sorceress",
     "name": "Damned Sorceress",
     "cardColor": "BRONZE",
@@ -3614,7 +3615,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "82",
+    "img": "82",
     "url": "http://gwent.wikia.com/wiki/Dandelion",
     "name": "Dandelion",
     "cardColor": "GOLD",
@@ -3634,7 +3635,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dandelion_(Ale_Fest)",
     "name": "Dandelion",
     "cardColor": "GOLD",
@@ -3654,7 +3655,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dandelion_(Alpha)",
     "name": "Dandelion",
     "cardColor": "SILVER",
@@ -3673,7 +3674,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "485",
+    "img": "485",
     "url": "http://gwent.wikia.com/wiki/Dazhbog_Runestone",
     "name": "Dazhbog Runestone",
     "cardColor": "SILVER",
@@ -3691,7 +3692,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "43",
+    "img": "43",
     "url": "http://gwent.wikia.com/wiki/Decoy",
     "name": "Decoy",
     "cardColor": "SILVER",
@@ -3708,7 +3709,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Decoy_(Alpha)",
     "name": "Decoy",
     "cardColor": "BRONZE",
@@ -3724,7 +3725,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Decoy_(Midwinter_Hunt)",
     "name": "Decoy",
     "cardColor": "SILVER",
@@ -3741,7 +3742,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "310",
+    "img": "310",
     "url": "http://gwent.wikia.com/wiki/Deithwen_Arbalest",
     "name": "Deithwen Arbalest",
     "cardColor": "BRONZE",
@@ -3762,7 +3763,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "196",
+    "img": "196",
     "url": "http://gwent.wikia.com/wiki/Dennis_Cranmer",
     "name": "Dennis Cranmer",
     "cardColor": "SILVER",
@@ -3784,7 +3785,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00006",
+    "img": "00006",
     "url": "http://gwent.wikia.com/wiki/Derran",
     "name": "Derran",
     "cardColor": "SILVER",
@@ -3806,7 +3807,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "88",
+    "img": "88",
     "url": "http://gwent.wikia.com/wiki/Dethmold",
     "name": "Dethmold",
     "cardColor": "SILVER",
@@ -3827,7 +3828,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "486",
+    "img": "486",
     "url": "http://gwent.wikia.com/wiki/Devana_Runestone",
     "name": "Devana Runestone",
     "cardColor": "SILVER",
@@ -3845,7 +3846,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "78",
+    "img": "78",
     "url": "http://gwent.wikia.com/wiki/Dijkstra",
     "name": "Dijkstra",
     "cardColor": "GOLD",
@@ -3866,7 +3867,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dijkstra_(Alpha)",
     "name": "Dijkstra",
     "cardColor": "SILVER",
@@ -3885,7 +3886,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "47",
+    "img": "47",
     "url": "http://gwent.wikia.com/wiki/Dimeritium_Bomb",
     "name": "Dimeritium Bomb",
     "cardColor": "SILVER",
@@ -3902,7 +3903,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "66",
+    "img": "66",
     "url": "http://gwent.wikia.com/wiki/Dimeritium_Shackles",
     "name": "Dimeritium Shackles",
     "cardColor": "BRONZE",
@@ -3921,7 +3922,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "242",
+    "img": "242",
     "url": "http://gwent.wikia.com/wiki/Djenge_Frett",
     "name": "Djenge Frett",
     "cardColor": "SILVER",
@@ -3942,7 +3943,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Djenge_Frett_(Midwinter_Hunt)",
     "name": "Djenge Frett",
     "cardColor": "SILVER",
@@ -3962,7 +3963,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Djenge_Frett_2_(Midwinter_Hunt)",
     "name": "Djenge Frett",
     "cardColor": "GOLD",
@@ -3982,7 +3983,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dol_Blathanna_Marksman_(Alpha)",
     "name": "Dol Blathanna Marksman",
     "cardColor": "BRONZE",
@@ -4001,7 +4002,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dol_Blathanna_Trapper_(Alpha)",
     "name": "Dol Blathanna Trapper",
     "cardColor": "BRONZE",
@@ -4020,7 +4021,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "243",
+    "img": "243",
     "url": "http://gwent.wikia.com/wiki/Donar",
     "name": "Donar an Hindar",
     "cardColor": "SILVER",
@@ -4041,7 +4042,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Donar_an_Hindar_(Alpha)",
     "name": "Donar an Hindar",
     "cardColor": "SILVER",
@@ -4060,7 +4061,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "504",
+    "img": "504",
     "url": "http://gwent.wikia.com/wiki/Doppler",
     "name": "Doppler",
     "cardColor": "BRONZE",
@@ -4077,7 +4078,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "370",
+    "img": "370",
     "url": "http://gwent.wikia.com/wiki/Dorregaray",
     "name": "Dorregaray",
     "cardColor": "SILVER",
@@ -4097,7 +4098,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "451",
+    "img": "451",
     "url": "http://gwent.wikia.com/wiki/Dragon's_Dream",
     "name": "Dragon's Dream",
     "cardColor": "SILVER",
@@ -4116,7 +4117,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dragon's_Dream_(Saovine)",
     "name": "Dragon's Dream",
     "cardColor": "BRONZE",
@@ -4132,7 +4133,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "244",
+    "img": "244",
     "url": "http://gwent.wikia.com/wiki/Draig_Bon-Dhu",
     "name": "Draig Bon-Dhu",
     "cardColor": "SILVER",
@@ -4152,7 +4153,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Draig_Bon-Dhu_(Ale_Fest)",
     "name": "Draig Bon-Dhu",
     "cardColor": "GOLD",
@@ -4172,7 +4173,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Draig_Bon-Dhu_(Alpha)",
     "name": "Draig Bon-Dhu",
     "cardColor": "SILVER",
@@ -4191,7 +4192,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "131",
+    "img": "131",
     "url": "http://gwent.wikia.com/wiki/Draug",
     "name": "Draug",
     "cardColor": "GOLD",
@@ -4212,7 +4213,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "441",
+    "img": "441",
     "url": "http://gwent.wikia.com/wiki/Draugir",
     "name": "Draugir",
     "cardColor": "BRONZE",
@@ -4233,7 +4234,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Draug_(Alpha)",
     "name": "Draug",
     "cardColor": "GOLD",
@@ -4252,7 +4253,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "329",
+    "img": "329",
     "url": "http://gwent.wikia.com/wiki/Drought",
     "name": "Drought",
     "cardColor": "GOLD",
@@ -4269,7 +4270,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "173",
+    "img": "173",
     "url": "http://gwent.wikia.com/wiki/Drowner",
     "name": "Drowner",
     "cardColor": "BRONZE",
@@ -4289,7 +4290,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Drunken_Dwarf",
     "name": "Drunken Dwarf",
     "cardColor": "BRONZE",
@@ -4309,7 +4310,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Drunken_Sailor",
     "name": "Drunken Sailor",
     "cardColor": "BRONZE",
@@ -4327,7 +4328,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "39",
+    "img": "39",
     "url": "http://gwent.wikia.com/wiki/Duda:_Agitator",
     "name": "Duda: Agitator",
     "cardColor": "SILVER",
@@ -4348,7 +4349,7 @@ const __cardDB = [
     "loyalty": "BOTH"
   },
   {
-    "id": "38",
+    "img": "38",
     "url": "http://gwent.wikia.com/wiki/Duda:_Companion",
     "name": "Duda: Companion",
     "cardColor": "SILVER",
@@ -4369,7 +4370,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "21",
+    "img": "21",
     "url": "http://gwent.wikia.com/wiki/Dudu",
     "name": "Dudu",
     "cardColor": "SILVER",
@@ -4389,7 +4390,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "115",
+    "img": "115",
     "url": "http://gwent.wikia.com/wiki/Dun_Banner",
     "name": "Dun Banner Light Cavalry",
     "cardColor": "BRONZE",
@@ -4410,7 +4411,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dun_Banner_Heavy_Cavalry_(Alpha)",
     "name": "Dun Banner Heavy Cavalry",
     "cardColor": "BRONZE",
@@ -4429,7 +4430,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dun_Banner_Light_Cavalry_(Alpha)",
     "name": "Dun Banner Light Cavalry",
     "cardColor": "BRONZE",
@@ -4448,7 +4449,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "427",
+    "img": "427",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Agitator",
     "name": "Dwarven Agitator",
     "cardColor": "BRONZE",
@@ -4469,7 +4470,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "220",
+    "img": "220",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Mercenary",
     "name": "Dwarven Mercenary",
     "cardColor": "BRONZE",
@@ -4491,7 +4492,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Mercenary_(Ale_Fest)",
     "name": "Dwarven Mercenary",
     "cardColor": "BRONZE",
@@ -4513,7 +4514,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Mercenary_(Alpha)",
     "name": "Dwarven Mercenary",
     "cardColor": "BRONZE",
@@ -4532,7 +4533,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "214",
+    "img": "214",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Skirmisher",
     "name": "Dwarven Skirmisher",
     "cardColor": "BRONZE",
@@ -4553,7 +4554,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Dwarven_Skirmisher_(Ale_Fest)",
     "name": "Dwarven Skirmisher",
     "cardColor": "BRONZE",
@@ -4574,7 +4575,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "358",
+    "img": "358",
     "url": "http://gwent.wikia.com/wiki/Eist",
     "name": "Eist Tuirseach",
     "cardColor": "GOLD",
@@ -4594,7 +4595,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "186",
+    "img": "186",
     "url": "http://gwent.wikia.com/wiki/Eithn%C3%A9",
     "name": "Eithné",
     "cardColor": "GOLD",
@@ -4614,7 +4615,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Eithn%C3%A9_(Alpha)",
     "name": "Eithné",
     "cardColor": "GOLD",
@@ -4633,7 +4634,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "172",
+    "img": "172",
     "url": "http://gwent.wikia.com/wiki/Ekimmara",
     "name": "Ekimmara",
     "cardColor": "BRONZE",
@@ -4653,7 +4654,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ekimmara_(Saovine)",
     "name": "Ekimmara",
     "cardColor": "BRONZE",
@@ -4673,7 +4674,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ekimmara_Swarm_(Saovine)",
     "name": "Ekimmara Swarm",
     "cardColor": "BRONZE",
@@ -4695,7 +4696,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "209",
+    "img": "209",
     "url": "http://gwent.wikia.com/wiki/Ele'yas",
     "name": "Ele'yas",
     "cardColor": "SILVER",
@@ -4716,7 +4717,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "219",
+    "img": "219",
     "url": "http://gwent.wikia.com/wiki/Elven_Archer",
     "name": "Elven Archer",
     "cardColor": "BRONZE",
@@ -4737,7 +4738,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "469",
+    "img": "469",
     "url": "http://gwent.wikia.com/wiki/Elven_Blade",
     "name": "Elven Blade",
     "cardColor": "BRONZE",
@@ -4754,7 +4755,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "223",
+    "img": "223",
     "url": "http://gwent.wikia.com/wiki/Elven_Marksman",
     "name": "Elven Marksman",
     "cardColor": "BRONZE",
@@ -4776,7 +4777,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "217",
+    "img": "217",
     "url": "http://gwent.wikia.com/wiki/Elven_Mercenary",
     "name": "Elven Mercenary",
     "cardColor": "BRONZE",
@@ -4797,7 +4798,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Elven_Mercenary_(Alpha)",
     "name": "Elven Mercenary",
     "cardColor": "BRONZE",
@@ -4816,7 +4817,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "342",
+    "img": "342",
     "url": "http://gwent.wikia.com/wiki/Elven_Protector",
     "name": "Elven Protector",
     "cardColor": "BRONZE",
@@ -4837,7 +4838,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "225",
+    "img": "225",
     "url": "http://gwent.wikia.com/wiki/Elven_Saboteurs",
     "name": "Blue Mountain Commando",
     "cardColor": "BRONZE",
@@ -4859,7 +4860,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "462",
+    "img": "462",
     "url": "http://gwent.wikia.com/wiki/Elven_Scout",
     "name": "Elven Scout",
     "cardColor": "BRONZE",
@@ -4880,7 +4881,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "479",
+    "img": "479",
     "url": "http://gwent.wikia.com/wiki/Elven_Swordmaster",
     "name": "Elven Swordmaster",
     "cardColor": "BRONZE",
@@ -4901,7 +4902,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "213",
+    "img": "213",
     "url": "http://gwent.wikia.com/wiki/Elven_Trapper",
     "name": "Dol Blathanna Trapper",
     "cardColor": "BRONZE",
@@ -4922,7 +4923,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "282",
+    "img": "282",
     "url": "http://gwent.wikia.com/wiki/Emhyr",
     "name": "Emhyr",
     "cardColor": "GOLD",
@@ -4942,7 +4943,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "319",
+    "img": "319",
     "url": "http://gwent.wikia.com/wiki/Emissary",
     "name": "Emissary",
     "cardColor": "BRONZE",
@@ -4962,7 +4963,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Enraged_Katakan_(Saovine)",
     "name": "Enraged Katakan",
     "cardColor": "SILVER",
@@ -4983,7 +4984,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Enraged_Katakan_2_(Saovine)",
     "name": "Enraged Katakan",
     "cardColor": "SILVER",
@@ -5004,7 +5005,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "58",
+    "img": "58",
     "url": "http://gwent.wikia.com/wiki/Epidemic",
     "name": "Epidemic",
     "cardColor": "BRONZE",
@@ -5022,7 +5023,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Epidemic_(Alpha)",
     "name": "Epidemic",
     "cardColor": "BRONZE",
@@ -5038,7 +5039,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "128",
+    "img": "128",
     "url": "http://gwent.wikia.com/wiki/Eredin",
     "name": "Eredin",
     "cardColor": "GOLD",
@@ -5058,7 +5059,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Eredin_(Unit)",
     "name": "Eredin",
     "cardColor": "SILVER",
@@ -5078,7 +5079,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Eredin_Leader_(Alpha)",
     "name": "Eredin",
     "cardColor": "GOLD",
@@ -5097,7 +5098,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Eredin_Unit_(Alpha)",
     "name": "Eredin",
     "cardColor": "GOLD",
@@ -5115,7 +5116,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "234",
+    "img": "234",
     "url": "http://gwent.wikia.com/wiki/Ermion",
     "name": "Ermion",
     "cardColor": "GOLD",
@@ -5136,7 +5137,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ermion_(Alpha)",
     "name": "Ermion",
     "cardColor": "GOLD",
@@ -5155,7 +5156,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "22",
+    "img": "22",
     "url": "http://gwent.wikia.com/wiki/Eskel",
     "name": "Eskel",
     "cardColor": "SILVER",
@@ -5175,7 +5176,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "419",
+    "img": "419",
     "url": "http://gwent.wikia.com/wiki/Eskel:_Pathfinder",
     "name": "Eskel: Pathfinder",
     "cardColor": "GOLD",
@@ -5195,7 +5196,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Even_Lesser_Raven_(Saovine)",
     "name": "Even Lesser Raven",
     "cardColor": "BRONZE",
@@ -5215,7 +5216,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Exhausted_Ocvist",
     "name": "Exhausted Ocvist",
     "cardColor": "SILVER",
@@ -5235,7 +5236,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "416",
+    "img": "416",
     "url": "http://gwent.wikia.com/wiki/Expired_Ale",
     "name": "Expired Ale",
     "cardColor": "SILVER",
@@ -5252,7 +5253,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Extract",
     "name": "Extract",
     "cardColor": "SILVER",
@@ -5270,7 +5271,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Farmhand_(Saovine)",
     "name": "Farmhand",
     "cardColor": "BRONZE",
@@ -5290,7 +5291,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "391",
+    "img": "391",
     "url": "http://gwent.wikia.com/wiki/Farseer",
     "name": "Farseer",
     "cardColor": "BRONZE",
@@ -5311,7 +5312,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Festgoer",
     "name": "Festgoer",
     "cardColor": "BRONZE",
@@ -5329,7 +5330,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Field_Marshall_Duda:_Agitator_(Alpha)",
     "name": "Field Marshall Duda: Agitator",
     "cardColor": "GOLD",
@@ -5344,7 +5345,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Field_Marshall_Duda:_Companion_(Alpha)",
     "name": "Field Marshall Duda: Companion",
     "cardColor": "GOLD",
@@ -5359,7 +5360,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "114",
+    "img": "114",
     "url": "http://gwent.wikia.com/wiki/Field_Medic",
     "name": "Field Medic",
     "cardColor": "BRONZE",
@@ -5379,7 +5380,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Field_Medic_(Alpha)",
     "name": "Field Medic",
     "cardColor": "BRONZE",
@@ -5395,7 +5396,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "40",
+    "img": "40",
     "url": "http://gwent.wikia.com/wiki/Fiend",
     "name": "Fiend",
     "cardColor": "BRONZE",
@@ -5415,7 +5416,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "364",
+    "img": "364",
     "url": "http://gwent.wikia.com/wiki/Filavandrel",
     "name": "Filavandrel",
     "cardColor": "GOLD",
@@ -5435,7 +5436,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "311",
+    "img": "311",
     "url": "http://gwent.wikia.com/wiki/Fire_Scorpion",
     "name": "Fire Scorpion",
     "cardColor": "BRONZE",
@@ -5456,7 +5457,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "54",
+    "img": "54",
     "url": "http://gwent.wikia.com/wiki/First_Light",
     "name": "First Light",
     "cardColor": "BRONZE",
@@ -5475,7 +5476,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "397",
+    "img": "397",
     "url": "http://gwent.wikia.com/wiki/Flaminica",
     "name": "Flaminica",
     "cardColor": "BRONZE",
@@ -5496,7 +5497,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "55",
+    "img": "55",
     "url": "http://gwent.wikia.com/wiki/Fog",
     "name": "Fog",
     "cardColor": "BRONZE",
@@ -5513,7 +5514,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "158",
+    "img": "158",
     "url": "http://gwent.wikia.com/wiki/Foglet",
     "name": "Foglet",
     "cardColor": "BRONZE",
@@ -5533,7 +5534,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Foglet_(Alpha)",
     "name": "Foglet",
     "cardColor": "BRONZE",
@@ -5552,7 +5553,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "71",
+    "img": "71",
     "url": "http://gwent.wikia.com/wiki/Foltest",
     "name": "Foltest",
     "cardColor": "GOLD",
@@ -5572,7 +5573,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "466",
+    "img": "466",
     "url": "http://gwent.wikia.com/wiki/Foltest's_Pride",
     "name": "Foltest's Pride",
     "cardColor": "SILVER",
@@ -5594,7 +5595,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Foltest_(Alpha)",
     "name": "Foltest",
     "cardColor": "GOLD",
@@ -5613,7 +5614,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "461",
+    "img": "461",
     "url": "http://gwent.wikia.com/wiki/Forktail",
     "name": "Forktail",
     "cardColor": "BRONZE",
@@ -5633,7 +5634,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Foul_Ale",
     "name": "Foul Ale",
     "cardColor": "SILVER",
@@ -5651,7 +5652,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Foul_Ale_(Ale_Fest)",
     "name": "Foul Ale",
     "cardColor": "SILVER",
@@ -5668,7 +5669,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Foul_Ale_(Token)",
     "name": "Foul Ale",
     "cardColor": "SILVER",
@@ -5689,7 +5690,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "185",
+    "img": "185",
     "url": "http://gwent.wikia.com/wiki/Francesca",
     "name": "Francesca",
     "cardColor": "GOLD",
@@ -5710,7 +5711,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "142",
+    "img": "142",
     "url": "http://gwent.wikia.com/wiki/Frightener",
     "name": "Frightener",
     "cardColor": "SILVER",
@@ -5731,7 +5732,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Frightener_(Alpha)",
     "name": "Frightener",
     "cardColor": "SILVER",
@@ -5750,7 +5751,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "297",
+    "img": "297",
     "url": "http://gwent.wikia.com/wiki/Fringilla_Vigo",
     "name": "Fringilla Vigo",
     "cardColor": "SILVER",
@@ -5770,7 +5771,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "53",
+    "img": "53",
     "url": "http://gwent.wikia.com/wiki/Frost",
     "name": "Frost",
     "cardColor": "BRONZE",
@@ -5787,7 +5788,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Frost_(Midwinter_Hunt)",
     "name": "Frost",
     "cardColor": "BRONZE",
@@ -5804,7 +5805,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "361",
+    "img": "361",
     "url": "http://gwent.wikia.com/wiki/Full_Moon",
     "name": "Full Moon",
     "cardColor": "BRONZE",
@@ -5821,7 +5822,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Full_Moon_Potion_(Ale_Fest)",
     "name": "Full Moon Potion",
     "cardColor": "BRONZE",
@@ -5838,7 +5839,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "422",
+    "img": "422",
     "url": "http://gwent.wikia.com/wiki/Gabor_Zigrin",
     "name": "Gabor Zigrin",
     "cardColor": "GOLD",
@@ -5858,7 +5859,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Garkain_(Saovine)",
     "name": "Garkain",
     "cardColor": "BRONZE",
@@ -5878,7 +5879,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "153",
+    "img": "153",
     "url": "http://gwent.wikia.com/wiki/Gaunter_O'Dimm",
     "name": "Gaunter O'Dimm",
     "cardColor": "GOLD",
@@ -5898,7 +5899,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Gaunter_O'Dimm_(Alpha)",
     "name": "Gaunter O'Dimm",
     "cardColor": "SILVER",
@@ -5917,7 +5918,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "129",
+    "img": "129",
     "url": "http://gwent.wikia.com/wiki/Ge'els",
     "name": "Ge'els",
     "cardColor": "GOLD",
@@ -5938,7 +5939,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ge'els_(Alpha)",
     "name": "Ge'els",
     "cardColor": "GOLD",
@@ -5953,7 +5954,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "10",
+    "img": "10",
     "url": "http://gwent.wikia.com/wiki/Geralt",
     "name": "Geralt",
     "cardColor": "GOLD",
@@ -5973,7 +5974,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Geralt_(Midwinter_Hunt)",
     "name": "Geralt",
     "cardColor": "GOLD",
@@ -5991,7 +5992,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "18",
+    "img": "18",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Aard",
     "name": "Geralt: Aard",
     "cardColor": "GOLD",
@@ -6011,7 +6012,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00009",
+    "img": "00009",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Igni",
     "name": "Geralt: Igni",
     "cardColor": "GOLD",
@@ -6031,7 +6032,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Igni_(Alpha)",
     "name": "Geralt: Igni",
     "cardColor": "GOLD",
@@ -6050,7 +6051,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Igni_(Midwinter_Hunt)",
     "name": "Geralt: Igni",
     "cardColor": "GOLD",
@@ -6070,7 +6071,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Swordmaster_(Alpha)",
     "name": "Geralt: Swordmaster",
     "cardColor": "GOLD",
@@ -6088,7 +6089,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "470",
+    "img": "470",
     "url": "http://gwent.wikia.com/wiki/Geralt:_Yrden",
     "name": "Geralt: Yrden",
     "cardColor": "GOLD",
@@ -6108,7 +6109,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "455",
+    "img": "455",
     "url": "http://gwent.wikia.com/wiki/Germain",
     "name": "Germain",
     "cardColor": "SILVER",
@@ -6128,7 +6129,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Germain_of_Fox_Hollow_(Saovine)",
     "name": "Germain of Fox Hollow",
     "cardColor": "GOLD",
@@ -6150,7 +6151,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Germain_of_Fox_Hollow_2_(Saovine)",
     "name": "Germain of Fox Hollow",
     "cardColor": "GOLD",
@@ -6171,7 +6172,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Germain_of_Fox_Hollow_3_(Saovine)",
     "name": "Germain of Fox Hollow",
     "cardColor": "GOLD",
@@ -6195,7 +6196,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "163",
+    "img": "163",
     "url": "http://gwent.wikia.com/wiki/Ghoul",
     "name": "Ghoul",
     "cardColor": "BRONZE",
@@ -6215,7 +6216,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "498",
+    "img": "498",
     "url": "http://gwent.wikia.com/wiki/Giant_Boar",
     "name": "Giant Boar",
     "cardColor": "SILVER",
@@ -6235,7 +6236,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Giant_Toad_(Alpha)",
     "name": "Giant Toad",
     "cardColor": "SILVER",
@@ -6254,7 +6255,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "471",
+    "img": "471",
     "url": "http://gwent.wikia.com/wiki/Glorious_Hunt",
     "name": "Glorious Hunt",
     "cardColor": "SILVER",
@@ -6272,7 +6273,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "526",
+    "img": "526",
     "url": "http://gwent.wikia.com/wiki/Golden_Froth",
     "name": "Golden Froth",
     "cardColor": "BRONZE",
@@ -6289,7 +6290,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Golem",
     "name": "Golem",
     "cardColor": "BRONZE",
@@ -6307,7 +6308,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Golem_(Alpha)",
     "name": "Golem",
     "cardColor": "BRONZE",
@@ -6326,7 +6327,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "352",
+    "img": "352",
     "url": "http://gwent.wikia.com/wiki/Golyat",
     "name": "Golyat",
     "cardColor": "SILVER",
@@ -6347,7 +6348,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Grave_Hag_(Alpha)",
     "name": "Grave Hag",
     "cardColor": "SILVER",
@@ -6363,7 +6364,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "245",
+    "img": "245",
     "url": "http://gwent.wikia.com/wiki/Gremist",
     "name": "Gremist",
     "cardColor": "SILVER",
@@ -6383,7 +6384,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "171",
+    "img": "171",
     "url": "http://gwent.wikia.com/wiki/Griffin",
     "name": "Griffin",
     "cardColor": "BRONZE",
@@ -6403,7 +6404,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Griffin_(Alpha)",
     "name": "Griffin",
     "cardColor": "BRONZE",
@@ -6421,7 +6422,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "44",
+    "img": "44",
     "url": "http://gwent.wikia.com/wiki/Hailstorm",
     "name": "Hailstorm",
     "cardColor": "SILVER",
@@ -6438,7 +6439,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "508",
+    "img": "508",
     "url": "http://gwent.wikia.com/wiki/Half-Elf_Hunter",
     "name": "Half-Elf Hunter",
     "cardColor": "BRONZE",
@@ -6459,7 +6460,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "346",
+    "img": "346",
     "url": "http://gwent.wikia.com/wiki/Harald_Houndsnout",
     "name": "Harald Houndsnout",
     "cardColor": "SILVER",
@@ -6480,7 +6481,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "232",
+    "img": "232",
     "url": "http://gwent.wikia.com/wiki/Harald_the_Cripple",
     "name": "Harald the Cripple",
     "cardColor": "GOLD",
@@ -6500,7 +6501,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Harald_the_Cripple_(Alpha)",
     "name": "Harald the Cripple",
     "cardColor": "GOLD",
@@ -6519,7 +6520,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "174",
+    "img": "174",
     "url": "http://gwent.wikia.com/wiki/Harpy",
     "name": "Harpy",
     "cardColor": "BRONZE",
@@ -6539,7 +6540,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "175",
+    "img": "175",
     "url": "http://gwent.wikia.com/wiki/Harpy_Egg",
     "name": "Harpy Egg",
     "cardColor": "BRONZE",
@@ -6559,7 +6560,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Harpy_Egg_(Ale_Fest)",
     "name": "Harpy Egg",
     "cardColor": "BRONZE",
@@ -6579,7 +6580,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "435",
+    "img": "435",
     "url": "http://gwent.wikia.com/wiki/Harpy_Hatchling",
     "name": "Harpy Hatchling",
     "cardColor": "BRONZE",
@@ -6600,7 +6601,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Harpy_Hatchling_(Ale_Fest)",
     "name": "Harpy Hatchling",
     "cardColor": "BRONZE",
@@ -6620,7 +6621,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "449",
+    "img": "449",
     "url": "http://gwent.wikia.com/wiki/Hattori",
     "name": "Hattori",
     "cardColor": "SILVER",
@@ -6642,7 +6643,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Hav'caaren_Healer_(Alpha)",
     "name": "Hav'caaren Healer",
     "cardColor": "BRONZE",
@@ -6658,7 +6659,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Hav'caaren_Smuggler_(Alpha)",
     "name": "Hav'caaren Smuggler",
     "cardColor": "BRONZE",
@@ -6677,7 +6678,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "210",
+    "img": "210",
     "url": "http://gwent.wikia.com/wiki/Hawker_Healer",
     "name": "Hawker Healer",
     "cardColor": "BRONZE",
@@ -6698,7 +6699,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "224",
+    "img": "224",
     "url": "http://gwent.wikia.com/wiki/Hawker_Smuggler",
     "name": "Hawker Smuggler",
     "cardColor": "BRONZE",
@@ -6719,7 +6720,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "221",
+    "img": "221",
     "url": "http://gwent.wikia.com/wiki/Hawker_Support",
     "name": "Hawker Support",
     "cardColor": "BRONZE",
@@ -6740,7 +6741,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Headless_Drunkman",
     "name": "Headless Drunkman",
     "cardColor": "SILVER",
@@ -6761,7 +6762,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "344",
+    "img": "344",
     "url": "http://gwent.wikia.com/wiki/Hefty_Helge",
     "name": "Hefty Helge",
     "cardColor": "SILVER",
@@ -6782,7 +6783,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "276",
+    "img": "276",
     "url": "http://gwent.wikia.com/wiki/Hemdall",
     "name": "Hemdall",
     "cardColor": "GOLD",
@@ -6803,7 +6804,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "414",
+    "img": "414",
     "url": "http://gwent.wikia.com/wiki/Henry_var_Attre",
     "name": "Henry var Attre",
     "cardColor": "SILVER",
@@ -6824,7 +6825,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "73",
+    "img": "73",
     "url": "http://gwent.wikia.com/wiki/Henselt",
     "name": "Henselt",
     "cardColor": "GOLD",
@@ -6844,7 +6845,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Henselt_(Alpha)",
     "name": "Henselt",
     "cardColor": "GOLD",
@@ -6862,7 +6863,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "368",
+    "img": "368",
     "url": "http://gwent.wikia.com/wiki/Herbalist",
     "name": "Herbalist",
     "cardColor": "BRONZE",
@@ -6883,7 +6884,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Heroics_(Alpha)",
     "name": "Heroics",
     "cardColor": "BRONZE",
@@ -6899,7 +6900,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "233",
+    "img": "233",
     "url": "http://gwent.wikia.com/wiki/Hjalmar",
     "name": "Hjalmar",
     "cardColor": "GOLD",
@@ -6920,7 +6921,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Hjalmar_(Ale_Fest)",
     "name": "Hjalmar",
     "cardColor": "GOLD",
@@ -6941,7 +6942,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Hjalmar_(Alpha)",
     "name": "Hjalmar",
     "cardColor": "GOLD",
@@ -6959,7 +6960,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "246",
+    "img": "246",
     "url": "http://gwent.wikia.com/wiki/Holger_Blackhand",
     "name": "Holger Blackhand",
     "cardColor": "SILVER",
@@ -6982,7 +6983,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "371",
+    "img": "371",
     "url": "http://gwent.wikia.com/wiki/Hubert_Rejk",
     "name": "Hubert Rejk",
     "cardColor": "SILVER",
@@ -7002,7 +7003,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "376",
+    "img": "376",
     "url": "http://gwent.wikia.com/wiki/Hym",
     "name": "Hym",
     "cardColor": "GOLD",
@@ -7024,7 +7025,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "150",
+    "img": "150",
     "url": "http://gwent.wikia.com/wiki/Ice_Giant",
     "name": "Ice Giant",
     "cardColor": "BRONZE",
@@ -7044,7 +7045,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ice_Giant_(Alpha)",
     "name": "Ice Giant",
     "cardColor": "SILVER",
@@ -7063,7 +7064,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ice_Giant_(Midwinter_Hunt)",
     "name": "Ice Giant",
     "cardColor": "BRONZE",
@@ -7083,7 +7084,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "446",
+    "img": "446",
     "url": "http://gwent.wikia.com/wiki/Ice_Troll",
     "name": "Ice Troll",
     "cardColor": "BRONZE",
@@ -7104,7 +7105,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ice_Troll_(Midwinter_Hunt)",
     "name": "Ice Troll",
     "cardColor": "BRONZE",
@@ -7125,7 +7126,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "197",
+    "img": "197",
     "url": "http://gwent.wikia.com/wiki/Ida_Emean",
     "name": "Ida Emean",
     "cardColor": "SILVER",
@@ -7146,7 +7147,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "148",
+    "img": "148",
     "url": "http://gwent.wikia.com/wiki/Ifrit",
     "name": "Ifrit",
     "cardColor": "SILVER",
@@ -7166,7 +7167,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "132",
+    "img": "132",
     "url": "http://gwent.wikia.com/wiki/Imlerith",
     "name": "Imlerith",
     "cardColor": "GOLD",
@@ -7187,7 +7188,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Imlerith_(Alpha)",
     "name": "Imlerith",
     "cardColor": "GOLD",
@@ -7203,7 +7204,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Impenetrable_Fog_(Alpha)",
     "name": "Impenetrable Fog",
     "cardColor": "BRONZE",
@@ -7219,7 +7220,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "312",
+    "img": "312",
     "url": "http://gwent.wikia.com/wiki/Impera_Brigade",
     "name": "Impera Brigade",
     "cardColor": "BRONZE",
@@ -7240,7 +7241,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "313",
+    "img": "313",
     "url": "http://gwent.wikia.com/wiki/Impera_Enforcers",
     "name": "Impera Enforcers",
     "cardColor": "BRONZE",
@@ -7261,7 +7262,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "170",
+    "img": "170",
     "url": "http://gwent.wikia.com/wiki/Imperial_Golem",
     "name": "Imperial Golem",
     "cardColor": "BRONZE",
@@ -7281,7 +7282,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "147",
+    "img": "147",
     "url": "http://gwent.wikia.com/wiki/Imperial_Manticore",
     "name": "Imperial Manticore",
     "cardColor": "SILVER",
@@ -7301,7 +7302,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "229",
+    "img": "229",
     "url": "http://gwent.wikia.com/wiki/Incinerating_Trap",
     "name": "Fireball Trap",
     "cardColor": "BRONZE",
@@ -7323,7 +7324,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Infestation_(Saovine)",
     "name": "Infestation",
     "cardColor": "BRONZE",
@@ -7338,7 +7339,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "386",
+    "img": "386",
     "url": "http://gwent.wikia.com/wiki/Infiltrator",
     "name": "Infiltrator",
     "cardColor": "BRONZE",
@@ -7358,7 +7359,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "190",
+    "img": "190",
     "url": "http://gwent.wikia.com/wiki/Iorveth",
     "name": "Iorveth",
     "cardColor": "GOLD",
@@ -7380,7 +7381,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Iorveth_(Alpha)",
     "name": "Iorveth",
     "cardColor": "GOLD",
@@ -7399,7 +7400,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "492",
+    "img": "492",
     "url": "http://gwent.wikia.com/wiki/Iorveth:_Meditation",
     "name": "Iorveth: Meditation",
     "cardColor": "GOLD",
@@ -7420,7 +7421,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "35",
+    "img": "35",
     "url": "http://gwent.wikia.com/wiki/Iris",
     "name": "Iris",
     "cardColor": "SILVER",
@@ -7441,7 +7442,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "189",
+    "img": "189",
     "url": "http://gwent.wikia.com/wiki/Isengrim",
     "name": "Isengrim",
     "cardColor": "GOLD",
@@ -7462,7 +7463,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "493",
+    "img": "493",
     "url": "http://gwent.wikia.com/wiki/Isengrim:_Outlaw",
     "name": "Isengrim: Outlaw",
     "cardColor": "GOLD",
@@ -7484,7 +7485,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "194",
+    "img": "194",
     "url": "http://gwent.wikia.com/wiki/Ithlinne",
     "name": "Ithlinne",
     "cardColor": "GOLD",
@@ -7505,7 +7506,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ithlinne_Aegli_(Alpha)",
     "name": "Ithlinne Aegli",
     "cardColor": "SILVER",
@@ -7524,7 +7525,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "353",
+    "img": "353",
     "url": "http://gwent.wikia.com/wiki/Jade_Figurine",
     "name": "Jade Figurine",
     "cardColor": "SILVER",
@@ -7544,7 +7545,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Jade_Golem_(Alpha)",
     "name": "Jade Golem",
     "cardColor": "BRONZE",
@@ -7563,7 +7564,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "284",
+    "img": "284",
     "url": "http://gwent.wikia.com/wiki/Jan_Calveit",
     "name": "Jan Calveit",
     "cardColor": "GOLD",
@@ -7583,7 +7584,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "303",
+    "img": "303",
     "url": "http://gwent.wikia.com/wiki/Joachim_de_Wett",
     "name": "Joachim de Wett",
     "cardColor": "SILVER",
@@ -7604,7 +7605,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "31",
+    "img": "31",
     "url": "http://gwent.wikia.com/wiki/Johnny",
     "name": "Johnny",
     "cardColor": "SILVER",
@@ -7625,7 +7626,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "76",
+    "img": "76",
     "url": "http://gwent.wikia.com/wiki/John_Natalis",
     "name": "John Natalis",
     "cardColor": "GOLD",
@@ -7646,7 +7647,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/John_Natalis_(Alpha)",
     "name": "John Natalis",
     "cardColor": "GOLD",
@@ -7665,7 +7666,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "406",
+    "img": "406",
     "url": "http://gwent.wikia.com/wiki/Jotunn",
     "name": "Jotunn",
     "cardColor": "SILVER",
@@ -7686,7 +7687,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Jotunn_(Midwinter_Hunt)",
     "name": "Jotunn",
     "cardColor": "GOLD",
@@ -7706,7 +7707,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "247",
+    "img": "247",
     "url": "http://gwent.wikia.com/wiki/Jutta",
     "name": "Jutta",
     "cardColor": "SILVER",
@@ -7727,7 +7728,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "116",
+    "img": "116",
     "url": "http://gwent.wikia.com/wiki/Kaedweni_Cavalry",
     "name": "Kaedweni Cavalry",
     "cardColor": "BRONZE",
@@ -7748,7 +7749,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "338",
+    "img": "338",
     "url": "http://gwent.wikia.com/wiki/Kaedweni_Knight",
     "name": "Kaedweni Knight",
     "cardColor": "BRONZE",
@@ -7769,7 +7770,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "499",
+    "img": "499",
     "url": "http://gwent.wikia.com/wiki/Kaedweni_Revenant",
     "name": "Kaedweni Revenant",
     "cardColor": "BRONZE",
@@ -7791,7 +7792,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "95",
+    "img": "95",
     "url": "http://gwent.wikia.com/wiki/Kaedweni_Sergeant",
     "name": "Kaedweni Sergeant",
     "cardColor": "BRONZE",
@@ -7812,7 +7813,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Kaedweni_Siege_Support_(Alpha)",
     "name": "Kaedweni Siege Support",
     "cardColor": "BRONZE",
@@ -7831,7 +7832,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "235",
+    "img": "235",
     "url": "http://gwent.wikia.com/wiki/Kambi",
     "name": "Kambi",
     "cardColor": "GOLD",
@@ -7850,7 +7851,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Kambi_(Alpha)",
     "name": "Kambi",
     "cardColor": "GOLD",
@@ -7870,7 +7871,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Katakan_(Alpha)",
     "name": "Katakan",
     "cardColor": "SILVER",
@@ -7889,7 +7890,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "137",
+    "img": "137",
     "url": "http://gwent.wikia.com/wiki/Kayran",
     "name": "Kayran",
     "cardColor": "GOLD",
@@ -7909,7 +7910,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "81",
+    "img": "81",
     "url": "http://gwent.wikia.com/wiki/Keira_Metz",
     "name": "Keira Metz",
     "cardColor": "GOLD",
@@ -7930,7 +7931,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/King_Bran_(Ale_Fest)",
     "name": "King Bran",
     "cardColor": "GOLD",
@@ -7952,7 +7953,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "33",
+    "img": "33",
     "url": "http://gwent.wikia.com/wiki/King_of_Beggars",
     "name": "King of Beggars",
     "cardColor": "SILVER",
@@ -7972,7 +7973,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "497",
+    "img": "497",
     "url": "http://gwent.wikia.com/wiki/Kiyan",
     "name": "Kiyan",
     "cardColor": "GOLD",
@@ -7994,7 +7995,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "281",
+    "img": "281",
     "url": "http://gwent.wikia.com/wiki/Lacerate",
     "name": "Lacerate",
     "cardColor": "BRONZE",
@@ -8011,7 +8012,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "24",
+    "img": "24",
     "url": "http://gwent.wikia.com/wiki/Lambert",
     "name": "Lambert",
     "cardColor": "SILVER",
@@ -8031,7 +8032,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lambert_(Alpha)",
     "name": "Lambert",
     "cardColor": "SILVER",
@@ -8050,7 +8051,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "418",
+    "img": "418",
     "url": "http://gwent.wikia.com/wiki/Lambert:_Swordmaster",
     "name": "Lambert: Swordmaster",
     "cardColor": "GOLD",
@@ -8070,7 +8071,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "530",
+    "img": "530",
     "url": "http://gwent.wikia.com/wiki/Lamia",
     "name": "Lamia",
     "cardColor": "BRONZE",
@@ -8091,7 +8092,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Late_Harvest_(Saovine)",
     "name": "Late Harvest",
     "cardColor": "BRONZE",
@@ -8107,7 +8108,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Leshen_(Alpha)",
     "name": "Leshen",
     "cardColor": "GOLD",
@@ -8126,7 +8127,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lesser_D'ao",
     "name": "Lesser D'ao",
     "cardColor": "BRONZE",
@@ -8147,7 +8148,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "369",
+    "img": "369",
     "url": "http://gwent.wikia.com/wiki/Lesser_Demons",
     "name": "Lesser Demons",
     "cardColor": "SILVER",
@@ -8167,7 +8168,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lesser_Golem",
     "name": "Lesser Golem",
     "cardColor": "BRONZE",
@@ -8188,7 +8189,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lesser_Guardian",
     "name": "Lesser Guardian",
     "cardColor": "BRONZE",
@@ -8209,7 +8210,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "178",
+    "img": "178",
     "url": "http://gwent.wikia.com/wiki/Lesser_Ifrit",
     "name": "Lesser Ifrit",
     "cardColor": "BRONZE",
@@ -8230,7 +8231,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lesser_Jade_Golem_(Alpha)",
     "name": "Lesser Jade Golem",
     "cardColor": "BRONZE",
@@ -8248,7 +8249,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Lesser_Raven_(Saovine)",
     "name": "Lesser Raven",
     "cardColor": "BRONZE",
@@ -8268,7 +8269,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "285",
+    "img": "285",
     "url": "http://gwent.wikia.com/wiki/Letho",
     "name": "Letho",
     "cardColor": "GOLD",
@@ -8290,7 +8291,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "491",
+    "img": "491",
     "url": "http://gwent.wikia.com/wiki/Letho:_Kingslayer",
     "name": "Letho: Kingslayer",
     "cardColor": "GOLD",
@@ -8311,7 +8312,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "263",
+    "img": "263",
     "url": "http://gwent.wikia.com/wiki/Light_Longship",
     "name": "Light Longship",
     "cardColor": "BRONZE",
@@ -8332,7 +8333,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "275",
+    "img": "275",
     "url": "http://gwent.wikia.com/wiki/Lord_of_Undvik",
     "name": "Lord of Undvik",
     "cardColor": "SILVER",
@@ -8353,7 +8354,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "124",
+    "img": "124",
     "url": "http://gwent.wikia.com/wiki/Lubberkin",
     "name": "Lubberkin",
     "cardColor": "SILVER",
@@ -8373,7 +8374,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "237",
+    "img": "237",
     "url": "http://gwent.wikia.com/wiki/Madman_Lugos",
     "name": "Madman Lugos",
     "cardColor": "GOLD",
@@ -8394,7 +8395,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Madman_Lugos_(Alpha)",
     "name": "Madman Lugos",
     "cardColor": "SILVER",
@@ -8413,7 +8414,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "347",
+    "img": "347",
     "url": "http://gwent.wikia.com/wiki/Magne_Division",
     "name": "Magne Division",
     "cardColor": "BRONZE",
@@ -8433,7 +8434,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mahakaman_Guard_(Alpha)",
     "name": "Mahakaman Guard",
     "cardColor": "BRONZE",
@@ -8452,7 +8453,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "415",
+    "img": "415",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Ale",
     "name": "Mahakam Ale",
     "cardColor": "BRONZE",
@@ -8469,7 +8470,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Ale_(Ale_Fest)",
     "name": "Mahakam Ale",
     "cardColor": "GOLD",
@@ -8489,7 +8490,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "215",
+    "img": "215",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Defender",
     "name": "Mahakam Defender",
     "cardColor": "BRONZE",
@@ -8510,7 +8511,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Defender_(Ale_Fest)",
     "name": "Mahakam Defender",
     "cardColor": "BRONZE",
@@ -8531,7 +8532,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "226",
+    "img": "226",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Guard",
     "name": "Mahakam Guard",
     "cardColor": "BRONZE",
@@ -8552,7 +8553,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Guard_(Ale_Fest)",
     "name": "Mahakam Guard",
     "cardColor": "BRONZE",
@@ -8572,7 +8573,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "473",
+    "img": "473",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Horn",
     "name": "Mahakam Horn",
     "cardColor": "SILVER",
@@ -8591,7 +8592,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "345",
+    "img": "345",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Marauder",
     "name": "Mahakam Marauder",
     "cardColor": "BRONZE",
@@ -8613,7 +8614,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "478",
+    "img": "478",
     "url": "http://gwent.wikia.com/wiki/Mahakam_Volunteers",
     "name": "Mahakam Volunteers",
     "cardColor": "BRONZE",
@@ -8634,7 +8635,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Makeshift_Ballista_(Saovine)",
     "name": "Makeshift Ballista",
     "cardColor": "SILVER",
@@ -8655,7 +8656,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "205",
+    "img": "205",
     "url": "http://gwent.wikia.com/wiki/Malena",
     "name": "Malena",
     "cardColor": "SILVER",
@@ -8675,7 +8676,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "410",
+    "img": "410",
     "url": "http://gwent.wikia.com/wiki/Mandrake",
     "name": "Mandrake",
     "cardColor": "SILVER",
@@ -8694,7 +8695,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mandrake_(Midwinter_Hunt)",
     "name": "Mandrake",
     "cardColor": "SILVER",
@@ -8713,7 +8714,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "322",
+    "img": "322",
     "url": "http://gwent.wikia.com/wiki/Mangonel",
     "name": "Mangonel",
     "cardColor": "BRONZE",
@@ -8734,7 +8735,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Manticore_(Alpha)",
     "name": "Manticore",
     "cardColor": "SILVER",
@@ -8752,7 +8753,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "56",
+    "img": "56",
     "url": "http://gwent.wikia.com/wiki/Manticore_Venom",
     "name": "Manticore Venom",
     "cardColor": "SILVER",
@@ -8769,7 +8770,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "330",
+    "img": "330",
     "url": "http://gwent.wikia.com/wiki/Marching_Orders",
     "name": "Marching Orders",
     "cardColor": "SILVER",
@@ -8786,7 +8787,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "92",
+    "img": "92",
     "url": "http://gwent.wikia.com/wiki/Margarita",
     "name": "Margarita",
     "cardColor": "SILVER",
@@ -8807,7 +8808,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mass_Levy_(Saovine)",
     "name": "Mass Levy",
     "cardColor": "BRONZE",
@@ -8822,7 +8823,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "387",
+    "img": "387",
     "url": "http://gwent.wikia.com/wiki/Master_of_Disguise",
     "name": "Master of Disguise",
     "cardColor": "BRONZE",
@@ -8843,7 +8844,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "286",
+    "img": "286",
     "url": "http://gwent.wikia.com/wiki/Menno_Coehoorn",
     "name": "Menno Coehoorn",
     "cardColor": "GOLD",
@@ -8864,7 +8865,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "00005",
+    "img": "00005",
     "url": "http://gwent.wikia.com/wiki/Milaen",
     "name": "Milaen",
     "cardColor": "SILVER",
@@ -8884,7 +8885,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "191",
+    "img": "191",
     "url": "http://gwent.wikia.com/wiki/Milva",
     "name": "Milva",
     "cardColor": "GOLD",
@@ -8904,7 +8905,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "184",
+    "img": "184",
     "url": "http://gwent.wikia.com/wiki/Monster_Nest",
     "name": "Monster Nest",
     "cardColor": "SILVER",
@@ -8921,7 +8922,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "361",
+    "img": "361",
     "url": "http://gwent.wikia.com/wiki/Moonlight",
     "name": "Moonlight",
     "cardColor": "BRONZE",
@@ -8940,7 +8941,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "487",
+    "img": "487",
     "url": "http://gwent.wikia.com/wiki/Morana_Runestone",
     "name": "Morana Runestone",
     "cardColor": "SILVER",
@@ -8958,7 +8959,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "203",
+    "img": "203",
     "url": "http://gwent.wikia.com/wiki/Morenn",
     "name": "Morenn",
     "cardColor": "SILVER",
@@ -8978,7 +8979,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Morenn_(Alpha)",
     "name": "Morenn",
     "cardColor": "SILVER",
@@ -8997,7 +8998,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "248",
+    "img": "248",
     "url": "http://gwent.wikia.com/wiki/Morkvarg",
     "name": "Morkvarg",
     "cardColor": "SILVER",
@@ -9018,7 +9019,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Morkvarg_(Alpha)",
     "name": "Morkvarg",
     "cardColor": "SILVER",
@@ -9037,7 +9038,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "143",
+    "img": "143",
     "url": "http://gwent.wikia.com/wiki/Morvudd",
     "name": "Morvudd",
     "cardColor": "SILVER",
@@ -9057,7 +9058,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "140",
+    "img": "140",
     "url": "http://gwent.wikia.com/wiki/Mourntart",
     "name": "Mourntart",
     "cardColor": "SILVER",
@@ -9077,7 +9078,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "69",
+    "img": "69",
     "url": "http://gwent.wikia.com/wiki/Mushrooms",
     "name": "Mushrooms",
     "cardColor": "BRONZE",
@@ -9097,7 +9098,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mushrooms_(Alpha)",
     "name": "Mushrooms",
     "cardColor": "BRONZE",
@@ -9113,7 +9114,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mushrooms_(Midwinter_Hunt)",
     "name": "Mushrooms",
     "cardColor": "BRONZE",
@@ -9133,7 +9134,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Mutagen",
     "name": "Mutagen",
     "cardColor": "BRONZE",
@@ -9151,7 +9152,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "412",
+    "img": "412",
     "url": "http://gwent.wikia.com/wiki/Muzzle",
     "name": "Muzzle",
     "cardColor": "GOLD",
@@ -9168,7 +9169,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "25",
+    "img": "25",
     "url": "http://gwent.wikia.com/wiki/Myrgtabrakke",
     "name": "Myrgtabrakke",
     "cardColor": "SILVER",
@@ -9188,7 +9189,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Myrgtabrakke_(Alpha)",
     "name": "Myrgtabrakke",
     "cardColor": "SILVER",
@@ -9207,7 +9208,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "228",
+    "img": "228",
     "url": "http://gwent.wikia.com/wiki/Nature's_Gift",
     "name": "Nature's Gift",
     "cardColor": "SILVER",
@@ -9224,7 +9225,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Nature's_Gift_(Alpha)",
     "name": "Nature's Gift",
     "cardColor": "BRONZE",
@@ -9240,7 +9241,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "315",
+    "img": "315",
     "url": "http://gwent.wikia.com/wiki/Nauzicaa_Brigade",
     "name": "Nauzicaa Brigade",
     "cardColor": "BRONZE",
@@ -9261,7 +9262,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "314",
+    "img": "314",
     "url": "http://gwent.wikia.com/wiki/Nauzicaa_Sergeant",
     "name": "Nauzicaa Sergeant",
     "cardColor": "BRONZE",
@@ -9281,7 +9282,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "331",
+    "img": "331",
     "url": "http://gwent.wikia.com/wiki/Necromancy",
     "name": "Necromancy",
     "cardColor": "SILVER",
@@ -9298,7 +9299,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "162",
+    "img": "162",
     "url": "http://gwent.wikia.com/wiki/Nekker",
     "name": "Nekker",
     "cardColor": "BRONZE",
@@ -9318,7 +9319,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "149",
+    "img": "149",
     "url": "http://gwent.wikia.com/wiki/Nekker_Warrior",
     "name": "Nekker Warrior",
     "cardColor": "BRONZE",
@@ -9338,7 +9339,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "157",
+    "img": "157",
     "url": "http://gwent.wikia.com/wiki/Nekurat",
     "name": "Nekurat",
     "cardColor": "SILVER",
@@ -9358,7 +9359,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "93",
+    "img": "93",
     "url": "http://gwent.wikia.com/wiki/Nenneke",
     "name": "Nenneke",
     "cardColor": "SILVER",
@@ -9379,7 +9380,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Nenneke_(Alpha)",
     "name": "Nenneke",
     "cardColor": "SILVER",
@@ -9398,7 +9399,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "453",
+    "img": "453",
     "url": "http://gwent.wikia.com/wiki/Nilfgaardian_Gate",
     "name": "Nilfgaardian Gate",
     "cardColor": "SILVER",
@@ -9415,7 +9416,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "323",
+    "img": "323",
     "url": "http://gwent.wikia.com/wiki/Nilfgaardian_Knight",
     "name": "Nilfgaardian Knight",
     "cardColor": "BRONZE",
@@ -9435,7 +9436,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "152",
+    "img": "152",
     "url": "http://gwent.wikia.com/wiki/Nithral",
     "name": "Nithral",
     "cardColor": "SILVER",
@@ -9456,7 +9457,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Nithral_(Alpha)",
     "name": "Nithral",
     "cardColor": "SILVER",
@@ -9475,7 +9476,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "372",
+    "img": "372",
     "url": "http://gwent.wikia.com/wiki/Nivellen",
     "name": "Nivelllen",
     "cardColor": "SILVER",
@@ -9495,7 +9496,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "529",
+    "img": "529",
     "url": "http://gwent.wikia.com/wiki/Northern_Wind_(Midwinter_Hunt)",
     "name": "Northern Wind",
     "cardColor": "BRONZE",
@@ -9512,7 +9513,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "26",
+    "img": "26",
     "url": "http://gwent.wikia.com/wiki/Ocvist",
     "name": "Ocvist",
     "cardColor": "SILVER",
@@ -9532,7 +9533,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ocvist_(Alpha)",
     "name": "Ocvist",
     "cardColor": "SILVER",
@@ -9551,7 +9552,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "94",
+    "img": "94",
     "url": "http://gwent.wikia.com/wiki/Odrin",
     "name": "Odrin",
     "cardColor": "SILVER",
@@ -9572,7 +9573,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Odrin_(Ale_Fest)",
     "name": "Odrin",
     "cardColor": "GOLD",
@@ -9594,7 +9595,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Odrin_(Alpha)",
     "name": "Odrin",
     "cardColor": "SILVER",
@@ -9613,7 +9614,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "474",
+    "img": "474",
     "url": "http://gwent.wikia.com/wiki/Ointment",
     "name": "Ointment",
     "cardColor": "BRONZE",
@@ -9634,7 +9635,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "377",
+    "img": "377",
     "url": "http://gwent.wikia.com/wiki/Olaf",
     "name": "Olaf",
     "cardColor": "GOLD",
@@ -9656,7 +9657,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Olaf_the_Bear_(Alpha)",
     "name": "Olaf the Bear",
     "cardColor": "SILVER",
@@ -9675,7 +9676,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "182",
+    "img": "182",
     "url": "http://gwent.wikia.com/wiki/Old_Speartip",
     "name": "Old Speartip",
     "cardColor": "GOLD",
@@ -9695,7 +9696,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "27",
+    "img": "27",
     "url": "http://gwent.wikia.com/wiki/Olgierd",
     "name": "Olgierd",
     "cardColor": "SILVER",
@@ -9716,7 +9717,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Open_Bar",
     "name": "Open Bar",
     "cardColor": "SILVER",
@@ -9731,7 +9732,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "28",
+    "img": "28",
     "url": "http://gwent.wikia.com/wiki/Operator",
     "name": "Operator",
     "cardColor": "SILVER",
@@ -9752,7 +9753,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Operator_(Alpha)",
     "name": "Operator",
     "cardColor": "SILVER",
@@ -9770,7 +9771,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "509",
+    "img": "509",
     "url": "http://gwent.wikia.com/wiki/Ornamental_Sword",
     "name": "Ornamental Sword",
     "cardColor": "SILVER",
@@ -9787,7 +9788,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "328",
+    "img": "328",
     "url": "http://gwent.wikia.com/wiki/Overdose",
     "name": "Overdose",
     "cardColor": "BRONZE",
@@ -9805,7 +9806,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Palisade_(Saovine)",
     "name": "Palisade",
     "cardColor": "GOLD",
@@ -9826,7 +9827,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "393",
+    "img": "393",
     "url": "http://gwent.wikia.com/wiki/Panther",
     "name": "Panther",
     "cardColor": "BRONZE",
@@ -9846,7 +9847,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "472",
+    "img": "472",
     "url": "http://gwent.wikia.com/wiki/Parasite",
     "name": "Parasite",
     "cardColor": "SILVER",
@@ -9863,7 +9864,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "518",
+    "img": "518",
     "url": "http://gwent.wikia.com/wiki/Paulie_Dahlberg",
     "name": "Paulie Dahlberg",
     "cardColor": "SILVER",
@@ -9885,7 +9886,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "91",
+    "img": "91",
     "url": "http://gwent.wikia.com/wiki/Pavetta",
     "name": "Pavetta",
     "cardColor": "SILVER",
@@ -9906,7 +9907,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "516",
+    "img": "516",
     "url": "http://gwent.wikia.com/wiki/Pavko_Gale",
     "name": "Pavko Gale",
     "cardColor": "SILVER",
@@ -9926,7 +9927,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Peasants",
     "name": "Peasants",
     "cardColor": "BRONZE",
@@ -9946,7 +9947,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "517",
+    "img": "517",
     "url": "http://gwent.wikia.com/wiki/Peasant_Militia",
     "name": "Peasant Militia",
     "cardColor": "BRONZE",
@@ -9963,7 +9964,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Peasant_Militia_(Saovine)",
     "name": "Peasant Militia",
     "cardColor": "BRONZE",
@@ -9984,7 +9985,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Pertydoll",
     "name": "Pertydoll",
     "cardColor": "BRONZE",
@@ -10002,7 +10003,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "296",
+    "img": "296",
     "url": "http://gwent.wikia.com/wiki/Peter_Gwynleve",
     "name": "Peter Gwynleve",
     "cardColor": "SILVER",
@@ -10022,7 +10023,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "67",
+    "img": "67",
     "url": "http://gwent.wikia.com/wiki/Petri's_Philter",
     "name": "Petri's Philter",
     "cardColor": "BRONZE",
@@ -10040,7 +10041,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "77",
+    "img": "77",
     "url": "http://gwent.wikia.com/wiki/Philippa",
     "name": "Philippa",
     "cardColor": "GOLD",
@@ -10061,7 +10062,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "481",
+    "img": "481",
     "url": "http://gwent.wikia.com/wiki/Phoenix",
     "name": "Phoenix",
     "cardColor": "GOLD",
@@ -10082,7 +10083,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Phoenix_(Midwinter_Hunt)",
     "name": "Phoenix",
     "cardColor": "GOLD",
@@ -10100,7 +10101,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Phoenix_2_(Midwinter_Hunt)",
     "name": "Phoenix",
     "cardColor": "GOLD",
@@ -10118,7 +10119,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "258",
+    "img": "258",
     "url": "http://gwent.wikia.com/wiki/Pirate_Captain",
     "name": "Pirate Captain",
     "cardColor": "BRONZE",
@@ -10139,7 +10140,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "439",
+    "img": "439",
     "url": "http://gwent.wikia.com/wiki/Pit_Trap",
     "name": "Pit Trap",
     "cardColor": "SILVER",
@@ -10156,7 +10157,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "102",
+    "img": "102",
     "url": "http://gwent.wikia.com/wiki/Poor_Infantry",
     "name": "Poor Flanking Infantry",
     "cardColor": "BRONZE",
@@ -10177,7 +10178,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Poor_Infantry_(Alpha)",
     "name": "Poor Infantry",
     "cardColor": "BRONZE",
@@ -10197,7 +10198,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "101",
+    "img": "101",
     "url": "http://gwent.wikia.com/wiki/Poor_Infantry_(Token,_Left)",
     "name": "Poor Infantry",
     "cardColor": "BRONZE",
@@ -10219,7 +10220,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "103",
+    "img": "103",
     "url": "http://gwent.wikia.com/wiki/Poor_Infantry_(Token,_Right)",
     "name": "Poor Infantry",
     "cardColor": "BRONZE",
@@ -10241,7 +10242,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "452",
+    "img": "452",
     "url": "http://gwent.wikia.com/wiki/Portcullis",
     "name": "Portcullis",
     "cardColor": "SILVER",
@@ -10258,7 +10259,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "528",
+    "img": "528",
     "url": "http://gwent.wikia.com/wiki/Precipice_(Midwinter_Hunt)",
     "name": "Precipice",
     "cardColor": "SILVER",
@@ -10275,7 +10276,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "264",
+    "img": "264",
     "url": "http://gwent.wikia.com/wiki/Priestess_of_Freya",
     "name": "Priestess of Freya",
     "cardColor": "BRONZE",
@@ -10297,7 +10298,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Priestess_of_Freya_(Ale_Fest)",
     "name": "Priestess of Freya",
     "cardColor": "BRONZE",
@@ -10318,7 +10319,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Priestess_of_Freya_(Alpha)",
     "name": "Priestess of Freya",
     "cardColor": "BRONZE",
@@ -10334,7 +10335,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Priestess_of_Freya_(Midwinter_Hunt)",
     "name": "Priestess of Freya",
     "cardColor": "BRONZE",
@@ -10356,7 +10357,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "83",
+    "img": "83",
     "url": "http://gwent.wikia.com/wiki/Priscilla",
     "name": "Priscilla",
     "cardColor": "GOLD",
@@ -10376,7 +10377,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Priscilla_(Ale_Fest)",
     "name": "Priscilla",
     "cardColor": "GOLD",
@@ -10397,7 +10398,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Priscilla_(Alpha)",
     "name": "Priscilla",
     "cardColor": "SILVER",
@@ -10416,7 +10417,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "29",
+    "img": "29",
     "url": "http://gwent.wikia.com/wiki/Prize-Winning_Cow",
     "name": "Prize-Winning Cow",
     "cardColor": "SILVER",
@@ -10436,7 +10437,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Prize_Winning_Cow_(Alpha)",
     "name": "Prize Winning Cow",
     "cardColor": "SILVER",
@@ -10452,7 +10453,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Promote",
     "name": "Promote",
     "cardColor": "BRONZE",
@@ -10467,7 +10468,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "390",
+    "img": "390",
     "url": "http://gwent.wikia.com/wiki/Pyrotechnician",
     "name": "Mahakam Pyrotechnician",
     "cardColor": "BRONZE",
@@ -10488,7 +10489,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "259",
+    "img": "259",
     "url": "http://gwent.wikia.com/wiki/Queensguard",
     "name": "Queensguard",
     "cardColor": "BRONZE",
@@ -10509,7 +10510,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Queensguard_(Alpha)",
     "name": "Queensguard",
     "cardColor": "BRONZE",
@@ -10528,7 +10529,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Queen_of_the_Night_(Saovine)",
     "name": "Queen of the Night",
     "cardColor": "GOLD",
@@ -10549,7 +10550,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Queen_of_the_Night_2_(Saovine)",
     "name": "Queen of the Night",
     "cardColor": "GOLD",
@@ -10571,7 +10572,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "183",
+    "img": "183",
     "url": "http://gwent.wikia.com/wiki/Quen_Sign",
     "name": "Quen Sign",
     "cardColor": "BRONZE",
@@ -10588,7 +10589,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "72",
+    "img": "72",
     "url": "http://gwent.wikia.com/wiki/Radovid",
     "name": "Radovid",
     "cardColor": "GOLD",
@@ -10608,7 +10609,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Radovid_(Alpha)",
     "name": "Radovid",
     "cardColor": "GOLD",
@@ -10627,7 +10628,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "41",
+    "img": "41",
     "url": "http://gwent.wikia.com/wiki/Ragh_Nar_Roog",
     "name": "Ragh Nar Roog",
     "cardColor": "GOLD",
@@ -10645,7 +10646,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "278",
+    "img": "278",
     "url": "http://gwent.wikia.com/wiki/Raging_Bear",
     "name": "Raging Bear",
     "cardColor": "BRONZE",
@@ -10667,7 +10668,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "253",
+    "img": "253",
     "url": "http://gwent.wikia.com/wiki/Raging_Berserker",
     "name": "Raging Berserker",
     "cardColor": "BRONZE",
@@ -10689,7 +10690,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "62",
+    "img": "62",
     "url": "http://gwent.wikia.com/wiki/Rain",
     "name": "Rain",
     "cardColor": "BRONZE",
@@ -10706,7 +10707,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "336",
+    "img": "336",
     "url": "http://gwent.wikia.com/wiki/Rainfarn",
     "name": "Rainfarn",
     "cardColor": "GOLD",
@@ -10726,7 +10727,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "68",
+    "img": "68",
     "url": "http://gwent.wikia.com/wiki/Rally",
     "name": "Rally",
     "cardColor": "BRONZE",
@@ -10743,7 +10744,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Rat_(Saovine)",
     "name": "Rat",
     "cardColor": "SILVER",
@@ -10763,7 +10764,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ravenous_Ekimmara_(Saovine)",
     "name": "Ravenous Ekimmara",
     "cardColor": "BRONZE",
@@ -10784,7 +10785,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ravenous_Katakan_(Saovine)",
     "name": "Ravenous Katakan",
     "cardColor": "SILVER",
@@ -10805,7 +10806,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Raven_(Saovine)",
     "name": "Raven",
     "cardColor": "BRONZE",
@@ -10825,7 +10826,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "106",
+    "img": "106",
     "url": "http://gwent.wikia.com/wiki/Reaver_Hunter",
     "name": "Reaver Hunter",
     "cardColor": "BRONZE",
@@ -10846,7 +10847,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "107",
+    "img": "107",
     "url": "http://gwent.wikia.com/wiki/Reaver_Scout",
     "name": "Reaver Scout",
     "cardColor": "BRONZE",
@@ -10867,7 +10868,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Reaver_Scout_(Alpha)",
     "name": "Reaver Scout",
     "cardColor": "BRONZE",
@@ -10886,7 +10887,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "7",
+    "img": "7",
     "url": "http://gwent.wikia.com/wiki/Reconnaissance",
     "name": "Reconnaissance",
     "cardColor": "BRONZE",
@@ -10903,7 +10904,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "494",
+    "img": "494",
     "url": "http://gwent.wikia.com/wiki/Recruit",
     "name": "Recruit",
     "cardColor": "BRONZE",
@@ -10923,7 +10924,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "121",
+    "img": "121",
     "url": "http://gwent.wikia.com/wiki/Redanian_Elite",
     "name": "Redanian Elite",
     "cardColor": "BRONZE",
@@ -10944,7 +10945,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Redanian_Elite_(Alpha)",
     "name": "Redanian Elite",
     "cardColor": "BRONZE",
@@ -10963,7 +10964,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "108",
+    "img": "108",
     "url": "http://gwent.wikia.com/wiki/Redanian_Knight",
     "name": "Redanian Knight",
     "cardColor": "BRONZE",
@@ -10984,7 +10985,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "11",
+    "img": "11",
     "url": "http://gwent.wikia.com/wiki/Regis",
     "name": "Regis",
     "cardColor": "GOLD",
@@ -11004,7 +11005,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Regis_(Alpha)",
     "name": "Regis",
     "cardColor": "SILVER",
@@ -11023,7 +11024,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Regis:_Blood_Drunk_(Saovine)",
     "name": "Regis: Blood Drunk",
     "cardColor": "GOLD",
@@ -11044,7 +11045,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Regis:_Blood_Thirsty_(Saovine)",
     "name": "Regis: Blood Thirsty",
     "cardColor": "GOLD",
@@ -11066,7 +11067,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Regis:_Blood_Tipsy_(Saovine)",
     "name": "Regis: Blood Tipsy",
     "cardColor": "GOLD",
@@ -11088,7 +11089,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "12",
+    "img": "12",
     "url": "http://gwent.wikia.com/wiki/Regis:_Higher_Vampire",
     "name": "Regis: Higher Vampire",
     "cardColor": "GOLD",
@@ -11109,7 +11110,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "98",
+    "img": "98",
     "url": "http://gwent.wikia.com/wiki/Reinforced_Ballista",
     "name": "Reinforced Ballista",
     "cardColor": "BRONZE",
@@ -11130,7 +11131,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "117",
+    "img": "117",
     "url": "http://gwent.wikia.com/wiki/Reinforced_Trebuchet",
     "name": "Reinforced Trebuchet",
     "cardColor": "BRONZE",
@@ -11150,7 +11151,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "126",
+    "img": "126",
     "url": "http://gwent.wikia.com/wiki/Reinforcement",
     "name": "Reinforcement",
     "cardColor": "SILVER",
@@ -11167,7 +11168,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "65",
+    "img": "65",
     "url": "http://gwent.wikia.com/wiki/Renew",
     "name": "Renew",
     "cardColor": "GOLD",
@@ -11184,7 +11185,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "280",
+    "img": "280",
     "url": "http://gwent.wikia.com/wiki/Restore",
     "name": "Restoration",
     "cardColor": "SILVER",
@@ -11201,7 +11202,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Rhapsodic_Melody",
     "name": "Rhapsodic Melody",
     "cardColor": "SILVER",
@@ -11216,7 +11217,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Riordain_(Alpha)",
     "name": "Riordain",
     "cardColor": "SILVER",
@@ -11235,7 +11236,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "30",
+    "img": "30",
     "url": "http://gwent.wikia.com/wiki/Roach",
     "name": "Roach",
     "cardColor": "SILVER",
@@ -11255,7 +11256,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Roach_(Alpha)",
     "name": "Roach",
     "cardColor": "SILVER",
@@ -11274,7 +11275,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "279",
+    "img": "279",
     "url": "http://gwent.wikia.com/wiki/Roar",
     "name": "Roar",
     "cardColor": "BRONZE",
@@ -11292,7 +11293,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "507",
+    "img": "507",
     "url": "http://gwent.wikia.com/wiki/Rockslide",
     "name": "Rockslide",
     "cardColor": "SILVER",
@@ -11309,7 +11310,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "442",
+    "img": "442",
     "url": "http://gwent.wikia.com/wiki/Ronvid",
     "name": "Ronvid",
     "cardColor": "SILVER",
@@ -11330,7 +11331,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "429",
+    "img": "429",
     "url": "http://gwent.wikia.com/wiki/Rotfiend",
     "name": "Rotfiend",
     "cardColor": "BRONZE",
@@ -11350,7 +11351,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "307",
+    "img": "307",
     "url": "http://gwent.wikia.com/wiki/Rot_Tosser",
     "name": "Rot Tosser",
     "cardColor": "BRONZE",
@@ -11370,7 +11371,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "400",
+    "img": "400",
     "url": "http://gwent.wikia.com/wiki/Royal_Decree",
     "name": "Royal Decree",
     "cardColor": "GOLD",
@@ -11387,7 +11388,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "00002",
+    "img": "00002",
     "url": "http://gwent.wikia.com/wiki/Ruehin",
     "name": "Ruehin",
     "cardColor": "SILVER",
@@ -11408,7 +11409,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "86",
+    "img": "86",
     "url": "http://gwent.wikia.com/wiki/S%C3%ADle",
     "name": "Síle",
     "cardColor": "SILVER",
@@ -11428,7 +11429,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "87",
+    "img": "87",
     "url": "http://gwent.wikia.com/wiki/Sabrina",
     "name": "Sabrina",
     "cardColor": "SILVER",
@@ -11449,7 +11450,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "512",
+    "img": "512",
     "url": "http://gwent.wikia.com/wiki/Sabrina's_Specter",
     "name": "Sabrina's Specter",
     "cardColor": "SILVER",
@@ -11471,7 +11472,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "392",
+    "img": "392",
     "url": "http://gwent.wikia.com/wiki/Sage",
     "name": "Sage",
     "cardColor": "BRONZE",
@@ -11492,7 +11493,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "32",
+    "img": "32",
     "url": "http://gwent.wikia.com/wiki/Sarah",
     "name": "Sarah",
     "cardColor": "SILVER",
@@ -11512,7 +11513,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Sarah_(Alpha)",
     "name": "Sarah",
     "cardColor": "SILVER",
@@ -11531,7 +11532,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "403",
+    "img": "403",
     "url": "http://gwent.wikia.com/wiki/Saskia",
     "name": "Saskia",
     "cardColor": "GOLD",
@@ -11552,7 +11553,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Saskia_(Alpha)",
     "name": "Saskia",
     "cardColor": "GOLD",
@@ -11571,7 +11572,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "188",
+    "img": "188",
     "url": "http://gwent.wikia.com/wiki/Saskia:_Destroyer",
     "name": "Saskia: Destroyer",
     "cardColor": "GOLD",
@@ -11592,7 +11593,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "356",
+    "img": "356",
     "url": "http://gwent.wikia.com/wiki/Saskia:_Dragonfire",
     "name": "Saskia: Dragonfire",
     "cardColor": "GOLD",
@@ -11613,7 +11614,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "249",
+    "img": "249",
     "url": "http://gwent.wikia.com/wiki/Savage_Bear",
     "name": "Savage Bear",
     "cardColor": "BRONZE",
@@ -11635,7 +11636,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "195",
+    "img": "195",
     "url": "http://gwent.wikia.com/wiki/Schirr%C3%BA",
     "name": "Schirrú",
     "cardColor": "GOLD",
@@ -11656,7 +11657,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Schirr%C3%BA_(Alpha)",
     "name": "Schirrú",
     "cardColor": "SILVER",
@@ -11675,7 +11676,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Scoia'tael_Neophyte_(Alpha)",
     "name": "Scoia'tael Neophyte",
     "cardColor": "BRONZE",
@@ -11694,7 +11695,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "59",
+    "img": "59",
     "url": "http://gwent.wikia.com/wiki/Scorch",
     "name": "Scorch",
     "cardColor": "SILVER",
@@ -11711,7 +11712,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Scorch_(Alpha)",
     "name": "Scorch",
     "cardColor": "BRONZE",
@@ -11727,7 +11728,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "425",
+    "img": "425",
     "url": "http://gwent.wikia.com/wiki/Scytheman_(Saovine)",
     "name": "Scytheman",
     "cardColor": "BRONZE",
@@ -11747,7 +11748,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "425",
+    "img": "425",
     "url": "http://gwent.wikia.com/wiki/Scytheman_2_(Saovine)",
     "name": "Scytheman",
     "cardColor": "BRONZE",
@@ -11767,7 +11768,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "495",
+    "img": "495",
     "url": "http://gwent.wikia.com/wiki/Seltkirk",
     "name": "Seltkirk",
     "cardColor": "GOLD",
@@ -11790,7 +11791,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "514",
+    "img": "514",
     "url": "http://gwent.wikia.com/wiki/Sentry",
     "name": "Sentry",
     "cardColor": "BRONZE",
@@ -11810,7 +11811,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "301",
+    "img": "301",
     "url": "http://gwent.wikia.com/wiki/Serrit",
     "name": "Serrit",
     "cardColor": "SILVER",
@@ -11830,7 +11831,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "180",
+    "img": "180",
     "url": "http://gwent.wikia.com/wiki/Shadow",
     "name": "Shadow",
     "cardColor": "SILVER",
@@ -11850,7 +11851,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "79",
+    "img": "79",
     "url": "http://gwent.wikia.com/wiki/Shani",
     "name": "Shani",
     "cardColor": "GOLD",
@@ -11872,7 +11873,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Shani_(Alpha)",
     "name": "Shani",
     "cardColor": "GOLD",
@@ -11891,7 +11892,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "445",
+    "img": "445",
     "url": "http://gwent.wikia.com/wiki/She-Troll",
     "name": "She-Troll",
     "cardColor": "SILVER",
@@ -11911,7 +11912,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/She-Troll_of_Vergen_(Ale_Fest)",
     "name": "She-Troll of Vergen",
     "cardColor": "GOLD",
@@ -11931,7 +11932,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "207",
+    "img": "207",
     "url": "http://gwent.wikia.com/wiki/Sheldon_Skaggs",
     "name": "Sheldon Skaggs",
     "cardColor": "SILVER",
@@ -11952,7 +11953,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Sheldon_Skaggs_(Ale_Fest)",
     "name": "Sheldon Skaggs",
     "cardColor": "SILVER",
@@ -11972,7 +11973,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Sheldon_Skaggs_(Alpha)",
     "name": "Sheldon Skaggs",
     "cardColor": "SILVER",
@@ -11991,7 +11992,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "272",
+    "img": "272",
     "url": "http://gwent.wikia.com/wiki/Shieldmaiden",
     "name": "Shieldmaiden",
     "cardColor": "BRONZE",
@@ -12012,7 +12013,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "362",
+    "img": "362",
     "url": "http://gwent.wikia.com/wiki/Shilard",
     "name": "Shilard",
     "cardColor": "GOLD",
@@ -12033,7 +12034,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Shupe",
     "name": "Shupe",
     "cardColor": "GOLD",
@@ -12054,7 +12055,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "426",
+    "img": "426",
     "url": "http://gwent.wikia.com/wiki/Shupe's_Bizzare_Adventure",
     "name": "Shupe's Bizzare Adventure",
     "cardColor": "GOLD",
@@ -12071,7 +12072,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "523",
+    "img": "523",
     "url": "http://gwent.wikia.com/wiki/Shupe:_Hunter",
     "name": "Shupe: Hunter",
     "cardColor": "GOLD",
@@ -12092,7 +12093,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "524",
+    "img": "524",
     "url": "http://gwent.wikia.com/wiki/Shupe:_Knight",
     "name": "Shupe: Knight",
     "cardColor": "GOLD",
@@ -12113,7 +12114,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "522",
+    "img": "522",
     "url": "http://gwent.wikia.com/wiki/Shupe:_Mage",
     "name": "Shupe: Mage",
     "cardColor": "GOLD",
@@ -12134,7 +12135,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "122",
+    "img": "122",
     "url": "http://gwent.wikia.com/wiki/Siege_Master",
     "name": "Siege Master",
     "cardColor": "BRONZE",
@@ -12155,7 +12156,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "109",
+    "img": "109",
     "url": "http://gwent.wikia.com/wiki/Siege_Support",
     "name": "Siege Support",
     "cardColor": "BRONZE",
@@ -12176,7 +12177,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "100",
+    "img": "100",
     "url": "http://gwent.wikia.com/wiki/Siege_Tower",
     "name": "Siege Tower",
     "cardColor": "BRONZE",
@@ -12197,7 +12198,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "250",
+    "img": "250",
     "url": "http://gwent.wikia.com/wiki/Sigrdrifa",
     "name": "Sigrdrifa",
     "cardColor": "SILVER",
@@ -12218,7 +12219,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Sigrdrifa_(Ale_Fest)",
     "name": "Sigrdrifa",
     "cardColor": "SILVER",
@@ -12239,7 +12240,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Sigrdrifa_(Alpha)",
     "name": "Sigrdrifa",
     "cardColor": "SILVER",
@@ -12258,7 +12259,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "505",
+    "img": "505",
     "url": "http://gwent.wikia.com/wiki/Sihil",
     "name": "Sihil",
     "cardColor": "GOLD",
@@ -12276,7 +12277,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "380",
+    "img": "380",
     "url": "http://gwent.wikia.com/wiki/Siren",
     "name": "Siren",
     "cardColor": "BRONZE",
@@ -12296,7 +12297,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "262",
+    "img": "262",
     "url": "http://gwent.wikia.com/wiki/Skald",
     "name": "Skald",
     "cardColor": "BRONZE",
@@ -12317,7 +12318,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "45",
+    "img": "45",
     "url": "http://gwent.wikia.com/wiki/Skellige_Storm",
     "name": "Skellige Storm",
     "cardColor": "SILVER",
@@ -12335,7 +12336,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Skellige_Storm_(Alpha)",
     "name": "Skellige Storm",
     "cardColor": "BRONZE",
@@ -12351,7 +12352,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "405",
+    "img": "405",
     "url": "http://gwent.wikia.com/wiki/Skjall",
     "name": "Skjall",
     "cardColor": "SILVER",
@@ -12372,7 +12373,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "459",
+    "img": "459",
     "url": "http://gwent.wikia.com/wiki/Slave_Driver",
     "name": "Slave Driver",
     "cardColor": "BRONZE",
@@ -12392,7 +12393,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "456",
+    "img": "456",
     "url": "http://gwent.wikia.com/wiki/Slave_Hunter",
     "name": "Slave Hunter",
     "cardColor": "BRONZE",
@@ -12412,7 +12413,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "457",
+    "img": "457",
     "url": "http://gwent.wikia.com/wiki/Slave_Infantry",
     "name": "Slave Infantry",
     "cardColor": "BRONZE",
@@ -12432,7 +12433,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "156",
+    "img": "156",
     "url": "http://gwent.wikia.com/wiki/Sleeping_Giant",
     "name": "Sleeping Giant",
     "cardColor": "GOLD",
@@ -12452,7 +12453,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "460",
+    "img": "460",
     "url": "http://gwent.wikia.com/wiki/Slyzard",
     "name": "Slyzard",
     "cardColor": "BRONZE",
@@ -12472,7 +12473,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "467",
+    "img": "467",
     "url": "http://gwent.wikia.com/wiki/Spear",
     "name": "Spear",
     "cardColor": "BRONZE",
@@ -12489,7 +12490,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "441",
+    "img": "441",
     "url": "http://gwent.wikia.com/wiki/Specter",
     "name": "Specter",
     "cardColor": "BRONZE",
@@ -12510,7 +12511,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "277",
+    "img": "277",
     "url": "http://gwent.wikia.com/wiki/Spectral_Whale",
     "name": "Spectral Whale",
     "cardColor": "SILVER",
@@ -12531,7 +12532,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "70",
+    "img": "70",
     "url": "http://gwent.wikia.com/wiki/Spores",
     "name": "Spores",
     "cardColor": "BRONZE",
@@ -12548,7 +12549,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "69",
+    "img": "69",
     "url": "http://gwent.wikia.com/wiki/Spores_(Token)",
     "name": "Spores",
     "cardColor": "BRONZE",
@@ -12566,7 +12567,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "308",
+    "img": "308",
     "url": "http://gwent.wikia.com/wiki/Spotter",
     "name": "Spotter",
     "cardColor": "BRONZE",
@@ -12586,7 +12587,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "428",
+    "img": "428",
     "url": "http://gwent.wikia.com/wiki/Standard_Bearer",
     "name": "Standard Bearer",
     "cardColor": "BRONZE",
@@ -12606,7 +12607,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "290",
+    "img": "290",
     "url": "http://gwent.wikia.com/wiki/Stefan_Skellen",
     "name": "Stefan Skellen",
     "cardColor": "GOLD",
@@ -12626,7 +12627,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "89",
+    "img": "89",
     "url": "http://gwent.wikia.com/wiki/Stennis",
     "name": "Stennis",
     "cardColor": "SILVER",
@@ -12647,7 +12648,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "373",
+    "img": "373",
     "url": "http://gwent.wikia.com/wiki/Stregobor",
     "name": "Stregobor",
     "cardColor": "SILVER",
@@ -12667,7 +12668,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "483",
+    "img": "483",
     "url": "http://gwent.wikia.com/wiki/Stribog_Runestone",
     "name": "Stribog Runestone",
     "cardColor": "SILVER",
@@ -12685,7 +12686,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "363",
+    "img": "363",
     "url": "http://gwent.wikia.com/wiki/Striga",
     "name": "Striga",
     "cardColor": "SILVER",
@@ -12706,7 +12707,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "138",
+    "img": "138",
     "url": "http://gwent.wikia.com/wiki/Succubus",
     "name": "Succubus",
     "cardColor": "GOLD",
@@ -12726,7 +12727,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "332",
+    "img": "332",
     "url": "http://gwent.wikia.com/wiki/Summoning_Circle",
     "name": "Summoning Circle",
     "cardColor": "SILVER",
@@ -12744,7 +12745,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "251",
+    "img": "251",
     "url": "http://gwent.wikia.com/wiki/Svanrige",
     "name": "Svanrige",
     "cardColor": "SILVER",
@@ -12765,7 +12766,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "60",
+    "img": "60",
     "url": "http://gwent.wikia.com/wiki/Swallow",
     "name": "Swallow",
     "cardColor": "BRONZE",
@@ -12783,7 +12784,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Swallow_(Midwinter_Hunt)",
     "name": "Swallow",
     "cardColor": "BRONZE",
@@ -12801,7 +12802,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "298",
+    "img": "298",
     "url": "http://gwent.wikia.com/wiki/Sweers",
     "name": "Sweers",
     "cardColor": "SILVER",
@@ -12821,7 +12822,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "432",
+    "img": "432",
     "url": "http://gwent.wikia.com/wiki/Temerian_Drummer",
     "name": "Temerian Drummer",
     "cardColor": "BRONZE",
@@ -12842,7 +12843,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Temerian_Foot_Soldier_(Alpha)",
     "name": "Temerian Foot Soldier",
     "cardColor": "BRONZE",
@@ -12861,7 +12862,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "118",
+    "img": "118",
     "url": "http://gwent.wikia.com/wiki/Temerian_Infantry",
     "name": "Temerian Infantry",
     "cardColor": "BRONZE",
@@ -12882,7 +12883,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Tesham_Mutna_Ghoul_(Saovine)",
     "name": "Tesham Mutna Ghoul",
     "cardColor": "BRONZE",
@@ -12902,7 +12903,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "84",
+    "img": "84",
     "url": "http://gwent.wikia.com/wiki/Thaler",
     "name": "Thaler",
     "cardColor": "SILVER",
@@ -12924,7 +12925,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Thaler_(Alpha)",
     "name": "Thaler",
     "cardColor": "SILVER",
@@ -12943,7 +12944,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "304",
+    "img": "304",
     "url": "http://gwent.wikia.com/wiki/The_Empress",
     "name": "The Empress",
     "cardColor": "SILVER",
@@ -12963,7 +12964,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "324",
+    "img": "324",
     "url": "http://gwent.wikia.com/wiki/The_Guardian",
     "name": "The Guardian",
     "cardColor": "SILVER",
@@ -12983,7 +12984,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "42",
+    "img": "42",
     "url": "http://gwent.wikia.com/wiki/The_Last_Wish",
     "name": "The Last Wish",
     "cardColor": "SILVER",
@@ -13000,7 +13001,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Thirsty_Troll",
     "name": "Thirsty Troll",
     "cardColor": "SILVER",
@@ -13022,7 +13023,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "61",
+    "img": "61",
     "url": "http://gwent.wikia.com/wiki/Thunderbolt",
     "name": "Thunderbolt",
     "cardColor": "BRONZE",
@@ -13040,7 +13041,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Thunderbolt_Potion_(Ale_Fest)",
     "name": "Thunderbolt Potion",
     "cardColor": "BRONZE",
@@ -13057,7 +13058,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Thunderbolt_Potion_(Saovine)",
     "name": "Thunderbolt Potion",
     "cardColor": "BRONZE",
@@ -13074,7 +13075,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "291",
+    "img": "291",
     "url": "http://gwent.wikia.com/wiki/Tibor",
     "name": "Tibor",
     "cardColor": "GOLD",
@@ -13094,7 +13095,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "154",
+    "img": "154",
     "url": "http://gwent.wikia.com/wiki/Toad_Prince",
     "name": "Toad Prince",
     "cardColor": "SILVER",
@@ -13114,7 +13115,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "502",
+    "img": "502",
     "url": "http://gwent.wikia.com/wiki/Tormented_Mage",
     "name": "Tormented Mage",
     "cardColor": "BRONZE",
@@ -13135,7 +13136,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Torrential_Rain_(Alpha)",
     "name": "Torrential Rain",
     "cardColor": "BRONZE",
@@ -13151,7 +13152,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "199",
+    "img": "199",
     "url": "http://gwent.wikia.com/wiki/Toruviel",
     "name": "Toruviel",
     "cardColor": "SILVER",
@@ -13172,7 +13173,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "327",
+    "img": "327",
     "url": "http://gwent.wikia.com/wiki/Treason",
     "name": "Treason",
     "cardColor": "SILVER",
@@ -13189,7 +13190,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "99",
+    "img": "99",
     "url": "http://gwent.wikia.com/wiki/Trebuchet",
     "name": "Trebuchet",
     "cardColor": "BRONZE",
@@ -13210,7 +13211,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "46",
+    "img": "46",
     "url": "http://gwent.wikia.com/wiki/Tremors",
     "name": "Tremors",
     "cardColor": "BRONZE",
@@ -13227,7 +13228,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "365",
+    "img": "365",
     "url": "http://gwent.wikia.com/wiki/Trial_of_the_Grasses",
     "name": "Trial of the Grasses",
     "cardColor": "GOLD",
@@ -13244,7 +13245,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "00003",
+    "img": "00003",
     "url": "http://gwent.wikia.com/wiki/Tridam_Infantry",
     "name": "Tridam Infantry",
     "cardColor": "BRONZE",
@@ -13264,7 +13265,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "13",
+    "img": "13",
     "url": "http://gwent.wikia.com/wiki/Triss",
     "name": "Triss",
     "cardColor": "GOLD",
@@ -13285,7 +13286,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "80",
+    "img": "80",
     "url": "http://gwent.wikia.com/wiki/Triss:_Butterfly_Spell",
     "name": "Triss: Butterfly Spell",
     "cardColor": "GOLD",
@@ -13306,7 +13307,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Triss:_Butterfly_Spell_(Alpha)",
     "name": "Triss: Butterfly Spell",
     "cardColor": "GOLD",
@@ -13325,7 +13326,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Triss:_Mistress_of_Magic_(Alpha)",
     "name": "Triss: Mistress of Magic",
     "cardColor": "GOLD",
@@ -13344,7 +13345,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Trollalala",
     "name": "Trollalala",
     "cardColor": "GOLD",
@@ -13362,7 +13363,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "90",
+    "img": "90",
     "url": "http://gwent.wikia.com/wiki/Trollololo",
     "name": "Trollolo",
     "cardColor": "SILVER",
@@ -13383,7 +13384,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Trollololo_(Ale_Fest)",
     "name": "Trollololo",
     "cardColor": "GOLD",
@@ -13404,7 +13405,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Troll_-_Heeeeeeee",
     "name": "Troll - Heeeeeeee",
     "cardColor": "GOLD",
@@ -13422,7 +13423,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Trololo_(Alpha)",
     "name": "Trololo",
     "cardColor": "SILVER",
@@ -13440,7 +13441,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "64",
+    "img": "64",
     "url": "http://gwent.wikia.com/wiki/Twisted_Mirror",
     "name": "Twisted Mirror",
     "cardColor": "SILVER",
@@ -13457,7 +13458,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "252",
+    "img": "252",
     "url": "http://gwent.wikia.com/wiki/Udalryk",
     "name": "Udalryk",
     "cardColor": "SILVER",
@@ -13479,7 +13480,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Udalryk_(Alpha)",
     "name": "Udalryk",
     "cardColor": "SILVER",
@@ -13498,7 +13499,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "378",
+    "img": "378",
     "url": "http://gwent.wikia.com/wiki/Ulfhedinn",
     "name": "Ufhedinn",
     "cardColor": "GOLD",
@@ -13519,7 +13520,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "357",
+    "img": "357",
     "url": "http://gwent.wikia.com/wiki/Uma's_Curse",
     "name": "Uma's Curse",
     "cardColor": "GOLD",
@@ -13536,7 +13537,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "36",
+    "img": "36",
     "url": "http://gwent.wikia.com/wiki/Unicorn",
     "name": "Unicorn",
     "cardColor": "SILVER",
@@ -13557,7 +13558,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "354",
+    "img": "354",
     "url": "http://gwent.wikia.com/wiki/Unseen_Elder",
     "name": "Unseen Elder",
     "cardColor": "GOLD",
@@ -13577,7 +13578,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "482",
+    "img": "482",
     "url": "http://gwent.wikia.com/wiki/Usurper",
     "name": "Usurper",
     "cardColor": "GOLD",
@@ -13598,7 +13599,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "334",
+    "img": "334",
     "url": "http://gwent.wikia.com/wiki/Vabjorn",
     "name": "Vabjorn",
     "cardColor": "GOLD",
@@ -13619,7 +13620,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vabjorn_(Alpha)",
     "name": "Vabjorn",
     "cardColor": "SILVER",
@@ -13638,7 +13639,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "496",
+    "img": "496",
     "url": "http://gwent.wikia.com/wiki/Vandergrift",
     "name": "Vandergrift",
     "cardColor": "GOLD",
@@ -13661,7 +13662,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "506",
+    "img": "506",
     "url": "http://gwent.wikia.com/wiki/Vandergrift's_Blade",
     "name": "Vandergrift's Blade",
     "cardColor": "SILVER",
@@ -13680,7 +13681,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "299",
+    "img": "299",
     "url": "http://gwent.wikia.com/wiki/Vanhemar",
     "name": "Vanhemar",
     "cardColor": "SILVER",
@@ -13700,7 +13701,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "287",
+    "img": "287",
     "url": "http://gwent.wikia.com/wiki/Vattier",
     "name": "Vattier",
     "cardColor": "GOLD",
@@ -13720,7 +13721,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "448",
+    "img": "448",
     "url": "http://gwent.wikia.com/wiki/Venendal_Elite",
     "name": "Venendal Elite",
     "cardColor": "BRONZE",
@@ -13740,7 +13741,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "75",
+    "img": "75",
     "url": "http://gwent.wikia.com/wiki/Vernon_Roche",
     "name": "Vernon Roche",
     "cardColor": "GOLD",
@@ -13761,7 +13762,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vernon_Roche_(Alpha)",
     "name": "Vernon Roche",
     "cardColor": "GOLD",
@@ -13779,7 +13780,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "85",
+    "img": "85",
     "url": "http://gwent.wikia.com/wiki/Ves",
     "name": "Ves",
     "cardColor": "SILVER",
@@ -13800,7 +13801,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "23",
+    "img": "23",
     "url": "http://gwent.wikia.com/wiki/Vesemir",
     "name": "Vesemir",
     "cardColor": "SILVER",
@@ -13820,7 +13821,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vesemir_(Alpha)",
     "name": "Vesemir",
     "cardColor": "SILVER",
@@ -13839,7 +13840,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vesemir_(Saovine)",
     "name": "Vesemir",
     "cardColor": "GOLD",
@@ -13859,7 +13860,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vesemir_2_(Saovine)",
     "name": "Vesemir",
     "cardColor": "GOLD",
@@ -13879,7 +13880,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "420",
+    "img": "420",
     "url": "http://gwent.wikia.com/wiki/Vesemir:_Mentor",
     "name": "Vesemir: Mentor",
     "cardColor": "GOLD",
@@ -13899,7 +13900,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Ves_(Alpha)",
     "name": "Ves",
     "cardColor": "SILVER",
@@ -13918,7 +13919,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "309",
+    "img": "309",
     "url": "http://gwent.wikia.com/wiki/Vicovaro_Medic",
     "name": "Vicovaro Medic",
     "cardColor": "BRONZE",
@@ -13939,7 +13940,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "125",
+    "img": "125",
     "url": "http://gwent.wikia.com/wiki/Vicovaro_Novice",
     "name": "Vicovaro Novice",
     "cardColor": "BRONZE",
@@ -13959,7 +13960,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "289",
+    "img": "289",
     "url": "http://gwent.wikia.com/wiki/Vilgefortz",
     "name": "Vilgefortz",
     "cardColor": "GOLD",
@@ -13980,7 +13981,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "14",
+    "img": "14",
     "url": "http://gwent.wikia.com/wiki/Villentretenmerth",
     "name": "Villentretenmerth",
     "cardColor": "GOLD",
@@ -14000,7 +14001,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Villentretenmerth_(Alpha)",
     "name": "Villentretenmerth",
     "cardColor": "GOLD",
@@ -14019,7 +14020,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "374",
+    "img": "374",
     "url": "http://gwent.wikia.com/wiki/Vincent",
     "name": "Vincent",
     "cardColor": "SILVER",
@@ -14040,7 +14041,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "388",
+    "img": "388",
     "url": "http://gwent.wikia.com/wiki/Viper_Witcher",
     "name": "Viper Witcher",
     "cardColor": "BRONZE",
@@ -14060,7 +14061,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "283",
+    "img": "283",
     "url": "http://gwent.wikia.com/wiki/Voorhis",
     "name": "Voorhis",
     "cardColor": "GOLD",
@@ -14080,7 +14081,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "165",
+    "img": "165",
     "url": "http://gwent.wikia.com/wiki/Vran_Warrior",
     "name": "Vran Warrior",
     "cardColor": "BRONZE",
@@ -14101,7 +14102,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "351",
+    "img": "351",
     "url": "http://gwent.wikia.com/wiki/Vreemde",
     "name": "Vreemde",
     "cardColor": "SILVER",
@@ -14121,7 +14122,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "211",
+    "img": "211",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Brigade",
     "name": "Vrihedd Brigade",
     "cardColor": "BRONZE",
@@ -14142,7 +14143,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "200",
+    "img": "200",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Dragoon",
     "name": "Vrihedd Dragoon",
     "cardColor": "BRONZE",
@@ -14163,7 +14164,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "227",
+    "img": "227",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Neophyte",
     "name": "Vrihedd Neophyte",
     "cardColor": "BRONZE",
@@ -14184,7 +14185,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "212",
+    "img": "212",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Officer",
     "name": "Vrihedd Officer",
     "cardColor": "BRONZE",
@@ -14205,7 +14206,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Officer_(Alpha)",
     "name": "Vrihedd Officer",
     "cardColor": "BRONZE",
@@ -14224,7 +14225,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "216",
+    "img": "216",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Sappers",
     "name": "Vrihedd Sappers",
     "cardColor": "BRONZE",
@@ -14245,7 +14246,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "218",
+    "img": "218",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Vanguard",
     "name": "Vrihedd Vanguard",
     "cardColor": "BRONZE",
@@ -14267,7 +14268,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Vrihedd_Vanguard_(Alpha)",
     "name": "Vrihedd Vanguard",
     "cardColor": "BRONZE",
@@ -14286,7 +14287,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "458",
+    "img": "458",
     "url": "http://gwent.wikia.com/wiki/Vrygheff",
     "name": "Vrygheff",
     "cardColor": "SILVER",
@@ -14306,7 +14307,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Warcry",
     "name": "Warcry",
     "cardColor": "BRONZE",
@@ -14321,7 +14322,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "222",
+    "img": "222",
     "url": "http://gwent.wikia.com/wiki/Wardancer",
     "name": "Elven Wardancer",
     "cardColor": "BRONZE",
@@ -14342,7 +14343,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "379",
+    "img": "379",
     "url": "http://gwent.wikia.com/wiki/Warship",
     "name": "Warship",
     "cardColor": "BRONZE",
@@ -14363,7 +14364,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "268",
+    "img": "268",
     "url": "http://gwent.wikia.com/wiki/War_Longship",
     "name": "War Longship",
     "cardColor": "BRONZE",
@@ -14385,7 +14386,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "146",
+    "img": "146",
     "url": "http://gwent.wikia.com/wiki/Weavess",
     "name": "Weavess",
     "cardColor": "SILVER",
@@ -14406,7 +14407,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "409",
+    "img": "409",
     "url": "http://gwent.wikia.com/wiki/Weavess:_Incantation",
     "name": "Weavess: Incantation",
     "cardColor": "GOLD",
@@ -14429,7 +14430,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "383",
+    "img": "383",
     "url": "http://gwent.wikia.com/wiki/Werecat",
     "name": "Werecat",
     "cardColor": "BRONZE",
@@ -14450,7 +14451,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "375",
+    "img": "375",
     "url": "http://gwent.wikia.com/wiki/Werewolf",
     "name": "Werewolf",
     "cardColor": "BRONZE",
@@ -14471,7 +14472,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Whale_from_the_Cave_of_Dreams_(Alpha)",
     "name": "Whale from the Cave of Dreams",
     "cardColor": "SILVER",
@@ -14487,7 +14488,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "433",
+    "img": "433",
     "url": "http://gwent.wikia.com/wiki/Whale_Harpooner",
     "name": "Whale Harpooner",
     "cardColor": "BRONZE",
@@ -14508,7 +14509,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "488",
+    "img": "488",
     "url": "http://gwent.wikia.com/wiki/Whispering_Hillock",
     "name": "Whispering Hillock",
     "cardColor": "GOLD",
@@ -14528,7 +14529,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "144",
+    "img": "144",
     "url": "http://gwent.wikia.com/wiki/Whispess",
     "name": "Whispess",
     "cardColor": "SILVER",
@@ -14549,7 +14550,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "407",
+    "img": "407",
     "url": "http://gwent.wikia.com/wiki/Whispess:_Tribute",
     "name": "Whispess: Tribute",
     "cardColor": "GOLD",
@@ -14570,7 +14571,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "48",
+    "img": "48",
     "url": "http://gwent.wikia.com/wiki/White_Frost",
     "name": "White Frost",
     "cardColor": "SILVER",
@@ -14587,7 +14588,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/White_Frost_(Alpha)",
     "name": "White Frost",
     "cardColor": "BRONZE",
@@ -14603,7 +14604,7 @@ const __cardDB = [
     "tags": []
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/White_Frost_(Midwinter_Hunt)",
     "name": "White Frost",
     "cardColor": "SILVER",
@@ -14620,7 +14621,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "239",
+    "img": "239",
     "url": "http://gwent.wikia.com/wiki/Wild_Boar_of_the_Sea",
     "name": "Wild Boar of the Sea",
     "cardColor": "GOLD",
@@ -14642,7 +14643,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "434",
+    "img": "434",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Drakkar",
     "name": "Wild Hunt Drakkar",
     "cardColor": "BRONZE",
@@ -14663,7 +14664,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "176",
+    "img": "176",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Hound",
     "name": "Wild Hunt Hound",
     "cardColor": "BRONZE",
@@ -14684,7 +14685,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Hound_(Alpha)",
     "name": "Wild Hunt Hound",
     "cardColor": "BRONZE",
@@ -14703,7 +14704,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "333",
+    "img": "333",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Navigator",
     "name": "Wild Hunt Navigator",
     "cardColor": "BRONZE",
@@ -14724,7 +14725,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "167",
+    "img": "167",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Rider",
     "name": "Wild Hunt Rider",
     "cardColor": "BRONZE",
@@ -14745,7 +14746,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Rider_(Alpha)",
     "name": "Wild Hunt Rider",
     "cardColor": "BRONZE",
@@ -14764,7 +14765,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "166",
+    "img": "166",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Warrior",
     "name": "Wild Hunt Warrior",
     "cardColor": "BRONZE",
@@ -14785,7 +14786,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Wild_Hunt_Warrior_(Alpha)",
     "name": "Wild Hunt Warrior",
     "cardColor": "BRONZE",
@@ -14804,7 +14805,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "450",
+    "img": "450",
     "url": "http://gwent.wikia.com/wiki/Wilfred",
     "name": "Wilfred",
     "cardColor": "SILVER",
@@ -14825,7 +14826,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "450",
+    "img": "450",
     "url": "http://gwent.wikia.com/wiki/Wilhelm",
     "name": "Wilhelm",
     "cardColor": "SILVER",
@@ -14846,7 +14847,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Wilmar",
     "name": "Wilmar",
     "cardColor": "SILVER",
@@ -14867,7 +14868,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "513",
+    "img": "513",
     "url": "http://gwent.wikia.com/wiki/Winch",
     "name": "Winch",
     "cardColor": "BRONZE",
@@ -14884,7 +14885,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "389",
+    "img": "389",
     "url": "http://gwent.wikia.com/wiki/Witch_Hunter",
     "name": "Witch Hunter",
     "cardColor": "BRONZE",
@@ -14905,7 +14906,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "177",
+    "img": "177",
     "url": "http://gwent.wikia.com/wiki/Wolf",
     "name": "Wolf",
     "cardColor": "BRONZE",
@@ -14926,7 +14927,7 @@ const __cardDB = [
     "loyalty": "UNKNOWN"
   },
   {
-    "id": "413",
+    "img": "413",
     "url": "http://gwent.wikia.com/wiki/Wolfsbane",
     "name": "Wolfsbane",
     "cardColor": "GOLD",
@@ -14944,7 +14945,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "133",
+    "img": "133",
     "url": "http://gwent.wikia.com/wiki/Woodland_Spirit",
     "name": "Woodland Spirit",
     "cardColor": "GOLD",
@@ -14964,7 +14965,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "160",
+    "img": "160",
     "url": "http://gwent.wikia.com/wiki/Wyvern",
     "name": "Wyvern",
     "cardColor": "BRONZE",
@@ -14984,7 +14985,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Wyvern_(Alpha)",
     "name": "Wyvern",
     "cardColor": "BRONZE",
@@ -15002,7 +15003,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "476",
+    "img": "476",
     "url": "http://gwent.wikia.com/wiki/Wyvern_Shield",
     "name": "Wyvern Shield",
     "cardColor": "BRONZE",
@@ -15019,7 +15020,7 @@ const __cardDB = [
     ]
   },
   {
-    "id": "292",
+    "img": "292",
     "url": "http://gwent.wikia.com/wiki/Xarthisius",
     "name": "Xarthisius",
     "cardColor": "GOLD",
@@ -15039,7 +15040,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "367",
+    "img": "367",
     "url": "http://gwent.wikia.com/wiki/Xavier_Moran",
     "name": "Xavier Moran",
     "cardColor": "GOLD",
@@ -15059,7 +15060,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "198",
+    "img": "198",
     "url": "http://gwent.wikia.com/wiki/Yaevinn",
     "name": "Yaevinn",
     "cardColor": "SILVER",
@@ -15081,7 +15082,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Yaevinn_(Alpha)",
     "name": "Yaevinn",
     "cardColor": "SILVER",
@@ -15100,7 +15101,7 @@ const __cardDB = [
     "loyalty": "DISLOYAL"
   },
   {
-    "id": "208",
+    "img": "208",
     "url": "http://gwent.wikia.com/wiki/Yarpen",
     "name": "Yarpen",
     "cardColor": "SILVER",
@@ -15122,7 +15123,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "15",
+    "img": "15",
     "url": "http://gwent.wikia.com/wiki/Yennefer",
     "name": "Yennefer",
     "cardColor": "GOLD",
@@ -15144,7 +15145,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "20",
+    "img": "20",
     "url": "http://gwent.wikia.com/wiki/Yennefer:_Conjurer",
     "name": "Yennefer: Conjurer",
     "cardColor": "GOLD",
@@ -15165,7 +15166,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "490",
+    "img": "490",
     "url": "http://gwent.wikia.com/wiki/Yennefer:_Enchantress",
     "name": "Yennefer: Enchantress",
     "cardColor": "GOLD",
@@ -15186,7 +15187,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Yeoman_Archer_(Saovine)",
     "name": "Yeoman Archer",
     "cardColor": "BRONZE",
@@ -15206,7 +15207,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "510",
+    "img": "510",
     "url": "http://gwent.wikia.com/wiki/Yoana",
     "name": "Yoana",
     "cardColor": "SILVER",
@@ -15227,7 +15228,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "192",
+    "img": "192",
     "url": "http://gwent.wikia.com/wiki/Zoltan",
     "name": "Zoltan Chivay",
     "cardColor": "GOLD",
@@ -15251,7 +15252,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Zoltan_Chivay_(Ale_Fest)",
     "name": "Zoltan Chivay",
     "cardColor": "GOLD",
@@ -15271,7 +15272,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Zoltan:_Animal_Tamer_(Alpha)",
     "name": "Zoltan: Animal Tamer",
     "cardColor": "GOLD",
@@ -15290,7 +15291,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "16",
+    "img": "16",
     "url": "http://gwent.wikia.com/wiki/Zoltan:_Scoundrel",
     "name": "Zoltan: Scoundrel",
     "cardColor": "GOLD",
@@ -15311,7 +15312,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "",
+    "img": "",
     "url": "http://gwent.wikia.com/wiki/Zoltan:_the_Brawler_(Alpha)",
     "name": "Zoltan: the Brawler",
     "cardColor": "GOLD",
@@ -15330,7 +15331,7 @@ const __cardDB = [
     "loyalty": "LOYAL"
   },
   {
-    "id": "484",
+    "img": "484",
     "url": "http://gwent.wikia.com/wiki/Zoria_Runestone",
     "name": "Zoria Runestone",
     "cardColor": "SILVER",

@@ -43,7 +43,7 @@ export enum CardLoyalty
 
 export interface ICardv1
 {
-  id: string;
+  img: string;
   name: string;
   cardType: CardType;
   tags: string[];

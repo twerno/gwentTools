@@ -16,7 +16,7 @@ export const testCardSet: Array<ICardv1 | IUnitv1> = [
     set: CardSet.CLASSIC,
     tags: ['tag1', 'tag2'],
     url: '',
-    id: '',
+    img: '',
     armor: 0,
     strength: 5,
     loyalty: CardLoyalty.LOYAL
@@ -32,7 +32,7 @@ export const testCardSet: Array<ICardv1 | IUnitv1> = [
     set: CardSet.CLASSIC,
     tags: ['tag1'],
     url: '',
-    id: ''
+    img: ''
   },
   {
     cardColor: CardColor.GOLD,
@@ -45,7 +45,7 @@ export const testCardSet: Array<ICardv1 | IUnitv1> = [
     set: CardSet.CLASSIC,
     tags: ['tag1'],
     url: '',
-    id: '',
+    img: '',
     strength: 7,
     armor: 0,
     loyalty: CardLoyalty.LOYAL

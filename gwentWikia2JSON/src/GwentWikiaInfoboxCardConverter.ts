@@ -5,8 +5,9 @@ import
   ICardv1, CardType, IUnitv1, CardColor, Factionv1,
   CardRarity, CardSet, CardLoyalty
 } from '../../src/main/commons/card/CardStruct';
-import { idMap, IImageMapEl } from '../db/IdMap';
+
 import { lowerCaseCompare } from '../../src/main/commons/String.helper';
+import { IImageMapEl, imageMap } from '../db/ImageMap';
 
 export class GwentWikiaInfoboxCardConverter
 {
@@ -21,7 +22,7 @@ export class GwentWikiaInfoboxCardConverter
     try
     {
       const result: ICardv1 = {
-        id: this.id(infobox),
+        img: this.imageId(infobox),
         url: this.url(infobox),
         name: this.name(infobox),
         cardColor: this.cardColor(infobox),
@@ -51,20 +52,20 @@ export class GwentWikiaInfoboxCardConverter
     }
   }
 
-  private id(infobox: IInfobox): string
+  private imageId(infobox: IInfobox): string
   {
     const url = this.url(infobox);
-    const element: IImageMapEl | undefined = idMap.find(el => lowerCaseCompare(el.wikiUrl, url));
+    const element: IImageMapEl | undefined = imageMap.find(el => lowerCaseCompare(el.wikiUrl, url));
 
     if (element)
     {
-      if (element.imgId instanceof Array && element.imgId.length > 0)
+      if (element.img instanceof Array && element.img.length > 0)
       {
-        return element.imgId[0];
+        return element.img[0];
       }
-      else if (typeof element.imgId === 'string')
+      else if (typeof element.img === 'string')
       {
-        return element.imgId;
+        return element.img;
       }
     }
 

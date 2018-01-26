@@ -16,7 +16,7 @@ export class CardPatchHelper
   {
     if (card === undefined)
     {
-      GwentWikiaHelper.log(`[PATCH] [WARN] No cards with id=${patch.id} and url=${patch.url} found!`);
+      GwentWikiaHelper.log(`[PATCH] [WARN] No cards with id=${patch.img} and url=${patch.url} found!`);
     }
 
     const patchKeys: string[] = Object.keys(patch);
@@ -29,6 +29,6 @@ export class CardPatchHelper
 
   private findCard(patch: CardPatch, cards: ICardv1[]): ICardv1 | undefined
   {
-    return cards.find(c => lowerCaseCompare(c.id, patch.id) && lowerCaseCompare(c.url, patch.url));
+    return cards.find(c => lowerCaseCompare(c.img, patch.img) && lowerCaseCompare(c.url, patch.url));
   }
 }

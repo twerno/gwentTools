@@ -2,7 +2,6 @@ import './CardSmall.less';
 
 import * as React from 'react';
 import { ICardv1, isIUnitv1, Factionv1, CardLoyalty, CardColor } from '@src/commons/card/CardStruct';
-import { imageMap, getFirstImageId } from '@src/utils/ImageMap';
 import { getSmallImgUrl } from '@src/commons/assets/GwentAssets.helper';
 
 export interface CardSmallProps
@@ -99,11 +98,6 @@ export class CardSmall extends React.Component<CardSmallProps, {}>
 
   private cardImage(card: ICardv1)
   {
-    const mapEl = imageMap.find(e => e.wikiUrl.toLocaleLowerCase() === card.url.toLocaleLowerCase());
-    if (mapEl)
-    {
-      return getSmallImgUrl(getFirstImageId(mapEl));
-    }
-    return '';
+    return getSmallImgUrl(card.img);
   }
 }
