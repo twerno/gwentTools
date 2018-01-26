@@ -105,7 +105,7 @@ export class BasicFilterComp extends React.Component<BasicFilterCompProps, Basic
           <Select.default
             multi={true}
             name="set"
-            value={this.props.basicCardFilter.sets}
+            value={this.props.basicCardFilter.cardSets}
             onChange={selection => this.cardSetsChangeHandler(selection)}
             options={this.mapSet2Options(options.sets)}
             placeholder="Any Set"
@@ -168,8 +168,8 @@ export class BasicFilterComp extends React.Component<BasicFilterCompProps, Basic
   private cardSetsChangeHandler(selection: Select.Option | Select.Options | null): void
   {
     const options = this.optionsFromSelection(selection);
-    const sets: CardSet[] = options.map(o => o.value as CardSet);
-    this.callOnChange({ sets });
+    const cardSets: CardSet[] = options.map(o => o.value as CardSet);
+    this.callOnChange({ cardSets });
   }
 
   private callOnChange(changes: IBasicCardFilter): void

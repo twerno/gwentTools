@@ -38,7 +38,6 @@ const __cardDB = [
     "strength": 6,
     "armor": 0,
     "loyalty": "LOYAL",
-    "id": "360",
     "abilities": [
       {
         "mechanicId": "CREATE",
@@ -57,7 +56,7 @@ const __cardDB = [
           "tags": [
             "Cursed"
           ],
-          "set": [
+          "cardSets": [
             "CLASSIC"
           ],
           "isCollectable": true
@@ -246,7 +245,28 @@ const __cardDB = [
     ],
     "strength": 2,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE",
+            "SILVER"
+          ],
+          "cardTypes": [
+            "SPECIAL"
+          ],
+          "tags": [
+            "Spell"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "430",
@@ -3689,6 +3709,23 @@ const __cardDB = [
     "tags": [
       "Alchemy",
       "Item"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "factions": [
+            "NILFGAARD"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -3843,6 +3880,23 @@ const __cardDB = [
     "tags": [
       "Alchemy",
       "Item"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "factions": [
+            "MONSTERS"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -4095,7 +4149,29 @@ const __cardDB = [
     ],
     "strength": 1,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE",
+            "SILVER"
+          ],
+          "cardTypes": [
+            "UNIT"
+          ],
+          "tags": [
+            "Beast",
+            "Draconid"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "451",
@@ -4878,7 +4954,27 @@ const __cardDB = [
     ],
     "strength": 2,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE"
+          ],
+          "cardTypes": [
+            "UNIT"
+          ],
+          "factions": [
+            "SCOIATAEL"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "479",
@@ -5433,7 +5529,24 @@ const __cardDB = [
     ],
     "strength": 3,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "cardTypes": [
+            "SPECIAL"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "311",
@@ -8956,6 +9069,23 @@ const __cardDB = [
     "tags": [
       "Alchemy",
       "Item"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "factions": [
+            "SCOIATAEL"
+          ],
+          "cardSets": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -12683,6 +12813,23 @@ const __cardDB = [
     "tags": [
       "Alchemy",
       "Item"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "factions": [
+            "SKELLIGE"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -13534,6 +13681,23 @@ const __cardDB = [
     "set": "CLASSIC",
     "tags": [
       "Spell"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "GOLD"
+          ],
+          "cardTypes": [
+            "UNIT"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -14119,7 +14283,30 @@ const __cardDB = [
     ],
     "strength": 4,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE"
+          ],
+          "cardTypes": [
+            "UNIT"
+          ],
+          "factions": [
+            "NILFGAARD"
+          ],
+          "tags": [
+            "Soldier"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "211",
@@ -14526,7 +14713,29 @@ const __cardDB = [
     ],
     "strength": 5,
     "armor": 0,
-    "loyalty": "LOYAL"
+    "loyalty": "LOYAL",
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE",
+            "SILVER"
+          ],
+          "factions": [
+            "MONSTERS",
+            "NEUTRAL"
+          ],
+          "tags": [
+            "Organic"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
+    ]
   },
   {
     "img": "144",
@@ -14882,6 +15091,26 @@ const __cardDB = [
     "set": "CLASSIC",
     "tags": [
       "Tactic"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "BRONZE"
+          ],
+          "factions": [
+            "NORTHERN_REALMS"
+          ],
+          "tags": [
+            "Machine"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   },
   {
@@ -15346,6 +15575,23 @@ const __cardDB = [
     "tags": [
       "Alchemy",
       "Item"
+    ],
+    "abilities": [
+      {
+        "mechanicId": "CREATE",
+        "filter": {
+          "cardColors": [
+            "SILVER"
+          ],
+          "factions": [
+            "NORTHERN_REALMS"
+          ],
+          "set": [
+            "CLASSIC"
+          ],
+          "isCollectable": true
+        }
+      }
     ]
   }
 ];

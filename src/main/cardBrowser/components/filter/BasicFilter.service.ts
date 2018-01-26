@@ -14,7 +14,7 @@ export interface IBasicCardFilter
   rarities?: CardRarity[];
   cardColors?: CardColor[];
   factions?: Factionv1[];
-  sets?: CardSet[];
+  cardSets?: CardSet[];
   loyalty?: CardLoyalty;
   isCollectable?: boolean;
 }
@@ -44,7 +44,7 @@ export class BasicFilterService
       this.innerFilter(basicFilter.cardTypes, t => ({ cardType: t })),
       this.innerFilter(basicFilter.factions, f => ({ faction: f })),
       this.innerFilter(basicFilter.rarities, r => ({ rarity: r })),
-      this.innerFilter(basicFilter.sets, s => ({ set: s })),
+      this.innerFilter(basicFilter.cardSets, s => ({ set: s })),
       this.innerFilter(basicFilter.tags, t => ({ tag: t })),
       basicFilter.loyalty ? { loyalty: basicFilter.loyalty } : this.empty,
       basicFilter.isCollectable ? { isCollectable: basicFilter.isCollectable } : this.empty
