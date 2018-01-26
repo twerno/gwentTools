@@ -3,12 +3,15 @@ import * as fs from 'fs';
 import { GwentWikiaHelper } from './GwentWikiaHelper';
 import { ILink } from './GwentWikiaLinkCollector';
 import { HttpDownloadService } from './HttpDownloadService';
+import { GwentWikiaInfoboxEnchanter } from './GwentWikiaInfoboxEnchanter';
 
 export class GwentWikiaInfoboxDownloader
 {
   private infoBoxParser = /{{Infobox\s+Card((.|\s)+?)}}/;
 
-  public constructor(private downloader: HttpDownloadService) { }
+  public constructor(
+    private downloader: HttpDownloadService,
+    private enchanter?: GwentWikiaInfoboxEnchanter) { }
 
   public async downloadAndSave(links: ILink[], dir: string, override: boolean = false): Promise<void>
   {
@@ -30,7 +33,10 @@ export class GwentWikiaInfoboxDownloader
             let infobox = this.parseInfoBox(body);
             if (infobox)
             {
-              infobox += this.add2Infobox(link, infobox, body);
+              if (this.enchanter)
+              {
+                infobox += this.enchanter.enchant(link, this.filename(link), infobox, body);
+              }
               GwentWikiaHelper.saveOnDisk(`${dir}/${this.filename(link)}`, infobox);
             }
 
@@ -41,30 +47,6 @@ export class GwentWikiaInfoboxDownloader
           }, 10);
       }
     });
-  }
-
-  private add2Infobox(link: ILink, infobox: string, body: string): string
-  {
-    let result = `\n|__url=${link.urlToShow}`;
-    result += `\n|__wiki_id=${link.id.replace(/\/wiki\//g, '')}`;
-    result += `\n|__filename=${this.filename(link)}`;
-    result += `\n|__set=${this.setFromUrl(infobox)}`;
-    if (body.search(/{{Removed}}/) !== -1)
-    {
-      result += `\n|__removed=true`;
-    }
-
-    return result;
-  }
-
-  private setFromUrl(infoBox: string): string
-  {
-    const group = infoBox.match(/\|\s*url\s*=.+?_\((.+)\)/);
-    if (group && group.length > 1 && group[1])
-    {
-      return group[1];
-    }
-    return '';
   }
 
   private parseInfoBox(body: string): string | null

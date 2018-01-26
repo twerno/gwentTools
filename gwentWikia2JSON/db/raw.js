@@ -1,4 +1,4 @@
-const __cardDB = [
+[
   {
     "id": "141",
     "url": "http://gwent.wikia.com/wiki/Abaya",
@@ -37,32 +37,7 @@ const __cardDB = [
     ],
     "strength": 6,
     "armor": 0,
-    "loyalty": "LOYAL",
-    "abilities": [
-      {
-        "mechanicId": "CREATE",
-        "filter": {
-          "cardColors": [
-            "BRONZE",
-            "SILVER"
-          ],
-          "cardTypes": [
-            "UNIT"
-          ],
-          "factions": [
-            "NORTHERN_REALMS",
-            "NEUTRAL"
-          ],
-          "tags": [
-            "Cursed"
-          ],
-          "set": [
-            "CLASSIC"
-          ],
-          "isCollectable": true
-        }
-      }
-    ]
+    "loyalty": "LOYAL"
   },
   {
     "id": "57",
@@ -15347,4 +15322,4 @@ const __cardDB = [
       "Item"
     ]
   }
-];
+]

@@ -1,12 +1,12 @@
 import * as React from 'react';
 import { ArmorMechanicRendererBasic } from '@src/cardBrowser/cardMechanic/renderer/ArmorMechanicRenderer';
-import { ICardAbility, ArmorAbility, CreateAbility } from '@src/commons/card/Ability';
+import { ArmorAbility, CreateAbility, AbilityType } from '@src/commons/card/Ability';
 import { CreateMechanicRenderer } from '@src/cardBrowser/cardMechanic/renderer/CreateMechanicRenderer';
 import { BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
 
 export interface GenMechanicRendererPops
 {
-  mechanic: ICardAbility;
+  mechanic: AbilityType;
   mode: 'basic' | 'extended';
   basicCardService: BasicFilterService;
 }

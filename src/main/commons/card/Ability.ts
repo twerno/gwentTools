@@ -4,7 +4,9 @@ import { CardColor, CardType } from '@src/commons/card/CardStruct';
 
 export type gwentMechanic = 'SPAWN' | 'DEPLOY' | 'ARMOR' | 'CREATE';
 
-export interface ICardAbility
+export type AbilityType = SpawnAbility | DeployAbility | ArmorAbility | CreateAbility;
+
+interface ICardAbility
 {
   mechanicId: gwentMechanic;
   staticText?: string;
@@ -32,12 +34,3 @@ export interface CreateAbility extends ICardAbility
   mechanicId: gwentMechanic & 'CREATE';
   filter: IBasicCardFilter;
 }
-
-const create: CreateAbility = {
-  mechanicId: 'CREATE',
-  filter: {
-    cardColors: [CardColor.BRONZE, CardColor.SILVER],
-    cardTypes: [CardType.UNIT],
-    tags: ['Cursed']
-  },
-};

@@ -47,10 +47,11 @@ export abstract class GwentWikiaHelper
     this.saveOnDisk(filename, data);
   }
 
-  public static mkdir(dir: string): void
+  public static mkdir(dir: string | string[]): void
   {
+    const dirs = dir instanceof Array ? dir : [dir];
     // tslint:disable-next-line:no-empty
-    fs.mkdir(dir, (err) => { });
+    dirs.forEach(d => fs.mkdir(d, (err) => { }));
   }
 
   public static readFromDisk(filename: string): string

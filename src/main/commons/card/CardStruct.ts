@@ -1,4 +1,4 @@
-import { ICardAbility } from '@src/commons/card/Ability';
+import { AbilityType } from '@src/commons/card/Ability';
 
 export enum Factionv1
 {
@@ -52,7 +52,7 @@ export interface ICardv1
   faction: Factionv1;
   set: CardSet;
   collectable: boolean;
-  abilities?: ICardAbility[];
+  abilities?: AbilityType[];
   cardText: string[];
   url: string;
 }
