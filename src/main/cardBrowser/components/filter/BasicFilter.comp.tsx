@@ -5,6 +5,7 @@ import * as Select from 'react-select';
 import { CardService, ICardFilterOption } from '@src/cardBrowser/Card.service';
 import { IBasicCardFilter, BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
 import { CardType, CardRarity, CardColor, Factionv1, CardLoyalty, CardSet } from '@src/commons/card/CardStruct';
+import { InputGroup } from 'react-bootstrap';
 
 export interface BasicFilterCompProps
 {
@@ -14,7 +15,18 @@ export interface BasicFilterCompProps
   basicFilterService: BasicFilterService;
 }
 
-export class BasicFilterComp extends React.Component<BasicFilterCompProps, {}> {
+export interface BasicFilterCompState
+{
+  filterNameVal: string;
+}
+
+export class BasicFilterComp extends React.Component<BasicFilterCompProps, BasicFilterCompState> {
+
+  public constructor(props: BasicFilterCompProps)
+  {
+    super(props);
+    this.state = { filterNameVal: this.props.basicCardFilter.name || '' };
+  }
 
   public render()
   {
@@ -22,6 +34,17 @@ export class BasicFilterComp extends React.Component<BasicFilterCompProps, {}> {
     return (
       <>
       <div className="row">
+
+        <div className="section col-md-2">
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Strength"
+            value={this.state.filterNameVal}
+            onChange={(event) => this.setState({ filterNameVal: event.target.value })}
+            onBlur={e => this.callOnChange({ name: this.state.filterNameVal })}
+          />
+        </div>
 
         <div className="section col-md-2">
           <Select.default

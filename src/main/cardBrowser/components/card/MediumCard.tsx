@@ -47,7 +47,7 @@ export class MediumCard extends React.Component<MediumCardProps, MediumCardState
     // const willChange = (this.state.willChange === 'transform') ? ' willAnimate' : '';
 
     const containerStyle = (this.props.mobileView)
-      ? { height: '195px', width: '145px' }
+      ? { transform: 'scale(0.8)' }
       : {};
 
     return (

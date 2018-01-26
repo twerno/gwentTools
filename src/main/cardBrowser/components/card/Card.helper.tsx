@@ -26,18 +26,21 @@ export class CardRendererHelper
 
   public cardText2Str(card: ICardv1, basicCardService: BasicFilterService): JSX.Element
   {
-    console.log(JSON.stringify(card));
     if (card.abilities)
     {
-      return <GenMechanicRenderer mode={'basic'} mechanic={card.abilities[0]} basicCardService={basicCardService} />;
+      return <GenMechanicRenderer
+        mode={'basic'}
+        mechanic={card.abilities[0]}
+        basicCardService={basicCardService}
+      />;
     }
 
     return card.cardText.length === 1
       ? <>{card.cardText[0]} </>
       : (
         <>
-        {card.cardText.map(s => <>{s} </>)
-          .reduce((a, b) => <> {a} <br /> {b} </>)}
+        {card.cardText.map(s => <>s</>)
+          .reduce((a, b) => <>{a}<br />{b}</>)}
         </>
       );
   }
