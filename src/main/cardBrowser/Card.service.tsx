@@ -33,11 +33,13 @@ export interface IMap<T>
 export class CardService
 {
 
+  private sorted: ICardv1[] = __cardDB.sort((a, b) => this.sortByColor(a, b));
+
   private filterHelper: CardFilterHelper = new CardFilterHelper();
 
   public getAllCards(): ICardv1[]
   {
-    return __cardDB as ICardv1[];
+    return this.sorted;
   }
 
   public getFiltered(filter: CardFilterType): ICardv1[]
@@ -49,6 +51,48 @@ export class CardService
   {
     return new ICardFilterOptionSetsBuilder(this.getFiltered(filter))
       .build();
+  }
+
+  private sortByColor(a: ICardv1, b: ICardv1): number
+  {
+    const result = this.colorVal(a) - this.colorVal(b);
+    if (result !== 0)
+    {
+      return result;
+    }
+
+    if (a.name < b.name)
+    {
+      return -1;
+    }
+    else
+      if (a.name > b.name)
+      {
+        return 1;
+      }
+      else
+      {
+        return 0;
+      }
+
+  }
+
+  private colorVal(card: ICardv1): number
+  {
+    if (card.cardType === CardType.LEADER)
+    {
+      return 1;
+    }
+    else
+    {
+      switch (card.cardColor)
+      {
+        case CardColor.GOLD: return 2;
+        case CardColor.SILVER: return 3;
+        case CardColor.BRONZE: return 4;
+      }
+    }
+    return 5;
   }
 
 }
