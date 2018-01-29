@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { ICardv1 } from '@src/commons/card/CardStruct';
-import { getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
 import { GenMechanicRenderer } from '@src/cardBrowser/cardMechanic/renderer/GenMechanicRenderer';
 import { BasicFilterService } from '@src/cardBrowser/components/filter/BasicFilter.service';
+import { getMediumImgUrl } from '@src/commons/assets/GwentAssets.helper';
+import { ICardv1 } from '@src/commons/card/CardStruct';
+import * as React from 'react';
 
 export class CardRendererHelper
 {

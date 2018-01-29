@@ -1,19 +1,24 @@
-import '@src/commons/assets/GwentAssets.less';
 import './CardMedium.less';
+import '@src/commons/assets/GwentAssets.less';
 
-import * as React from 'react';
-import { ICardv1, isIUnitv1 } from '@src/commons/card/CardStruct';
-import
-{
-  cardColor2Border, cardFaction2Frame,
-  cardRarity2Gem, cardFaction2BanerBasic, getMediumImgUrl, gwentNumber, bgColor
+import {
+  bgColor,
+  cardColor2Border,
+  cardFaction2BanerBasic,
+  cardFaction2Frame,
+  cardRarity2Gem,
+  getMediumImgUrl,
+  gwentNumber,
 } from '@src/commons/assets/GwentAssets.helper';
+import { ICardv1, isIUnitv1 } from '@src/commons/card/CardStruct';
 import { nextId } from '@src/commons/Numerator';
+import * as React from 'react';
 
 export interface CardMediumProps
 {
   card: ICardv1;
   showText: boolean;
+  cardSelected: (card: ICardv1 | null) => void;
 }
 
 interface CardMediumState
@@ -42,7 +47,7 @@ export class CardMedium extends React.Component<CardMediumProps, CardMediumState
     const css = this.cssPrefix;
 
     return (
-      <div className={`${css}_container`}>
+      <div className={`${css}_container`} onMouseEnter={() => this.props.cardSelected(card)}>
         <div>
           <div className={`${css}_art`} style={{ backgroundImage: `url(${this.cardImage(card)})` }} />
           <div className={`${css}_border ${cardColor2Border(card.cardColor)}`} />
@@ -117,11 +122,4 @@ export class CardMedium extends React.Component<CardMediumProps, CardMediumState
       ? card.tags.reduce((a, b) => `${a}, ${b}`)
       : '';
   }
-
-  // private cardText2Str(cardText: string[]): JSX.Element
-  // {
-  //   return cardText.length === 1
-  //     ? <>{cardText[0]}</>
-  //     : <>{cardText.map(s => <>{s}</>).reduce((a, b) => <> {a} <br /> {b}</>)}</>;
-  // }
 }

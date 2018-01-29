@@ -1,12 +1,19 @@
 import './CardSmall.less';
 
-import * as React from 'react';
-import { ICardv1, isIUnitv1, Factionv1, CardLoyalty, CardColor } from '@src/commons/card/CardStruct';
 import { getSmallImgUrl } from '@src/commons/assets/GwentAssets.helper';
+import {
+  CardColor,
+  CardLoyalty,
+  Factionv1,
+  ICardv1,
+  isIUnitv1,
+} from '@src/commons/card/CardStruct';
+import * as React from 'react';
 
 export interface CardSmallProps
 {
   card: ICardv1;
+  cardSelected: (card: ICardv1 | null) => void;
 }
 
 export class CardSmall extends React.Component<CardSmallProps, {}>
@@ -23,7 +30,7 @@ export class CardSmall extends React.Component<CardSmallProps, {}>
 
     return (
 
-      <div className="cardContainer">
+      <div className="cardContainer" onMouseEnter={() => this.props.cardSelected(card)}>
         <div className="card" style={{ backgroundImage: `url(${this.cardImage(card)})` }} />
         <div className={this.borderClass(card)} />
         <div className={this.factionBannerClass(card)} />

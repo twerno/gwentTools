@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'GwentFont';
+    src: url('https://www.playgwent.com/fonts/hinted-GWENT-ExtraBold.ttf');
+}
+
+.cardPreview {
+    &_container {
+        width: 250px;
+        top: 100px;
+        bottom: 0px;
+        right: 0px;
+        position: fixed;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    &_card {
+        margin: 40px 25px;
+        transform: scale(1.1);
+    }
+    &_name_box {
+        margin: 0 auto;
+        width: 215px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        padding: 4px;
+        background-color: white;
+    }
+    &_name {
+        color: black;
+        font-family: "GwentFont";
+        font-size: 17px;
+    }
+    &_text_box {
+        margin: 0 auto;
+        width: 215px;
+        border-style: solid;
+        border-color: black;
+        border-width: 1px;
+        padding: 4px;
+        background-color: white;
+    }
+}
