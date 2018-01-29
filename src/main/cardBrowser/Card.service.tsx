@@ -32,14 +32,26 @@ export interface IMap<T>
 
 export class CardService
 {
-
-  private sorted: ICardv1[] = __cardDB.sort((a, b) => this.sortByColor(a, b));
+  private localSet: ICardv1[];
 
   private filterHelper: CardFilterHelper = new CardFilterHelper();
 
+  public constructor()
+  {
+    this.initCardSet();
+  }
+
+  private initCardSet(): void
+  {
+    this.localSet = __cardDB.sort((a, b) => this.sortByColor(a, b));
+    this.localSet
+      .filter(c => c.cardType === CardType.SPECIAL)
+      .forEach(c => c.tags.unshift('Special'));
+  }
+
   public getAllCards(): ICardv1[]
   {
-    return this.sorted;
+    return this.localSet;
   }
 
   public getFiltered(filter: CardFilterType): ICardv1[]
