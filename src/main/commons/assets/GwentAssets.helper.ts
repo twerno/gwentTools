@@ -77,6 +77,25 @@ export function cardFaction2BanerBasic(faction: Factionv1): string
   return '';
 }
 
+export function gwentNumber(num: number): string
+{
+  return `asset_number_${num}`;
+}
+
+export function bgColor(faction: Factionv1): string
+{
+  switch (faction)
+  {
+    case Factionv1.MONSTERS: return 'asset_faction_color_monster';
+    case Factionv1.NEUTRAL: return 'asset_faction_color_neutral';
+    case Factionv1.NILFGAARD: return 'asset_faction_color_nilfgaard';
+    case Factionv1.NORTHERN_REALMS: return 'asset_faction_color_northern';
+    case Factionv1.SCOIATAEL: return 'asset_faction_color_scoiatael';
+    case Factionv1.SKELLIGE: return 'asset_faction_color_skellige';
+  }
+  return '';
+}
+
 export function getSmallImgUrl(id: string, remote: boolean = false): string
 {
   id = fillLeftStr(id, 5, '0');
