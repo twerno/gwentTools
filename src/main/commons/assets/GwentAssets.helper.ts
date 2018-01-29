@@ -77,9 +77,16 @@ export function cardFaction2BanerBasic(faction: Factionv1): string
   return '';
 }
 
-export function gwentNumber(num: number): string
+export function gwentNumber(num: number | string): string
 {
-  return `asset_number_${num}`;
+  if (typeof num === 'string')
+  {
+    return gwentNumber(parseInt(num, 0));
+  }
+  else
+  {
+    return `asset_number_${num}`;
+  }
 }
 
 export function bgColor(faction: Factionv1): string
