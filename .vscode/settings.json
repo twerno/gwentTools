@@ -6,7 +6,7 @@
   "editor.formatOnType": true,
   "editor.codeLens": false,
   "editor.formatOnSave": true,
-  "typescriptHero.resolver.multiLineWrapThreshold": 100,
-  "typescriptHero.resolver.organizeOnSave": true,
+  "typescriptHero.imports.multiLineWrapThreshold": 100,
+  "typescriptHero.imports.organizeOnSave": true,
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }
