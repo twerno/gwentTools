@@ -28,7 +28,7 @@ interface CardMediumState
 export class CardMedium extends React.Component<CardMediumProps, CardMediumState>
 {
 
-  private readonly cssPrefix = 'cardMedium';
+  private readonly cssPrefix = 'cardMedium_140';
 
   public shouldComponentUpdate(nextProps: CardMediumProps, nextState: CardMediumState): boolean
   {

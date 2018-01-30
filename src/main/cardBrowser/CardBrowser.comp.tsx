@@ -1,5 +1,4 @@
 import { CardService } from '@src/cardBrowser/Card.service';
-import { CardPreview } from '@src/cardBrowser/components/card/CardPreview';
 import { CardGalleryGrid } from '@src/cardBrowser/components/cardGallery/CardGalleryGrid';
 import { CardGalleryTable } from '@src/cardBrowser/components/cardGallery/CardGalleryTable';
 import { BasicFilterComp } from '@src/cardBrowser/components/filter/BasicFilter.comp';
@@ -72,7 +71,7 @@ export class CardBrowserComponent extends React.Component<{}, CardBrowserCompone
 
       <div>
         {layout}
-        <CardPreview card={this.state.card} basicCardService={this.basicCardService} />
+        {/* <CardPreview card={this.state.card} basicCardService={this.basicCardService} /> */}
       </div>
 
       </>

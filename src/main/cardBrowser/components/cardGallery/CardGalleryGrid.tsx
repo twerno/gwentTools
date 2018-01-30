@@ -1,4 +1,4 @@
-import './CardGalleryGrid.css';
+import './CardGalleryGrid.less';
 
 import { CardRenderer } from '@src/cardBrowser/CardBrowser.comp';
 import { CardMedium } from '@src/cardBrowser/components/card/CardMedium';
@@ -20,6 +20,8 @@ export interface CardGalleryGridProps
 export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 {
 
+  private readonly cssPrefix = 'cardGallery';
+
   public constructor(props: CardGalleryGridProps)
   {
     super(props);
@@ -29,7 +31,7 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
   {
     return (
       <>
-      <div style={{ display: 'flex', flexWrap: 'wrap', maxWidth: 'calc(100% - 250px)', paddingLeft: '0px' }}>
+      <div className={`${this.cssPrefix}_container`}>
         {this.props.cards.map(card => this.renderCard(card))}
       </div>
       </>
@@ -38,14 +40,14 @@ export class CardGalleryGrid extends React.Component<CardGalleryGridProps, {}>
 
   public renderCard(card: ICardv1)
   {
-    return <div key={`preview-${card.url}`} style={{ padding: '10px 0px' }}>
+    return <div key={`preview-${card.url}`} className={`${this.cssPrefix}_grid_cell`}>
       {this.cardendererPicker(this.props.renderer, card)}
     </div>;
   }
 
   public cardendererPicker(renderer: CardRenderer, card: ICardv1)
   {
-    const scale = { transform: 'scale(.9)' };
+    const scale = { transform: 'scale()' };
     switch (this.props.renderer)
     {
       case CardRenderer.CARD_MEDIUM: return (
