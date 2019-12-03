@@ -6,8 +6,10 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
 ReactDOM.render(
-  <div>
-    <DuelCalcComponent />
+  <div id="page-container">
+    <div id="content-wrap">
+      <DuelCalcComponent />
+    </div>
     <StickyFooter />
   </div>
   ,

@@ -7,10 +7,10 @@ export function StickyFooter(props: any)
     <Footer
       className="footer"
       style={{
-        position: 'relative',
+        position: 'absolute',
         bottom: '0px',
         width: '100%',
-        height: '50px',
+        height: '2.5rem',
         backgroundColor: '#f5f5f5'
       }}
     >
