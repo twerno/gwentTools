@@ -62,7 +62,7 @@
     "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "mkdirp": "^0.5.1",
     "react": "^16.2.0",
     "react-bootstrap": "^0.31.5",
